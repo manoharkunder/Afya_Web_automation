@@ -13,16 +13,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 import org.testng.TestNG;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.collections.Lists;
@@ -61,7 +58,9 @@ public static File file;
 		 List<String> suites = Lists.newArrayList();         
 	       TestListenerAdapter tla = new TestListenerAdapter();
 	       TestNG testng = new TestNG();
-	       suites.add("StagingTestNG.xml");
+	    //   suites.add("StagingTestNG.xml");
+	       suites.add("testng.xml");
+
 	       testng.setTestSuites(suites);
 	       testng.addListener((ITestNGListener)tla);
 	       testng.run();
@@ -161,7 +160,7 @@ public static File file;
 		    
 			System.out.println("browser is launched");
 		
-		driver.navigate().to("https://stagingwebapp.afya.chat/");
+		driver.navigate().to("https://uatwebapp.afya.chat/");
 		
 		driver.manage().window().maximize();
 

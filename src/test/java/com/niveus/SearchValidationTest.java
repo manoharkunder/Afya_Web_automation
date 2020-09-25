@@ -88,6 +88,7 @@ public class SearchValidationTest extends Base {
 
 			{
 				homepge.getSpeciality().click();
+				
 				driver.findElement(By.xpath(
 						" //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][" + i
 								+ "]"))
@@ -122,7 +123,9 @@ public class SearchValidationTest extends Base {
 				homepge.getpopUpClose().click();
 
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 				homepge.getNewbtn().click();
+				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
@@ -157,8 +160,8 @@ public class SearchValidationTest extends Base {
 				e.printStackTrace();
 			}
 
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			homepge.getBackclear().click();
-			Thread.sleep(6000);
 			Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
 					true);
         

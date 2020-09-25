@@ -214,6 +214,7 @@ public class PatientInfoTest extends Base {
 		int val = 0;
 		while (val <= 100) {
 			try {
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				break;
@@ -225,6 +226,10 @@ public class PatientInfoTest extends Base {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
+		
+
+		WebDriverWait wrt=new WebDriverWait(driver, 20);
+		wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
 
 		homepge.getPatientinfo().click();
 

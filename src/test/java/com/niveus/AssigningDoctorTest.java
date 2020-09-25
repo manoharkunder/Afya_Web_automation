@@ -86,6 +86,7 @@ public class AssigningDoctorTest extends Base {
 
 			{
 				homepge.getSpeciality().click();
+				
 				driver.findElement(By.xpath(
 						" //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][" + i
 								+ "]"))

@@ -168,6 +168,7 @@ public class MediaFileTest extends Base{
 				Assert.assertTrue(b);
 
 				Reporter.log(logp.getSucess().getText() + " sucessfully updated", true);	
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
@@ -181,7 +182,10 @@ public class MediaFileTest extends Base{
 			}
 		}
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
+
+		WebDriverWait p=new WebDriverWait(driver, 20);
+		p.until(ExpectedConditions.elementToBeClickable(homepge.getMediaFil()));
+	
 		homepge.getMediaFil().click();
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

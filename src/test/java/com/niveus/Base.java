@@ -20,8 +20,8 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 import org.testng.TestNG;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.collections.Lists;
@@ -138,7 +138,9 @@ public static File file;
 		skippedCount=skippedCount+skipped;
 		driver.quit();
 	}
-	@AfterSuite
+	//@AfterSuite
+	
+	@AfterClass
 	public void flushReport() throws IOException, InterruptedException
 	{	
 

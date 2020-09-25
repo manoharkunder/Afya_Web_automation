@@ -40,7 +40,7 @@ public class AssigningDoctorTest extends Base {
 		Reporter.log("Login page is sucessfully displayed", true);
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-		logp.getUsername().sendKeys("vigga@gmail.com");
+		logp.getUsername().sendKeys("prasannaachar126@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 		logp.getpswdview().click();
 
@@ -61,7 +61,7 @@ public class AssigningDoctorTest extends Base {
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "vigga@gmail.com");
+		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
 		WebDriverWait wait5 = new WebDriverWait(driver, 80);

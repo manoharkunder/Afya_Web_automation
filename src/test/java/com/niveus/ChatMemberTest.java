@@ -203,6 +203,7 @@ public class ChatMemberTest extends Base{
 		int val = 0;
 		while (val <= 100) {
 			try {
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				break;
@@ -215,6 +216,9 @@ public class ChatMemberTest extends Base{
 			}
 		}
 
+		WebDriverWait rr=new WebDriverWait(driver, 20);
+		rr.until(ExpectedConditions.elementToBeClickable(homepge.getChatMemeber()));
+		
 		homepge.getChatMemeber().click();
 
 		WebDriverWait ww = new WebDriverWait(driver, 50);

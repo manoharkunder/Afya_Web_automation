@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class SearchValidationTest extends Base {
+public class SearchValidationTest extends  Base{
 
 	public LoginPage logp;
 	public Registeration registerp;
@@ -37,7 +37,7 @@ public class SearchValidationTest extends Base {
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 100);
+		WebDriverWait wait = new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 		logp.getUsername().sendKeys("man@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
@@ -46,12 +46,14 @@ public class SearchValidationTest extends Base {
 		for (int i = 0; i <= 10; i++) {
 			try {
 				logp.getloginbtn().click();
-				Thread.sleep(4000);
 				boolean res = logp.getloginbtn().isEnabled();
-				if (res == false) {
+				
+				if (res == false) 
+				{
 					break;
 				}
-			} catch (Exception e) {
+			}
+			 catch (Exception e) {
 				e.printStackTrace();
 
 			}
@@ -82,6 +84,7 @@ public class SearchValidationTest extends Base {
 			}
 		}
 
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		for (int i = 1; i <= 10;) {
 
 			try
@@ -135,13 +138,14 @@ public class SearchValidationTest extends Base {
 
 		homepge.getTextarea().sendKeys("hello  how are u search", Keys.ENTER);
 
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		String arr[] = { "how", "hello", "are", "search" };
 
 		for (int i = 0; i <= arr.length - 1; i++) {
 
 			try {
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				homepge.getSearch().sendKeys(arr[i]);
 
 				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -160,7 +164,8 @@ public class SearchValidationTest extends Base {
 				e.printStackTrace();
 			}
 
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+               WebDriverWait u=new WebDriverWait(driver, 20);
+               u.until(ExpectedConditions.elementToBeClickable(homepge.getBackclear()));
 			homepge.getBackclear().click();
 			Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
 					true);

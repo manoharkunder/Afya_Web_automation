@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -95,15 +96,20 @@ public class SearchValidationTest extends  Base{
 			try
 
 			{
-				homepge.getSpeciality().click();
+              homepge.getSpeciality().click();
 				
-				driver.findElement(By.xpath(
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				
+				WebElement spec = driver.findElement(By.xpath(
 						" //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][" + i
-								+ "]"))
-						.click();
+								+ "]"));
 
-				Thread.sleep(3000);
-
+				WebDriverWait tt=new WebDriverWait(driver, 30);
+				
+				tt.until(ExpectedConditions.elementToBeClickable(spec));
+				
+				spec.click();
+				
 				homepge.getChiefcomplaint().sendKeys("have a knee pain leg");
 
 				homepge.getNewpatient().click();
@@ -137,13 +143,30 @@ public class SearchValidationTest extends  Base{
 					WebDriverWait ppp=new WebDriverWait(driver, 20);
 					ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
 			
-					homepge.getNewbtn().click();
-				
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+					boolean b=homepge.getNewbtn().isEnabled();
+					
+					for(int o=0;o<=10;o++)
+					{
+						
+					try
+					{
+					if(b==true)
+					{
+						homepge.getNewbtn().click();
+	                  Reporter.log("clicked on new button............2time",true);
+						break;
+					}}
+					catch (Exception ei) 
+					{
+						ei.printStackTrace();
+					}
+					}
 			}
+		
 		}
-
+		
 		WebDriverWait wait11 = new WebDriverWait(driver, 100);
+		
 		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getTextarea()));
 
 		homepge.getTextarea().sendKeys("hello  how are u search", Keys.ENTER);
@@ -172,8 +195,8 @@ public class SearchValidationTest extends  Base{
 					Reporter.log("search is Unsucessfull");
 				}
 
-			} catch (Exception e) {
-				e.printStackTrace();
+			} catch (Exception eo) {
+				eo.printStackTrace();
 			}
 
                WebDriverWait u=new WebDriverWait(driver, 20);
@@ -187,4 +210,4 @@ public class SearchValidationTest extends  Base{
 		}
 
 	}
-}
+	}

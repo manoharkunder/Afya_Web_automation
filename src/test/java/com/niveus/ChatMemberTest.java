@@ -99,6 +99,7 @@ public class ChatMemberTest extends Base{
         	 if(ret==true)
         	 {
 		docpage.getNewSubmitter().click();
+		Reporter.log("click on the new button sucessfully......###########",true);
 		break;
         	 }
         	 else
@@ -108,11 +109,18 @@ public class ChatMemberTest extends Base{
          }
 
 		docpage.getSelectDate().sendKeys("11/11/1998");
+	
 		docpage.getPatientSearch().sendKeys("prasad");
-		WebDriverWait wait33 = new WebDriverWait(driver, 20);
+		
+		WebDriverWait wait33 = new WebDriverWait(driver, 40);
+		
 		wait33.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
 		
 		docpage.getSearchResult().click();
+		
+	   WebDriverWait wa = new WebDriverWait(driver, 40);
+		
+		wa.until(ExpectedConditions.elementToBeClickable(docpage.getConbutton()));
 		
 		
 		docpage.getConbutton().click();
@@ -127,17 +135,24 @@ public class ChatMemberTest extends Base{
 		
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 		
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Reporter.log("sucessfully enter the speciality and chief complaint.........########",true);
 		
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 		
 		int count = 0;
 		while (count <= 90) {
 			try {
-
+                  WebDriverWait op=new WebDriverWait(driver, 40);
+                 
+                  op.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
+                  
 				docpage.getIcdHeart().click();
+				Reporter.log("Icd code is sucessfully displayed............############",true);
 				break;
-			} catch (Exception e) {
+			} 
+			catch (Exception e) 
+			{
 				e.printStackTrace();
 				count++;
 			}
@@ -170,6 +185,7 @@ public class ChatMemberTest extends Base{
  		boolean flag3 = lang1.contains(dateArr[1]);
 
  		Assert.assertTrue(flag3);
+ 		
  		Reporter.log("Doctor is sucessfully added to the cht session", true);
  		boolean flag1 = lang1.contains(dateArr[2]);
  		Assert.assertTrue(flag1);
@@ -177,6 +193,7 @@ public class ChatMemberTest extends Base{
  		System.out.println(lang1);
 
  		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+ 		
  		Reporter.log("Patien  is sucessgully added to the chat session", true);
 
 
@@ -204,7 +221,9 @@ public class ChatMemberTest extends Base{
 		int val = 0;
 		while (val <= 100) {
 			try {
+				
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				break;

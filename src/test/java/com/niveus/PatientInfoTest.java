@@ -114,15 +114,27 @@ public class PatientInfoTest extends Base {
 		
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 		
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 		
 		int count = 0;
 		while (count <= 90) {
+		
 			try {
-
-				docpage.getIcdHeart().click();
+				
+				  WebDriverWait wat=new WebDriverWait(driver, 50);
+				  
+				  wat.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
+				  				 
+			    docpage.getIcdHeart().click();
+			
+				Reporter.log("sucessfully icd code is selected.................##########",true);
+				
 				break;
-			} catch (Exception e) {
+			} 
+			catch (Exception e) 
+			{
 				e.printStackTrace();
 				count++;
 			}
@@ -131,6 +143,7 @@ public class PatientInfoTest extends Base {
 
 		
 		boolean result = homepge.getReg().isEnabled();
+		
 		int countt=0;
 		while(countt>=0)
 		{
@@ -157,6 +170,7 @@ public class PatientInfoTest extends Base {
  		boolean flag3 = lang1.contains(dateArr[1]);
 
  		Assert.assertTrue(flag3);
+ 		
  		Reporter.log("Doctor is sucessfully added to the cht session", true);
  		boolean flag1 = lang1.contains(dateArr[2]);
  		Assert.assertTrue(flag1);
@@ -214,7 +228,9 @@ public class PatientInfoTest extends Base {
 		int val = 0;
 		while (val <= 100) {
 			try {
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				break;

@@ -43,6 +43,8 @@ public class ParticipantTest extends Base {
 
 		close = PageFactory.initElements(driver, CloseCode.class);
 
+		Reporter.log("Participant Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

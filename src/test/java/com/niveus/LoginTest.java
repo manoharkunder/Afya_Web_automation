@@ -21,9 +21,13 @@ public class LoginTest extends Base{
 		card = PageFactory.initElements(driver, Carddetails.class);
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 		
+		
+		Reporter.log("Login Testcase is runnng..........",true);
+
 		WebDriverWait log=new WebDriverWait(driver, 20);
 		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
+		
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 	
 		Reporter.log("Login page is sucessfully displayed", true);

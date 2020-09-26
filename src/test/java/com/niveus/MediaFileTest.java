@@ -37,6 +37,8 @@ public class MediaFileTest extends Base{
 		filter = PageFactory.initElements(driver, FilterSection.class);
         docpage=PageFactory.initElements(driver, DoctorRolesPage.class);
 
+		Reporter.log("MediaFile Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -197,6 +199,7 @@ public class MediaFileTest extends Base{
 		Assert.assertTrue(f);
 
 		Reporter.log("media file is sucessfully displayed", true);
+		
 		Reporter.log("MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS",true);
 
 	}

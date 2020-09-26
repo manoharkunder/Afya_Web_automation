@@ -31,6 +31,8 @@ public class FilterTest extends Base {
 		homepge = PageFactory.initElements(driver, HomePage.class);
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
+	
+		Reporter.log("FilterTest Testcase is runnng..........",true);
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -73,7 +75,7 @@ public class FilterTest extends Base {
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
-		Reporter.log("sucessfully loged in and Home page is displayed", true);
+		Reporter.log("sucessfully logedin and Home page is displayed", true);
 
 		WebDriverWait till = new WebDriverWait(driver, 100);
 		till.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));

@@ -22,9 +22,11 @@ public class AddNewPatientTest extends Base{
 	@Test
 	public void addNewPatientTest() throws Exception {
 		
+		
 		test=extent.createTest("4.AddNewPatient","This test case is to check submitteble to add the patient");
+	    Reporter.log("Addnewpatient testcase is running",true);
 		System.out.println("browser is launhed");
-		System.out.println("enter the url sucesfully");
+		System.out.println("enter the url sucessfully");
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		card = PageFactory.initElements(driver, Carddetails.class);
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
@@ -148,17 +150,17 @@ public class AddNewPatientTest extends Base{
  		boolean flag3 = lang1.contains(dateArr[1]);
 
  		Assert.assertTrue(flag3);
- 		Reporter.log("Doctor is sucessfully added to the cht session", true);
+ 		Reporter.log("Doctor is sucessfully added to the chat session", true);
  		boolean flag1 = lang1.contains(dateArr[2]);
  		Assert.assertTrue(flag1);
- 		Reporter.log("DOctor is assigned to the cht session", true);
+ 		Reporter.log("Doctor is assigned to the chat session", true);
  		System.out.println(lang1);
 
  		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
  		
  		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
  		
- 		Reporter.log("Patien  is sucessgully added to the chat session", true);
+ 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 		Reporter.log("AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS",true);
 
 	}

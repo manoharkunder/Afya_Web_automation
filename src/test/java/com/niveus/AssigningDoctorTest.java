@@ -27,6 +27,7 @@ public class AssigningDoctorTest extends Base {
 		test = extent.createTest("14.AssigningDoctor",
 				"This test case is to check consumer is able to Assign the Doctor");
 
+		Reporter.log("Assigining doctor Testcase is running...........",true);
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		card = PageFactory.initElements(driver, Carddetails.class);
 		filter = PageFactory.initElements(driver, FilterSection.class);
@@ -64,7 +65,7 @@ public class AssigningDoctorTest extends Base {
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
-		Reporter.log("sucessfully loged in and Home page is displayed", true);
+		Reporter.log("sucessfully logedin and Home page is displayed", true);
 
 		WebDriverWait wait5 = new WebDriverWait(driver, 80);
 
@@ -163,7 +164,7 @@ public class AssigningDoctorTest extends Base {
 
 	Assert.assertTrue(flag);
 	
-	Reporter.log("Doctor is sucessfully added to the cht session",true);
+	Reporter.log("Doctor is sucessfully added to the chat session",true);
 	boolean flag1 = lang1.contains(dateArr[2]);Assert.assertTrue(flag1);Reporter.log("DOctor is assigned to the cht session",true);System.out.println(lang1);
 
 	Reporter.log("AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS",true);

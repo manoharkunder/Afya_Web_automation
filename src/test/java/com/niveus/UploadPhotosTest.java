@@ -34,6 +34,8 @@ public class UploadPhotosTest extends Base {
 		homepge = PageFactory.initElements(driver, HomePage.class);
 		filter = PageFactory.initElements(driver, FilterSection.class);
 
+		Reporter.log("UploadPhoto Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

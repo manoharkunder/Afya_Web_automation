@@ -41,6 +41,7 @@ public class ChatMemberTest extends Base{
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
+		Reporter.log("Chatmember Testcase is running............",true);
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -88,7 +89,7 @@ public class ChatMemberTest extends Base{
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 		
-		Reporter.log("sucessfully loged in and Home page is displayed", true);
+		Reporter.log("sucessfully logedin and Home page is displayed", true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -186,15 +187,15 @@ public class ChatMemberTest extends Base{
 
  		Assert.assertTrue(flag3);
  		
- 		Reporter.log("Doctor is sucessfully added to the cht session", true);
+ 		Reporter.log("Doctor is sucessfully added to the chat session", true);
  		boolean flag1 = lang1.contains(dateArr[2]);
  		Assert.assertTrue(flag1);
- 		Reporter.log("DOctor is assigned to the cht session", true);
+ 		Reporter.log("Doctor is assigned to the chat session", true);
  		System.out.println(lang1);
 
  		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
  		
- 		Reporter.log("Patien  is sucessgully added to the chat session", true);
+ 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
 
 		WebDriverWait www = new WebDriverWait(driver, 100);
@@ -209,14 +210,14 @@ public class ChatMemberTest extends Base{
 		boolean flag33 = lang1.contains(dateArr1[1]);
 
 		Assert.assertTrue(flag33);
-		Reporter.log("Doctor is sucessfully added to the cht session", true);
+		Reporter.log("Doctor is sucessfully added to the chat session", true);
 		boolean flag11 = lang1.contains(dateArr1[2]);
 		Assert.assertTrue(flag11);
-		Reporter.log("DOctor is assigned to the cht session", true);
+		Reporter.log("DOctor is assigned to the chat session", true);
 		System.out.println(lang11);
 
 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
-		Reporter.log("Patien  is sucessgully added to the chat session", true);
+		Reporter.log("Patient  is sucessgully added to the chat session", true);
 
 		int val = 0;
 		while (val <= 100) {

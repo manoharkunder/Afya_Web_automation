@@ -34,6 +34,8 @@ public class SearchValidationTest extends  Base{
 		WebDriverWait log = new WebDriverWait(driver, 20);
 		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
+		Reporter.log("SearchValidation Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

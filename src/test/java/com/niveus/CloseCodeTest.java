@@ -43,6 +43,8 @@ public class CloseCodeTest extends Base {
 
 		close = PageFactory.initElements(driver, CloseCode.class);
 
+		Reporter.log("Closecode Testcase is runnng..........",true);
+	
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -91,7 +93,7 @@ public class CloseCodeTest extends Base {
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 
-		Reporter.log("sucessfully loged in and Home page is displayed", true);
+		Reporter.log("sucessfully logedin and HomePage is displayed", true);
 
          
         int count=0;

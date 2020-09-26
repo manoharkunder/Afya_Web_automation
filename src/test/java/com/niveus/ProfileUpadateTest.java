@@ -28,6 +28,8 @@ public class ProfileUpadateTest extends Base{
 		
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		
+		Reporter.log("ProfileUpdate Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

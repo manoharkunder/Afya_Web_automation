@@ -42,6 +42,8 @@ public class ResponderStatusTest extends Base{
 
 		close = PageFactory.initElements(driver, CloseCode.class);
 
+		Reporter.log("Responder Status Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

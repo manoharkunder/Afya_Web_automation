@@ -39,6 +39,8 @@ public class PatientInfoTest extends Base {
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
+		Reporter.log("PatientInfo Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

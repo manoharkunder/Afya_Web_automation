@@ -40,6 +40,8 @@ public class UploadDocumentTest extends Base {
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
 
 
+		Reporter.log("UploadDocument Testcase is runnng..........",true);
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);

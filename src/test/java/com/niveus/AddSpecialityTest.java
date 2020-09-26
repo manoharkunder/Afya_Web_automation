@@ -46,6 +46,7 @@ public class AddSpecialityTest extends Base {
 
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
+		Reporter.log("AddSpecialty testcase is running...........",true);
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -177,7 +178,7 @@ public class AddSpecialityTest extends Base {
 	  
 		Assert.assertTrue(flag1);
 	   
-		Reporter.log("Doctor is sucessfully added to the cht session", true);
+		Reporter.log("Doctor is sucessfully added to the chat session", true);
 		
 		System.out.println(lang1);
 		

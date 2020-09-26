@@ -334,6 +334,7 @@ public class HomePage
 	{
 		return files;
 	}
+	
 	public void createNewpatient(String speciality, String chiefcompliant) {
 		spec.sendKeys(speciality, Keys.ENTER);
 		chief.sendKeys(chiefcompliant);

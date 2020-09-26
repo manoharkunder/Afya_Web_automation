@@ -44,16 +44,20 @@ public class SearchValidationTest extends  Base{
 		logp.getpswdview().click();
 
 		for (int i = 0; i <= 10; i++) {
+			
 			try {
-				logp.getloginbtn().click();
+				
 				boolean res = logp.getloginbtn().isEnabled();
 				
-				if (res == false) 
+				if (res == true) 
 				{
+					logp.getloginbtn().click();
+
 					break;
 				}
 			}
-			 catch (Exception e) {
+			 catch (Exception e) 
+			{
 				e.printStackTrace();
 
 			}
@@ -78,6 +82,7 @@ public class SearchValidationTest extends  Base{
 		while (countt >= 0) {
 			if (out == true) {
 				homepge.getNewbtn().click();
+				Reporter.log("sucessfully clicked on New buuton",true);
 				break;
 			} else {
 				countt++;
@@ -122,12 +127,17 @@ public class SearchValidationTest extends  Base{
 			catch (Exception e) {
 
 				e.printStackTrace();
+				
+					WebDriverWait pp=new WebDriverWait(driver, 20);
+					pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
+			
+					homepge.getpopUpClose().click();
 
-				homepge.getpopUpClose().click();
-
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-				homepge.getNewbtn().click();
+			
+					WebDriverWait ppp=new WebDriverWait(driver, 20);
+					ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
+			
+					homepge.getNewbtn().click();
 				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
@@ -145,7 +155,9 @@ public class SearchValidationTest extends  Base{
 		for (int i = 0; i <= arr.length - 1; i++) {
 
 			try {
+				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			
 				homepge.getSearch().sendKeys(arr[i]);
 
 				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -166,8 +178,10 @@ public class SearchValidationTest extends  Base{
 
                WebDriverWait u=new WebDriverWait(driver, 20);
                u.until(ExpectedConditions.elementToBeClickable(homepge.getBackclear()));
-			homepge.getBackclear().click();
-			Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
+		
+               homepge.getBackclear().click();
+			
+               Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
 					true);
         
 		}

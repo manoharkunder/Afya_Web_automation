@@ -47,10 +47,12 @@ public class UploadPhotosTest extends Base {
 
 		for (int i = 0; i <= 10; i++) {
 			try {
-				logp.getloginbtn().click();
-				Thread.sleep(4000);
 				boolean res = logp.getloginbtn().isEnabled();
-				if (res == false) {
+			
+				if (res == true) 
+				{
+					logp.getloginbtn().click();
+
 					break;
 				}
 			} catch (Exception e) {

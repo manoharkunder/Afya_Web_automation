@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,10 +47,11 @@ public class AssigningDoctorTest extends Base {
 
 		for (int i = 0; i <= 10; i++) {
 			try {
-				logp.getloginbtn().click();
-				Thread.sleep(4000);
 				boolean res = logp.getloginbtn().isEnabled();
-				if (res == false) {
+				if (res == true) {
+					
+					logp.getloginbtn().click();
+
 					break;
 				}
 			} catch (Exception e) {
@@ -73,7 +75,10 @@ public class AssigningDoctorTest extends Base {
 		int countt = 0;
 		while (countt >= 0) {
 			if (out == true) {
+				WebDriverWait i=new WebDriverWait(driver, 30);
+				i.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
 				homepge.getNewbtn().click();
+				Reporter.log("sucessfully clicked on new button",true);
 				break;
 			} else {
 				countt++;
@@ -85,13 +90,23 @@ public class AssigningDoctorTest extends Base {
 			try
 
 			{
+				
+				
 				homepge.getSpeciality().click();
 				
-				driver.findElement(By.xpath(
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				
+				WebElement spec = driver.findElement(By.xpath(
 						" //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][" + i
-								+ "]"))
-						.click();
+								+ "]"));
 
+				WebDriverWait tt=new WebDriverWait(driver, 30);
+				tt.until(ExpectedConditions.elementToBeClickable(spec));
+				
+				spec.click();
+				
+				Reporter.log("sucessfully specialty is seleced",true);
+				
 				Thread.sleep(3000);
 
 				homepge.getChiefcomplaint().sendKeys("have a knee pain leg");
@@ -117,11 +132,16 @@ public class AssigningDoctorTest extends Base {
 			catch (Exception e) {
 
 				e.printStackTrace();
+				
+				WebDriverWait pp=new WebDriverWait(driver, 30);
+				pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
 
 				homepge.getpopUpClose().click();
 
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 				homepge.getNewbtn().click();
+				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
@@ -134,7 +154,6 @@ public class AssigningDoctorTest extends Base {
 
 	String lang1 = homepge.getBannerLang1().getText();
 
-	Thread.sleep(5000);
 
 	Date d = new Date();
 
@@ -143,6 +162,7 @@ public class AssigningDoctorTest extends Base {
 	boolean flag = lang1.contains(dateArr[1]);
 
 	Assert.assertTrue(flag);
+	
 	Reporter.log("Doctor is sucessfully added to the cht session",true);
 	boolean flag1 = lang1.contains(dateArr[2]);Assert.assertTrue(flag1);Reporter.log("DOctor is assigned to the cht session",true);System.out.println(lang1);
 

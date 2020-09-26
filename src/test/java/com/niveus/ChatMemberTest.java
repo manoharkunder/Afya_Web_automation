@@ -57,11 +57,12 @@ public class ChatMemberTest extends Base{
 		{
 		try
 		{
-		logp.getloginbtn().click();
-		Thread.sleep(4000);
+
 		boolean res = logp.getloginbtn().isEnabled();
-		if(res==false)
+		if(res==true)
 		{
+			logp.getloginbtn().click();
+
 			break;
 		}
 		}

@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class AddNewPatientTest extends Base{
+public class AddNewPatientTest extends Base {
 	public LoginPage logp;
 	public Registeration registerp;
 	public Carddetails card;
@@ -21,147 +21,138 @@ public class AddNewPatientTest extends Base{
 
 	@Test
 	public void addNewPatientTest() throws Exception {
-		
-		
-		test=extent.createTest("4.AddNewPatient","This test case is to check submitteble to add the patient");
-	    Reporter.log("Addnewpatient testcase is running",true);
-		System.out.println("browser is launhed");
+
+		test = extent.createTest("4.AddNewPatient", "This test case is to check submitteble to add the patient");
+		Reporter.log("Addnewpatient testcase is running.............############", true);
 		System.out.println("enter the url sucessfully");
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		card = PageFactory.initElements(driver, Carddetails.class);
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
-		homepge=PageFactory.initElements(driver, HomePage.class);
+		homepge = PageFactory.initElements(driver, HomePage.class);
 
 		registerp = PageFactory.initElements(driver, Registeration.class);
-		
- 
-	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	    
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		logp.getUsername().sendKeys("test2prasanna@gmail.com");
-	     logp.getpassword().sendKeys("Aa123456@");
-	     
-	 	logp.getpswdview().click();
-	
-	 	for(int i=0;i<=10;i++)
-		{
-		try
-		{
-		boolean res = logp.getloginbtn().isEnabled(); 
-		if(res==true)
-		{
-			logp.getloginbtn().click();
+		logp.getpassword().sendKeys("Aa123456@");
 
-			break;
-		}
-		}
-		catch (Exception e) 
-		{
-			e.printStackTrace();
+		logp.getpswdview().click();
 
+		for (int i = 0; i <= 10; i++) {
+			try {
+				boolean res = logp.getloginbtn().isEnabled();
+				if (res == true) {
+					logp.getloginbtn().click();
+
+					break;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+
+			}
 		}
-		}
-			
-	     
+
 		System.out.println("sucessfully logedin");
-		
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 		ut.moveToElement(driver, docpage.getSubProvider());
-		
+
 		Thread.sleep(5000);
-		
-		WebDriverWait www=new WebDriverWait(driver, 50);
-		
+
+		WebDriverWait www = new WebDriverWait(driver, 50);
+
 		www.until(ExpectedConditions.elementToBeClickable(docpage.getNewSubmitter()));
-		
+
 		docpage.getNewSubmitter().click();
-		
+
 		docpage.getSelectDate().sendKeys("11/11/1998");
 		docpage.getPatientSearch().sendKeys("prasanna");
 		WebDriverWait wait1 = new WebDriverWait(driver, 200);
-		
+
 		wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
-		
+
 		docpage.getSearchResult().click();
-		
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		docpage.getConbutton().click();
-		
+
 		docpage.getSpeciality().sendKeys("anesthesiology");
-		
+
 		WebDriverWait wait2 = new WebDriverWait(driver, 20);
-		
+
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()));
-		
+
 		docpage.getAnsthesiolgy().click();
-		
+
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
-		
+       
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
-		
+
+
 		int count = 0;
 		while (count <= 90) {
 			try {
+				WebDriverWait m = new WebDriverWait(driver, 10);
+				
+				m.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
 
 				docpage.getIcdHeart().click();
+				Reporter.log("Sucessfully selected the Icd Code.........", true);
 				break;
 			} catch (Exception e) {
 				e.printStackTrace();
+               System.out.println("current count is for selecting Icd......."+count);
 				count++;
 			}
 		}
 
-
 		try {
 			Thread.sleep(3000);
-		}
-		catch (InterruptedException e) {
+		} catch (InterruptedException e) {
 
 			e.printStackTrace();
 		}
-		
+
 		boolean result = homepge.getReg().isEnabled();
-		int countt=0;
-		while(countt>=0)
-		{
-		if(result==true)
-		{
-        homepge.getReg().click();
-        break;
+		int countt = 0;
+		while (countt >= 0) {
+			if (result == true) {
+				homepge.getReg().click();
+				break;
+			} else {
+				count++;
+			}
 		}
-		else
-		{
-			count++;
-		}
-		}
- 		WebDriverWait w = new WebDriverWait(driver, 50);
- 		
- 		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
+		WebDriverWait w = new WebDriverWait(driver, 50);
 
- 		String lang1 = homepge.getBannerLang1().getText();
+		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
 
- 		Date d = new Date();
+		String lang1 = homepge.getBannerLang1().getText();
 
- 		String[] dateArr = d.toString().split(" ");
+		Date d = new Date();
 
- 		boolean flag3 = lang1.contains(dateArr[1]);
+		String[] dateArr = d.toString().split(" ");
 
- 		Assert.assertTrue(flag3);
- 		Reporter.log("Doctor is sucessfully added to the chat session", true);
- 		boolean flag1 = lang1.contains(dateArr[2]);
- 		Assert.assertTrue(flag1);
- 		Reporter.log("Doctor is assigned to the chat session", true);
- 		System.out.println(lang1);
+		boolean flag3 = lang1.contains(dateArr[1]);
 
- 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
- 		
- 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
- 		
- 		Reporter.log("Patient  is sucessfully added to the chat session", true);
-		Reporter.log("AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS",true);
+		Assert.assertTrue(flag3);
+		Reporter.log("Doctor is sucessfully added to the chat session", true);
+		boolean flag1 = lang1.contains(dateArr[2]);
+		Assert.assertTrue(flag1);
+		Reporter.log("Doctor is assigned to the chat session", true);
+		System.out.println(lang1);
+
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
+
+		Reporter.log("Patient  is sucessfully added to the chat session", true);
+		Reporter.log("AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS", true);
 
 	}
 

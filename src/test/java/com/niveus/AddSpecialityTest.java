@@ -1,7 +1,5 @@
 package com.niveus;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -102,6 +100,7 @@ public class AddSpecialityTest extends Base {
 		
 		
 		boolean resl = filter.getFilter().isEnabled();
+	
 		while(count>=0)
 		{
 		
@@ -110,7 +109,8 @@ public class AddSpecialityTest extends Base {
 
 		     WebDriverWait w1=new WebDriverWait(driver, 100);
 		     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		       filter.getFilter().click();
+		   
+		     filter.getFilter().click();
 		       break;
 		}
 		else
@@ -120,12 +120,12 @@ public class AddSpecialityTest extends Base {
 		}
 	
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		Thread.sleep(4000);
 
 		filter.getAllchat().click();
 
+		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>",true);
 	
 
 		WebDriverWait wait11 = new WebDriverWait(driver, 40);
@@ -134,7 +134,6 @@ public class AddSpecialityTest extends Base {
 
 		landpage.getChatsesion().click();
 			
-          Thread.sleep(10000);
       
 
 		for (int i = 1; i <= 100; i++) 
@@ -142,14 +141,18 @@ public class AddSpecialityTest extends Base {
 			
 
 				try {
+					Thread.sleep(5000);
+					
 					landpage.getTextarea().sendKeys("@speciality");
 
-                         Thread.sleep(10000);
                          
 					WebElement spcilaity = driver.findElement(By.xpath("//div[@class='list-sort-demo-list'][" + i + "]"));
 					
-					WebDriverWait wt=new WebDriverWait(driver, 20);
-					wt.until(ExpectedConditions.visibilityOf(spcilaity));
+					
+					 WebDriverWait itt=new WebDriverWait(driver, 10);
+					 
+					  itt.until(ExpectedConditions.visibilityOf(spcilaity));
+					  
 					
 					 WebDriverWait waitt=new WebDriverWait(driver, 100);
 					 

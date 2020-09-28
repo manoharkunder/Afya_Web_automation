@@ -81,6 +81,14 @@ public class LoginPage {
 	{
 		return sucess;
 	}
+	
+	@FindBy(xpath ="//div[text()='User does not exist.']")
+	private WebElement invalid;
+	
+	public WebElement getInvlid()
+	{
+		return invalid;
+	}
 	public void login(String email,String password)
 	{
 		username.sendKeys(email);

@@ -100,6 +100,7 @@ public class CloseCodeTest extends Base {
 		
 		
 		boolean resl = filter.getFilter().isEnabled();
+	
 		while(count>=0)
 		{
 		
@@ -118,66 +119,91 @@ public class CloseCodeTest extends Base {
 		}
 	
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		/*
+		 * WebDriverWait jj=new WebDriverWait(driver, 20);
+		 * 
+		 * jj.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+		 */
+	
+		Thread.sleep(3000);
+		
 		filter.getAllchat().click();
-		
 
-		
 		
 		
 		WebDriverWait hme = new WebDriverWait(driver, 100);
 
 		hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 		
+		Reporter.log("Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>",true);
+
+		
 		homepge.getChatsesion().click();
 		
-       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		
        int ch = 1;
 	
 		switch (ch) {
 		case 1:
 			
-			Thread.sleep(5000);
+
+		//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
+			Thread.sleep(5000);
+		
 			homepge.getTextarea().sendKeys("@close");
 			
-			WebDriverWait wt=new WebDriverWait(driver, 100);
+			/*
+			 * WebDriverWait wt=new WebDriverWait(driver, 100);
+			 * 
+			 * wt.until(ExpectedConditions.elementToBeClickable(close.getCloseVideo()));
+			 */
 			
-			wt.until(ExpectedConditions.elementToBeClickable(close.getCloseVideo()));
-			
-			WebDriverWait wtr=new WebDriverWait(driver, 20);
-			wtr.until(ExpectedConditions.visibilityOf(close.getCloseComplete()));
-			
+			  WebDriverWait wtr=new WebDriverWait(driver, 20);
+			  wtr.until(ExpectedConditions.visibilityOf(close.getCloseComplete()));
+			 
 			close.getCloseComplete().click();
 			
-             Thread.sleep(10000);			
+
+			WebDriverWait uu=new WebDriverWait(driver, 20);
+			uu.until(ExpectedConditions.visibilityOf(close.getConsultcomplete()));
+		
 			boolean b=close.getConsultcomplete().getText().contains("consultation as Complete");
 			Assert.assertTrue(b);
 			Reporter.log(close.getConsultcomplete().getText()+ " sucess",true);
 
+			WebDriverWait pp=new WebDriverWait(driver, 40);
+			pp.until(ExpectedConditions.elementToBeClickable(homepge.getSendbutton()));
+			
 			homepge.getSendbutton().click();
-
+ 
+			Reporter.log("close code apply sucessfully...>>>> 1",true);
 		case 2:
 
+			Thread.sleep(4000);
 			homepge.getTextarea().sendKeys("@close");
 			
-             WebDriverWait wt1=new WebDriverWait(driver,100);
-			
-			wt1.until(ExpectedConditions.elementToBeClickable(close.getCloseInPerson()));
-		
+            
 			WebDriverWait wtw=new WebDriverWait(driver, 20);
 			wtw.until(ExpectedConditions.visibilityOf(close.getCloseInPerson()));
 			
 			close.getCloseInPerson().click();
 
+			WebDriverWait ll=new WebDriverWait(driver, 30);
+			ll.until(ExpectedConditions.visibilityOf(close.getInPerson()));
+			
 			boolean b1=close.getInPerson().getText().contains("consultation as recommending an In Person Visit");
 			Assert.assertTrue(b1);
+		
 			Reporter.log(close.getInPerson().getText()+ " sucess",true);
 			
+			WebDriverWait ppp=new WebDriverWait(driver, 40);
+			ppp.until(ExpectedConditions.elementToBeClickable(homepge.getSendbutton()));
+		
 			homepge.getSendbutton().click();
-			
+		
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Reporter.log("CloseCode TestCase is sucessfully done ############################# TEST IS PASS",true);
 
 		}

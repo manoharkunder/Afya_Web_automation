@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.niveus.ChatMemberTest">
+      <class name="com.niveus.CloseCodeTest">
         <methods>
           <include name="getResult"/>
+          <include name="closeCodeValidationTest"/>
           <include name="setUp"/>
-          <include name="chatMemeberValidation"/>
           <include name="flushReport"/>
           <include name="configBc"/>
         </methods>
-      </class> <!-- com.niveus.ChatMemberTest -->
+      </class> <!-- com.niveus.CloseCodeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -125,6 +125,13 @@ public class ProfilePage {
     {
     	return updateprofile;
     }
+    @FindBy(xpath = "//li[text()='sign out']")
+    private WebElement logout;
+    
+    public WebElement getLog()
+    {
+    	return logout;
+    }
 	
     public void updateProfile(String firstname, String lastName, String dateofbirth, String gender, String biodata)
 			throws Exception {

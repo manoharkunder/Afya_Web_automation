@@ -143,6 +143,7 @@ public class PatientInfoTest extends Base {
 		}
 
 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		boolean result = homepge.getReg().isEnabled();
 		
@@ -151,6 +152,8 @@ public class PatientInfoTest extends Base {
 		{
 		if(result==true)
 		{
+			WebDriverWait oo=new WebDriverWait(driver, 20);
+			oo.until(ExpectedConditions.elementToBeClickable(homepge.getReg()));
         homepge.getReg().click();
         break;
 		}

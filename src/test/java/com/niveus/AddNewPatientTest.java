@@ -104,29 +104,29 @@ public class AddNewPatientTest extends Base {
 				docpage.getIcdHeart().click();
 				Reporter.log("Sucessfully selected the Icd Code.........", true);
 				break;
-			} catch (Exception e) {
+			}
+			catch (Exception e) {
 				e.printStackTrace();
                System.out.println("current count is for selecting Icd......."+count);
 				count++;
 			}
 		}
 
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-
-			e.printStackTrace();
-		}
-		
+	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		boolean result = homepge.getReg().isEnabled();
 		int countt = 0;
 		while (countt >= 0) {
-			if (result == true) {
+			if (result == true)
+			{
+				WebDriverWait kk=new WebDriverWait(driver, 20);
+				kk.until(ExpectedConditions.elementToBeClickable(homepge.getReg()));
 				homepge.getReg().click();
 				break;
-			} else {
+			} 
+			else 
+			{
 				count++;
 			}
 		}

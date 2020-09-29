@@ -115,21 +115,35 @@ public class MediaFileTest extends Base{
 
 			filter.getAllchat().click();
 			
+			WebDriverWait t=new WebDriverWait(driver, 20);
+			t.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+			Reporter.log("Chat session is sucessfully  displayed in the landing page",true);
 			
          int cnt=0;
- 	    while(cnt>=0)
+ 	 
+         while(cnt>=0)
  	    {
  	    	try
  	    	{
- 	    		homepge.getChatsesion().isDisplayed();
+ 	    		WebDriverWait oo=new WebDriverWait(driver, 20);
+ 	    		oo.until(ExpectedConditions.elementToBeClickable(homepge.getChatsesion()));
  	    		homepge.getChatsesion().click();
  	    		break;
  	    	}
  	    	catch (Exception e) 
  	    	{
  	    		Thread.sleep(1000);
- 				filter.getFilter().click();
- 				filter.getAllchat().click();
+ 	    		
+ 	    		WebDriverWait po=new WebDriverWait(driver, 20);
+ 	    		po.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
+ 			
+ 	    		filter.getFilter().click();
+ 				
+ 	    		
+ 	    		WebDriverWait uu=new WebDriverWait(driver, 20);
+ 	    		uu.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+ 				
+ 	    		filter.getAllchat().click();
 
                   cnt++;
                   e.printStackTrace();
@@ -143,22 +157,23 @@ public class MediaFileTest extends Base{
 
 		homepge.getPaperclip().click();
 
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
-		Thread.sleep(3000);
-
-		
-		
+						
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		int val = 0;
 		while (val <= 100) {
 			try {
 				
-				homepge.getUploadPhoto().click();
+				WebDriverWait ko=new WebDriverWait(driver, 20);
+ 	    		ko.until(ExpectedConditions.elementToBeClickable(homepge.getUploadPhoto()));
+			
+ 	    		homepge.getUploadPhoto().click();
 				
 
 				homepge.getPhotoUpload()
 						.sendKeys(fs.getAbsolutePath());
+				
+				WebDriverWait nn=new WebDriverWait(driver, 20);
+				nn.until(ExpectedConditions.elementToBeClickable(homepge.getSubmitButton()));
 
 				homepge.getSubmitButton().click();
 

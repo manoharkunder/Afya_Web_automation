@@ -135,14 +135,19 @@ public class AddNewPatientTest extends Base {
 		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
 
 		String lang1 = homepge.getBannerLang1().getText();
+		
+		Reporter.log(lang1 +"...........Sucess...",true);
 
 		Date d = new Date();
 
 		String[] dateArr = d.toString().split(" ");
 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		boolean flag3 = lang1.contains(dateArr[1]);
 
 		Assert.assertTrue(flag3);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Reporter.log("Doctor is sucessfully added to the chat session", true);
 		boolean flag1 = lang1.contains(dateArr[2]);
 		Assert.assertTrue(flag1);

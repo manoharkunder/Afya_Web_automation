@@ -262,11 +262,13 @@ public class PatientInfoTest extends Base {
 
 		String chatmemeber = homepge.getPatientDetails().getText();
 	
-		System.out.println(chatmemeber);
 
+		Reporter.log(chatmemeber+" sucess",true);
 		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		boolean flag4 = chatmemeber.contains("Prasad Shetty");
 		Assert.assertTrue(flag4);
+		
 		Reporter.log("patient name is displayed  sucesssfully", true);
 	   
 		boolean flag5=chatmemeber.contains("11-11-1998");

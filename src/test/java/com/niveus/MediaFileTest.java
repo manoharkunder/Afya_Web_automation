@@ -170,6 +170,7 @@ public class MediaFileTest extends Base{
 				Assert.assertTrue(b);
 
 				Reporter.log(logp.getSucess().getText() + " sucessfully updated", true);	
+				
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;

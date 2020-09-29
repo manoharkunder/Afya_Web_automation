@@ -117,6 +117,7 @@ public class PatientInfoTest extends Base {
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 		
@@ -125,7 +126,7 @@ public class PatientInfoTest extends Base {
 		
 			try {
 				
-				  WebDriverWait wat=new WebDriverWait(driver, 50);
+				  WebDriverWait wat=new WebDriverWait(driver, 5);
 				  
 				  wat.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
 				  				 
@@ -138,7 +139,9 @@ public class PatientInfoTest extends Base {
 			catch (Exception e) 
 			{
 				e.printStackTrace();
+				
 				count++;
+				Reporter.log("count number is ......."+count,true);
 			}
 		}
 

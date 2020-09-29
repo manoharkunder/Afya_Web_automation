@@ -1,0 +1,381 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 29 13:46:54 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>394 seconds (394826 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.niveus.AddNewPatientTest.addNewPatientTest()'><b>addNewPatientTest</b><br>Test class: com.niveus.AddNewPatientTest<br/>
+<a href="#Output-1206577437" onClick='toggleBox("Output-1206577437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1206577437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1206577437">
+Addnewpatient testcase is running.............############<br/>
+Sucessfully selected the Icd Code.........<br/>
+Doctor is sucessfully added to the chat session<br/>
+Doctor is assigned to the chat session<br/>
+Patient  is sucessfully added to the chat session<br/>
+AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.niveus.AddNewPatientTest@24a35978</td></tr>
+<tr>
+<td title='com.niveus.AddSpecialityTest.addspecialityValidationTest()'><b>addspecialityValidationTest</b><br>Test class: com.niveus.AddSpecialityTest<br/>
+<a href="#Output-976725249" onClick='toggleBox("Output-976725249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-976725249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-976725249">
+AddSpecialty testcase is running...........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+chat session is sucessfully displayed in Add specialty..>>>>>>>>>>><br/>
+Speciality list is displaying sucessfully<br/>
+Doctor is sucessfully added to the chat session<br/>
+AddSpeciality TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.niveus.AddSpecialityTest@4cf4d528</td></tr>
+<tr>
+<td title='com.niveus.AssigningDoctorTest.assigningDoctorTest()'><b>assigningDoctorTest</b><br>Test class: com.niveus.AssigningDoctorTest<br/>
+<a href="#Output-997695567" onClick='toggleBox("Output-997695567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-997695567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-997695567">
+Assigining doctor Testcase is running...........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully logedin and Home page is displayed<br/>
+sucessfully clicked on new button<br/>
+sucessfully specialty is seleced<br/>
+Session has been created sucessfully created<br/>
+Doctor is sucessfully added to the chat session<br/>
+DOctor is assigned to the cht session<br/>
+AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.niveus.AssigningDoctorTest@481a15ff</td></tr>
+<tr>
+<td title='com.niveus.ChatMemberTest.chatMemeberValidation()'><b>chatMemeberValidation</b><br>Test class: com.niveus.ChatMemberTest<br/>
+<a href="#Output-425246937" onClick='toggleBox("Output-425246937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-425246937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-425246937">
+Chatmember Testcase is running............<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully logedin and Home page is displayed<br/>
+click on the new button sucessfully......###########<br/>
+sucessfully enter the speciality and chief complaint.........########<br/>
+count number...1<br/>
+Icd code is sucessfully displayed............############<br/>
+Doctor is sucessfully added to the chat session<br/>
+Doctor is assigned to the chat session<br/>
+Patient  is sucessfully added to the chat session<br/>
+Doctor is sucessfully added to the chat session<br/>
+DOctor is assigned to the chat session<br/>
+Patient  is sucessgully added to the chat session<br/>
+Responder 1 name  is displayed sucessfully<br/>
+patient name is displayed  sucesssfully<br/>
+ChatMember TestCase is sucessfully done  ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.niveus.ChatMemberTest@df27fae</td></tr>
+<tr>
+<td title='com.niveus.CloseCodeTest.closeCodeValidationTest()'><b>closeCodeValidationTest</b><br>Test class: com.niveus.CloseCodeTest<br/>
+<a href="#Output-1316525828" onClick='toggleBox("Output-1316525828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1316525828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1316525828">
+Closecode Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully logedin and HomePage is displayed<br/>
+Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>><br/>
+Dr. test2 prasanna has marked this consultation as Complete sucess<br/>
+close code apply sucessfully...>>>> 1<br/>
+Dr. test2 prasanna has marked this consultation as recommending an In Person Visit sucess<br/>
+CloseCode TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.niveus.CloseCodeTest@2f0a87b3</td></tr>
+<tr>
+<td title='com.niveus.FilterTest.filterValidationTest()'><b>filterValidationTest</b><br>Test class: com.niveus.FilterTest<br/>
+<a href="#Output-109987815" onClick='toggleBox("Output-109987815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-109987815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-109987815">
+FilterTest Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully logedin and Home page is displayed<br/>
+test2, LeeMaster +1
+Sent an image
+a few seconds ago
+RE: prasad shetty<br/>
+First time stmp is  displayed........###########<br/>
+a few seconds ago<br/>
+a day ago<br/>
+filter is sucessfully applied<br/>
+Filter Test is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.niveus.FilterTest@727803de</td></tr>
+<tr>
+<td title='com.niveus.LoginTest.loginPageTest()'><b>loginPageTest</b><br>Test class: com.niveus.LoginTest<br/>
+<a href="#Output-1619736058" onClick='toggleBox("Output-1619736058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1619736058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1619736058">
+Login Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully loged in and Home page is displayed<br/>
+Login TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.niveus.LoginTest@704921a5</td></tr>
+<tr>
+<td title='com.niveus.MediaFileTest.mediaFileValidation()'><b>mediaFileValidation</b><br>Test class: com.niveus.MediaFileTest<br/>
+<a href="#Output-131837504" onClick='toggleBox("Output-131837504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-131837504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-131837504">
+MediaFile Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+file has been successfully uploaded. sucessfully updated<br/>
+media file is sucessfully displayed<br/>
+MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.niveus.MediaFileTest@2641e737</td></tr>
+<tr>
+<td title='com.niveus.ParticipantTest.participantValidationTest()'><b>participantValidationTest</b><br>Test class: com.niveus.ParticipantTest<br/>
+<a href="#Output-666040998" onClick='toggleBox("Output-666040998", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-666040998" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-666040998">
+Participant Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+Full Access sucess<br/>
+ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.niveus.ParticipantTest@545997b1</td></tr>
+<tr>
+<td title='com.niveus.PatientInfoTest.patientInfoValidationTest()'><b>patientInfoValidationTest</b><br>Test class: com.niveus.PatientInfoTest<br/>
+<a href="#Output-634440506" onClick='toggleBox("Output-634440506", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-634440506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-634440506">
+PatientInfo Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+sucessfully icd code is selected.................##########<br/>
+Doctor is sucessfully added to the cht session<br/>
+DOctor is assigned to the cht session<br/>
+Patien  is sucessgully added to the chat session<br/>
+Doctor is sucessfully added to the cht session<br/>
+DOctor is assigned to the cht session<br/>
+Patien  is sucessgully added to the chat session<br/>
+Doctor is sucessfully added to the cht session<br/>
+DOctor is assigned to the cht session<br/>
+Patien  is sucessgully added to the chat session<br/>
+patient name is displayed  sucesssfully<br/>
+patient date of birth  is displayed  sucesssfully<br/>
+patient year  is displayed  sucesssfully<br/>
+PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.niveus.PatientInfoTest@77846d2c</td></tr>
+<tr>
+<td title='com.niveus.SearchValidationTest.patientSearchTest()'><b>patientSearchTest</b><br>Test class: com.niveus.SearchValidationTest<br/>
+<a href="#Output-1132369181" onClick='toggleBox("Output-1132369181", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1132369181" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1132369181">
+SearchValidation Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully loged in and Home page is displayed<br/>
+sucessfully clicked on New buuton<br/>
+Session has been created sucessfully created<br/>
+Search is sucessfully done<br/>
+SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
+Search is sucessfully done<br/>
+SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
+Search is sucessfully done<br/>
+SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
+Search is sucessfully done<br/>
+SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.niveus.SearchValidationTest@78186a70</td></tr>
+<tr>
+<td title='com.niveus.ResponderStatusTest.statusValidation()'><b>statusValidation</b><br>Test class: com.niveus.ResponderStatusTest<br/>
+<a href="#Output-1215456927" onClick='toggleBox("Output-1215456927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215456927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215456927">
+Responder Status Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully loged in and Home page is displayed<br/>
+User status is changed to Away<br/>
+status is sucessfully changed <br/>
+ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS<br/>
+User status is changed to Chat Only<br/>
+status is sucessfully changed <br/>
+ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS<br/>
+User status is changed to Active<br/>
+status is sucessfully changed <br/>
+ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.niveus.ResponderStatusTest@548ad73b</td></tr>
+<tr>
+<td title='com.niveus.ProfileUpadateTest.updateProfileInformation()'><b>updateProfileInformation</b><br>Test class: com.niveus.ProfileUpadateTest<br/>
+<a href="#Output-1375681611" onClick='toggleBox("Output-1375681611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1375681611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1375681611">
+ProfileUpdate Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully loged in and Home page is displayed<br/>
+Profile ingormation is sucessfully updated<br/>
+ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.niveus.ProfileUpadateTest@4c762604</td></tr>
+<tr>
+<td title='com.niveus.UploadDocumentTest.uploadDocumentValidation()'><b>uploadDocumentValidation</b><br>Test class: com.niveus.UploadDocumentTest<br/>
+<a href="#Output-113416412" onClick='toggleBox("Output-113416412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-113416412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-113416412">
+UploadDocument Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+file has been successfully uploaded. sucessfully updated<br/>
+UploadDocument Test is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.niveus.UploadDocumentTest@306279ee</td></tr>
+<tr>
+<td title='com.niveus.UploadPhotosTest.uploadPhotoValidation()'><b>uploadPhotoValidation</b><br>Test class: com.niveus.UploadPhotosTest<br/>
+<a href="#Output-1733184642" onClick='toggleBox("Output-1733184642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1733184642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1733184642">
+UploadPhoto Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+sucessfully loged in and Home page is displayed<br/>
+file has been successfully uploaded. sucessfully updated<br/>
+UploadPhotosTest is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.niveus.UploadPhotosTest@16f7c8c1</td></tr>
+</table><p>
+</body>
+</html>

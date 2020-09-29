@@ -117,6 +117,8 @@ public class AddNewPatientTest extends Base {
 
 			e.printStackTrace();
 		}
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		boolean result = homepge.getReg().isEnabled();
 		int countt = 0;

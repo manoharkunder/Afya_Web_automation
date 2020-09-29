@@ -136,29 +136,36 @@ public class ChatMemberTest extends Base{
 		
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
 		Reporter.log("sucessfully enter the speciality and chief complaint.........########",true);
 		
+		Thread.sleep(2000);
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 		
-		int count = 0;
+		int count = 0;   
 		while (count <= 90) {
 			try {
-                  WebDriverWait op=new WebDriverWait(driver, 40);
+                  WebDriverWait op=new WebDriverWait(driver, 5);
                  
                   op.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
                   
 				docpage.getIcdHeart().click();
+				
 				Reporter.log("Icd code is sucessfully displayed............############",true);
+				
 				break;
 			} 
 			catch (Exception e) 
 			{
 				e.printStackTrace();
 				count++;
+				Reporter.log("count number..."+count,true);
 			}
 		}
  
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		boolean result = homepge.getReg().isEnabled();
 		int countt=0;
 		while(countt>=0)

@@ -156,12 +156,14 @@ public class Base {
 		 * below code is used the launch the browser
 		 */
 
-	//	 driver = new ChromeDriver();
+		// driver = new ChromeDriver();
 
 		
-		  // below code is used to run the automation in headless mode
+		/*
+		 *  below code is used to run the automation in headless mode
+		 */		  
 		  
-		  
+			
 			
 			  ChromeOptions options = new ChromeOptions();
 			  options.addArguments("--headless", "--disable-web-security",

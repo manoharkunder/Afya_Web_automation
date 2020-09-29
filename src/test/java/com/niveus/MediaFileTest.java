@@ -24,7 +24,7 @@ public class MediaFileTest extends Base{
 	@Test
 	public void mediaFileValidation() throws Exception {
 		
-		test=extent.createTest("2.CloseCode","This test case is to check whether close code is working");
+		test=extent.createTest("2.MediaFile","This test case is to check whether close code is working");
 
          File f1 = new  	File("data");
 		
@@ -187,6 +187,8 @@ public class MediaFileTest extends Base{
 				Reporter.log(logp.getSucess().getText() + " sucessfully updated", true);	
 				
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				
+				Thread.sleep(6000);
 				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());

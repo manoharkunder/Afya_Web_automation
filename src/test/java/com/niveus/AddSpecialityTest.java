@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -134,7 +136,7 @@ public class AddSpecialityTest extends Base {
 
 		landpage.getChatsesion().click();
 			
-      
+         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		for (int i = 1; i <= 100; i++) 
 		{

@@ -17,6 +17,7 @@ public class LoginTest extends Base{
 	@Test()
 	public void loginPageTest() {
 		test=extent.createTest("1.Login","This test case is to check login");
+		
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		card = PageFactory.initElements(driver, Carddetails.class);
 		propage = PageFactory.initElements(driver, ProfilePage.class);

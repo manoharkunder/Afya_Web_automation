@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class AssigningDoctorTest extends Base {
+public class AssigningDoctorTest extends Base {	
 	public LoginPage logp;
 	public Registeration registerp;
 	public Carddetails card;

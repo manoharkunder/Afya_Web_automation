@@ -184,6 +184,6 @@ public class Base {
 
 		driver.manage().window().maximize();
 
-		Reporter.log(driver.getTitle() + "Admin Page  is sucessgully displayed", true);
+		Reporter.log(driver.getTitle() + "Afya Page  is sucessgully displayed", true);
 	}
 }

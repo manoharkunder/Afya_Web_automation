@@ -1,0 +1,66 @@
+# Created at 2020-10-05T10:21:34.184
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2020-10-05T10:21:34.196
+Unexpected IOException with stream: D
+
+# Created at 2020-10-05T10:21:34.197
+Unexpected IOException with stream: r
+
+# Created at 2020-10-05T10:21:34.198
+Unexpected IOException with stream: i
+
+# Created at 2020-10-05T10:21:34.199
+Unexpected IOException with stream: v
+
+# Created at 2020-10-05T10:21:34.201
+Unexpected IOException with stream: e
+
+# Created at 2020-10-05T10:21:34.202
+Unexpected IOException with stream: r
+
+# Created at 2020-10-05T10:21:34.206
+Unexpected IOException with stream:  
+
+# Created at 2020-10-05T10:21:34.208
+Unexpected IOException with stream: 8
+
+# Created at 2020-10-05T10:21:34.210
+Unexpected IOException with stream: 4
+
+# Created at 2020-10-05T10:21:34.210
+Unexpected IOException with stream: .
+
+# Created at 2020-10-05T10:21:34.211
+Unexpected IOException with stream: 0
+
+# Created at 2020-10-05T10:21:34.213
+Unexpected IOException with stream: .
+
+# Created at 2020-10-05T10:21:34.214
+Unexpected IOException with stream: 4
+
+# Created at 2020-10-05T10:21:34.215
+Unexpected IOException with stream: 1
+
+# Created at 2020-10-05T10:21:34.215
+Unexpected IOException with stream: 4
+
+# Created at 2020-10-05T10:21:34.216
+Unexpected IOException with stream: 7
+
+# Created at 2020-10-05T10:21:34.217
+Unexpected IOException with stream: .
+
+# Created at 2020-10-05T10:21:34.218
+Unexpected IOException with stream: 3
+
+# Created at 2020-10-05T10:21:34.221
+Unexpected IOException with stream: 0
+

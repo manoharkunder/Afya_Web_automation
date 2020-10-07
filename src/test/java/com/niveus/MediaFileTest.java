@@ -153,12 +153,15 @@ public class MediaFileTest extends Base{
  	    	}
  	    	
  	    }
+			Reporter.log("Media File Test   step ....1",true);
 
 		          
 		WebDriverWait wait11 = new WebDriverWait(driver, 30);
 		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getPaperclip()));
 
 		homepge.getPaperclip().click();
+	
+		Reporter.log("Media File Test   step ....2",true);
 
 						
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -179,6 +182,8 @@ public class MediaFileTest extends Base{
 				nn.until(ExpectedConditions.elementToBeClickable(homepge.getSubmitButton()));
 
 				homepge.getSubmitButton().click();
+			
+				Reporter.log("Media File Test   step ....3",true);
 
 				WebDriverWait www = new WebDriverWait(driver, 80);
 				www.until(ExpectedConditions.visibilityOf(logp.getSucess()));
@@ -195,6 +200,9 @@ public class MediaFileTest extends Base{
 				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				
+				Reporter.log("Media File Test   step ....4",true);
+
 				break;
 
 			} catch (Exception e) {

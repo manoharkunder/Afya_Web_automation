@@ -55,9 +55,12 @@ public class AddNewPatientTest extends Base {
 
 		System.out.println("sucessfully logedin");
 
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
-		ut.moveToElement(driver, docpage.getSubProvider());
+		
+		  WebDriverWait wait = new WebDriverWait(driver, 50);
+		  wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
+		  
+		  ut.moveToElement(driver, docpage.getSubProvider());
+		 
 
 		Thread.sleep(5000);
 
@@ -74,6 +77,8 @@ public class AddNewPatientTest extends Base {
 		wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
 
 		docpage.getSearchResult().click();
+		
+		Reporter.log("Addd new paient step ....1",true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -94,6 +99,8 @@ public class AddNewPatientTest extends Base {
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 
 
+		Reporter.log("Addd new paient step ....2",true);
+
 		int count = 0;
 		while (count <= 90) {
 			try {
@@ -112,7 +119,8 @@ public class AddNewPatientTest extends Base {
 			}
 		}
 
-	
+		Reporter.log("Addd new paient step ....3",true);
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		boolean result = homepge.getReg().isEnabled();
@@ -137,6 +145,9 @@ public class AddNewPatientTest extends Base {
 		String lang1 = homepge.getBannerLang1().getText();
 		
 		Reporter.log(lang1 +"...........Sucess...",true);
+		
+		Reporter.log("Addd new paient step ....4",true);
+
 
 		Date d = new Date();
 

@@ -101,6 +101,8 @@ public class PatientInfoTest extends Base {
 		
 		docpage.getSearchResult().click();
 		
+		Reporter.log("Patient Info  Test   step ....1",true);
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		
@@ -146,6 +148,8 @@ public class PatientInfoTest extends Base {
 		}
 
 
+		Reporter.log("Patient Info  Test   step ....2",true);
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		boolean result = homepge.getReg().isEnabled();
@@ -166,10 +170,14 @@ public class PatientInfoTest extends Base {
 		}
 		}
 		
+		Reporter.log("Patient Info  Test   step ....3",true);
+
  		WebDriverWait w = new WebDriverWait(driver, 100);
  		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
 
  		String lang1 = homepge.getBannerLang1().getText();
+
+		Reporter.log("Patient Info  Test   step ....4",true);
 
  		Date d = new Date();
 
@@ -241,6 +249,9 @@ public class PatientInfoTest extends Base {
 			
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+			
+				Reporter.log("Patien Info   Test   step ....5",true);
+
 				break;
 
 			} catch (Exception e) {

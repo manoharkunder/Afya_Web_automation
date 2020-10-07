@@ -119,6 +119,8 @@ public class ChatMemberTest extends Base{
 		
 		docpage.getSearchResult().click();
 		
+		Reporter.log("Chat Member   Test   step ....1",true);
+
 	   WebDriverWait wa = new WebDriverWait(driver, 40);
 		
 		wa.until(ExpectedConditions.elementToBeClickable(docpage.getConbutton()));
@@ -163,6 +165,9 @@ public class ChatMemberTest extends Base{
 				Reporter.log("count number..."+count,true);
 			}
 		}
+		
+		Reporter.log("Chat Member   Test   step ....2",true);
+
  
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -181,10 +186,15 @@ public class ChatMemberTest extends Base{
 		}
 		}         
          
+		Reporter.log("Chat Member   Test   step ....3",true);
+
  		WebDriverWait w = new WebDriverWait(driver, 100);
  		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
 
  		String lang1 = homepge.getBannerLang1().getText();
+ 		
+		Reporter.log("Chat Member   Test   step ....4",true);
+
 
  		Date d = new Date();
 
@@ -234,6 +244,9 @@ public class ChatMemberTest extends Base{
 				
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+			
+				Reporter.log("Chat Member   Test   step ....5",true);
+
 				break;
 
 			} catch (Exception e) {

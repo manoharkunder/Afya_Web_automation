@@ -54,7 +54,7 @@ public class DoctorRolesPage {
 	}
 	
 	
-	@FindBy(xpath="//span[text()='Select']")
+	@FindBy(xpath="//span[text()=' Select']/..")
 	private WebElement searchres;
 	
 	public WebElement getSearchResult()
@@ -105,7 +105,7 @@ public class DoctorRolesPage {
 	}
 	
 	
-	@FindBy(xpath="//button[@type='button']/span[text()='NEW']")
+	@FindBy(xpath="//span[text()=' NEW']/..")
 	private WebElement subNew;
 	
 	public WebElement getNewSubmitter()
@@ -145,14 +145,14 @@ public class DoctorRolesPage {
 		return regbutton;
 	}
 	
-	@FindBy(xpath="//div[contains(@class,'first_name')]")
+	@FindBy(xpath="//div[contains(@class,'details_contaner___')]/span[2]")
 	private WebElement patient;
 	
 	public WebElement getPatientInfo()
 	{
 		 return patient;
 	}
-	@FindBy(xpath="//button[@type='button']/span[text()='Confirm']")
+	@FindBy(xpath="//span[text()=' Confirm']/..")
 	private WebElement confim;
 	
 	public WebElement getConbutton()

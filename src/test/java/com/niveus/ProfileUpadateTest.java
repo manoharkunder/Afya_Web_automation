@@ -73,7 +73,7 @@ public class ProfileUpadateTest extends Base{
 
 		util.moveToElement(driver, profile.getProfilehov());
 
-		profile.updateProfile("M", "A", "11111999", "Female", "good patient in upupi");
+		profile.updateProfile("M", "A", "11111999", "Female");
 		
 		
 		for (int i = 0; i <= 5; i++) 

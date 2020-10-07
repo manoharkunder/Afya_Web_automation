@@ -3,7 +3,6 @@ package com.niveus;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -167,12 +166,8 @@ public class SearchValidationTest extends  Base{
 		
 		}
 		
-		WebDriverWait wait11 = new WebDriverWait(driver, 100);
 		
-		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getTextarea()));
-
-		homepge.getTextarea().sendKeys("hello  how are u search", Keys.ENTER);
-
+	
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		String arr[] = { "how", "hello", "are", "search" };

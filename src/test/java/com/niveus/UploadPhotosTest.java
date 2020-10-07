@@ -18,6 +18,8 @@ public class UploadPhotosTest extends Base {
 	public FilterSection filter;
 	FileLib flib = new FileLib();
 	public ProfilePage propage;
+	public Utility ut=new Utility();
+	public DoctorRolesPage docpage;
 
 	@Test
 
@@ -33,7 +35,7 @@ public class UploadPhotosTest extends Base {
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		homepge = PageFactory.initElements(driver, HomePage.class);
 		filter = PageFactory.initElements(driver, FilterSection.class);
-
+        docpage=PageFactory.initElements(driver, DoctorRolesPage.class);
 		Reporter.log("UploadPhoto Testcase is runnng..........",true);
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
@@ -43,35 +45,48 @@ public class UploadPhotosTest extends Base {
 
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-		logp.getUsername().sendKeys("prasannaachar126@gmail.com");
+		logp.getUsername().sendKeys("test2prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 		logp.getpswdview().click();
 
-		for (int i = 0; i <= 10; i++) {
-			try {
-				boolean res = logp.getloginbtn().isEnabled();
-			
-				if (res == true) 
-				{
-					logp.getloginbtn().click();
 
-					break;
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
+		for(int i=0;i<=10;i++)
+		{
+		try
+		{
+		boolean res = logp.getloginbtn().isEnabled();
+		if(res==true)
+		{
+			logp.getloginbtn().click();
 
-			}
+			break;
 		}
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+
+		}
+		}
+		
+		WebDriverWait wait2 = new WebDriverWait(driver, 50);
+
+		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
+
+		ut.moveToElement(driver, docpage.getSubProvider());
+
+		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
+		Assert.assertTrue(flag);
+		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
-
+		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
+		
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
-
-		WebDriverWait till = new WebDriverWait(driver, 100);
-		till.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
+		
+	
 
 		int count = 0;
 

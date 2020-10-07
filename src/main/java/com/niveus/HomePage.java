@@ -9,7 +9,7 @@ public class HomePage
 {
 	WebDriver driver;
 	
-	@FindBy(xpath = "//span[text()='Start Consult']")
+	@FindBy(xpath = "//span[text()=' Start Consult']/..")
 	private WebElement reg;
 	
 	public WebElement getReg()
@@ -40,7 +40,7 @@ public class HomePage
 		return fold;
 	}
 
-	@FindBy(xpath = "//button[@type='button']/span[text()='NEW']")
+	@FindBy(xpath = "//button[@type='button']/span[text()=' NEW']")
 	private WebElement buttonnew;
 
 	public WebElement getNewbtn() {
@@ -61,7 +61,7 @@ public class HomePage
 		return chief;
 	}
 
-	@FindBy(xpath = "//button[@type='button']/span[text()='Create a new chat']")
+	@FindBy(xpath = "//button[@type='button']/span[text()=' Create a new chat']")
 	private WebElement createnew;
 
 	public WebElement getNewpatient() {
@@ -105,7 +105,7 @@ public class HomePage
 		return btnsend;
 	}
 
-	@FindBy(xpath = "//span[@class='anticon anticon-paper-clip']")
+	@FindBy(xpath = "//div[@id='textArea']//button")
 	private WebElement paperclip;
 
 	public WebElement getPaperclip() {
@@ -273,7 +273,7 @@ public class HomePage
 		return status;
 	}
 
-	@FindBy(xpath = "//div[contains(@class,'chatArea')]")
+	@FindBy(xpath = "//div[contains(@class,'chat_content___')]")
 	private WebElement banner1;
 
 	public WebElement getBannerLang1() {

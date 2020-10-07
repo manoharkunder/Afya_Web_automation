@@ -12,7 +12,7 @@ public class FilterSection {
 		return filter;
 	}
 	
-	@FindBy(xpath="//li[text()='All Chats']")
+	@FindBy(xpath="//span[text()=' All Chats']")
     private WebElement alchat;
 	
 	public WebElement getAllchat()
@@ -68,7 +68,7 @@ public class FilterSection {
     	  return newest;
       }
       
-      @FindBy(xpath="//li[text()='Oldest']")
+      @FindBy(xpath="//span[text()='Oldest']/..")
       private WebElement oldest;
  	
        public WebElement getOldest()

@@ -9,7 +9,7 @@ public class ProfilePage {
 	WebDriver driver;
 	Utility ut = new Utility();
 
-	@FindBy(xpath = "//div[@class='drp ant-dropdown-trigger']")
+	@FindBy(xpath = "//div[@class='d']/span")
 	private WebElement proflehover;
 
 	public WebElement getProfilehov() {
@@ -133,7 +133,7 @@ public class ProfilePage {
     	return logout;
     }
 	
-    public void updateProfile(String firstname, String lastName, String dateofbirth, String gender, String biodata)
+    public void updateProfile(String firstname, String lastName, String dateofbirth, String gender)
 			throws Exception {
 
 
@@ -157,7 +157,6 @@ public class ProfilePage {
 		}
 		Thread.sleep(4000);
 
-	    bio.sendKeys(biodata);
 
 	}
 

@@ -99,9 +99,11 @@ public class MediaFileTest extends Base{
 			if(resl==true)
 			{
 
-			     WebDriverWait w1=new WebDriverWait(driver, 100);
+			     WebDriverWait w1=new WebDriverWait(driver, 20);
+			   
 			     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-			       filter.getFilter().click();
+			    
+			     filter.getFilter().click();
 			       break;
 			}
 			else
@@ -111,12 +113,13 @@ public class MediaFileTest extends Base{
 			}
 		
 
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 			filter.getAllchat().click();
 			
 			WebDriverWait t=new WebDriverWait(driver, 20);
 			t.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+		
 			Reporter.log("Chat session is sucessfully  displayed in the landing page",true);
 			
          int cnt=0;

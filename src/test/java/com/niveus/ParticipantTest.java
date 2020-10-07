@@ -118,9 +118,9 @@ public class ParticipantTest extends Base {
 			}
 			}
 		
+			WebDriverWait pp=new WebDriverWait(driver, 30);
+			pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			Thread.sleep(4000);
 
 			filter.getAllchat().click();
 			

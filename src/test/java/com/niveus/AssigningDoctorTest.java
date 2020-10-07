@@ -115,8 +115,10 @@ public class AssigningDoctorTest extends Base {
 				homepge.getNewpatient().click();
 
 				WebDriverWait wit = new WebDriverWait(driver, 100);
+
 				wit.until(ExpectedConditions.visibilityOf(homepge.getSession()));
 
+				
 				boolean b = homepge.getSession().getText().contains("Session");
 				if (b) {
 					Reporter.log(homepge.getSession().getText() + " sucessfully created", true);
@@ -139,8 +141,10 @@ public class AssigningDoctorTest extends Base {
 
 				homepge.getpopUpClose().click();
 
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				
+				WebDriverWait ppp=new WebDriverWait(driver, 30);
+				ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
+
+               				
 				homepge.getNewbtn().click();
 				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

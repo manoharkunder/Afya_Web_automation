@@ -119,8 +119,9 @@ public class CloseCodeTest extends Base {
 		}
 	
 
-		
-		Thread.sleep(3000);
+		WebDriverWait op=new WebDriverWait(driver, 30);
+		op.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+
 		
 		filter.getAllchat().click();
 

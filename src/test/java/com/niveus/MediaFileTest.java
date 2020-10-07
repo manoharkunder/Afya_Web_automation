@@ -85,14 +85,17 @@ public class MediaFileTest extends Base{
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 
 	      int count=0;
 			
-			
 			boolean resl = filter.getFilter().isEnabled();
+		
 			while(count>=0)
 			{
 			
@@ -113,7 +116,9 @@ public class MediaFileTest extends Base{
 			}
 		
 
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			WebDriverWait pp=new WebDriverWait(driver, 30);
+		
+			pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
 			filter.getAllchat().click();
 			

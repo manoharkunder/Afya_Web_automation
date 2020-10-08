@@ -110,9 +110,15 @@ public class PatientInfoTest extends Base {
 		
 		docpage.getSpeciality().sendKeys("anesthesiology");
 		
-		WebDriverWait wait66 = new WebDriverWait(driver, 100);
+		/*
+		 * WebDriverWait wait66 = new WebDriverWait(driver, 100);
+		 * 
+		 * wait66.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy(
+		 * )));
+		 */
 		
-		wait66.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()));
+		
+		Thread.sleep(4000);
 		
 		docpage.getAnsthesiolgy().click();
 		

@@ -141,10 +141,10 @@ public class AssigningDoctorTest extends Base {
 
 				homepge.getpopUpClose().click();
 
+				Thread.sleep(2000);
 				WebDriverWait ppp=new WebDriverWait(driver, 30);
 				ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
-
-               				
+				
 				homepge.getNewbtn().click();
 				
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

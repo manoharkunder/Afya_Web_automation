@@ -88,11 +88,15 @@ public class AddNewPatientTest extends Base {
 		docpage.getSpeciality().sendKeys("anesthesiology");
 		
 	     
-
-		WebDriverWait wait2 = new WebDriverWait(driver, 30);
-
-		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()));
-
+		/*
+		 * WebDriverWait wait2 = new WebDriverWait(driver, 30);
+		 * 
+		 * wait2.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()
+		 * ));
+		 */
+		
+		Thread.sleep(5000);
+		
 		docpage.getAnsthesiolgy().click();
 
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");

@@ -107,7 +107,8 @@ public class MediaFileTest extends Base{
 			     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 			    
 			     filter.getFilter().click();
-			       break;
+		
+			     break;
 			}
 			else
 			{
@@ -116,13 +117,17 @@ public class MediaFileTest extends Base{
 			}
 		
 
-			WebDriverWait pp=new WebDriverWait(driver, 30);
-		
-			pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+			/*
+			 * WebDriverWait pp=new WebDriverWait(driver, 30);
+			 * 
+			 * pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+			 */
+			
+			Thread.sleep(5000);
 
 			filter.getAllchat().click();
 			
-			WebDriverWait t=new WebDriverWait(driver, 20);
+			WebDriverWait t=new WebDriverWait(driver, 30);
 			t.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 		
 			Reporter.log("Chat session is sucessfully  displayed in the landing page",true);

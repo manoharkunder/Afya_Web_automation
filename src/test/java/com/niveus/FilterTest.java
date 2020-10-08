@@ -96,7 +96,9 @@ public class FilterTest extends Base {
 			}
 		}
 	     
+		Thread.sleep(4000);
 		WebDriverWait w1 = new WebDriverWait(driver, 100);
+	
 		w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		
 		

@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="28" total="43" passed="15" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Assigining doctor Testcase is running...........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully logedin and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully clicked on new button]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully specialty is seleced]]>
+    </line>
+    <line>
+      <![CDATA[Session has been created sucessfully created]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[DOctor is assigned to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[SearchValidation Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully clicked on New buuton]]>
+    </line>
+    <line>
+      <![CDATA[Session has been created sucessfully created]]>
+    </line>
+    <line>
+      <![CDATA[Search is sucessfully done]]>
+    </line>
+    <line>
+      <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[Search is sucessfully done]]>
+    </line>
+    <line>
+      <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[Search is sucessfully done]]>
+    </line>
+    <line>
+      <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[Search is sucessfully done]]>
+    </line>
+    <line>
+      <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[UploadDocument Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+    </line>
+    <line>
+      <![CDATA[UploadDocument Test is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Participant Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Full Access sucess]]>
+    </line>
+    <line>
+      <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[AddSpecialty testcase is running...........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+    </line>
+    <line>
+      <![CDATA[Speciality list is displaying sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[AddSpeciality TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[PatientInfo Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Patient Info  Test   step ....1]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully icd code is selected.................##########]]>
+    </line>
+    <line>
+      <![CDATA[Patient Info  Test   step ....2]]>
+    </line>
+    <line>
+      <![CDATA[Patient Info  Test   step ....3]]>
+    </line>
+    <line>
+      <![CDATA[Patient Info  Test   step ....4]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[DOctor is assigned to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[Patien  is sucessgully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[DOctor is assigned to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[Patien  is sucessgully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[DOctor is assigned to the cht session]]>
+    </line>
+    <line>
+      <![CDATA[Patien  is sucessgully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Patien Info   Test   step ....5]]>
+    </line>
+    <line>
+      <![CDATA[Patient Details
+Close
+Name:
+Prasad Shetty
+Chief:
+Have A Knee Pain In Leg
+Dob:
+11-11-1998
+Gender:
+Female
+Year:
+21 Years Old
+Mobile:
+16578901245
+Email:
+username795@gmail.com
+Icd:
+I11.0 Hypertensive Heart Disease With Heart Failure
+Cpt: sucess]]>
+    </line>
+    <line>
+      <![CDATA[patient name is displayed  sucesssfully]]>
+    </line>
+    <line>
+      <![CDATA[patient date of birth  is displayed  sucesssfully]]>
+    </line>
+    <line>
+      <![CDATA[patient year  is displayed  sucesssfully]]>
+    </line>
+    <line>
+      <![CDATA[PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Responder Status Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[User status is changed to Active]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[User status is changed to Away]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[User status is changed to Chat Only]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[ProfileUpdate Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Profile ingormation is sucessfully updated]]>
+    </line>
+    <line>
+      <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[MediaFile Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Chat session is sucessfully  displayed in the landing page]]>
+    </line>
+    <line>
+      <![CDATA[Media File Test   step ....1]]>
+    </line>
+    <line>
+      <![CDATA[Media File Test   step ....2]]>
+    </line>
+    <line>
+      <![CDATA[Media File Test   step ....3]]>
+    </line>
+    <line>
+      <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+    </line>
+    <line>
+      <![CDATA[Media File Test   step ....4]]>
+    </line>
+    <line>
+      <![CDATA[media file is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[FilterTest Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully logedin and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[test2, LeeMaster +1
+Sent an image
+a few seconds ago
+RE: prasad shetty]]>
+    </line>
+    <line>
+      <![CDATA[First time stmp is  displayed........###########]]>
+    </line>
+    <line>
+      <![CDATA[a few seconds ago]]>
+    </line>
+    <line>
+      <![CDATA[a day ago]]>
+    </line>
+    <line>
+      <![CDATA[filter is sucessfully applied]]>
+    </line>
+    <line>
+      <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Login Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Login TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Chatmember Testcase is running............]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully logedin and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[click on the new button sucessfully......###########]]>
+    </line>
+    <line>
+      <![CDATA[Chat Member   Test   step ....1]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully enter the speciality and chief complaint.........########]]>
+    </line>
+    <line>
+      <![CDATA[Icd code is sucessfully displayed............############]]>
+    </line>
+    <line>
+      <![CDATA[Chat Member   Test   step ....2]]>
+    </line>
+    <line>
+      <![CDATA[Chat Member   Test   step ....3]]>
+    </line>
+    <line>
+      <![CDATA[Chat Member   Test   step ....4]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is assigned to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Patient  is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[DOctor is assigned to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Patient  is sucessgully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Chat Member   Test   step ....5]]>
+    </line>
+    <line>
+      <![CDATA[Responder 1 name  is displayed sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[patient name is displayed  sucesssfully]]>
+    </line>
+    <line>
+      <![CDATA[ChatMember TestCase is sucessfully done  ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Addnewpatient testcase is running.............############]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....1]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....2]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully selected the Icd Code.........]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....3]]>
+    </line>
+    <line>
+      <![CDATA[This chat has been assigned to Dr. Alvin Pp (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Oct 08, 05:08 PM...........Sucess...]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....4]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is assigned to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Patient  is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[UploadPhoto Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+    </line>
+    <line>
+      <![CDATA[UploadPhotosTest is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Closecode Testcase is runnng..........]]>
+    </line>
+    <line>
+      <![CDATA[Login page is sucessfully displayed]]>
+    </line>
+    <line>
+      <![CDATA[Submitter Provider role is selected]]>
+    </line>
+    <line>
+      <![CDATA[sucessfully logedin and HomePage is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>]]>
+    </line>
+    <line>
+      <![CDATA[Dr. test2 prasanna has marked this consultation as Complete sucess]]>
+    </line>
+    <line>
+      <![CDATA[close code apply sucessfully...>>>> 1]]>
+    </line>
+    <line>
+      <![CDATA[Dr. test2 prasanna has marked this consultation as recommending an In Person Visit sucess]]>
+    </line>
+    <line>
+      <![CDATA[CloseCode TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-10-08T17:01:29 IST" name="Surefire suite" finished-at="2020-10-08T17:09:18 IST" duration-ms="468830">
+    <groups>
+    </groups>
+    <test started-at="2020-10-08T17:01:29 IST" name="Surefire test" finished-at="2020-10-08T17:09:18 IST" duration-ms="468830">
+      <class name="com.niveus.UploadPhotosTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-08T17:08:05 IST" name="configBc" finished-at="2020-10-08T17:08:16 IST" duration-ms="10964" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-08T17:08:16 IST" name="uploadPhotoValidation" finished-at="2020-10-08T17:08:42 IST" duration-ms="25178" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[UploadPhoto Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[UploadPhotosTest is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- uploadPhotoValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-08T17:08:42 IST" name="getResult" finished-at="2020-10-08T17:08:42 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadPhotoValidation status=SUCCESS method=UploadPhotosTest.uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978] output=UploadPhoto Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.UploadPhotosTest -->
+      <class name="com.niveus.SearchValidationTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-08T17:01:55 IST" name="configBc" finished-at="2020-10-08T17:02:01 IST" duration-ms="5961" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-08T17:02:01 IST" name="patientSearchTest" finished-at="2020-10-08T17:02:13 IST" duration-ms="12094" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[SearchValidation Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully clicked on New buuton]]>
+            </line>
+            <line>
+              <![CDATA[Session has been created sucessfully created]]>
+            </line>
+            <line>
+              <![CDATA[Search is sucessfully done]]>
+            </line>
+            <line>
+              <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[Search is sucessfully done]]>
+            </line>
+            <line>
+              <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[Search is sucessfully done]]>
+            </line>
+            <line>
+              <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[Search is sucessfully done]]>
+            </line>
+            <line>
+              <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- patientSearchTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-08T17:02:13 IST" name="getResult" finished-at="2020-10-08T17:02:13 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=patientSearchTest status=SUCCESS method=SearchValidationTest.patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff] output=SearchValidation Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.SearchValidationTest -->
+      <class name="com.niveus.LoginTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-08T17:06:43 IST" name="configBc" finished-at="2020-10-08T17:06:50 IST" duration-ms="6880" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-08T17:06:50 IST" name="loginPageTest" finished-at="2020-10-08T17:06:58 IST" duration-ms="7511" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Login TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginPageTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-08T17:06:58 IST" name="getResult" finished-at="2020-10-08T17:06:58 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTest status=SUCCESS method=LoginTest.loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de] output=Login Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.LoginTest -->
+      <class name="com.niveus.MediaFileTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-08T17:05:41 IST" name="configBc" finished-at="2020-10-08T17:05:47 IST" duration-ms="5954" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-08T17:05:47 IST" name="mediaFileValidation" finished-at="2020-10-08T17:06:18 IST" duration-ms="31128" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[MediaFile Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Chat session is sucessfully  displayed in the landing page]]>
+            </line>
+            <line>
+              <![CDATA[Media File Test   step ....1]]>
+            </line>
+            <line>
+              <![CDATA[Media File Test   step ....2]]>
+            </line>
+            <line>
+              <![CDATA[Media File Test   step ....3]]>
+            </line>
+            <line>
+              <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[Media File Test   step ....4]]>
+            </line>
+            <line>
+              <![CDATA[media file is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mediaFileValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-08T17:06:18 IST" name="getResult" finished-at="2020-10-08T17:06:18 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mediaFileValidation status=SUCCESS method=MediaFileTest.mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604] output=MediaFile Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.MediaFileTest -->
+      <class name="com.niveus.ResponderStatusTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-08T17:04:28 IST" name="configBc" finished-at="2020-10-08T17:04:35 IST" duration-ms="6670" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-08T17:04:35 IST" name="statusValidation" finished-at="2020-10-08T17:05:18 IST" duration-ms="43508" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Responder Status Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Active]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Away]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Chat Only]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- statusValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-08T17:05:18 IST" name="getResult" finished-at="2020-10-08T17:05:18 IST" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=statusValidation status=SUCCESS method=ResponderStatusTest.statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c] output=Responder Status Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ResponderStatusTest -->
+      <class name="com.niveus.AddNewPatientTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-08T17:07:32 IST" name="configBc" finished-at="2020-10-08T17:07:40 IST" duration-ms="8356" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-08T17:07:40 IST" name="addNewPatientTest" finished-at="2020-10-08T17:08:05 IST" duration-ms="25309" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Addnewpatient testcase is running.............############]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....1]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....2]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully selected the Icd Code.........]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....3]]>
+            </line>
+            <line>
+              <![CDATA[This chat has been assigned to Dr. Alvin Pp (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Oct 08, 05:08 PM...........Sucess...]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....4]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is assigned to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Patient  is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addNewPatientTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-08T17:08:05 IST" name="getResult" finished-at="2020-10-08T17:08:05 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewPatientTest status=SUCCESS method=AddNewPatientTest.addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae] output=Addnewpatient testcase is running.............############]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.AddNewPatientTest -->
+      <class name="com.niveus.AssigningDoctorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-08T17:01:29 IST" name="setUp" finished-at="2020-10-08T17:01:29 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-08T17:01:29 IST" name="configBc" finished-at="2020-10-08T17:01:37 IST" duration-ms="8462" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-08T17:01:37 IST" name="assigningDoctorTest" finished-at="2020-10-08T17:01:55 IST" duration-ms="17462" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Assigining doctor Testcase is running...........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully logedin and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully clicked on new button]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully specialty is seleced]]>
+            </line>
+            <line>
+              <![CDATA[Session has been created sucessfully created]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[DOctor is assigned to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- assigningDoctorTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-08T17:01:55 IST" name="getResult" finished-at="2020-10-08T17:01:55 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assigningDoctorTest status=SUCCESS method=AssigningDoctorTest.assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4] output=Assigining doctor Testcase is running...........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-08T17:09:18 IST" name="flushReport" finished-at="2020-10-08T17:10:17 IST" duration-ms="59474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.niveus.AssigningDoctorTest -->
+      <class name="com.niveus.UploadDocumentTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-08T17:02:13 IST" name="configBc" finished-at="2020-10-08T17:02:21 IST" duration-ms="7714" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-08T17:02:21 IST" name="uploadDocumentValidation" finished-at="2020-10-08T17:02:46 IST" duration-ms="25015" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[UploadDocument Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[UploadDocument Test is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- uploadDocumentValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-08T17:02:46 IST" name="getResult" finished-at="2020-10-08T17:02:46 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadDocumentValidation status=SUCCESS method=UploadDocumentTest.uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70] output=UploadDocument Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.UploadDocumentTest -->
+      <class name="com.niveus.PatientInfoTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-08T17:03:59 IST" name="configBc" finished-at="2020-10-08T17:04:06 IST" duration-ms="6807" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-08T17:04:06 IST" name="patientInfoValidationTest" finished-at="2020-10-08T17:04:28 IST" duration-ms="22515" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PatientInfo Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Patient Info  Test   step ....1]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully icd code is selected.................##########]]>
+            </line>
+            <line>
+              <![CDATA[Patient Info  Test   step ....2]]>
+            </line>
+            <line>
+              <![CDATA[Patient Info  Test   step ....3]]>
+            </line>
+            <line>
+              <![CDATA[Patient Info  Test   step ....4]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[DOctor is assigned to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[Patien  is sucessgully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[DOctor is assigned to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[Patien  is sucessgully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[DOctor is assigned to the cht session]]>
+            </line>
+            <line>
+              <![CDATA[Patien  is sucessgully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Patien Info   Test   step ....5]]>
+            </line>
+            <line>
+              <![CDATA[Patient Details
+Close
+Name:
+Prasad Shetty
+Chief:
+Have A Knee Pain In Leg
+Dob:
+11-11-1998
+Gender:
+Female
+Year:
+21 Years Old
+Mobile:
+16578901245
+Email:
+username795@gmail.com
+Icd:
+I11.0 Hypertensive Heart Disease With Heart Failure
+Cpt: sucess]]>
+            </line>
+            <line>
+              <![CDATA[patient name is displayed  sucesssfully]]>
+            </line>
+            <line>
+              <![CDATA[patient date of birth  is displayed  sucesssfully]]>
+            </line>
+            <line>
+              <![CDATA[patient year  is displayed  sucesssfully]]>
+            </line>
+            <line>
+              <![CDATA[PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- patientInfoValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-08T17:04:28 IST" name="getResult" finished-at="2020-10-08T17:04:28 IST" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=patientInfoValidationTest status=SUCCESS method=PatientInfoTest.patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528] output=PatientInfo Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.PatientInfoTest -->
+      <class name="com.niveus.CloseCodeTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-08T17:08:42 IST" name="configBc" finished-at="2020-10-08T17:08:49 IST" duration-ms="7175" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-08T17:08:49 IST" name="closeCodeValidationTest" finished-at="2020-10-08T17:09:18 IST" duration-ms="28963" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closecode Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully logedin and HomePage is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Dr. test2 prasanna has marked this consultation as Complete sucess]]>
+            </line>
+            <line>
+              <![CDATA[close code apply sucessfully...>>>> 1]]>
+            </line>
+            <line>
+              <![CDATA[Dr. test2 prasanna has marked this consultation as recommending an In Person Visit sucess]]>
+            </line>
+            <line>
+              <![CDATA[CloseCode TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeCodeValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-08T17:09:18 IST" name="getResult" finished-at="2020-10-08T17:09:18 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=closeCodeValidationTest status=SUCCESS method=CloseCodeTest.closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1] output=Closecode Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.CloseCodeTest -->
+      <class name="com.niveus.ParticipantTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-08T17:02:46 IST" name="configBc" finished-at="2020-10-08T17:02:55 IST" duration-ms="8983" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-08T17:02:55 IST" name="participantValidationTest" finished-at="2020-10-08T17:03:31 IST" duration-ms="36568" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Participant Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Full Access sucess]]>
+            </line>
+            <line>
+              <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- participantValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-08T17:03:31 IST" name="getResult" finished-at="2020-10-08T17:03:32 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee] output=Participant Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ParticipantTest -->
+      <class name="com.niveus.FilterTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-08T17:06:18 IST" name="configBc" finished-at="2020-10-08T17:06:26 IST" duration-ms="8234" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-08T17:06:26 IST" name="filterValidationTest" finished-at="2020-10-08T17:06:43 IST" duration-ms="16989" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[FilterTest Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully logedin and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[test2, LeeMaster +1
+Sent an image
+a few seconds ago
+RE: prasad shetty]]>
+            </line>
+            <line>
+              <![CDATA[First time stmp is  displayed........###########]]>
+            </line>
+            <line>
+              <![CDATA[a few seconds ago]]>
+            </line>
+            <line>
+              <![CDATA[a day ago]]>
+            </line>
+            <line>
+              <![CDATA[filter is sucessfully applied]]>
+            </line>
+            <line>
+              <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- filterValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-08T17:06:43 IST" name="getResult" finished-at="2020-10-08T17:06:43 IST" duration-ms="68" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=filterValidationTest status=SUCCESS method=FilterTest.filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737] output=FilterTest Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.FilterTest -->
+      <class name="com.niveus.AddSpecialityTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-08T17:03:32 IST" name="configBc" finished-at="2020-10-08T17:03:37 IST" duration-ms="5419" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-08T17:03:37 IST" name="addspecialityValidationTest" finished-at="2020-10-08T17:03:59 IST" duration-ms="21790" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AddSpecialty testcase is running...........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Speciality list is displaying sucessfully]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[AddSpeciality TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addspecialityValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-08T17:03:59 IST" name="getResult" finished-at="2020-10-08T17:03:59 IST" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addspecialityValidationTest status=SUCCESS method=AddSpecialityTest.addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1] output=AddSpecialty testcase is running...........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.AddSpecialityTest -->
+      <class name="com.niveus.ProfileUpadateTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-08T17:05:18 IST" name="configBc" finished-at="2020-10-08T17:05:25 IST" duration-ms="6897" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-08T17:05:25 IST" name="updateProfileInformation" finished-at="2020-10-08T17:05:41 IST" duration-ms="15362" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ProfileUpdate Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Profile ingormation is sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateProfileInformation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-08T17:05:41 IST" name="getResult" finished-at="2020-10-08T17:05:41 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b] output=ProfileUpdate Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ProfileUpadateTest -->
+      <class name="com.niveus.ChatMemberTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-08T17:06:58 IST" name="configBc" finished-at="2020-10-08T17:07:06 IST" duration-ms="8401" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-08T17:07:06 IST" name="chatMemeberValidation" finished-at="2020-10-08T17:07:32 IST" duration-ms="25478" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Chatmember Testcase is running............]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully logedin and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[click on the new button sucessfully......###########]]>
+            </line>
+            <line>
+              <![CDATA[Chat Member   Test   step ....1]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully enter the speciality and chief complaint.........########]]>
+            </line>
+            <line>
+              <![CDATA[Icd code is sucessfully displayed............############]]>
+            </line>
+            <line>
+              <![CDATA[Chat Member   Test   step ....2]]>
+            </line>
+            <line>
+              <![CDATA[Chat Member   Test   step ....3]]>
+            </line>
+            <line>
+              <![CDATA[Chat Member   Test   step ....4]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is assigned to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Patient  is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[DOctor is assigned to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Patient  is sucessgully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Chat Member   Test   step ....5]]>
+            </line>
+            <line>
+              <![CDATA[Responder 1 name  is displayed sucessfully]]>
+            </line>
+            <line>
+              <![CDATA[patient name is displayed  sucesssfully]]>
+            </line>
+            <line>
+              <![CDATA[ChatMember TestCase is sucessfully done  ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- chatMemeberValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-08T17:07:32 IST" name="getResult" finished-at="2020-10-08T17:07:32 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chatMemeberValidation status=SUCCESS method=ChatMemberTest.chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5] output=Chatmember Testcase is running............]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ChatMemberTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

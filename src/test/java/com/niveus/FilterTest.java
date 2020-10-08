@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -94,9 +96,8 @@ public class FilterTest extends Base {
 			}
 		}
 
-		WebDriverWait pp=new WebDriverWait(driver, 30);
-		pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
 		filter.getAllchat().click();
 
 		

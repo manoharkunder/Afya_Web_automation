@@ -72,6 +72,7 @@ public class AddNewPatientTest extends Base {
 
 		docpage.getSelectDate().sendKeys("11/11/1998");
 		docpage.getPatientSearch().sendKeys("prasanna");
+		
 		WebDriverWait wait1 = new WebDriverWait(driver, 200);
 
 		wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
@@ -124,6 +125,7 @@ public class AddNewPatientTest extends Base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		boolean result = homepge.getReg().isEnabled();
+	
 		int countt = 0;
 		while (countt >= 0) {
 			if (result == true)
@@ -158,10 +160,16 @@ public class AddNewPatientTest extends Base {
 		boolean flag3 = lang1.contains(dateArr[1]);
 
 		Assert.assertTrue(flag3);
+		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	
+		
 		Reporter.log("Doctor is sucessfully added to the chat session", true);
+		
 		boolean flag1 = lang1.contains(dateArr[2]);
+	
 		Assert.assertTrue(flag1);
+		
 		Reporter.log("Doctor is assigned to the chat session", true);
 		System.out.println(lang1);
 

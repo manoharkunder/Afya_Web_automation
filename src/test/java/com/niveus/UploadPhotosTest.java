@@ -105,6 +105,7 @@ public class UploadPhotosTest extends Base {
 		}
 
 		WebDriverWait pp=new WebDriverWait(driver, 30);
+		
 		pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
 		filter.getAllchat().click();

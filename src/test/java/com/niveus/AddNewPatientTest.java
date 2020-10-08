@@ -86,8 +86,10 @@ public class AddNewPatientTest extends Base {
 		docpage.getConbutton().click();
 
 		docpage.getSpeciality().sendKeys("anesthesiology");
+		
+	     
 
-		WebDriverWait wait2 = new WebDriverWait(driver, 20);
+		WebDriverWait wait2 = new WebDriverWait(driver, 30);
 
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()));
 

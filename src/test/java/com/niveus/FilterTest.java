@@ -1,7 +1,5 @@
 package com.niveus;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -95,8 +93,7 @@ public class FilterTest extends Base {
 				count++;
 			}
 		}
-
-	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+          Thread.sleep(5000);
 	
 		filter.getAllchat().click();
 
@@ -107,7 +104,10 @@ public class FilterTest extends Base {
 	    {
 	    	try
 	    	{
+	    		WebDriverWait hh=new WebDriverWait(driver, 20);
+	    		hh.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 	    		homepge.getChatsesion().isDisplayed();
+	    	
 	    		break;
 	    	}
 	    	catch (Exception e) 
@@ -121,7 +121,6 @@ public class FilterTest extends Base {
 	    	}
 	    	
 	    }
-	//	String newtime = filter.getTimeStamp().getText();
 	
 	   WebDriverWait w=new WebDriverWait(driver, 20);
 	   w.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));

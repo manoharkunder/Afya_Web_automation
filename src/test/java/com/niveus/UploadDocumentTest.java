@@ -108,10 +108,12 @@ public class UploadDocumentTest extends Base {
 				count++;
 			}
 		}
-
-		WebDriverWait pp=new WebDriverWait(driver, 30);
-		pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-
+		/*
+		 * WebDriverWait pp=new WebDriverWait(driver, 30);
+		 * pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+		 */
+		
+		Thread.sleep(4000);
 		filter.getAllchat().click();
 
 		WebDriverWait wait33 = new WebDriverWait(driver, 50);

@@ -122,11 +122,8 @@ public class CloseCodeTest extends Base {
 		WebDriverWait op=new WebDriverWait(driver, 30);
 		op.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
-		
 		filter.getAllchat().click();
-
-		
-		
+			
 		WebDriverWait hme = new WebDriverWait(driver, 100);
 
 		hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));

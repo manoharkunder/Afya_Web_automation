@@ -113,6 +113,7 @@ public class AddSpecialityTest extends Base {
 		     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		   
 		     filter.getFilter().click();
+		     
 		       break;
 		}
 		else
@@ -124,9 +125,11 @@ public class AddSpecialityTest extends Base {
 		WebDriverWait pp=new WebDriverWait(driver, 30);
 		pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
-
 		filter.getAllchat().click();
 
+		WebDriverWait up=new WebDriverWait(driver, 30);
+		up.until(ExpectedConditions.visibilityOf(landpage.getChatsesion()));
+	
 		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>",true);
 	
 

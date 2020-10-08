@@ -81,20 +81,25 @@ public class FilterTest extends Base {
 		int count = 0;
 
 		boolean resl = filter.getFilter().isEnabled();
+		
 		while (count >= 0) {
 
 			if (resl == true) {
 
 				WebDriverWait w1 = new WebDriverWait(driver, 100);
 				w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+				
 				filter.getFilter().click();
 				break;
 			} else {
 				count++;
 			}
 		}
-          Thread.sleep(5000);
-	
+	     
+		WebDriverWait w1 = new WebDriverWait(driver, 100);
+		w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+		
+		
 		filter.getAllchat().click();
 
 		
@@ -106,6 +111,7 @@ public class FilterTest extends Base {
 	    	{
 	    		WebDriverWait hh=new WebDriverWait(driver, 20);
 	    		hh.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+	    	
 	    		homepge.getChatsesion().isDisplayed();
 	    	
 	    		break;

@@ -132,7 +132,9 @@ public class ChatMemberTest extends Base{
 		
 		WebDriverWait wait66 = new WebDriverWait(driver, 20);
 		
-		wait66.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()));
+		wait66.until(ExpectedConditions.visibilityOf(docpage.getAnsthesiolgy()));
+		
+		Thread.sleep(4000);
 		
 		docpage.getAnsthesiolgy().click();
 		

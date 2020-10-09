@@ -131,9 +131,16 @@ public class AddSpecialityTest extends Base {
 
 		filter.getAllchat().click();
 
+		try
+		{
 		WebDriverWait up=new WebDriverWait(driver, 30);
 		up.until(ExpectedConditions.visibilityOf(landpage.getChatsesion()));
-	
+		}
+		catch (Exception e)
+		
+		{
+		e.printStackTrace();	
+		}
 		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>",true);
 	
 

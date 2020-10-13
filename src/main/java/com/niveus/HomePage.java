@@ -17,7 +17,6 @@ public class HomePage
 		return reg;
 	}
 	@FindBy(xpath = "//a[@href='/chatcenter']")
-
 	private WebElement chats;
 
 	public WebElement getChat() {
@@ -295,7 +294,7 @@ public class HomePage
 	{
 		return canclbutton;
 	}
-	@FindBy(xpath="//span[contains(text(),'Dr. test2 prasanna has Added Dr. ')]")
+	@FindBy(xpath="//div[contains(@class,'chat_content_items_')]")
 	private WebElement addspec;
 	
 	public WebElement getAddSpec()

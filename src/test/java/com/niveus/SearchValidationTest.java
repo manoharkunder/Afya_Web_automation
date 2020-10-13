@@ -73,6 +73,7 @@ public class SearchValidationTest extends  Base{
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
 		homepge = PageFactory.initElements(driver, HomePage.class);
+		
 
 		WebDriverWait wait5 = new WebDriverWait(driver, 80);
 
@@ -167,11 +168,11 @@ public class SearchValidationTest extends  Base{
 		}
 		
 		
-	
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		String arr[] = { "how", "hello", "are", "search" };
 
+		Thread.sleep(5000);
 		for (int i = 0; i <= arr.length - 1; i++) {
 
 			try {

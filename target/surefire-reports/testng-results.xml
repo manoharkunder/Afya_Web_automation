@@ -56,9 +56,6 @@
       <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
     </line>
     <line>
-      <![CDATA[Search is sucessfully done]]>
-    </line>
-    <line>
       <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
     </line>
     <line>
@@ -161,12 +158,6 @@
       <![CDATA[Patient Info  Test   step ....1]]>
     </line>
     <line>
-      <![CDATA[count number is .......1]]>
-    </line>
-    <line>
-      <![CDATA[count number is .......2]]>
-    </line>
-    <line>
       <![CDATA[sucessfully icd code is selected.................##########]]>
     </line>
     <line>
@@ -254,15 +245,6 @@ Cpt: sucess]]>
       <![CDATA[sucessfully loged in and Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[User status is changed to Active]]>
-    </line>
-    <line>
-      <![CDATA[status is sucessfully changed ]]>
-    </line>
-    <line>
-      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
-    </line>
-    <line>
       <![CDATA[User status is changed to Away]]>
     </line>
     <line>
@@ -273,6 +255,15 @@ Cpt: sucess]]>
     </line>
     <line>
       <![CDATA[User status is changed to Chat Only]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[User status is changed to Active]]>
     </line>
     <line>
       <![CDATA[status is sucessfully changed ]]>
@@ -350,7 +341,7 @@ Cpt: sucess]]>
       <![CDATA[sucessfully logedin and Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[test2, jffff +1
+      <![CDATA[test2, Testing +1
 Sent an image
 a few seconds ago
 RE: prasad shetty]]>
@@ -362,7 +353,7 @@ RE: prasad shetty]]>
       <![CDATA[a few seconds ago]]>
     </line>
     <line>
-      <![CDATA[21 hours ago]]>
+      <![CDATA[17 hours ago]]>
     </line>
     <line>
       <![CDATA[filter is sucessfully applied]]>
@@ -414,9 +405,6 @@ RE: prasad shetty]]>
     </line>
     <line>
       <![CDATA[count number...2]]>
-    </line>
-    <line>
-      <![CDATA[count number...3]]>
     </line>
     <line>
       <![CDATA[Icd code is sucessfully displayed............############]]>
@@ -479,8 +467,8 @@ RE: prasad shetty]]>
       <![CDATA[Addd new paient step ....3]]>
     </line>
     <line>
-      <![CDATA[This chat has been assigned to Dr. LeeMaster Uat (Anesthesiology) and the provider will respond to this chat after they've reviewed
-Oct 09, 01:39 PM...........Sucess...]]>
+      <![CDATA[This chat has been assigned to Dr. Alvin Kwong (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Oct 10, 11:10 AM...........Sucess...]]>
     </line>
     <line>
       <![CDATA[Addd new paient step ....4]]>
@@ -537,31 +525,31 @@ Oct 09, 01:39 PM...........Sucess...]]>
       <![CDATA[Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>]]>
     </line>
     <line>
-      <![CDATA[Dr. test2 prasanna has marked this consultation as Complete sucess]]>
+      <![CDATA[Dr. test2 Prasanna has marked this consultation as Complete sucess]]>
     </line>
     <line>
       <![CDATA[close code apply sucessfully...>>>> 1]]>
     </line>
     <line>
-      <![CDATA[Dr. test2 prasanna has marked this consultation as recommending an In Person Visit sucess]]>
+      <![CDATA[Dr. test2 Prasanna has marked this consultation as recommending an In Person Visit sucess]]>
     </line>
     <line>
       <![CDATA[CloseCode TestCase is sucessfully done ############################# TEST IS PASS]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-10-09T13:33:18 IST" name="Surefire suite" finished-at="2020-10-09T13:41:05 IST" duration-ms="466861">
+  <suite started-at="2020-10-10T11:02:20 IST" name="Surefire suite" finished-at="2020-10-10T11:11:58 IST" duration-ms="577967">
     <groups>
     </groups>
-    <test started-at="2020-10-09T13:33:18 IST" name="Surefire test" finished-at="2020-10-09T13:41:05 IST" duration-ms="466861">
+    <test started-at="2020-10-10T11:02:20 IST" name="Surefire test" finished-at="2020-10-10T11:11:58 IST" duration-ms="577967">
       <class name="com.niveus.UploadPhotosTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-09T13:39:55 IST" name="configBc" finished-at="2020-10-09T13:40:04 IST" duration-ms="8623" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-10T11:10:45 IST" name="configBc" finished-at="2020-10-10T11:10:53 IST" duration-ms="8226" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-09T13:40:04 IST" name="uploadPhotoValidation" finished-at="2020-10-09T13:40:29 IST" duration-ms="24905" status="PASS">
+        <test-method signature="uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-10T11:10:53 IST" name="uploadPhotoValidation" finished-at="2020-10-10T11:11:21 IST" duration-ms="27709" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[UploadPhoto Testcase is runnng..........]]>
@@ -583,7 +571,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- uploadPhotoValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-09T13:40:29 IST" name="getResult" finished-at="2020-10-09T13:40:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-10T11:11:21 IST" name="getResult" finished-at="2020-10-10T11:11:21 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -596,14 +584,14 @@ Oct 09, 01:39 PM...........Sucess...]]>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.UploadPhotosTest -->
       <class name="com.niveus.SearchValidationTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-09T13:33:39 IST" name="configBc" finished-at="2020-10-09T13:33:49 IST" duration-ms="9921" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-10T11:02:48 IST" name="configBc" finished-at="2020-10-10T11:03:07 IST" duration-ms="18943" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-09T13:33:49 IST" name="patientSearchTest" finished-at="2020-10-09T13:34:01 IST" duration-ms="11847" status="PASS">
+        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-10T11:03:07 IST" name="patientSearchTest" finished-at="2020-10-10T11:04:34 IST" duration-ms="86496" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SearchValidation Testcase is runnng..........]]>
@@ -627,9 +615,6 @@ Oct 09, 01:39 PM...........Sucess...]]>
               <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
             </line>
             <line>
-              <![CDATA[Search is sucessfully done]]>
-            </line>
-            <line>
               <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
             </line>
             <line>
@@ -646,7 +631,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- patientSearchTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-09T13:34:01 IST" name="getResult" finished-at="2020-10-09T13:34:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-10T11:04:34 IST" name="getResult" finished-at="2020-10-10T11:04:34 IST" duration-ms="76" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -659,14 +644,14 @@ Oct 09, 01:39 PM...........Sucess...]]>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.SearchValidationTest -->
       <class name="com.niveus.LoginTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-09T13:38:39 IST" name="configBc" finished-at="2020-10-09T13:38:48 IST" duration-ms="8874" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-10T11:09:16 IST" name="configBc" finished-at="2020-10-10T11:09:25 IST" duration-ms="8963" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-09T13:38:48 IST" name="loginPageTest" finished-at="2020-10-09T13:38:53 IST" duration-ms="4427" status="PASS">
+        <test-method signature="loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-10T11:09:25 IST" name="loginPageTest" finished-at="2020-10-10T11:09:32 IST" duration-ms="7329" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Testcase is runnng..........]]>
@@ -682,7 +667,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-09T13:38:53 IST" name="getResult" finished-at="2020-10-09T13:38:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-10T11:09:32 IST" name="getResult" finished-at="2020-10-10T11:09:32 IST" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -694,75 +679,15 @@ Oct 09, 01:39 PM...........Sucess...]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.LoginTest -->
-      <class name="com.niveus.ResponderStatusTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-09T13:36:23 IST" name="configBc" finished-at="2020-10-09T13:36:31 IST" duration-ms="8223" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-09T13:36:31 IST" name="statusValidation" finished-at="2020-10-09T13:37:11 IST" duration-ms="39452" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Responder Status Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully loged in and Home page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[User status is changed to Active]]>
-            </line>
-            <line>
-              <![CDATA[status is sucessfully changed ]]>
-            </line>
-            <line>
-              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-            <line>
-              <![CDATA[User status is changed to Away]]>
-            </line>
-            <line>
-              <![CDATA[status is sucessfully changed ]]>
-            </line>
-            <line>
-              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-            <line>
-              <![CDATA[User status is changed to Chat Only]]>
-            </line>
-            <line>
-              <![CDATA[status is sucessfully changed ]]>
-            </line>
-            <line>
-              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- statusValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-09T13:37:11 IST" name="getResult" finished-at="2020-10-09T13:37:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=statusValidation status=SUCCESS method=ResponderStatusTest.statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c] output=Responder Status Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.ResponderStatusTest -->
       <class name="com.niveus.MediaFileTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-09T13:37:34 IST" name="configBc" finished-at="2020-10-09T13:37:41 IST" duration-ms="6726" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-10T11:08:08 IST" name="configBc" finished-at="2020-10-10T11:08:18 IST" duration-ms="10063" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-09T13:37:41 IST" name="mediaFileValidation" finished-at="2020-10-09T13:38:17 IST" duration-ms="36095" status="PASS">
+        <test-method signature="mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-10T11:08:18 IST" name="mediaFileValidation" finished-at="2020-10-10T11:08:52 IST" duration-ms="34247" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MediaFile Testcase is runnng..........]]>
@@ -802,7 +727,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- mediaFileValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-09T13:38:17 IST" name="getResult" finished-at="2020-10-09T13:38:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-10T11:08:52 IST" name="getResult" finished-at="2020-10-10T11:08:52 IST" duration-ms="74" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -814,15 +739,75 @@ Oct 09, 01:39 PM...........Sucess...]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.MediaFileTest -->
-      <class name="com.niveus.AddNewPatientTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-09T13:39:23 IST" name="configBc" finished-at="2020-10-09T13:39:34 IST" duration-ms="11216" status="PASS">
+      <class name="com.niveus.ResponderStatusTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-10T11:06:52 IST" name="configBc" finished-at="2020-10-10T11:07:02 IST" duration-ms="10585" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-09T13:39:34 IST" name="addNewPatientTest" finished-at="2020-10-09T13:39:55 IST" duration-ms="21219" status="PASS">
+        <test-method signature="statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-10T11:07:02 IST" name="statusValidation" finished-at="2020-10-10T11:07:45 IST" duration-ms="42767" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Responder Status Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Away]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Chat Only]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Active]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- statusValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-10T11:07:45 IST" name="getResult" finished-at="2020-10-10T11:07:45 IST" duration-ms="79" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=statusValidation status=SUCCESS method=ResponderStatusTest.statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c] output=Responder Status Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ResponderStatusTest -->
+      <class name="com.niveus.AddNewPatientTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-10T11:10:09 IST" name="configBc" finished-at="2020-10-10T11:10:18 IST" duration-ms="9581" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-10T11:10:18 IST" name="addNewPatientTest" finished-at="2020-10-10T11:10:45 IST" duration-ms="26408" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Addnewpatient testcase is running.............############]]>
@@ -840,8 +825,8 @@ Oct 09, 01:39 PM...........Sucess...]]>
               <![CDATA[Addd new paient step ....3]]>
             </line>
             <line>
-              <![CDATA[This chat has been assigned to Dr. LeeMaster Uat (Anesthesiology) and the provider will respond to this chat after they've reviewed
-Oct 09, 01:39 PM...........Sucess...]]>
+              <![CDATA[This chat has been assigned to Dr. Alvin Kwong (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Oct 10, 11:10 AM...........Sucess...]]>
             </line>
             <line>
               <![CDATA[Addd new paient step ....4]]>
@@ -860,7 +845,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- addNewPatientTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-09T13:39:55 IST" name="getResult" finished-at="2020-10-09T13:39:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-10T11:10:45 IST" name="getResult" finished-at="2020-10-10T11:10:45 IST" duration-ms="70" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -873,18 +858,18 @@ Oct 09, 01:39 PM...........Sucess...]]>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.AddNewPatientTest -->
       <class name="com.niveus.AssigningDoctorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-09T13:33:18 IST" name="setUp" finished-at="2020-10-09T13:33:18 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-10T11:02:19 IST" name="setUp" finished-at="2020-10-10T11:02:20 IST" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-09T13:33:18 IST" name="configBc" finished-at="2020-10-09T13:33:25 IST" duration-ms="7196" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-10T11:02:20 IST" name="configBc" finished-at="2020-10-10T11:02:30 IST" duration-ms="10667" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-09T13:33:25 IST" name="assigningDoctorTest" finished-at="2020-10-09T13:33:39 IST" duration-ms="14058" status="PASS">
+        <test-method signature="assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-10T11:02:30 IST" name="assigningDoctorTest" finished-at="2020-10-10T11:02:48 IST" duration-ms="18005" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Assigining doctor Testcase is running...........]]>
@@ -915,7 +900,7 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
           </reporter-output>
         </test-method> <!-- assigningDoctorTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-09T13:33:39 IST" name="getResult" finished-at="2020-10-09T13:33:39 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-10T11:02:48 IST" name="getResult" finished-at="2020-10-10T11:02:48 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -926,20 +911,113 @@ Oct 09, 01:39 PM...........Sucess...]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-09T13:41:05 IST" name="flushReport" finished-at="2020-10-09T13:42:04 IST" duration-ms="59496" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-10T11:11:58 IST" name="flushReport" finished-at="2020-10-10T11:13:01 IST" duration-ms="63606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- com.niveus.AssigningDoctorTest -->
-      <class name="com.niveus.PatientInfoTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-09T13:35:52 IST" name="configBc" finished-at="2020-10-09T13:36:02 IST" duration-ms="9762" status="PASS">
+      <class name="com.niveus.ParticipantTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-10T11:05:07 IST" name="configBc" finished-at="2020-10-10T11:05:18 IST" duration-ms="10815" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-09T13:36:02 IST" name="patientInfoValidationTest" finished-at="2020-10-09T13:36:23 IST" duration-ms="21394" status="PASS">
+        <test-method signature="participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-10T11:05:18 IST" name="participantValidationTest" finished-at="2020-10-10T11:05:54 IST" duration-ms="35708" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Participant Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Full Access sucess]]>
+            </line>
+            <line>
+              <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- participantValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-10T11:05:54 IST" name="getResult" finished-at="2020-10-10T11:05:54 IST" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee] output=Participant Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ParticipantTest -->
+      <class name="com.niveus.CloseCodeTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-10T11:11:21 IST" name="configBc" finished-at="2020-10-10T11:11:27 IST" duration-ms="6708" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-10T11:11:27 IST" name="closeCodeValidationTest" finished-at="2020-10-10T11:11:58 IST" duration-ms="30152" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closecode Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully logedin and HomePage is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Dr. test2 Prasanna has marked this consultation as Complete sucess]]>
+            </line>
+            <line>
+              <![CDATA[close code apply sucessfully...>>>> 1]]>
+            </line>
+            <line>
+              <![CDATA[Dr. test2 Prasanna has marked this consultation as recommending an In Person Visit sucess]]>
+            </line>
+            <line>
+              <![CDATA[CloseCode TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeCodeValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-10T11:11:58 IST" name="getResult" finished-at="2020-10-10T11:11:58 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=closeCodeValidationTest status=SUCCESS method=CloseCodeTest.closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1] output=Closecode Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.CloseCodeTest -->
+      <class name="com.niveus.PatientInfoTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-10T11:06:20 IST" name="configBc" finished-at="2020-10-10T11:06:26 IST" duration-ms="6470" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-10T11:06:26 IST" name="patientInfoValidationTest" finished-at="2020-10-10T11:06:51 IST" duration-ms="25042" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PatientInfo Testcase is runnng..........]]>
@@ -955,12 +1033,6 @@ Oct 09, 01:39 PM...........Sucess...]]>
             </line>
             <line>
               <![CDATA[Patient Info  Test   step ....1]]>
-            </line>
-            <line>
-              <![CDATA[count number is .......1]]>
-            </line>
-            <line>
-              <![CDATA[count number is .......2]]>
             </line>
             <line>
               <![CDATA[sucessfully icd code is selected.................##########]]>
@@ -1039,7 +1111,7 @@ Cpt: sucess]]>
             </line>
           </reporter-output>
         </test-method> <!-- patientInfoValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-09T13:36:23 IST" name="getResult" finished-at="2020-10-09T13:36:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-10T11:06:51 IST" name="getResult" finished-at="2020-10-10T11:06:52 IST" duration-ms="74" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1051,66 +1123,15 @@ Cpt: sucess]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.PatientInfoTest -->
-      <class name="com.niveus.CloseCodeTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-09T13:40:29 IST" name="configBc" finished-at="2020-10-09T13:40:35 IST" duration-ms="6532" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-09T13:40:35 IST" name="closeCodeValidationTest" finished-at="2020-10-09T13:41:05 IST" duration-ms="29467" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Closecode Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Submitter Provider role is selected]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully logedin and HomePage is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>]]>
-            </line>
-            <line>
-              <![CDATA[Dr. test2 prasanna has marked this consultation as Complete sucess]]>
-            </line>
-            <line>
-              <![CDATA[close code apply sucessfully...>>>> 1]]>
-            </line>
-            <line>
-              <![CDATA[Dr. test2 prasanna has marked this consultation as recommending an In Person Visit sucess]]>
-            </line>
-            <line>
-              <![CDATA[CloseCode TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeCodeValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-09T13:41:05 IST" name="getResult" finished-at="2020-10-09T13:41:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=closeCodeValidationTest status=SUCCESS method=CloseCodeTest.closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1] output=Closecode Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.CloseCodeTest -->
       <class name="com.niveus.UploadDocumentTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-09T13:34:01 IST" name="configBc" finished-at="2020-10-09T13:34:08 IST" duration-ms="7050" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-10T11:04:34 IST" name="configBc" finished-at="2020-10-10T11:04:44 IST" duration-ms="9686" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-09T13:34:08 IST" name="uploadDocumentValidation" finished-at="2020-10-09T13:34:30 IST" duration-ms="22197" status="PASS">
+        <test-method signature="uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-10T11:04:44 IST" name="uploadDocumentValidation" finished-at="2020-10-10T11:05:07 IST" duration-ms="23453" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[UploadDocument Testcase is runnng..........]]>
@@ -1132,7 +1153,7 @@ Cpt: sucess]]>
             </line>
           </reporter-output>
         </test-method> <!-- uploadDocumentValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-09T13:34:30 IST" name="getResult" finished-at="2020-10-09T13:34:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-10T11:05:07 IST" name="getResult" finished-at="2020-10-10T11:05:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1144,57 +1165,15 @@ Cpt: sucess]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.UploadDocumentTest -->
-      <class name="com.niveus.ParticipantTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-09T13:34:30 IST" name="configBc" finished-at="2020-10-09T13:34:36 IST" duration-ms="6403" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-09T13:34:36 IST" name="participantValidationTest" finished-at="2020-10-09T13:35:14 IST" duration-ms="38013" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Participant Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Submitter Provider role is selected]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully loged in and Home page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Full Access sucess]]>
-            </line>
-            <line>
-              <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- participantValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-09T13:35:14 IST" name="getResult" finished-at="2020-10-09T13:35:14 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee] output=Participant Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.ParticipantTest -->
       <class name="com.niveus.FilterTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-09T13:38:17 IST" name="configBc" finished-at="2020-10-09T13:38:23 IST" duration-ms="5809" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-10T11:08:52 IST" name="configBc" finished-at="2020-10-10T11:09:00 IST" duration-ms="8066" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-09T13:38:23 IST" name="filterValidationTest" finished-at="2020-10-09T13:38:39 IST" duration-ms="16883" status="PASS">
+        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-10T11:09:00 IST" name="filterValidationTest" finished-at="2020-10-10T11:09:16 IST" duration-ms="15720" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FilterTest Testcase is runnng..........]]>
@@ -1206,7 +1185,7 @@ Cpt: sucess]]>
               <![CDATA[sucessfully logedin and Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[test2, jffff +1
+              <![CDATA[test2, Testing +1
 Sent an image
 a few seconds ago
 RE: prasad shetty]]>
@@ -1218,7 +1197,7 @@ RE: prasad shetty]]>
               <![CDATA[a few seconds ago]]>
             </line>
             <line>
-              <![CDATA[21 hours ago]]>
+              <![CDATA[17 hours ago]]>
             </line>
             <line>
               <![CDATA[filter is sucessfully applied]]>
@@ -1228,7 +1207,7 @@ RE: prasad shetty]]>
             </line>
           </reporter-output>
         </test-method> <!-- filterValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-09T13:38:39 IST" name="getResult" finished-at="2020-10-09T13:38:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-10T11:09:16 IST" name="getResult" finished-at="2020-10-10T11:09:16 IST" duration-ms="92" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1241,14 +1220,14 @@ RE: prasad shetty]]>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.FilterTest -->
       <class name="com.niveus.AddSpecialityTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-09T13:35:14 IST" name="configBc" finished-at="2020-10-09T13:35:24 IST" duration-ms="9685" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-10T11:05:54 IST" name="configBc" finished-at="2020-10-10T11:06:00 IST" duration-ms="6503" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-09T13:35:24 IST" name="addspecialityValidationTest" finished-at="2020-10-09T13:35:52 IST" duration-ms="27584" status="PASS">
+        <test-method signature="addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-10T11:06:00 IST" name="addspecialityValidationTest" finished-at="2020-10-10T11:06:20 IST" duration-ms="19644" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AddSpecialty testcase is running...........]]>
@@ -1276,7 +1255,7 @@ RE: prasad shetty]]>
             </line>
           </reporter-output>
         </test-method> <!-- addspecialityValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-09T13:35:52 IST" name="getResult" finished-at="2020-10-09T13:35:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-10T11:06:20 IST" name="getResult" finished-at="2020-10-10T11:06:20 IST" duration-ms="71" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1288,54 +1267,15 @@ RE: prasad shetty]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.AddSpecialityTest -->
-      <class name="com.niveus.ProfileUpadateTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-09T13:37:11 IST" name="configBc" finished-at="2020-10-09T13:37:22 IST" duration-ms="11385" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-09T13:37:22 IST" name="updateProfileInformation" finished-at="2020-10-09T13:37:34 IST" duration-ms="11898" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ProfileUpdate Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully loged in and Home page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Profile ingormation is sucessfully updated]]>
-            </line>
-            <line>
-              <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- updateProfileInformation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-09T13:37:34 IST" name="getResult" finished-at="2020-10-09T13:37:34 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b] output=ProfileUpdate Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.ProfileUpadateTest -->
       <class name="com.niveus.ChatMemberTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-09T13:38:53 IST" name="configBc" finished-at="2020-10-09T13:39:01 IST" duration-ms="8461" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-10T11:09:32 IST" name="configBc" finished-at="2020-10-10T11:09:41 IST" duration-ms="8541" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-09T13:39:01 IST" name="chatMemeberValidation" finished-at="2020-10-09T13:39:23 IST" duration-ms="21498" status="PASS">
+        <test-method signature="chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-10T11:09:41 IST" name="chatMemeberValidation" finished-at="2020-10-10T11:10:09 IST" duration-ms="27883" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Chatmember Testcase is running............]]>
@@ -1363,9 +1303,6 @@ RE: prasad shetty]]>
             </line>
             <line>
               <![CDATA[count number...2]]>
-            </line>
-            <line>
-              <![CDATA[count number...3]]>
             </line>
             <line>
               <![CDATA[Icd code is sucessfully displayed............############]]>
@@ -1411,7 +1348,7 @@ RE: prasad shetty]]>
             </line>
           </reporter-output>
         </test-method> <!-- chatMemeberValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-09T13:39:23 IST" name="getResult" finished-at="2020-10-09T13:39:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-10T11:10:09 IST" name="getResult" finished-at="2020-10-10T11:10:09 IST" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1423,6 +1360,45 @@ RE: prasad shetty]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.ChatMemberTest -->
+      <class name="com.niveus.ProfileUpadateTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-10T11:07:45 IST" name="configBc" finished-at="2020-10-10T11:07:53 IST" duration-ms="7699" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-10T11:07:53 IST" name="updateProfileInformation" finished-at="2020-10-10T11:08:07 IST" duration-ms="14788" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ProfileUpdate Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Profile ingormation is sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateProfileInformation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-10T11:08:07 IST" name="getResult" finished-at="2020-10-10T11:08:08 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b] output=ProfileUpdate Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ProfileUpadateTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

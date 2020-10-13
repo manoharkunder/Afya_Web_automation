@@ -188,12 +188,12 @@ public class AddSpecialityTest extends Base {
 		}
 		Reporter.log("Speciality list is displaying sucessfully",true);
 			
-		WebDriverWait w = new WebDriverWait(driver, 100);
+		WebDriverWait w = new WebDriverWait(driver, 20);
 		w.until(ExpectedConditions.visibilityOf(landpage.getAddSpec()));
 
 		String lang1 = landpage.getAddSpec().getText();
 
-		boolean flag1=lang1.contains("Dr. test2 prasanna has Added Dr.");
+		boolean flag1=landpage.getAddSpec().isDisplayed();
 	  
 		Assert.assertTrue(flag1);
 	   

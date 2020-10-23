@@ -36,7 +36,7 @@ public class LoginTest extends Base{
 		
 		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-		logp.getUsername().sendKeys("niveus@gmail.com");
+		logp.getUsername().sendKeys("manoharkunder123@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 		
 		logp.getpswdview().click();
@@ -63,7 +63,7 @@ public class LoginTest extends Base{
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "niveus@gmail.com");
+		Assert.assertEquals(propage.getmailId().getText(), "manoharkunder123@gmail.com");
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 		Reporter.log("Login TestCase is sucessfully done ############################# TEST IS PASS",true);
 	}

@@ -111,7 +111,7 @@ public class ChatMemberTest extends Base{
 
 		docpage.getSelectDate().sendKeys("11/11/1998");
 	
-		docpage.getPatientSearch().sendKeys("prasad");
+		docpage.getPatientSearch().sendKeys("prasanna");
 		
 		WebDriverWait wait33 = new WebDriverWait(driver, 40);
 		
@@ -212,7 +212,7 @@ public class ChatMemberTest extends Base{
  		Reporter.log("Doctor is assigned to the chat session", true);
  		System.out.println(lang1);
 
- 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+ 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
  		
  		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
@@ -235,7 +235,7 @@ public class ChatMemberTest extends Base{
 		Reporter.log("DOctor is assigned to the chat session", true);
 		System.out.println(lang11);
 
-		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
 		Reporter.log("Patient  is sucessgully added to the chat session", true);
 
 		int val = 0;
@@ -260,9 +260,12 @@ public class ChatMemberTest extends Base{
 		}
 
 		WebDriverWait rr=new WebDriverWait(driver, 20);
-		rr.until(ExpectedConditions.elementToBeClickable(homepge.getChatMemeber()));
+		rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));
 		
-		homepge.getChatMemeber().click();
+		   JavascriptExecutor ex = (JavascriptExecutor)driver;
+		     ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
+		     
+	//	homepge.getChatMemeber().click();
 
 		WebDriverWait ww = new WebDriverWait(driver, 50);
 		ww.until(ExpectedConditions.visibilityOf(docpage.getChatM()));
@@ -270,8 +273,8 @@ public class ChatMemberTest extends Base{
 		String chatmemeber = docpage.getChatM().getText();
 		System.out.println(chatmemeber);
 
-		boolean flag2 = chatmemeber.contains("test2");
-		boolean flag4 = chatmemeber.contains("prasad shetty");
+		boolean flag2 = chatmemeber.contains("Test2");
+		boolean flag4 = chatmemeber.contains("Prasanna");
 		Assert.assertTrue(flag2);
 		Reporter.log("Responder 1 name  is displayed sucessfully", true);
 		Assert.assertTrue(flag4);

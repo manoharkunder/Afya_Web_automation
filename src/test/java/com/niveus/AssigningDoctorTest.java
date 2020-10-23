@@ -151,7 +151,7 @@ public class AssigningDoctorTest extends Base {
 			}
 		}
 
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 	WebDriverWait w = new WebDriverWait(driver, 100);
 

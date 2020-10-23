@@ -3,6 +3,7 @@ package com.niveus;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -117,9 +118,12 @@ public class UploadDocumentTest extends Base {
 		filter.getAllchat().click();
 
 		WebDriverWait wait33 = new WebDriverWait(driver, 50);
-		wait33.until(ExpectedConditions.elementToBeClickable(homepge.getChatsesion()));
+		wait33.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 
-		homepge.getChatsesion().click();
+		   JavascriptExecutor ex = (JavascriptExecutor)driver;
+		   ex.executeScript("arguments[0].click();", homepge.getChatsesion());
+		     
+	//	homepge.getChatsesion().click();
 
 		WebDriverWait wait11 = new WebDriverWait(driver, 30);
 		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getPaperclip()));

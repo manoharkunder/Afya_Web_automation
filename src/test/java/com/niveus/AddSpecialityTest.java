@@ -3,6 +3,7 @@ package com.niveus;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -109,10 +110,14 @@ public class AddSpecialityTest extends Base {
 		if(resl==true)
 		{
 
+			Thread.sleep(2000);
 		     WebDriverWait w1=new WebDriverWait(driver, 100);
 		     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		   
-		     filter.getFilter().click();
+		     JavascriptExecutor ex = (JavascriptExecutor)driver;
+		     ex.executeScript("arguments[0].click();", filter.getFilter());
+		     
+		  //   filter.getFilter().click();
 		     
 		       break;
 		}

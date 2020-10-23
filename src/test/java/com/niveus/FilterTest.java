@@ -1,5 +1,6 @@
 package com.niveus;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -89,6 +90,9 @@ public class FilterTest extends Base {
 				WebDriverWait w1 = new WebDriverWait(driver, 100);
 				w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 				
+				   JavascriptExecutor ex = (JavascriptExecutor)driver;
+				    ex.executeScript("arguments[0].click();", filter.getFilter());
+				     
 				filter.getFilter().click();
 				break;
 			} else {

@@ -91,10 +91,13 @@ public class PatientInfoTest extends Base {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		docpage.getNewSubmitter().click();
+		   JavascriptExecutor ex = (JavascriptExecutor)driver;
+		     ex.executeScript("arguments[0].click();", docpage.getNewSubmitter());
+		     
+	//	docpage.getNewSubmitter().click();
 
 		docpage.getSelectDate().sendKeys("11/11/1998");
-		docpage.getPatientSearch().sendKeys("prasad");
+		docpage.getPatientSearch().sendKeys("prasanna");
 	
 		WebDriverWait wait33 = new WebDriverWait(driver, 20);
 		wait33.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
@@ -199,7 +202,7 @@ public class PatientInfoTest extends Base {
  		Reporter.log("DOctor is assigned to the cht session", true);
  		System.out.println(lang1);
 
- 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+ 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
  		
  		Reporter.log("Patien  is sucessgully added to the chat session", true);
 
@@ -222,7 +225,7 @@ public class PatientInfoTest extends Base {
 		Reporter.log("DOctor is assigned to the cht session", true);
 		System.out.println(lang11);
 
-		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
 		Reporter.log("Patien  is sucessgully added to the chat session", true);
 
 
@@ -244,7 +247,7 @@ public class PatientInfoTest extends Base {
 		Reporter.log("DOctor is assigned to the cht session", true);
 		System.out.println(lang1);
 
-		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasad");
+		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
 		Reporter.log("Patien  is sucessgully added to the chat session", true);
 
 		int val = 0;
@@ -283,7 +286,7 @@ public class PatientInfoTest extends Base {
 		Reporter.log(chatmemeber+" sucess",true);
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		boolean flag4 = chatmemeber.contains("Prasad Shetty");
+		boolean flag4 = chatmemeber.contains("Prasanna");
 		Assert.assertTrue(flag4);
 		
 		Reporter.log("patient name is displayed  sucesssfully", true);

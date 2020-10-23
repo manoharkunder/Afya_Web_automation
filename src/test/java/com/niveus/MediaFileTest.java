@@ -225,15 +225,18 @@ public class MediaFileTest extends Base{
 
 
 		WebDriverWait p=new WebDriverWait(driver, 20);
-		p.until(ExpectedConditions.elementToBeClickable(homepge.getMediaFil()));
+		p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
 	
-		homepge.getMediaFil().click();
+		   JavascriptExecutor ex = (JavascriptExecutor)driver;
+		   ex.executeScript("arguments[0].click();", homepge.getMediaFil());
+		     
+		//homepge.getMediaFil().click();
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		String fle = homepge.getFile().getText();
 
-		boolean f = fle.contains("test2");
+		boolean f = fle.contains("Test2");
 
 		Assert.assertTrue(f);
 

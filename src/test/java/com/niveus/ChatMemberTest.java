@@ -99,7 +99,12 @@ public class ChatMemberTest extends Base{
          {
         	 if(ret==true)
         	 {
-		docpage.getNewSubmitter().click();
+        			WebDriverWait rr=new WebDriverWait(driver, 20);
+        			rr.until(ExpectedConditions.visibilityOf(docpage.getNewSubmitter()));
+        			
+        			   JavascriptExecutor ex = (JavascriptExecutor)driver;
+        			    ex.executeScript("arguments[0].click();", docpage.getNewSubmitter());
+        			     
 		Reporter.log("click on the new button sucessfully......###########",true);
 		break;
         	 }

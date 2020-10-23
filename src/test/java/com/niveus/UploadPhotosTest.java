@@ -3,6 +3,7 @@ package com.niveus;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -97,7 +98,10 @@ public class UploadPhotosTest extends Base {
 
 				WebDriverWait w1 = new WebDriverWait(driver, 100);
 				w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-				filter.getFilter().click();
+			
+				   JavascriptExecutor ex = (JavascriptExecutor)driver;
+				     ex.executeScript("arguments[0].click();", filter.getFilter());
+				     
 				break;
 			} else {
 				count++;

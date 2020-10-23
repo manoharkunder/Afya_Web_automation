@@ -106,8 +106,10 @@ public class MediaFileTest extends Base{
 			   
 			     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 			    
-			     filter.getFilter().click();
-		
+			
+				   JavascriptExecutor ex = (JavascriptExecutor)driver;
+				     ex.executeScript("arguments[0].click();", filter.getFilter());
+				     		
 			     break;
 			}
 			else

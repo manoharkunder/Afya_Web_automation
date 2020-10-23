@@ -114,9 +114,7 @@ public class ParticipantTest extends Base {
 			     JavascriptExecutor ex = (JavascriptExecutor)driver;
 			     ex.executeScript("arguments[0].click();", filter.getFilter());
 			     
-			   
-			     filter.getFilter().click();
-			       break;
+			   			       break;
 			}
 			else
 			{

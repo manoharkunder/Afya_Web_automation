@@ -114,7 +114,6 @@ public class CloseCodeTest extends Base {
 		     JavascriptExecutor ex = (JavascriptExecutor)driver;
 		     ex.executeScript("arguments[0].click();", filter.getFilter());
 		     
-		     filter.getFilter().click();
 		  
 		     break;
 		}

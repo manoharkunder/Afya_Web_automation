@@ -169,9 +169,13 @@ public class MediaFileTest extends Base{
 
 		          
 		WebDriverWait wait11 = new WebDriverWait(driver, 30);
-		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getPaperclip()));
+		wait11.until(ExpectedConditions.visibilityOf(homepge.getPaperclip()));
 
-		homepge.getPaperclip().click();
+	    
+	     JavascriptExecutor ex1 = (JavascriptExecutor)driver;
+	     ex1.executeScript("arguments[0].click();", homepge.getPaperclip());
+	     
+		
 	
 		Reporter.log("Media File Test   step ....2",true);
 

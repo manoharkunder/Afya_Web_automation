@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">673,043</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.niveus.AddNewPatientTest</td><td><a href="#m0">addNewPatientTest</a></td><td rowspan="1">1603859766794</td><td rowspan="1">72346</td></tr><tr class="failedodd"><td rowspan="1">com.niveus.CloseCodeTest</td><td><a href="#m1">closeCodeValidationTest</a></td><td rowspan="1">1603859841881</td><td rowspan="1">29</td></tr><tr class="failedeven"><td rowspan="1">com.niveus.FilterTest</td><td><a href="#m2">filterValidationTest</a></td><td rowspan="1">1603859676292</td><td rowspan="1">32356</td></tr><tr class="failedodd"><td rowspan="1">com.niveus.ResponderStatusTest</td><td><a href="#m3">statusValidation</a></td><td rowspan="1">1603859453504</td><td rowspan="1">132275</td></tr><tr class="failedeven"><td rowspan="1">com.niveus.UploadPhotosTest</td><td><a href="#m4">uploadPhotoValidation</a></td><td rowspan="1">1603859840689</td><td rowspan="1">78</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.niveus.AddSpecialityTest</td><td><a href="#m5">addspecialityValidationTest</a></td><td rowspan="1">1603859388271</td><td rowspan="1">21022</td></tr><tr class="passedodd"><td rowspan="1">com.niveus.AssigningDoctorTest</td><td><a href="#m6">assigningDoctorTest</a></td><td rowspan="1">1603859180659</td><td rowspan="1">22556</td></tr><tr class="passedeven"><td rowspan="1">com.niveus.ChatMemberTest</td><td><a href="#m7">chatMemeberValidation</a></td><td rowspan="1">1603859733745</td><td rowspan="1">25986</td></tr><tr class="passedodd"><td rowspan="1">com.niveus.LoginTest</td><td><a href="#m8">loginPageTest</a></td><td rowspan="1">1603859719298</td><td rowspan="1">2022</td></tr><tr class="passedeven"><td rowspan="1">com.niveus.MediaFileTest</td><td><a href="#m9">mediaFileValidation</a></td><td rowspan="1">1603859630034</td><td rowspan="1">40966</td></tr><tr class="passedodd"><td rowspan="1">com.niveus.ParticipantTest</td><td><a href="#m10">participantValidationTest</a></td><td rowspan="1">1603859347125</td><td rowspan="1">34175</td></tr><tr class="passedeven"><td rowspan="1">com.niveus.PatientInfoTest</td><td><a href="#m11">patientInfoValidationTest</a></td><td rowspan="1">1603859417273</td><td rowspan="1">26204</td></tr><tr class="passedodd"><td rowspan="1">com.niveus.ProfileUpadateTest</td><td><a href="#m12">updateProfileInformation</a></td><td rowspan="1">1603859606026</td><td rowspan="1">14886</td></tr><tr class="passedeven"><td rowspan="1">com.niveus.SearchValidationTest</td><td><a href="#m13">patientSearchTest</a></td><td rowspan="1">1603859222145</td><td rowspan="1">89410</td></tr><tr class="passedodd"><td rowspan="1">com.niveus.UploadDocumentTest</td><td><a href="#m14">uploadDocumentValidation</a></td><td rowspan="1">1603859319121</td><td rowspan="1">19084</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.niveus.AddNewPatientTest#addNewPatientTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Addnewpatient testcase is running.............############</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos; NEW&apos;]/..&apos; (tried for 50 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.niveus.AddNewPatientTest.addNewPatientTest(AddNewPatientTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos; NEW&apos;]/..&quot;}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.8J1NJi}, goog:chromeOptions: {debuggerAddress: localhost:38855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2449d8ac12b7bb764c93b5f09a797e35
+*** Element info: {Using=xpath, value=//span[text()=&apos; NEW&apos;]/..}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.niveus.CloseCodeTest#closeCodeValidationTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Closecode Testcase is runnng..........</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos;]&quot;}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.etKVIg}, goog:chromeOptions: {debuggerAddress: localhost:36149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5110afdc47a1bd363f21e3eaa6a941af
+*** Element info: {Using=xpath, value=//button[@type=&apos;submit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.niveus.CloseCodeTest.closeCodeValidationTest(CloseCodeTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.niveus.FilterTest#filterValidationTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">FilterTest Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>sucessfully logedin and Home page is displayed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@aria-label=&apos;filter&apos;]&quot;}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.dSOJwM}, goog:chromeOptions: {debuggerAddress: localhost:45449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d7851a2c5dbabc42922f32545cc5040d
+*** Element info: {Using=xpath, value=//span[@aria-label=&apos;filter&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.niveus.FilterTest.filterValidationTest(FilterTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.niveus.ResponderStatusTest#statusValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Responder Status Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>sucessfully loged in and Home page is displayed<br/>User status is changed to Chat Only<br/>status is sucessfully changed <br/>ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;User status is changed to&apos;)]&apos; (tried for 100 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.niveus.ResponderStatusTest.statusValidation(ResponderStatusTest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;User status is changed to&apos;)]&quot;}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.r8NOJS}, goog:chromeOptions: {debuggerAddress: localhost:46309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 869296979c9b751bb2d61f881ab669bd
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;User status is changed to&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.niveus.UploadPhotosTest#uploadPhotoValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">UploadPhoto Testcase is runnng..........</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos;]&quot;}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.bszOgu}, goog:chromeOptions: {debuggerAddress: localhost:43551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1a5df1d823b89285a1928a9868b6fb80
+*** Element info: {Using=xpath, value=//button[@type=&apos;submit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.niveus.UploadPhotosTest.uploadPhotoValidation(UploadPhotosTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.niveus.AddSpecialityTest#addspecialityValidationTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">AddSpecialty testcase is running...........<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully loged in and Home page is displayed<br/>chat session is sucessfully displayed in Add specialty..>>>>>>>>>>><br/>Speciality list is displaying sucessfully<br/>Doctor is sucessfully added to the chat session<br/>AddSpeciality TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.niveus.AssigningDoctorTest#assigningDoctorTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Assigining doctor Testcase is running...........<br/>Login page is sucessfully displayed<br/>sucessfully logedin and Home page is displayed<br/>sucessfully clicked on new button<br/>sucessfully specialty is seleced<br/>Session has been created sucessfully created<br/>Doctor is sucessfully added to the chat session<br/>DOctor is assigned to the cht session<br/>AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.niveus.ChatMemberTest#chatMemeberValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Chatmember Testcase is running............<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully logedin and Home page is displayed<br/>click on the new button sucessfully......###########<br/>Chat Member   Test   step ....1<br/>sucessfully enter the speciality and chief complaint.........########<br/>count number...1<br/>Icd code is sucessfully displayed............############<br/>Chat Member   Test   step ....2<br/>Chat Member   Test   step ....3<br/>Chat Member   Test   step ....4<br/>Doctor is sucessfully added to the chat session<br/>Doctor is assigned to the chat session<br/>Patient  is sucessfully added to the chat session<br/>Doctor is sucessfully added to the chat session<br/>DOctor is assigned to the chat session<br/>Patient  is sucessgully added to the chat session<br/>Chat Member   Test   step ....5<br/>Responder 1 name  is displayed sucessfully<br/>patient name is displayed  sucesssfully<br/>ChatMember TestCase is sucessfully done  ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.niveus.LoginTest#loginPageTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>sucessfully loged in and Home page is displayed<br/>Login TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.niveus.MediaFileTest#mediaFileValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">MediaFile Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully loged in and Home page is displayed<br/>Chat session is sucessfully  displayed in the landing page<br/>Media File Test   step ....1<br/>Media File Test   step ....2<br/>Media File Test   step ....3<br/>file has been successfully uploaded. sucessfully updated<br/>Media File Test   step ....4<br/>media file is sucessfully displayed<br/>MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.niveus.ParticipantTest#participantValidationTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Participant Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully loged in and Home page is displayed<br/>Full Access sucess<br/>ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.niveus.PatientInfoTest#patientInfoValidationTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">PatientInfo Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully loged in and Home page is displayed<br/>Patient Info  Test   step ....1<br/>sucessfully icd code is selected.................##########<br/>Patient Info  Test   step ....2<br/>Patient Info  Test   step ....3<br/>Patient Info  Test   step ....4<br/>Doctor is sucessfully added to the cht session<br/>DOctor is assigned to the cht session<br/>Patien  is sucessgully added to the chat session<br/>Doctor is sucessfully added to the cht session<br/>DOctor is assigned to the cht session<br/>Patien  is sucessgully added to the chat session<br/>Doctor is sucessfully added to the cht session<br/>DOctor is assigned to the cht session<br/>Patien  is sucessgully added to the chat session<br/>Patien Info   Test   step ....5<br/>Patient Details
+Close
+Name:
+Prasanna Helo
+Chief:
+Have A Knee Pain In Leg
+Dob:
+11-11-1998
+Gender:
+Female
+Year:
+21 Years Old
+Mobile:
+917022912986
+Email:
+prasanna@gmail.com
+Icd:
+I11.0 Hypertensive Heart Disease With Heart Failure
+Cpt: sucess<br/>patient name is displayed  sucesssfully<br/>patient date of birth  is displayed  sucesssfully<br/>patient year  is displayed  sucesssfully<br/>PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.niveus.ProfileUpadateTest#updateProfileInformation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">ProfileUpdate Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>sucessfully loged in and Home page is displayed<br/>Profile ingormation is sucessfully updated<br/>ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.niveus.SearchValidationTest#patientSearchTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">SearchValidation Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>sucessfully loged in and Home page is displayed<br/>sucessfully clicked on New buuton<br/>Session has been created sucessfully created<br/>Search is sucessfully done<br/>SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>Search is sucessfully done<br/>SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>Search is sucessfully done<br/>SearchValidation TestCase is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.niveus.UploadDocumentTest#uploadDocumentValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">UploadDocument Testcase is runnng..........<br/>Login page is sucessfully displayed<br/>Submitter Provider role is selected<br/>sucessfully loged in and Home page is displayed<br/>file has been successfully uploaded. sucessfully updated<br/>UploadDocument Test is sucessfully done ############################# TEST IS PASS</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

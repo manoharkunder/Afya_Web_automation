@@ -169,7 +169,10 @@ public class FilterTest extends Base {
 
 		q.until(ExpectedConditions.visibilityOf(filter.getOldest()));
 		
-		filter.getOldest().click();
+
+		 JavascriptExecutor ex1 = (JavascriptExecutor)driver;
+		    ex1.executeScript("arguments[0].click();", filter.getOldest());
+		     
 
 		WebDriverWait www = new WebDriverWait(driver, 100);
 		www.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));

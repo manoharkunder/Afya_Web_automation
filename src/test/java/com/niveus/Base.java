@@ -132,7 +132,7 @@ public class Base {
 		passedCount = passedCount + passed;
 		failureCount = failureCount + failed;
 		skippedCount = skippedCount + skipped;
-		driver.quit();
+	//	driver.quit();
 	}
 
 	@AfterSuite
@@ -146,7 +146,7 @@ public class Base {
 		email.sendEmail(passedCount, failureCount, skippedCount);
 
 		// close driver
-		 driver.quit();
+		// driver.quit();
 	}
 
 	@BeforeClass
@@ -156,7 +156,7 @@ public class Base {
 		 * below code is used the launch the browser
 		 */
 
-		//driver = new ChromeDriver();
+		// driver = new ChromeDriver();
 
 		/*
 		 * below code is used to run the automation in headless mode
@@ -165,7 +165,7 @@ public class Base {
 		
 		
 		  
-		
+		  
 		  ChromeOptions options = new ChromeOptions();
 		  options.addArguments("--headless", "--disable-web-security",
 		  "--ignore-certificate-errors", "--allow-running-insecure-content",
@@ -176,7 +176,7 @@ public class Base {
 		  options.setExperimentalOption("useAutomationExtension", false);
 		  options.setExperimentalOption("excludeSwitches", new String[] {
 		  "enable-automation" }); driver = new ChromeDriver(options);
-		 
+		  
 		 
 		
 		System.out.println("browser is launched");

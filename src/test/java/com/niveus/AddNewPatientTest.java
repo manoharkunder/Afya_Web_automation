@@ -156,7 +156,7 @@ public class AddNewPatientTest extends Base {
 		
 		Reporter.log("Addd new paient step ....4",true);
 
-
+ 
 		Date d = new Date();
 
 		String[] dateArr = d.toString().split(" ");

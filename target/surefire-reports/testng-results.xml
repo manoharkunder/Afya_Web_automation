@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="28" total="43" passed="10" failed="5" skipped="0">
+<testng-results ignored="28" total="43" passed="12" failed="2" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
@@ -86,12 +86,6 @@
       <![CDATA[sucessfully loged in and Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[file has been successfully uploaded. sucessfully updated]]>
-    </line>
-    <line>
-      <![CDATA[UploadDocument Test is sucessfully done ############################# TEST IS PASS]]>
-    </line>
-    <line>
       <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
     </line>
     <line>
@@ -156,6 +150,9 @@
     </line>
     <line>
       <![CDATA[Patient Info  Test   step ....1]]>
+    </line>
+    <line>
+      <![CDATA[count number is .......1]]>
     </line>
     <line>
       <![CDATA[sucessfully icd code is selected.................##########]]>
@@ -245,7 +242,25 @@ Cpt: sucess]]>
       <![CDATA[sucessfully loged in and Home page is displayed]]>
     </line>
     <line>
+      <![CDATA[User status is changed to Away]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
       <![CDATA[User status is changed to Chat Only]]>
+    </line>
+    <line>
+      <![CDATA[status is sucessfully changed ]]>
+    </line>
+    <line>
+      <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[User status is changed to Active]]>
     </line>
     <line>
       <![CDATA[status is sucessfully changed ]]>
@@ -323,6 +338,27 @@ Cpt: sucess]]>
       <![CDATA[sucessfully logedin and Home page is displayed]]>
     </line>
     <line>
+      <![CDATA[prem, Test2 +1
+Sent an image
+a few seconds ago
+RE: prasanna Helo]]>
+    </line>
+    <line>
+      <![CDATA[First time stmp is  displayed........###########]]>
+    </line>
+    <line>
+      <![CDATA[a few seconds ago]]>
+    </line>
+    <line>
+      <![CDATA[3 hours ago]]>
+    </line>
+    <line>
+      <![CDATA[filter is sucessfully applied]]>
+    </line>
+    <line>
+      <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
       <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
     </line>
     <line>
@@ -363,6 +399,12 @@ Cpt: sucess]]>
     </line>
     <line>
       <![CDATA[count number...1]]>
+    </line>
+    <line>
+      <![CDATA[count number...2]]>
+    </line>
+    <line>
+      <![CDATA[count number...3]]>
     </line>
     <line>
       <![CDATA[Icd code is sucessfully displayed............############]]>
@@ -413,54 +455,79 @@ Cpt: sucess]]>
       <![CDATA[Addnewpatient testcase is running.............############]]>
     </line>
     <line>
-      <![CDATA[Afya Page  is sucessgully displayed]]>
+      <![CDATA[Addd new paient step ....1]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....2]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully selected the Icd Code.........]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....3]]>
+    </line>
+    <line>
+      <![CDATA[This chat has been assigned to Dr. Alvin Kwong (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Nov 02, 12:50 PM...........Sucess...]]>
+    </line>
+    <line>
+      <![CDATA[Addd new paient step ....4]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Doctor is assigned to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[Patient  is sucessfully added to the chat session]]>
+    </line>
+    <line>
+      <![CDATA[AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+    </line>
+    <line>
+      <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
     </line>
     <line>
       <![CDATA[UploadPhoto Testcase is runnng..........]]>
     </line>
     <line>
-      <![CDATA[Afya Page  is sucessgully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Closecode Testcase is runnng..........]]>
+      <![CDATA[Login page is sucessfully displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-10-28T09:56:09 IST" name="Surefire suite" finished-at="2020-10-28T10:07:22 IST" duration-ms="673043">
+  <suite started-at="2020-11-02T12:40:57 IST" name="Surefire suite" finished-at="2020-11-02T12:52:01 IST" duration-ms="663419">
     <groups>
     </groups>
-    <test started-at="2020-10-28T09:56:09 IST" name="Surefire test" finished-at="2020-10-28T10:07:22 IST" duration-ms="673043">
+    <test started-at="2020-11-02T12:40:57 IST" name="Surefire test" finished-at="2020-11-02T12:52:01 IST" duration-ms="663419">
       <class name="com.niveus.UploadPhotosTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-28T10:07:19 IST" name="configBc" finished-at="2020-10-28T10:07:20 IST" duration-ms="735" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadPhotosTest@16f7c8c1]" started-at="2020-11-02T12:50:44 IST" name="configBc" finished-at="2020-11-02T12:50:58 IST" duration-ms="14058" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Afya Page  is sucessgully displayed]]>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-28T10:07:20 IST" name="uploadPhotoValidation" finished-at="2020-10-28T10:07:20 IST" duration-ms="78" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@16f7c8c1]" started-at="2020-11-02T12:50:58 IST" name="uploadPhotoValidation" finished-at="2020-11-02T12:51:21 IST" duration-ms="23023" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.bszOgu}, goog:chromeOptions: {debuggerAddress: localhost:43551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1a5df1d823b89285a1928a9868b6fb80
-*** Element info: {Using=xpath, value=//button[@type='submit']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.ReOdrm}, goog:chromeOptions: {debuggerAddress: localhost:32907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f149530b635a1ab69eb12b2213251a33
+*** Element info: {Using=xpath, value=//div[text()='Submitter Provider']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.bszOgu}, goog:chromeOptions: {debuggerAddress: localhost:43551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1a5df1d823b89285a1928a9868b6fb80
-*** Element info: {Using=xpath, value=//button[@type='submit']}
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.ReOdrm}, goog:chromeOptions: {debuggerAddress: localhost:32907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f149530b635a1ab69eb12b2213251a33
+*** Element info: {Using=xpath, value=//div[text()='Submitter Provider']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -475,8 +542,15 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.getText(Unknown Source)
-at com.niveus.UploadPhotosTest.uploadPhotoValidation(UploadPhotosTest.java:42)
+at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.niveus.UploadPhotosTest.uploadPhotoValidation(UploadPhotosTest.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -512,18 +586,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
             <line>
               <![CDATA[UploadPhoto Testcase is runnng..........]]>
             </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- uploadPhotoValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadPhotosTest@24a35978]" started-at="2020-10-28T10:07:20 IST" name="getResult" finished-at="2020-10-28T10:07:21 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadPhotosTest@16f7c8c1]" started-at="2020-11-02T12:51:21 IST" name="getResult" finished-at="2020-11-02T12:51:21 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=uploadPhotoValidation status=FAILURE method=UploadPhotosTest.uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@24a35978] output=UploadPhoto Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=uploadPhotoValidation status=FAILURE method=UploadPhotosTest.uploadPhotoValidation()[pri:0, instance:com.niveus.UploadPhotosTest@16f7c8c1] output=UploadPhoto Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -532,14 +609,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.UploadPhotosTest -->
       <class name="com.niveus.SearchValidationTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-28T09:56:43 IST" name="configBc" finished-at="2020-10-28T09:57:02 IST" duration-ms="18849" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@78186a70]" started-at="2020-11-02T12:41:32 IST" name="configBc" finished-at="2020-11-02T12:41:49 IST" duration-ms="16523" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-28T09:57:02 IST" name="patientSearchTest" finished-at="2020-10-28T09:58:31 IST" duration-ms="89410" status="PASS">
+        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@78186a70]" started-at="2020-11-02T12:41:49 IST" name="patientSearchTest" finished-at="2020-11-02T12:43:01 IST" duration-ms="72344" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SearchValidation Testcase is runnng..........]]>
@@ -579,11 +656,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- patientSearchTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@481a15ff]" started-at="2020-10-28T09:58:31 IST" name="getResult" finished-at="2020-10-28T09:58:31 IST" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@78186a70]" started-at="2020-11-02T12:43:01 IST" name="getResult" finished-at="2020-11-02T12:43:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=patientSearchTest status=SUCCESS method=SearchValidationTest.patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@481a15ff] output=SearchValidation Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=patientSearchTest status=SUCCESS method=SearchValidationTest.patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@78186a70] output=SearchValidation Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -592,14 +669,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.SearchValidationTest -->
       <class name="com.niveus.LoginTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-28T10:05:09 IST" name="configBc" finished-at="2020-10-28T10:05:19 IST" duration-ms="9721" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@704921a5]" started-at="2020-11-02T12:48:54 IST" name="configBc" finished-at="2020-11-02T12:49:06 IST" duration-ms="11476" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-28T10:05:19 IST" name="loginPageTest" finished-at="2020-10-28T10:05:21 IST" duration-ms="2022" status="PASS">
+        <test-method signature="loginPageTest()[pri:0, instance:com.niveus.LoginTest@704921a5]" started-at="2020-11-02T12:49:06 IST" name="loginPageTest" finished-at="2020-11-02T12:49:08 IST" duration-ms="2224" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Testcase is runnng..........]]>
@@ -615,11 +692,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@727803de]" started-at="2020-10-28T10:05:21 IST" name="getResult" finished-at="2020-10-28T10:05:21 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@704921a5]" started-at="2020-11-02T12:49:08 IST" name="getResult" finished-at="2020-11-02T12:49:08 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginPageTest status=SUCCESS method=LoginTest.loginPageTest()[pri:0, instance:com.niveus.LoginTest@727803de] output=Login Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=loginPageTest status=SUCCESS method=LoginTest.loginPageTest()[pri:0, instance:com.niveus.LoginTest@704921a5] output=Login Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -628,14 +705,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.LoginTest -->
       <class name="com.niveus.MediaFileTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-28T10:03:40 IST" name="configBc" finished-at="2020-10-28T10:03:50 IST" duration-ms="9055" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.MediaFileTest@2641e737]" started-at="2020-11-02T12:47:46 IST" name="configBc" finished-at="2020-11-02T12:47:54 IST" duration-ms="8126" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-28T10:03:50 IST" name="mediaFileValidation" finished-at="2020-10-28T10:04:31 IST" duration-ms="40966" status="PASS">
+        <test-method signature="mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@2641e737]" started-at="2020-11-02T12:47:54 IST" name="mediaFileValidation" finished-at="2020-11-02T12:48:31 IST" duration-ms="37052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MediaFile Testcase is runnng..........]]>
@@ -675,11 +752,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- mediaFileValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.MediaFileTest@4c762604]" started-at="2020-10-28T10:04:31 IST" name="getResult" finished-at="2020-10-28T10:04:31 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.MediaFileTest@2641e737]" started-at="2020-11-02T12:48:31 IST" name="getResult" finished-at="2020-11-02T12:48:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=mediaFileValidation status=SUCCESS method=MediaFileTest.mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@4c762604] output=MediaFile Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=mediaFileValidation status=SUCCESS method=MediaFileTest.mediaFileValidation()[pri:0, instance:com.niveus.MediaFileTest@2641e737] output=MediaFile Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -688,90 +765,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.MediaFileTest -->
       <class name="com.niveus.ResponderStatusTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-28T10:00:43 IST" name="configBc" finished-at="2020-10-28T10:00:53 IST" duration-ms="9908" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ResponderStatusTest@548ad73b]" started-at="2020-11-02T12:45:40 IST" name="configBc" finished-at="2020-11-02T12:45:49 IST" duration-ms="9034" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-28T10:00:53 IST" name="statusValidation" finished-at="2020-10-28T10:03:05 IST" duration-ms="132275" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'User status is changed to')]' (tried for 100 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'User status is changed to')]' (tried for 100 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.niveus.ResponderStatusTest.statusValidation(ResponderStatusTest.java:99)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'User status is changed to')]"}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.r8NOJS}, goog:chromeOptions: {debuggerAddress: localhost:46309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 869296979c9b751bb2d61f881ab669bd
-*** Element info: {Using=xpath, value=//span[contains(text(),'User status is changed to')]}
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@548ad73b]" started-at="2020-11-02T12:45:49 IST" name="statusValidation" finished-at="2020-11-02T12:47:25 IST" duration-ms="96590" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Responder Status Testcase is runnng..........]]>
@@ -783,7 +784,25 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
               <![CDATA[sucessfully loged in and Home page is displayed]]>
             </line>
             <line>
+              <![CDATA[User status is changed to Away]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
               <![CDATA[User status is changed to Chat Only]]>
+            </line>
+            <line>
+              <![CDATA[status is sucessfully changed ]]>
+            </line>
+            <line>
+              <![CDATA[ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+            <line>
+              <![CDATA[User status is changed to Active]]>
             </line>
             <line>
               <![CDATA[status is sucessfully changed ]]>
@@ -793,11 +812,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </line>
           </reporter-output>
         </test-method> <!-- statusValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c]" started-at="2020-10-28T10:03:05 IST" name="getResult" finished-at="2020-10-28T10:03:06 IST" duration-ms="997" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ResponderStatusTest@548ad73b]" started-at="2020-11-02T12:47:25 IST" name="getResult" finished-at="2020-11-02T12:47:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=statusValidation status=FAILURE method=ResponderStatusTest.statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@77846d2c] output=Responder Status Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=statusValidation status=SUCCESS method=ResponderStatusTest.statusValidation()[pri:0, instance:com.niveus.ResponderStatusTest@548ad73b] output=Responder Status Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -806,103 +825,56 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.ResponderStatusTest -->
       <class name="com.niveus.AddNewPatientTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-28T10:05:59 IST" name="configBc" finished-at="2020-10-28T10:06:06 IST" duration-ms="6986" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddNewPatientTest@24a35978]" started-at="2020-11-02T12:50:05 IST" name="configBc" finished-at="2020-11-02T12:50:16 IST" duration-ms="11883" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-28T10:06:06 IST" name="addNewPatientTest" finished-at="2020-10-28T10:07:19 IST" duration-ms="72346" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[text()=' NEW']/..' (tried for 50 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[text()=' NEW']/..' (tried for 50 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.niveus.AddNewPatientTest.addNewPatientTest(AddNewPatientTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()=' NEW']/.."}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.8J1NJi}, goog:chromeOptions: {debuggerAddress: localhost:38855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2449d8ac12b7bb764c93b5f09a797e35
-*** Element info: {Using=xpath, value=//span[text()=' NEW']/..}
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@24a35978]" started-at="2020-11-02T12:50:16 IST" name="addNewPatientTest" finished-at="2020-11-02T12:50:44 IST" duration-ms="27089" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Addnewpatient testcase is running.............############]]>
             </line>
+            <line>
+              <![CDATA[Addd new paient step ....1]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....2]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully selected the Icd Code.........]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....3]]>
+            </line>
+            <line>
+              <![CDATA[This chat has been assigned to Dr. Alvin Kwong (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Nov 02, 12:50 PM...........Sucess...]]>
+            </line>
+            <line>
+              <![CDATA[Addd new paient step ....4]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Doctor is assigned to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[Patient  is sucessfully added to the chat session]]>
+            </line>
+            <line>
+              <![CDATA[AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addNewPatientTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddNewPatientTest@df27fae]" started-at="2020-10-28T10:07:19 IST" name="getResult" finished-at="2020-10-28T10:07:19 IST" duration-ms="811" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddNewPatientTest@24a35978]" started-at="2020-11-02T12:50:44 IST" name="getResult" finished-at="2020-11-02T12:50:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewPatientTest status=FAILURE method=AddNewPatientTest.addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@df27fae] output=Addnewpatient testcase is running.............############]]]>
+                <![CDATA[[TestResult name=addNewPatientTest status=SUCCESS method=AddNewPatientTest.addNewPatientTest()[pri:0, instance:com.niveus.AddNewPatientTest@24a35978] output=Addnewpatient testcase is running.............############]]]>
               </value>
             </param>
           </params>
@@ -911,18 +883,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.AddNewPatientTest -->
       <class name="com.niveus.AssigningDoctorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-28T09:56:08 IST" name="setUp" finished-at="2020-10-28T09:56:09 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff]" started-at="2020-11-02T12:40:57 IST" name="setUp" finished-at="2020-11-02T12:40:57 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-28T09:56:09 IST" name="configBc" finished-at="2020-10-28T09:56:20 IST" duration-ms="11491" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff]" started-at="2020-11-02T12:40:57 IST" name="configBc" finished-at="2020-11-02T12:41:15 IST" duration-ms="18151" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-28T09:56:20 IST" name="assigningDoctorTest" finished-at="2020-10-28T09:56:43 IST" duration-ms="22556" status="PASS">
+        <test-method signature="assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff]" started-at="2020-11-02T12:41:15 IST" name="assigningDoctorTest" finished-at="2020-11-02T12:41:32 IST" duration-ms="17130" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Assigining doctor Testcase is running...........]]>
@@ -953,54 +925,48 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </line>
           </reporter-output>
         </test-method> <!-- assigningDoctorTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-28T09:56:43 IST" name="getResult" finished-at="2020-10-28T09:56:43 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff]" started-at="2020-11-02T12:41:32 IST" name="getResult" finished-at="2020-11-02T12:41:32 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=assigningDoctorTest status=SUCCESS method=AssigningDoctorTest.assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4] output=Assigining doctor Testcase is running...........]]]>
+                <![CDATA[[TestResult name=assigningDoctorTest status=SUCCESS method=AssigningDoctorTest.assigningDoctorTest()[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff] output=Assigining doctor Testcase is running...........]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AssigningDoctorTest@646007f4]" started-at="2020-10-28T10:07:22 IST" name="flushReport" finished-at="2020-10-28T10:08:21 IST" duration-ms="59689" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AssigningDoctorTest@481a15ff]" started-at="2020-11-02T12:52:01 IST" name="flushReport" finished-at="2020-11-02T12:53:01 IST" duration-ms="60103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- com.niveus.AssigningDoctorTest -->
       <class name="com.niveus.CloseCodeTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-28T10:07:21 IST" name="configBc" finished-at="2020-10-28T10:07:21 IST" duration-ms="860" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Afya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-28T10:07:21 IST" name="closeCodeValidationTest" finished-at="2020-10-28T10:07:21 IST" duration-ms="29" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.CloseCodeTest@2f0a87b3]" started-at="2020-11-02T12:51:21 IST" name="configBc" finished-at="2020-11-02T12:52:00 IST" duration-ms="39855" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
   (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.etKVIg}, goog:chromeOptions: {debuggerAddress: localhost:36149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5110afdc47a1bd363f21e3eaa6a941af
-*** Element info: {Using=xpath, value=//button[@type='submit']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 81da148c50d3766e3cdc185e6eb52447]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
   (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.etKVIg}, goog:chromeOptions: {debuggerAddress: localhost:36149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5110afdc47a1bd363f21e3eaa6a941af
-*** Element info: {Using=xpath, value=//button[@type='submit']}
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 81da148c50d3766e3cdc185e6eb52447
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -1009,26 +975,19 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.getText(Unknown Source)
-at com.niveus.CloseCodeTest.closeCodeValidationTest(CloseCodeTest.java:49)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at com.niveus.Base.configBc(Base.java:186)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
@@ -1052,37 +1011,100 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
-            <line>
-              <![CDATA[Closecode Testcase is runnng..........]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@2f0a87b3]" started-at="2020-11-02T12:52:01 IST" name="closeCodeValidationTest" finished-at="2020-11-02T12:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 81da148c50d3766e3cdc185e6eb52447]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: headless chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 81da148c50d3766e3cdc185e6eb52447
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at com.niveus.Base.configBc(Base.java:186)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- closeCodeValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1]" started-at="2020-10-28T10:07:21 IST" name="getResult" finished-at="2020-10-28T10:07:22 IST" duration-ms="281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=closeCodeValidationTest status=FAILURE method=CloseCodeTest.closeCodeValidationTest()[pri:0, instance:com.niveus.CloseCodeTest@16f7c8c1] output=Closecode Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.CloseCodeTest@2f0a87b3]" started-at="2020-11-02T12:52:01 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1604301721009" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.CloseCodeTest -->
-      <class name="com.niveus.UploadDocumentTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-28T09:58:31 IST" name="configBc" finished-at="2020-10-28T09:58:39 IST" duration-ms="7496" status="PASS">
+      <class name="com.niveus.ParticipantTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ParticipantTest@545997b1]" started-at="2020-11-02T12:43:55 IST" name="configBc" finished-at="2020-11-02T12:44:03 IST" duration-ms="8401" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-28T09:58:39 IST" name="uploadDocumentValidation" finished-at="2020-10-28T09:58:58 IST" duration-ms="19084" status="PASS">
+        <test-method signature="participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@545997b1]" started-at="2020-11-02T12:44:03 IST" name="participantValidationTest" finished-at="2020-11-02T12:44:36 IST" duration-ms="32557" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[UploadDocument Testcase is runnng..........]]>
+              <![CDATA[Participant Testcase is runnng..........]]>
             </line>
             <line>
               <![CDATA[Login page is sucessfully displayed]]>
@@ -1094,34 +1116,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[sucessfully loged in and Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[file has been successfully uploaded. sucessfully updated]]>
+              <![CDATA[Full Access sucess]]>
             </line>
             <line>
-              <![CDATA[UploadDocument Test is sucessfully done ############################# TEST IS PASS]]>
+              <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
             </line>
           </reporter-output>
-        </test-method> <!-- uploadDocumentValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadDocumentTest@78186a70]" started-at="2020-10-28T09:58:58 IST" name="getResult" finished-at="2020-10-28T09:58:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- participantValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ParticipantTest@545997b1]" started-at="2020-11-02T12:44:36 IST" name="getResult" finished-at="2020-11-02T12:44:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=uploadDocumentValidation status=SUCCESS method=UploadDocumentTest.uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@78186a70] output=UploadDocument Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@545997b1] output=Participant Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.UploadDocumentTest -->
+      </class> <!-- com.niveus.ParticipantTest -->
       <class name="com.niveus.PatientInfoTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-28T10:00:09 IST" name="configBc" finished-at="2020-10-28T10:00:17 IST" duration-ms="7863" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@77846d2c]" started-at="2020-11-02T12:45:04 IST" name="configBc" finished-at="2020-11-02T12:45:14 IST" duration-ms="9820" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-28T10:00:17 IST" name="patientInfoValidationTest" finished-at="2020-10-28T10:00:43 IST" duration-ms="26204" status="PASS">
+        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@77846d2c]" started-at="2020-11-02T12:45:14 IST" name="patientInfoValidationTest" finished-at="2020-11-02T12:45:40 IST" duration-ms="26268" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PatientInfo Testcase is runnng..........]]>
@@ -1137,6 +1159,9 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
             <line>
               <![CDATA[Patient Info  Test   step ....1]]>
+            </line>
+            <line>
+              <![CDATA[count number is .......1]]>
             </line>
             <line>
               <![CDATA[sucessfully icd code is selected.................##########]]>
@@ -1215,11 +1240,11 @@ Cpt: sucess]]>
             </line>
           </reporter-output>
         </test-method> <!-- patientInfoValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528]" started-at="2020-10-28T10:00:43 IST" name="getResult" finished-at="2020-10-28T10:00:43 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@77846d2c]" started-at="2020-11-02T12:45:40 IST" name="getResult" finished-at="2020-11-02T12:45:40 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=patientInfoValidationTest status=SUCCESS method=PatientInfoTest.patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@4cf4d528] output=PatientInfo Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=patientInfoValidationTest status=SUCCESS method=PatientInfoTest.patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@77846d2c] output=PatientInfo Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -1227,96 +1252,24 @@ Cpt: sucess]]>
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.PatientInfoTest -->
-      <class name="com.niveus.ParticipantTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-28T09:58:58 IST" name="configBc" finished-at="2020-10-28T09:59:07 IST" duration-ms="8919" status="PASS">
+      <class name="com.niveus.UploadDocumentTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UploadDocumentTest@306279ee]" started-at="2020-11-02T12:43:01 IST" name="configBc" finished-at="2020-11-02T12:43:12 IST" duration-ms="10567" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-28T09:59:07 IST" name="participantValidationTest" finished-at="2020-10-28T09:59:41 IST" duration-ms="34175" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Participant Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Submitter Provider role is selected]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully loged in and Home page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Full Access sucess]]>
-            </line>
-            <line>
-              <![CDATA[ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- participantValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ParticipantTest@306279ee]" started-at="2020-10-28T09:59:41 IST" name="getResult" finished-at="2020-10-28T09:59:41 IST" duration-ms="120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidationTest()[pri:0, instance:com.niveus.ParticipantTest@306279ee] output=Participant Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.ParticipantTest -->
-      <class name="com.niveus.FilterTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-28T10:04:31 IST" name="configBc" finished-at="2020-10-28T10:04:36 IST" duration-ms="5116" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-28T10:04:36 IST" name="filterValidationTest" finished-at="2020-10-28T10:05:08 IST" duration-ms="32356" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@306279ee]" started-at="2020-11-02T12:43:12 IST" name="uploadDocumentValidation" finished-at="2020-11-02T12:43:54 IST" duration-ms="42591" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@aria-label='filter']"}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.dSOJwM}, goog:chromeOptions: {debuggerAddress: localhost:45449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d7851a2c5dbabc42922f32545cc5040d
-*** Element info: {Using=xpath, value=//span[@aria-label='filter']}]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='textArea']//button' (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@aria-label='filter']"}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.dSOJwM}, goog:chromeOptions: {debuggerAddress: localhost:45449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d7851a2c5dbabc42922f32545cc5040d
-*** Element info: {Using=xpath, value=//span[@aria-label='filter']}
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at com.niveus.FilterTest.filterValidationTest(FilterTest.java:128)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='textArea']//button' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.niveus.UploadDocumentTest.uploadDocumentValidation(UploadDocumentTest.java:133)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1350,9 +1303,78 @@ at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='textArea']//button"}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-52-generic', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.t5N4Iw}, goog:chromeOptions: {debuggerAddress: localhost:35561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7d1c8847c7a6bb9daf2c1f74b93a8889
+*** Element info: {Using=xpath, value=//div[@id='textArea']//button}
+at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[UploadDocument Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[Submitter Provider role is selected]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- uploadDocumentValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UploadDocumentTest@306279ee]" started-at="2020-11-02T12:43:54 IST" name="getResult" finished-at="2020-11-02T12:43:55 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadDocumentValidation status=FAILURE method=UploadDocumentTest.uploadDocumentValidation()[pri:0, instance:com.niveus.UploadDocumentTest@306279ee] output=UploadDocument Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.UploadDocumentTest -->
+      <class name="com.niveus.FilterTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@727803de]" started-at="2020-11-02T12:48:31 IST" name="configBc" finished-at="2020-11-02T12:48:40 IST" duration-ms="8804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@727803de]" started-at="2020-11-02T12:48:40 IST" name="filterValidationTest" finished-at="2020-11-02T12:48:54 IST" duration-ms="14756" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FilterTest Testcase is runnng..........]]>
@@ -1363,13 +1385,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             <line>
               <![CDATA[sucessfully logedin and Home page is displayed]]>
             </line>
+            <line>
+              <![CDATA[prem, Test2 +1
+Sent an image
+a few seconds ago
+RE: prasanna Helo]]>
+            </line>
+            <line>
+              <![CDATA[First time stmp is  displayed........###########]]>
+            </line>
+            <line>
+              <![CDATA[a few seconds ago]]>
+            </line>
+            <line>
+              <![CDATA[3 hours ago]]>
+            </line>
+            <line>
+              <![CDATA[filter is sucessfully applied]]>
+            </line>
+            <line>
+              <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+            </line>
           </reporter-output>
         </test-method> <!-- filterValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@2641e737]" started-at="2020-10-28T10:05:08 IST" name="getResult" finished-at="2020-10-28T10:05:09 IST" duration-ms="927" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@727803de]" started-at="2020-11-02T12:48:54 IST" name="getResult" finished-at="2020-11-02T12:48:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterValidationTest status=FAILURE method=FilterTest.filterValidationTest()[pri:0, instance:com.niveus.FilterTest@2641e737] output=FilterTest Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=filterValidationTest status=SUCCESS method=FilterTest.filterValidationTest()[pri:0, instance:com.niveus.FilterTest@727803de] output=FilterTest Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
@@ -1378,14 +1421,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.FilterTest -->
       <class name="com.niveus.AddSpecialityTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-28T09:59:41 IST" name="configBc" finished-at="2020-10-28T09:59:48 IST" duration-ms="6851" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddSpecialityTest@4cf4d528]" started-at="2020-11-02T12:44:36 IST" name="configBc" finished-at="2020-11-02T12:44:43 IST" duration-ms="7507" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-28T09:59:48 IST" name="addspecialityValidationTest" finished-at="2020-10-28T10:00:09 IST" duration-ms="21022" status="PASS">
+        <test-method signature="addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@4cf4d528]" started-at="2020-11-02T12:44:43 IST" name="addspecialityValidationTest" finished-at="2020-11-02T12:45:04 IST" duration-ms="20616" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AddSpecialty testcase is running...........]]>
@@ -1413,11 +1456,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- addspecialityValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddSpecialityTest@545997b1]" started-at="2020-10-28T10:00:09 IST" name="getResult" finished-at="2020-10-28T10:00:09 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddSpecialityTest@4cf4d528]" started-at="2020-11-02T12:45:04 IST" name="getResult" finished-at="2020-11-02T12:45:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addspecialityValidationTest status=SUCCESS method=AddSpecialityTest.addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@545997b1] output=AddSpecialty testcase is running...........]]]>
+                <![CDATA[[TestResult name=addspecialityValidationTest status=SUCCESS method=AddSpecialityTest.addspecialityValidationTest()[pri:0, instance:com.niveus.AddSpecialityTest@4cf4d528] output=AddSpecialty testcase is running...........]]]>
               </value>
             </param>
           </params>
@@ -1425,54 +1468,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.AddSpecialityTest -->
-      <class name="com.niveus.ProfileUpadateTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-28T10:03:06 IST" name="configBc" finished-at="2020-10-28T10:03:26 IST" duration-ms="19239" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBc -->
-        <test-method signature="updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-28T10:03:26 IST" name="updateProfileInformation" finished-at="2020-10-28T10:03:40 IST" duration-ms="14886" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ProfileUpdate Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[sucessfully loged in and Home page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Profile ingormation is sucessfully updated]]>
-            </line>
-            <line>
-              <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- updateProfileInformation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b]" started-at="2020-10-28T10:03:40 IST" name="getResult" finished-at="2020-10-28T10:03:40 IST" duration-ms="67" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@548ad73b] output=ProfileUpdate Testcase is runnng..........]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.niveus.ProfileUpadateTest -->
       <class name="com.niveus.ChatMemberTest">
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-28T10:05:21 IST" name="configBc" finished-at="2020-10-28T10:05:33 IST" duration-ms="12350" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ChatMemberTest@df27fae]" started-at="2020-11-02T12:49:08 IST" name="configBc" finished-at="2020-11-02T12:49:28 IST" duration-ms="19382" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-28T10:05:33 IST" name="chatMemeberValidation" finished-at="2020-10-28T10:05:59 IST" duration-ms="25986" status="PASS">
+        <test-method signature="chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@df27fae]" started-at="2020-11-02T12:49:28 IST" name="chatMemeberValidation" finished-at="2020-11-02T12:50:04 IST" duration-ms="36826" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Chatmember Testcase is running............]]>
@@ -1497,6 +1501,12 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
             <line>
               <![CDATA[count number...1]]>
+            </line>
+            <line>
+              <![CDATA[count number...2]]>
+            </line>
+            <line>
+              <![CDATA[count number...3]]>
             </line>
             <line>
               <![CDATA[Icd code is sucessfully displayed............############]]>
@@ -1542,11 +1552,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- chatMemeberValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ChatMemberTest@704921a5]" started-at="2020-10-28T10:05:59 IST" name="getResult" finished-at="2020-10-28T10:05:59 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ChatMemberTest@df27fae]" started-at="2020-11-02T12:50:05 IST" name="getResult" finished-at="2020-11-02T12:50:05 IST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chatMemeberValidation status=SUCCESS method=ChatMemberTest.chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@704921a5] output=Chatmember Testcase is running............]]]>
+                <![CDATA[[TestResult name=chatMemeberValidation status=SUCCESS method=ChatMemberTest.chatMemeberValidation()[pri:0, instance:com.niveus.ChatMemberTest@df27fae] output=Chatmember Testcase is running............]]]>
               </value>
             </param>
           </params>
@@ -1554,6 +1564,45 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </reporter-output>
         </test-method> <!-- getResult -->
       </class> <!-- com.niveus.ChatMemberTest -->
+      <class name="com.niveus.ProfileUpadateTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ProfileUpadateTest@4c762604]" started-at="2020-11-02T12:47:25 IST" name="configBc" finished-at="2020-11-02T12:47:34 IST" duration-ms="8498" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@4c762604]" started-at="2020-11-02T12:47:34 IST" name="updateProfileInformation" finished-at="2020-11-02T12:47:46 IST" duration-ms="11822" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ProfileUpdate Testcase is runnng..........]]>
+            </line>
+            <line>
+              <![CDATA[Login page is sucessfully displayed]]>
+            </line>
+            <line>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Profile ingormation is sucessfully updated]]>
+            </line>
+            <line>
+              <![CDATA[ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateProfileInformation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ProfileUpadateTest@4c762604]" started-at="2020-11-02T12:47:46 IST" name="getResult" finished-at="2020-11-02T12:47:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInformation()[pri:0, instance:com.niveus.ProfileUpadateTest@4c762604] output=ProfileUpdate Testcase is runnng..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ProfileUpadateTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

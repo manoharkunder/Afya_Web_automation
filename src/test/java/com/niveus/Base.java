@@ -156,26 +156,27 @@ public class Base {
 		 * below code is used the launch the browser
 		 */
 
-		// driver = new ChromeDriver();
+		 driver = new ChromeDriver();
 
 		/*
 		 * below code is used to run the automation in headless mode
 		 */
 
 		
-		
-		  
-		  
-		  ChromeOptions options = new ChromeOptions();
-		  options.addArguments("--headless", "--disable-web-security",
-		  "--ignore-certificate-errors", "--allow-running-insecure-content",
-		  "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",
-		  "--window-size=1920,1080", "--start-maximized", "--disable-gpu",
-		  "--test-type"); options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,
-		  true); options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		  options.setExperimentalOption("useAutomationExtension", false);
-		  options.setExperimentalOption("excludeSwitches", new String[] {
-		  "enable-automation" }); driver = new ChromeDriver(options);
+		/*
+		 * 
+		 * 
+		 * ChromeOptions options = new ChromeOptions();
+		 * options.addArguments("--headless", "--disable-web-security",
+		 * "--ignore-certificate-errors", "--allow-running-insecure-content",
+		 * "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",
+		 * "--window-size=1920,1080", "--start-maximized", "--disable-gpu",
+		 * "--test-type"); options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,
+		 * true); options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		 * options.setExperimentalOption("useAutomationExtension", false);
+		 * options.setExperimentalOption("excludeSwitches", new String[] {
+		 * "enable-automation" }); driver = new ChromeDriver(options);
+		 */
 		  
 		 
 		

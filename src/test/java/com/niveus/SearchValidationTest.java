@@ -35,7 +35,7 @@ public class SearchValidationTest extends  Base{
 
 		Reporter.log("SearchValidation Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
@@ -184,28 +184,44 @@ public class SearchValidationTest extends  Base{
 				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 				String chat = homepge.getChatsesion().getText();
+				
 
-				if (chat.contains(arr[i])) {
+				if (chat.contains(arr[i])) 
+				{
 
 					Reporter.log("Search is sucessfully done", true);
+					
+					
+				
 
-				} else {
+				} else 
+				{
 					Reporter.log("search is Unsucessfull");
 				}
 
-			} catch (Exception eo) {
+			} catch (Exception eo) 
+			
+			{
 				eo.printStackTrace();
 			}
 
                WebDriverWait u=new WebDriverWait(driver, 20);
                u.until(ExpectedConditions.elementToBeClickable(homepge.getBackclear()));
 		
+               
                homepge.getBackclear().click();
-			
-               Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
-					true);
+               Thread.sleep(2000);
+			 
+				/*
+				 * Reporter.
+				 * log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS"
+				 * , true);
+				 */
         
 		}
+	    Reporter.log("SearchValidation TestCase is sucessfully done ############################# TEST IS PASS",
+				true);
+    
 
 	}
 	}

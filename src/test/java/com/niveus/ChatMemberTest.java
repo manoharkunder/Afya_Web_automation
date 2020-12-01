@@ -42,7 +42,7 @@ public class ChatMemberTest extends Base{
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
 		Reporter.log("Chatmember Testcase is running............",true);
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 

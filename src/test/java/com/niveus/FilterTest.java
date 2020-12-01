@@ -33,7 +33,7 @@ public class FilterTest extends Base {
 	
 		Reporter.log("FilterTest Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 		Reporter.log("Login page is sucessfully displayed", true);
 
 		WebDriverWait wait = new WebDriverWait(driver, 100);
@@ -133,18 +133,21 @@ public class FilterTest extends Base {
 	    	}
 	    	
 	    }
+	    Thread.sleep(3000);
 	
 	   WebDriverWait w=new WebDriverWait(driver, 20);
+	   
 	   w.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 	
 	   String chat=homepge.getChatsesion().getText();
+	  
 	   Reporter.log(chat,true);
 
 	    String newtime="";
 	    String StrOld="";
 	 
 		
-		if(chat.contains("ago"))
+		if(chat.equalsIgnoreCase("ago"))
 		{
 		Reporter.log("First time stmp is  displayed........###########",true);
 		 newtime = filter.getTimeStamp().getText();

@@ -41,7 +41,7 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("PatientInfo Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
@@ -294,7 +294,7 @@ public class PatientInfoTest extends Base {
 		boolean flag5=chatmemeber.contains("11-11-1998");
 		Assert.assertTrue(flag5);
 		Reporter.log("patient date of birth  is displayed  sucesssfully", true);
-	    boolean flag6=chatmemeber.contains("21 Years Old");
+	    boolean flag6=chatmemeber.contains("Years Old");
 	    Assert.assertTrue(flag6);
 		Reporter.log("patient year  is displayed  sucesssfully", true);
 		Reporter.log("PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS",true);

@@ -116,7 +116,7 @@ public class SendEmail {
 			// Send the complete message parts
 			message.setContent(multipart);
 			// Send message
-			Thread.sleep(50000L);
+			Thread.sleep(70000L);
 			Transport transport = session.getTransport("smtp");
 			transport.connect(host, fromemail, frompassword);
 			transport.sendMessage(message, message.getAllRecipients());

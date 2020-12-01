@@ -39,7 +39,7 @@ public class UploadPhotosTest extends Base {
         docpage=PageFactory.initElements(driver, DoctorRolesPage.class);
 		Reporter.log("UploadPhoto Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 

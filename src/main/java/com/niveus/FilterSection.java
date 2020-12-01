@@ -76,14 +76,14 @@ public class FilterSection {
      	  return oldest;
        }
        
-       @FindBy(xpath="//span[contains(text(),'ago')]")
+       @FindBy(xpath="//div[@class='chatItem___1pptZ']//div[2]//div[2]")
        private WebElement timestamp;
 
        public  WebElement getTimeStamp()
        {
     	   return timestamp;
        }
-       @FindBy(xpath="//span[contains(text(),'old')]")
+       @FindBy(xpath="//div[@class='chatItem___1pptZ']//div[2]//div[2]")
        private WebElement time;
        
        public WebElement getTime()

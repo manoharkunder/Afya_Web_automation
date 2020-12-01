@@ -43,7 +43,7 @@ public class UploadDocumentTest extends Base {
 
 		Reporter.log("UploadDocument Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 

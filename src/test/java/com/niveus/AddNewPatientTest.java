@@ -23,8 +23,11 @@ public class AddNewPatientTest extends Base {
 	public void addNewPatientTest() throws Exception {
 
 		test = extent.createTest("4.AddNewPatient", "This test case is to check submitteble to add the patient");
+
 		Reporter.log("Addnewpatient testcase is running.............############", true);
-		System.out.println("enter the url sucessfully");
+
+		Reporter.log("Enter the url sucessfully###################", true);
+
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		card = PageFactory.initElements(driver, Carddetails.class);
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
@@ -53,16 +56,14 @@ public class AddNewPatientTest extends Base {
 			}
 		}
 
-		System.out.println("sucessfully logedin");
 
-		
-		  WebDriverWait wait = new WebDriverWait(driver, 50);
-		  wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
-		  
-		  ut.moveToElement(driver, docpage.getSubProvider());
-		 
+		Reporter.log("sucessfully logged in and Home page is displayed ######################",true);
+	
+		WebDriverWait wait = new WebDriverWait(driver, 50);
+		wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
-		Thread.sleep(5000);
+		ut.moveToElement(driver, docpage.getSubProvider());
+
 
 		WebDriverWait www = new WebDriverWait(driver, 50);
 
@@ -72,77 +73,71 @@ public class AddNewPatientTest extends Base {
 
 		docpage.getSelectDate().sendKeys("11/11/1998");
 		docpage.getPatientSearch().sendKeys("prasanna");
-		
+
 		WebDriverWait wait1 = new WebDriverWait(driver, 200);
 
 		wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
 
 		docpage.getSearchResult().click();
-		
-		Reporter.log("Addd new paient step ....1",true);
+
+		Reporter.log("Addd new paient step ....1", true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		docpage.getConbutton().click();
 
 		docpage.getSpeciality().sendKeys("anesthesiology");
-		
-	     
+
 		/*
 		 * WebDriverWait wait2 = new WebDriverWait(driver, 30);
 		 * 
 		 * wait2.until(ExpectedConditions.elementToBeClickable(docpage.getAnsthesiolgy()
 		 * ));
 		 */
-		
+
 		Thread.sleep(5000);
-		
+
 		docpage.getAnsthesiolgy().click();
 
 		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
-       
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
+
 		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
 
-
-		Reporter.log("Addd new paient step ....2",true);
+		Reporter.log("Addd new paient step ....2", true);
 
 		int count = 0;
 		while (count <= 90) {
 			try {
 				WebDriverWait m = new WebDriverWait(driver, 10);
-				
+
 				m.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
 
 				docpage.getIcdHeart().click();
 				Reporter.log("Sucessfully selected the Icd Code.........", true);
 				break;
-			}
-			catch (Exception e) {
+			} catch (Exception e) {
 				e.printStackTrace();
-               System.out.println("current count is for selecting Icd......."+count);
+				System.out.println("current count is for selecting Icd......." + count);
 				count++;
 			}
 		}
 
-		Reporter.log("Addd new paient step ....3",true);
+		Reporter.log("Addd new paient step ....3", true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		boolean result = homepge.getReg().isEnabled();
-	
+
 		int countt = 0;
 		while (countt >= 0) {
-			if (result == true)
-			{
-				WebDriverWait kk=new WebDriverWait(driver, 20);
+			if (result == true) {
+				WebDriverWait kk = new WebDriverWait(driver, 20);
 				kk.until(ExpectedConditions.elementToBeClickable(homepge.getReg()));
 				homepge.getReg().click();
 				break;
-			} 
-			else 
-			{
+			} else {
 				count++;
 			}
 		}
@@ -151,31 +146,29 @@ public class AddNewPatientTest extends Base {
 		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
 
 		String lang1 = homepge.getBannerLang1().getText();
-		
-		Reporter.log(lang1 +"...........Sucess...",true);
-		
-		Reporter.log("Addd new paient step ....4",true);
 
- 
+		Reporter.log(lang1 + "...........Sucess...", true);
+
+		Reporter.log("Addd new paient step ....4", true);
+
 		Date d = new Date();
 
 		String[] dateArr = d.toString().split(" ");
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		boolean flag3 = lang1.contains(dateArr[1]);
 
 		Assert.assertTrue(flag3);
-		
+
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	
-		
+
 		Reporter.log("Doctor is sucessfully added to the chat session", true);
-		
+
 		boolean flag1 = lang1.contains(dateArr[2]);
-	
+
 		Assert.assertTrue(flag1);
-		
+
 		Reporter.log("Doctor is assigned to the chat session", true);
 		System.out.println(lang1);
 

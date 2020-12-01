@@ -62,13 +62,14 @@ public class CloseCode {
 	{
 		return specilaity;
 	}
-	@FindBy(xpath="//span[contains(text(),'consultation as Complete')]")
+	@FindBy(xpath="//div[contains(@title,' has marked this consultation as Complete, ')]")
 	private WebElement conscomplete;
+	
 	public WebElement getConsultcomplete()
 	{
 		return conscomplete;
 	}
-	@FindBy(xpath="//span[contains(text(),'consultation as recommending an In Person Visit')]")
+	@FindBy(xpath="//div[contains(@title,' has marked this consultation as recommending an In Person Visit, ')]")
 	private WebElement inperson;
 	
 	public WebElement getInPerson()

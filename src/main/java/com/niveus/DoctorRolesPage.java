@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class DoctorRolesPage {
-	@FindBy(xpath="//div[text()='Submitter Provider']")
+	@FindBy(xpath="//span[text()='Submitter Provider']")
 	private WebElement submitter;
 	
 	public WebElement getSubProvider()
@@ -13,7 +13,7 @@ public class DoctorRolesPage {
 		return submitter;
 	}
 	
-	@FindBy(xpath="//div[text()='Responder Provider']")
+	@FindBy(xpath="//span[text()='Responder Provider']")
 	private WebElement responder;
 	
 	public WebElement getResponder()

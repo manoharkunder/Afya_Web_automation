@@ -5,102 +5,90 @@
       <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
     </line>
     <line>
-      <![CDATA[FilterTest Testcase is runnng..........]]>
+      <![CDATA[SearchValidation Testcase is runnng..........]]>
     </line>
     <line>
       <![CDATA[Login page is sucessfully displayed]]>
     </line>
     <line>
-      <![CDATA[sucessfully logedin and Home page is displayed]]>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[Jffff, Test2 +1
-Dr. Test2 Prasanna has marked this consultation as recommending an In Person Visit
-33 minutes ago
-RE: prasanna Helo]]>
+      <![CDATA[sucessfully clicked on New buuton]]>
     </line>
     <line>
-      <![CDATA[second time stamp is taken.........############]]>
+      <![CDATA[Session has been created sucessfully created]]>
     </line>
     <line>
-      <![CDATA[33 minutes ago]]>
+      <![CDATA[Search is sucessfully done]]>
     </line>
     <line>
-      <![CDATA[11 days old]]>
+      <![CDATA[Search is sucessfully done]]>
     </line>
     <line>
-      <![CDATA[filter is sucessfully applied]]>
-    </line>
-    <line>
-      <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+      <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-11-30T12:45:06 IST" name="Default suite" finished-at="2020-11-30T12:45:34 IST" duration-ms="28111">
+  <suite started-at="2020-12-01T12:10:47 IST" name="Default suite" finished-at="2020-12-01T12:13:06 IST" duration-ms="139219">
     <groups>
     </groups>
-    <test started-at="2020-11-30T12:45:06 IST" name="Default test" finished-at="2020-11-30T12:45:34 IST" duration-ms="28111">
-      <class name="com.niveus.FilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2020-11-30T12:45:06 IST" name="setUp" finished-at="2020-11-30T12:45:06 IST" duration-ms="204" status="PASS">
+    <test started-at="2020-12-01T12:10:47 IST" name="Default test" finished-at="2020-12-01T12:13:06 IST" duration-ms="139219">
+      <class name="com.niveus.SearchValidationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.SearchValidationTest@4387b79e]" started-at="2020-12-01T12:10:47 IST" name="setUp" finished-at="2020-12-01T12:10:47 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2020-11-30T12:45:06 IST" name="configBc" finished-at="2020-11-30T12:45:15 IST" duration-ms="9022" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchValidationTest@4387b79e]" started-at="2020-12-01T12:10:47 IST" name="configBc" finished-at="2020-12-01T12:10:55 IST" duration-ms="8308" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfyaAfya Page  is sucessgully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2020-11-30T12:45:15 IST" name="filterValidationTest" finished-at="2020-11-30T12:45:34 IST" duration-ms="19047" status="PASS">
+        <test-method signature="patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@4387b79e]" started-at="2020-12-01T12:10:55 IST" name="patientSearchTest" finished-at="2020-12-01T12:13:06 IST" duration-ms="130858" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[FilterTest Testcase is runnng..........]]>
+              <![CDATA[SearchValidation Testcase is runnng..........]]>
             </line>
             <line>
               <![CDATA[Login page is sucessfully displayed]]>
             </line>
             <line>
-              <![CDATA[sucessfully logedin and Home page is displayed]]>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[Jffff, Test2 +1
-Dr. Test2 Prasanna has marked this consultation as recommending an In Person Visit
-33 minutes ago
-RE: prasanna Helo]]>
+              <![CDATA[sucessfully clicked on New buuton]]>
             </line>
             <line>
-              <![CDATA[second time stamp is taken.........############]]>
+              <![CDATA[Session has been created sucessfully created]]>
             </line>
             <line>
-              <![CDATA[33 minutes ago]]>
+              <![CDATA[Search is sucessfully done]]>
             </line>
             <line>
-              <![CDATA[11 days old]]>
+              <![CDATA[Search is sucessfully done]]>
             </line>
             <line>
-              <![CDATA[filter is sucessfully applied]]>
-            </line>
-            <line>
-              <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
+              <![CDATA[SearchValidation TestCase is sucessfully done ############################# TEST IS PASS]]>
             </line>
           </reporter-output>
-        </test-method> <!-- filterValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2020-11-30T12:45:34 IST" name="getResult" finished-at="2020-11-30T12:45:34 IST" duration-ms="11" status="PASS">
+        </test-method> <!-- patientSearchTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchValidationTest@4387b79e]" started-at="2020-12-01T12:13:06 IST" name="getResult" finished-at="2020-12-01T12:13:06 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterValidationTest status=SUCCESS method=FilterTest.filterValidationTest()[pri:0, instance:com.niveus.FilterTest@6e75aa0d] output=FilterTest Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=patientSearchTest status=SUCCESS method=SearchValidationTest.patientSearchTest()[pri:0, instance:com.niveus.SearchValidationTest@4387b79e] output=SearchValidation Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2020-11-30T12:45:34 IST" name="flushReport" finished-at="2020-11-30T12:46:51 IST" duration-ms="76733" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.SearchValidationTest@4387b79e]" started-at="2020-12-01T12:13:06 IST" name="flushReport" finished-at="2020-12-01T12:14:22 IST" duration-ms="76228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- com.niveus.FilterTest -->
+      </class> <!-- com.niveus.SearchValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

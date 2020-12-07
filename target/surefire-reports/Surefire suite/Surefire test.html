@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/2/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 02 12:40:57 IST 2020</td>
+<td>Started on:</td><td>Mon Dec 07 09:51:09 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>663 seconds (663419 ms)</td>
+<tr><td>Total time:</td><td>445 seconds (445208 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,342 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.niveus.CloseCodeTest.configBc()'><b>configBc</b><br>Test class: com.niveus.CloseCodeTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
-from unknown error: cannot determine loading status
-from tab crashed
-  (Session info: headless chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 81da148c50d3766e3cdc185e6eb52447
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.niveus.Base.configBc(Base.java:186)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865031664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1865031664'><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
-from unknown error: cannot determine loading status
-from tab crashed
-  (Session info: headless chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 81da148c50d3766e3cdc185e6eb52447
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.niveus.Base.configBc(Base.java:186)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>39</td>
-<td>com.niveus.CloseCodeTest@2f0a87b3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.niveus.CloseCodeTest.getResult()'><b>getResult</b><br>Test class: com.niveus.CloseCodeTest</td>
-<td></td>
-<td>-1604301721</td>
-<td>com.niveus.CloseCodeTest@2f0a87b3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.niveus.UploadDocumentTest.uploadDocumentValidation()'><b>uploadDocumentValidation</b><br>Test class: com.niveus.UploadDocumentTest<br/>
-<a href="#Output-653880197" onClick='toggleBox("Output-653880197", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-653880197" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-653880197">
-UploadDocument Testcase is runnng..........<br/>
-Login page is sucessfully displayed<br/>
-Submitter Provider role is selected<br/>
-sucessfully loged in and Home page is displayed<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;textArea&apos;]//button&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.niveus.UploadDocumentTest.uploadDocumentValidation(UploadDocumentTest.java:133)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;textArea&apos;]//button&quot;}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.t5N4Iw}, goog:chromeOptions: {debuggerAddress: localhost:35561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7d1c8847c7a6bb9daf2c1f74b93a8889
-*** Element info: {Using=xpath, value=//div[@id=&apos;textArea&apos;]//button}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 34 more
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace653880197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace653880197'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;textArea&apos;]//button&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.niveus.UploadDocumentTest.uploadDocumentValidation(UploadDocumentTest.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;textArea&apos;]//button&quot;}
-  (Session info: headless chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.t5N4Iw}, goog:chromeOptions: {debuggerAddress: localhost:35561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7d1c8847c7a6bb9daf2c1f74b93a8889
-*** Element info: {Using=xpath, value=//div[@id=&apos;textArea&apos;]//button}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 34 more
-</pre></div></td>
-<td>42</td>
-<td>com.niveus.UploadDocumentTest@306279ee</td></tr>
-<tr>
-<td title='com.niveus.UploadPhotosTest.uploadPhotoValidation()'><b>uploadPhotoValidation</b><br>Test class: com.niveus.UploadPhotosTest<br/>
-<a href="#Output-914718002" onClick='toggleBox("Output-914718002", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-914718002" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-914718002">
-UploadPhoto Testcase is runnng..........<br/>
-Login page is sucessfully displayed<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.ReOdrm}, goog:chromeOptions: {debuggerAddress: localhost:32907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f149530b635a1ab69eb12b2213251a33
-*** Element info: {Using=xpath, value=//div[text()=&apos;Submitter Provider&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.niveus.UploadPhotosTest.uploadPhotoValidation(UploadPhotosTest.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914718002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace914718002'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.ReOdrm}, goog:chromeOptions: {debuggerAddress: localhost:32907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f149530b635a1ab69eb12b2213251a33
-*** Element info: {Using=xpath, value=//div[text()=&apos;Submitter Provider&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.niveus.UploadPhotosTest.uploadPhotoValidation(UploadPhotosTest.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>23</td>
-<td>com.niveus.UploadPhotosTest@16f7c8c1</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -412,17 +76,19 @@ Session ID: f149530b635a1ab69eb12b2213251a33
 </tr>
 <tr>
 <td title='com.niveus.AddNewPatientTest.addNewPatientTest()'><b>addNewPatientTest</b><br>Test class: com.niveus.AddNewPatientTest<br/>
-<a href="#Output-742288" onClick='toggleBox("Output-742288", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-154128529" onClick='toggleBox("Output-154128529", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-742288" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-742288">
+<a href="#Output-154128529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154128529">
 Addnewpatient testcase is running.............############<br/>
+Enter the url sucessfully###################<br/>
+sucessfully logged in and Home page is displayed ######################<br/>
 Addd new paient step ....1<br/>
 Addd new paient step ....2<br/>
 Sucessfully selected the Icd Code.........<br/>
 Addd new paient step ....3<br/>
-This chat has been assigned to Dr. Alvin Kwong (Anesthesiology) and the provider will respond to this chat after they've reviewed
-Nov 02, 12:50 PM...........Sucess...<br/>
+This chat has been assigned to Dr. Akshay Kumar (Anesthesiology) and the provider will respond to this chat after they've reviewed
+Dec 07, 09:57 AM...........Sucess...<br/>
 Addd new paient step ....4<br/>
 Doctor is sucessfully added to the chat session<br/>
 Doctor is assigned to the chat session<br/>
@@ -431,14 +97,14 @@ AddNewPatientTest TestCase is sucessfully done ############################# TES
 </div>
 </td>
 <td></td>
-<td>27</td>
-<td>com.niveus.AddNewPatientTest@24a35978</td></tr>
+<td>26</td>
+<td>com.niveus.AddNewPatientTest@727803de</td></tr>
 <tr>
 <td title='com.niveus.AddSpecialityTest.addspecialityValidationTest()'><b>addspecialityValidationTest</b><br>Test class: com.niveus.AddSpecialityTest<br/>
-<a href="#Output-445509811" onClick='toggleBox("Output-445509811", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1066949254" onClick='toggleBox("Output-1066949254", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-445509811" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-445509811">
+<a href="#Output-1066949254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066949254">
 AddSpecialty testcase is running...........<br/>
 Login page is sucessfully displayed<br/>
 Submitter Provider role is selected<br/>
@@ -450,14 +116,14 @@ AddSpeciality TestCase is sucessfully done ############################# TEST IS
 </div>
 </td>
 <td></td>
-<td>20</td>
-<td>com.niveus.AddSpecialityTest@4cf4d528</td></tr>
+<td>22</td>
+<td>com.niveus.AddSpecialityTest@78186a70</td></tr>
 <tr>
 <td title='com.niveus.AssigningDoctorTest.assigningDoctorTest()'><b>assigningDoctorTest</b><br>Test class: com.niveus.AssigningDoctorTest<br/>
-<a href="#Output-2066892165" onClick='toggleBox("Output-2066892165", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-177104018" onClick='toggleBox("Output-177104018", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2066892165" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2066892165">
+<a href="#Output-177104018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177104018">
 Assigining doctor Testcase is running...........<br/>
 Login page is sucessfully displayed<br/>
 sucessfully logedin and Home page is displayed<br/>
@@ -471,13 +137,13 @@ AssigningDoctorTest TestCase is sucessfully done ############################# T
 </td>
 <td></td>
 <td>17</td>
-<td>com.niveus.AssigningDoctorTest@481a15ff</td></tr>
+<td>com.niveus.AssigningDoctorTest@710726a3</td></tr>
 <tr>
 <td title='com.niveus.ChatMemberTest.chatMemeberValidation()'><b>chatMemeberValidation</b><br>Test class: com.niveus.ChatMemberTest<br/>
-<a href="#Output-1961537655" onClick='toggleBox("Output-1961537655", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1207580273" onClick='toggleBox("Output-1207580273", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1961537655" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1961537655">
+<a href="#Output-1207580273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207580273">
 Chatmember Testcase is running............<br/>
 Login page is sucessfully displayed<br/>
 Submitter Provider role is selected<br/>
@@ -485,9 +151,6 @@ sucessfully logedin and Home page is displayed<br/>
 click on the new button sucessfully......###########<br/>
 Chat Member   Test   step ....1<br/>
 sucessfully enter the speciality and chief complaint.........########<br/>
-count number...1<br/>
-count number...2<br/>
-count number...3<br/>
 Icd code is sucessfully displayed............############<br/>
 Chat Member   Test   step ....2<br/>
 Chat Member   Test   step ....3<br/>
@@ -505,37 +168,57 @@ ChatMember TestCase is sucessfully done  ############################# TEST IS P
 </div>
 </td>
 <td></td>
-<td>36</td>
-<td>com.niveus.ChatMemberTest@df27fae</td></tr>
+<td>28</td>
+<td>com.niveus.ChatMemberTest@2641e737</td></tr>
+<tr>
+<td title='com.niveus.CloseCodeTest.closeCodeValidationTest()'><b>closeCodeValidationTest</b><br>Test class: com.niveus.CloseCodeTest<br/>
+<a href="#Output-1822323955" onClick='toggleBox("Output-1822323955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1822323955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1822323955">
+Closecode Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully logedin and HomePage is displayed<br/>
+Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>><br/>
+Dr. Test2 Prasanna has marked this consultation as Complete sucess<br/>
+close code apply sucessfully...>>>> 1<br/>
+Dr. Test2 Prasanna has marked this consultation as recommending an In Person Visit sucess<br/>
+CloseCode TestCase is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.niveus.CloseCodeTest@df27fae</td></tr>
 <tr>
 <td title='com.niveus.FilterTest.filterValidationTest()'><b>filterValidationTest</b><br>Test class: com.niveus.FilterTest<br/>
-<a href="#Output-1279369591" onClick='toggleBox("Output-1279369591", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-813455850" onClick='toggleBox("Output-813455850", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1279369591" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1279369591">
+<a href="#Output-813455850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-813455850">
 FilterTest Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 sucessfully logedin and Home page is displayed<br/>
-prem, Test2 +1
+Hhhhhh, Test2 +1
 Sent an image
 a few seconds ago
 RE: prasanna Helo<br/>
-First time stmp is  displayed........###########<br/>
+second time stamp is taken.........############<br/>
 a few seconds ago<br/>
-3 hours ago<br/>
+18 days old<br/>
 filter is sucessfully applied<br/>
 Filter Test is sucessfully done ############################# TEST IS PASS<br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>com.niveus.FilterTest@727803de</td></tr>
+<td>18</td>
+<td>com.niveus.FilterTest@548ad73b</td></tr>
 <tr>
 <td title='com.niveus.LoginTest.loginPageTest()'><b>loginPageTest</b><br>Test class: com.niveus.LoginTest<br/>
-<a href="#Output-1676883562" onClick='toggleBox("Output-1676883562", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1167582947" onClick='toggleBox("Output-1167582947", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1676883562" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1676883562">
+<a href="#Output-1167582947" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1167582947">
 Login Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 sucessfully loged in and Home page is displayed<br/>
@@ -543,14 +226,14 @@ Login TestCase is sucessfully done ############################# TEST IS PASS<br
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>com.niveus.LoginTest@704921a5</td></tr>
+<td>4</td>
+<td>com.niveus.LoginTest@4c762604</td></tr>
 <tr>
 <td title='com.niveus.MediaFileTest.mediaFileValidation()'><b>mediaFileValidation</b><br>Test class: com.niveus.MediaFileTest<br/>
-<a href="#Output-160804176" onClick='toggleBox("Output-160804176", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-651535127" onClick='toggleBox("Output-651535127", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-160804176" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-160804176">
+<a href="#Output-651535127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-651535127">
 MediaFile Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 Submitter Provider role is selected<br/>
@@ -566,14 +249,14 @@ MediaFileTest TestCase is sucessfully done #####################################
 </div>
 </td>
 <td></td>
-<td>37</td>
-<td>com.niveus.MediaFileTest@2641e737</td></tr>
+<td>29</td>
+<td>com.niveus.MediaFileTest@77846d2c</td></tr>
 <tr>
 <td title='com.niveus.ParticipantTest.participantValidationTest()'><b>participantValidationTest</b><br>Test class: com.niveus.ParticipantTest<br/>
-<a href="#Output-1530560245" onClick='toggleBox("Output-1530560245", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1799831668" onClick='toggleBox("Output-1799831668", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1530560245" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1530560245">
+<a href="#Output-1799831668" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1799831668">
 Participant Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 Submitter Provider role is selected<br/>
@@ -583,20 +266,19 @@ ParticipantTest TestCase is sucessfully done ###################################
 </div>
 </td>
 <td></td>
-<td>32</td>
-<td>com.niveus.ParticipantTest@545997b1</td></tr>
+<td>35</td>
+<td>com.niveus.ParticipantTest@481a15ff</td></tr>
 <tr>
 <td title='com.niveus.PatientInfoTest.patientInfoValidationTest()'><b>patientInfoValidationTest</b><br>Test class: com.niveus.PatientInfoTest<br/>
-<a href="#Output-463313451" onClick='toggleBox("Output-463313451", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1093223281" onClick='toggleBox("Output-1093223281", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-463313451" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-463313451">
+<a href="#Output-1093223281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1093223281">
 PatientInfo Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 Submitter Provider role is selected<br/>
 sucessfully loged in and Home page is displayed<br/>
 Patient Info  Test   step ....1<br/>
-count number is .......1<br/>
 sucessfully icd code is selected.................##########<br/>
 Patient Info  Test   step ....2<br/>
 Patient Info  Test   step ....3<br/>
@@ -619,10 +301,10 @@ Chief:
 Have A Knee Pain In Leg
 Dob:
 11-11-1998
-Gender:
-Female
+Sex:
+Male
 Year:
-21 Years Old
+22 Years Old
 Mobile:
 917022912986
 Email:
@@ -638,36 +320,13 @@ PatientInfoTest TestCase is sucessfully done ###################################
 </td>
 <td></td>
 <td>26</td>
-<td>com.niveus.PatientInfoTest@77846d2c</td></tr>
-<tr>
-<td title='com.niveus.SearchValidationTest.patientSearchTest()'><b>patientSearchTest</b><br>Test class: com.niveus.SearchValidationTest<br/>
-<a href="#Output-1671816300" onClick='toggleBox("Output-1671816300", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1671816300" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1671816300">
-SearchValidation Testcase is runnng..........<br/>
-Login page is sucessfully displayed<br/>
-sucessfully loged in and Home page is displayed<br/>
-sucessfully clicked on New buuton<br/>
-Session has been created sucessfully created<br/>
-Search is sucessfully done<br/>
-SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
-SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
-Search is sucessfully done<br/>
-SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
-Search is sucessfully done<br/>
-SearchValidation TestCase is sucessfully done ############################# TEST IS PASS<br/>
-</div>
-</td>
-<td></td>
-<td>72</td>
-<td>com.niveus.SearchValidationTest@78186a70</td></tr>
+<td>com.niveus.PatientInfoTest@306279ee</td></tr>
 <tr>
 <td title='com.niveus.ResponderStatusTest.statusValidation()'><b>statusValidation</b><br>Test class: com.niveus.ResponderStatusTest<br/>
-<a href="#Output-2058879732" onClick='toggleBox("Output-2058879732", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1768473046" onClick='toggleBox("Output-1768473046", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2058879732" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2058879732">
+<a href="#Output-1768473046" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768473046">
 Responder Status Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 sucessfully loged in and Home page is displayed<br/>
@@ -683,14 +342,14 @@ ResponderStatus TestCase is sucessfully done ############################# TEST 
 </div>
 </td>
 <td></td>
-<td>96</td>
-<td>com.niveus.ResponderStatusTest@548ad73b</td></tr>
+<td>42</td>
+<td>com.niveus.ResponderStatusTest@545997b1</td></tr>
 <tr>
 <td title='com.niveus.ProfileUpadateTest.updateProfileInformation()'><b>updateProfileInformation</b><br>Test class: com.niveus.ProfileUpadateTest<br/>
-<a href="#Output-1564449239" onClick='toggleBox("Output-1564449239", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1368391951" onClick='toggleBox("Output-1368391951", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1564449239" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1564449239">
+<a href="#Output-1368391951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1368391951">
 ProfileUpdate Testcase is runnng..........<br/>
 Login page is sucessfully displayed<br/>
 sucessfully loged in and Home page is displayed<br/>
@@ -699,94 +358,42 @@ ProfileUpdateTest TestCase is sucessfully done ############################# TES
 </div>
 </td>
 <td></td>
-<td>11</td>
-<td>com.niveus.ProfileUpadateTest@4c762604</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>15</td>
+<td>com.niveus.ProfileUpadateTest@4cf4d528</td></tr>
 <tr>
-<td title='com.niveus.CloseCodeTest.closeCodeValidationTest()'><b>closeCodeValidationTest</b><br>Test class: com.niveus.CloseCodeTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
-from unknown error: cannot determine loading status
-from tab crashed
-  (Session info: headless chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 81da148c50d3766e3cdc185e6eb52447
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.niveus.Base.configBc(Base.java:186)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006419032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2006419032'><pre>org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
-from unknown error: cannot determine loading status
-from tab crashed
-  (Session info: headless chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;11.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /tmp/.com.google.Chrome.HDm4I1}, goog:chromeOptions: {debuggerAddress: localhost:37471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 81da148c50d3766e3cdc185e6eb52447
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.niveus.Base.configBc(Base.java:186)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>com.niveus.CloseCodeTest@2f0a87b3</td></tr>
+<td title='com.niveus.UploadDocumentTest.uploadDocumentValidation()'><b>uploadDocumentValidation</b><br>Test class: com.niveus.UploadDocumentTest<br/>
+<a href="#Output-1055104416" onClick='toggleBox("Output-1055104416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1055104416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1055104416">
+UploadDocument Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+file has been successfully uploaded. sucessfully updated<br/>
+UploadDocument Test is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.niveus.UploadDocumentTest@646007f4</td></tr>
+<tr>
+<td title='com.niveus.UploadPhotosTest.uploadPhotoValidation()'><b>uploadPhotoValidation</b><br>Test class: com.niveus.UploadPhotosTest<br/>
+<a href="#Output-1354439711" onClick='toggleBox("Output-1354439711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1354439711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1354439711">
+UploadPhoto Testcase is runnng..........<br/>
+Login page is sucessfully displayed<br/>
+Submitter Provider role is selected<br/>
+sucessfully loged in and Home page is displayed<br/>
+file has been successfully uploaded. sucessfully updated<br/>
+UploadPhotosTest is sucessfully done ############################# TEST IS PASS<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.niveus.UploadPhotosTest@704921a5</td></tr>
 </table><p>
 </body>
 </html>

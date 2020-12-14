@@ -69,7 +69,7 @@ public class CloseCode {
 	{
 		return conscomplete;
 	}
-	@FindBy(xpath="//div[contains(@title,' has marked this consultation as recommending an In Person Visit, ')]")
+	@FindBy(xpath="//div[contains(@title,' has recommended an In-Person Visit, ')]")
 	private WebElement inperson;
 	
 	public WebElement getInPerson()

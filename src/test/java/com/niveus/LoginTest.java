@@ -29,7 +29,7 @@ public class LoginTest extends Base{
 		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
 		
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 	
 		Reporter.log("Login page is sucessfully displayed", true);
 	

@@ -145,7 +145,7 @@ public class DoctorRolesPage {
 		return regbutton;
 	}
 	
-	@FindBy(xpath="//div[contains(@class,'details_contaner___')]/span[2]")
+	@FindBy(xpath="//div[contains(@class,'details_contaner')]//div/span")
 	private WebElement patient;
 	
 	public WebElement getPatientInfo()

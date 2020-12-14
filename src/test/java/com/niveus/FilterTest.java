@@ -33,7 +33,7 @@ public class FilterTest extends Base {
 	
 		Reporter.log("FilterTest Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 		Reporter.log("Login page is sucessfully displayed", true);
 
 		WebDriverWait wait = new WebDriverWait(driver, 100);

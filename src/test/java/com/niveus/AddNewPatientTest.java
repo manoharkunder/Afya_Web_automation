@@ -3,6 +3,7 @@ package com.niveus;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -71,7 +72,12 @@ public class AddNewPatientTest extends Base {
 
 		docpage.getNewSubmitter().click();
 
-		docpage.getSelectDate().sendKeys("11/11/1998");
+		docpage.getSelectDate().sendKeys("11/11/1998",Keys.ENTER);
+		
+		WebDriverWait tt=new WebDriverWait(driver, 20);
+		
+		tt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
+		
 		docpage.getPatientSearch().sendKeys("prasanna");
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 200);

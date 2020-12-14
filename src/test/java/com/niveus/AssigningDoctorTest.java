@@ -38,7 +38,7 @@ public class AssigningDoctorTest extends Base {
 		WebDriverWait log = new WebDriverWait(driver, 20);
 		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 		Reporter.log("Login page is sucessfully displayed", true);
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));

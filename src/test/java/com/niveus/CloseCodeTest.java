@@ -46,7 +46,7 @@ public class CloseCodeTest extends Base {
 
 		Reporter.log("Closecode Testcase is runnng..........", true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
@@ -181,10 +181,12 @@ public class CloseCodeTest extends Base {
 
 			close.getCloseInPerson().click();
 
-			WebDriverWait ll = new WebDriverWait(driver, 30);
+				WebDriverWait ll = new WebDriverWait(driver, 30);
+		
 			ll.until(ExpectedConditions.visibilityOf(close.getInPerson()));
 
-			boolean b1 = close.getInPerson().getText().contains("consultation as recommending an In Person Visit");
+			boolean b1 = close.getInPerson().getText().contains("has recommended an In-Person Visit");
+	
 			Assert.assertTrue(b1);
 
 			Reporter.log(close.getInPerson().getText() + " sucess", true);

@@ -9,7 +9,7 @@ public class HomePage
 {
 	WebDriver driver;
 	
-	@FindBy(xpath = "//span[text()=' Start Consult']/..")
+	@FindBy(xpath = "//span[text()='Start Consult']")
 	private WebElement reg;
 	
 	public WebElement getReg()
@@ -60,7 +60,7 @@ public class HomePage
 		return chief;
 	}
 
-	@FindBy(xpath = "//button[@type='button']/span[text()=' Create a new chat']")
+	@FindBy(xpath = "//span[text()='Create a new chat']")
 	private WebElement createnew;
 
 	public WebElement getNewpatient() {

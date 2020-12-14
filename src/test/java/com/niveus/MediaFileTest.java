@@ -39,7 +39,7 @@ public class MediaFileTest extends Base{
 
 		Reporter.log("MediaFile Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 		

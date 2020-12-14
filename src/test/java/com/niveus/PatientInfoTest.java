@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,7 +42,7 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("PatientInfo Testcase is runnng..........",true);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "login");
+		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
@@ -96,7 +97,7 @@ public class PatientInfoTest extends Base {
 		     
 	//	docpage.getNewSubmitter().click();
 
-		docpage.getSelectDate().sendKeys("11/11/1998");
+		docpage.getSelectDate().sendKeys("11/11/1998",Keys.ENTER);	
 		docpage.getPatientSearch().sendKeys("prasanna");
 	
 		WebDriverWait wait33 = new WebDriverWait(driver, 20);

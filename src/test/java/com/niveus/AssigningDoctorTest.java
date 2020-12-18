@@ -21,7 +21,7 @@ public class AssigningDoctorTest extends Base {
 	public ProfilePage propage;
 	FileLib flib = new FileLib();
 
-	@Test
+	@Test(enabled=false)
 	public void assigningDoctorTest() throws Exception {
 
 		test = extent.createTest("14.AssigningDoctor",

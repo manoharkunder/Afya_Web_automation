@@ -25,7 +25,7 @@ public class AddSpecialityTest extends Base {
 	public ProfilePage propage;
 	public FilterSection filter;
 
-	@Test
+	@Test(enabled=false)
 	public void addspecialityValidationTest() throws Exception 
 	{
 

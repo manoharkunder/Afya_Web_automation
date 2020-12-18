@@ -18,7 +18,7 @@ public class ProfileUpadateTest extends Base{
 
 	
 
-	@Test(enabled=false)
+	@Test()
 	public void updateProfileInformation() throws Exception {
 	
 		test=extent.createTest("10.ProfileUpdateTest","This test case is to check user is able to Update the Profile");

@@ -21,6 +21,7 @@ public class MediaFileTest extends Base{
 	public ProfilePage propage;
     public DoctorRolesPage docpage;
     Utility ut=new Utility();
+    
 	@Test(enabled=false)
 	public void mediaFileValidation() throws Exception {
 		

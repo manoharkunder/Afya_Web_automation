@@ -20,7 +20,7 @@ public class AddNewPatientTest extends Base {
 	Utility ut = new Utility();
 	public HomePage homepge;
 
-	@Test(enabled=false)
+	@Test()
 	public void addNewPatientTest() throws Exception {
 
 		test = extent.createTest("4.AddNewPatient", "This test case is to check submitteble to add the patient");

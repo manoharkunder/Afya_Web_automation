@@ -22,7 +22,7 @@ public class CloseCodeTest extends Base {
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test(enabled=false)
+	@Test()
 
 	public void closeCodeValidationTest() throws Exception {
 

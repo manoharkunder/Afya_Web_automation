@@ -19,7 +19,7 @@ public class FilterTest extends Base {
 	public DoctorRolesPage docpage;
 	Utility ut = new Utility();
 
-	@Test(enabled=false)
+	@Test()
 	public void filterValidationTest() throws Exception {
 
 		test = extent.createTest("6.FilterTest", "This test case is to check whether Filter is working");

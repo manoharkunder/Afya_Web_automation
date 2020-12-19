@@ -23,7 +23,7 @@ public class PatientInfoTest extends Base {
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test(enabled=false)
+	@Test()
 	public void patientInfoValidationTest() throws Exception {
 		
 		test=extent.createTest("8.PatientInfoTest","This test case is to check whether patientInfo is working");
@@ -138,7 +138,7 @@ public class PatientInfoTest extends Base {
 		
 			try {
 				
-				  WebDriverWait wat=new WebDriverWait(driver, 5);
+				  WebDriverWait wat=new WebDriverWait(driver, 2);
 				  
 				  wat.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
 				  				 

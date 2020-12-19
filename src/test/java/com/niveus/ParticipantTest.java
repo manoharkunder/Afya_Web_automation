@@ -22,7 +22,7 @@ public class ParticipantTest extends Base {
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test(enabled=false)
+	@Test()
 	public void participantValidationTest() throws Exception {
 		
 		test=extent.createTest("8.ParticipantTest","This test case is to check whether ParticipantTest is working");

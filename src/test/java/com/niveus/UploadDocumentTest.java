@@ -24,7 +24,7 @@ public class UploadDocumentTest extends Base {
 
 
 
-	@Test(enabled=false)
+	@Test()
 
 	public void uploadDocumentValidation() throws Exception {
 

@@ -22,7 +22,7 @@ public class UploadPhotosTest extends Base {
 	public Utility ut=new Utility();
 	public DoctorRolesPage docpage;
 
-	@Test(enabled=false)
+	@Test()
 
 	public void uploadPhotoValidation() throws Exception {
 

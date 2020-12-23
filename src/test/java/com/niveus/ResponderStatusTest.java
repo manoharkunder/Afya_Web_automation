@@ -20,7 +20,7 @@ public class ResponderStatusTest extends Base{
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test()
+	@Test(enabled=false)
 	public void statusValidation() throws Exception {
 		
 		test=extent.createTest("11.ResponderStatus","This test case is to check Responder status");

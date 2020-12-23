@@ -18,7 +18,7 @@ public class ProfileUpadateTest extends Base{
 
 	
 
-	@Test()
+	@Test(priority = 4)
 	public void updateProfileInformation() throws Exception {
 	
 		test=extent.createTest("10.ProfileUpdateTest","This test case is to check user is able to Update the Profile");
@@ -29,6 +29,9 @@ public class ProfileUpadateTest extends Base{
 		logp = PageFactory.initElements(driver, LoginPage.class);
 		
 		Reporter.log("ProfileUpdate Testcase is runnng..........",true);
+		
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
@@ -59,11 +62,40 @@ public class ProfileUpadateTest extends Base{
 
 		}
 		}		
+		
+		try {
+            Thread.sleep(2000);
+			if (logp.getloginAlert().isEnabled()) {
+
+				if (true) {
+					Reporter.log("Login Alert Popup is displayed......", true);
+
+					logp.getloginAlert().click();
+
+				}
+
+			}
+		} catch (Exception e) { 
+			
+
+			Reporter.log("No Alert Popup...............", true);
+			
+
+		}
+		
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+
+		logp.getproficPic().click();
+		
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 100);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "pammi@gmail.com");
+		
+		logp.getcloseProfile().click();
+		
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 		
 		profile = PageFactory.initElements(driver, ProfilePage.class);
@@ -72,13 +104,16 @@ public class ProfileUpadateTest extends Base{
 		wait2.until(ExpectedConditions.elementToBeClickable(profile.getProfilehov()));
 
 		util.moveToElement(driver, profile.getProfilehov());
+		
+		Thread.sleep(3000);
 
 		profile.updateProfile("M", "A", "11111999", "Female");
 		
 		
-		for (int i = 0; i <= 5; i++) 
+		for (int i = 0; i >=0;) 
 		{
 			profile.getUpdatebtn().click();
+			i--;
 		}
 		
 		WebDriverWait  till= new  WebDriverWait(driver, 100);

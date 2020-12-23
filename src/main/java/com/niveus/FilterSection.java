@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class FilterSection {
-	@FindBy(xpath="//span[@aria-label='filter']")
+	@FindBy(xpath="//div[@role='filter_holder']/span")
 	private WebElement filter;
 	
 	public WebElement getFilter()
@@ -52,7 +52,7 @@ public class FilterSection {
 		return unresponded;
 	}
 	
-	@FindBy(xpath="//span[@aria-label='sort-ascending']")
+	@FindBy(xpath="//img[@src='/static/sort.260d578a.svg']")
 	private WebElement sort;
 	
 	public  WebElement getSorting()
@@ -60,7 +60,7 @@ public class FilterSection {
 		return sort;
 	}
 	
-	@FindBy(xpath="//li[text()='Newest']")
+	@FindBy(xpath="//span[text()='Newest']")
      private WebElement newest;
 	
       public WebElement getNewest()
@@ -68,7 +68,7 @@ public class FilterSection {
     	  return newest;
       }
       
-      @FindBy(xpath="//span[text()='Oldest']/..")
+      @FindBy(xpath="//span[text()='Oldest']")
       private WebElement oldest;
  	
        public WebElement getOldest()
@@ -89,5 +89,12 @@ public class FilterSection {
        public WebElement getTime()
        {
     	   return time;
+       }
+       @FindBy(xpath = "//span[text()='Close']")
+       private WebElement getclose;
+       
+       public WebElement getFilterClose()
+       {
+    	   return getclose;
        }
 }

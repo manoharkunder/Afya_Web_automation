@@ -22,7 +22,7 @@ public class MediaFileTest extends Base{
     public DoctorRolesPage docpage;
     Utility ut=new Utility();
     
-	@Test()
+	@Test(enabled=false)
 	public void mediaFileValidation() throws Exception {
 		
 		test=extent.createTest("2.MediaFile","This test case is to check whether close code is working");

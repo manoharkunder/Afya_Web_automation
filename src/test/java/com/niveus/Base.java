@@ -153,19 +153,19 @@ public class Base {
 
 	public void configBc() {
 		/*
-		 * below code is used the launch the browser
+		 * below code is used to launch the browser
 		 */
 
-//		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 
 		/*
-		 * below code is used to run the automation in headless mode
+		 * below code is used to run the Script in headless mode
 		 */
 
 		
 		  
 		
-		  
+		
 		  ChromeOptions options = new ChromeOptions();
 		  options.addArguments("--headless", "--disable-web-security",
 		  "--ignore-certificate-errors", "--allow-running-insecure-content",
@@ -176,16 +176,16 @@ public class Base {
 		  options.setExperimentalOption("useAutomationExtension", false);
 		  options.setExperimentalOption("excludeSwitches", new String[] {
 		  "enable-automation" }); driver = new ChromeDriver(options);
-		 
 		  
+		 
 		 
 
 		System.out.println("browser is launched");
 
-		driver.navigate().to("https://uatwebapp.afya.chat/");
+		driver.navigate().to("https:uatwebapp.afya.chat/");
 
 		driver.manage().window().maximize();
 
-		Reporter.log(driver.getTitle() + "Afya Page  is sucessgully displayed", true);
+		Reporter.log(driver.getTitle() + " Page  is sucessfully displayed", true);
 	}
 }

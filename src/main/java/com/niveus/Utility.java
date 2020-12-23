@@ -17,30 +17,34 @@ public class Utility {
 	public void selectByValue(WebElement webElement,String value)
 	{
 		Select sel = new Select(webElement);
+		
 		sel.selectByValue(value);
+		
 	}
 	
 	/**
-	 * This method is used to switch the driver control to new window
+	 * This method is used to switch the driver control to new tab
 	 * @param driver
 	 * @return String
 	 */
 	public String switchToNewWindow(WebDriver driver)
 	{
 		 Set<String> ids = driver.getWindowHandles();
+		
 		 Iterator<String> it = ids.iterator();
 		 
 		 String pid = it.next();
 		 String cid = it.next();
 		 
 		 driver.switchTo().window(cid);
+		 
 		 return pid;
 	}
 	
 	public void moveToElement(WebDriver driver,WebElement webelement)
 	{
 	Actions act=new Actions(driver);
-	act.moveToElement(webelement).click().perform();;
+	act.moveToElement(webelement).click().perform();
 	}
 	
 	public void hoverMouse(WebDriver driver,WebElement webelement)

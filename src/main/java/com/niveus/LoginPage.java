@@ -5,92 +5,116 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
+    Utility ut=new Utility();
 	WebDriver driver;
-	@FindBy(id="userName")
+
+	@FindBy(id = "userName")
 	private WebElement username;
 
-	@FindBy(id="password")
+	@FindBy(id = "password")
 	private WebElement pwd;
 
-	@FindBy(xpath="//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement logbtn;
 
-	@FindBy(xpath="//span[text()='auto log-in']/preceding-sibling::span//input")
+	@FindBy(xpath = "//span[text()='auto log-in']/preceding-sibling::span//input")
 	private WebElement autolog;
 
-	@FindBy(xpath="//span[@role='img' and contains(@class,'password-icon')]")
+	@FindBy(xpath = "//span[@role='img' and contains(@class,'password-icon')]")
 	private WebElement pwdview;
 
-	@FindBy(xpath="//a[text()='Register account']")
+	@FindBy(xpath = "//a[text()='Register account']")
 	private WebElement register;
 
-	@FindBy(xpath="//span[text()='User status is changed to Active']")
+	@FindBy(xpath = "//span[text()='User status is changed to Active']")
 	private WebElement statusChange;
 
-	@FindBy(xpath="//div[text()='Login']")
+	@FindBy(xpath = "//div[text()='Login']")
 	private WebElement logpage;
 
-	public WebElement getlogPage()
-	{	
+	@FindBy(xpath = "//span[text()=' Yes']/..")
+	private WebElement getpop;
+
+	@FindBy(xpath = "//div[contains(@class,'user_name_')]")
+	private WebElement mail;
+
+	public WebElement getproficPic() {
+		return mail;
+	}
+
+	public WebElement getloginAlert() {
+		return getpop;
+	}
+
+	public WebElement getlogPage() {
 		return logpage;
 	}
 
-	public WebElement getStatusChange()
-	{
+	public WebElement getStatusChange() {
 		return statusChange;
 	}
 
-	public WebElement getregisteration()
-	{
+	public WebElement getregisteration() {
 		return register;
 	}
 
-	public WebElement getpswdview()
-	{
+	public WebElement getpswdview() {
 		return pwdview;
 	}
-	public WebElement getautolog()
-	{
+
+	public WebElement getautolog() {
 		return autolog;
 	}
-	public WebElement getUsername()
-	{
+
+	public WebElement getUsername() {
 		return username;
 	}
-	public WebElement getpassword()
-	{
+
+	public WebElement getpassword() {
 		return pwd;
 	}
-	public WebElement getloginbtn()
-	{
+
+	public WebElement getloginbtn() {
 		return logbtn;
 	}
 
-	@FindBy(xpath="//span[contains(text(),'User status is changed to')]")
+	@FindBy(xpath = "//span[contains(text(),'User status is changed to')]")
 	private WebElement statuschange;
 
-	public WebElement getUpdateChange()
-	{
+	public WebElement getUpdateChange() {
 		return statuschange;
 	}
 
-	@FindBy(xpath="//span[text()='file has been successfully uploaded.']")
+	@FindBy(xpath = "//span[text()='file has been successfully uploaded.']")
 	private WebElement sucess;
 
-	public WebElement getSucess()
-	{
+	public WebElement getSucess() {
 		return sucess;
 	}
-	
-	@FindBy(xpath ="//div[text()='User does not exist.']")
+
+	@FindBy(xpath = "//div[text()='User does not exist.']")
 	private WebElement invalid;
-	
-	public WebElement getInvlid()
-	{
+
+	public WebElement getInvlid() {
 		return invalid;
 	}
-	public void login(String email,String password)
+
+	@FindBy(xpath = "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img")
+	private WebElement close;
+	
+	public WebElement getcloseProfile()
 	{
+		return close;
+	}
+	public void loginPopUP() 
+	{
+		
+			getloginAlert().click();
+		    ut.moveToElement(driver, getproficPic());
+					
+	}
+   
+	public void login(String email, String password) {
 		username.sendKeys(email);
 		pwd.sendKeys(password);
 		pwdview.click();

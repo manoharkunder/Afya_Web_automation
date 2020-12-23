@@ -9,7 +9,7 @@ public class ProfilePage {
 	WebDriver driver;
 	Utility ut = new Utility();
 
-	@FindBy(xpath = "//div[@class='d']/span")
+	@FindBy(xpath = "//a[@href='/profile']")
 	private WebElement proflehover;
 
 	public WebElement getProfilehov() {

@@ -11,6 +11,10 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class FileLib {
 
+	/*
+	 * This method is used to read data from property file*/
+	
+	
 	   public String  getPropertyKeyValue(String key)
 	   {
 		   FileInputStream ip=null;
@@ -48,6 +52,7 @@ public class FileLib {
 
 			 Sheet sh = wb.getSheet(sheetName);
 			 Cell c = sh.getRow(rowNum).getCell(cellNum);
+			
 			 CellType cType = c.getCellType();
 
 			if(cType.toString().equals("NUMERIC"))

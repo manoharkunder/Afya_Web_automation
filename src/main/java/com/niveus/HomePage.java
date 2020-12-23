@@ -39,7 +39,7 @@ public class HomePage
 		return fold;
 	}
 
-	@FindBy(xpath = "//button[@type='button']/span[text()=' NEW']")
+	@FindBy(xpath = "//div[contains(@class,'container___2U')]//img")
 	private WebElement buttonnew;
 
 	public WebElement getNewbtn() {
@@ -332,6 +332,13 @@ public class HomePage
 	public WebElement getFile()
 	{
 		return files;
+	}
+	@FindBy(xpath = "//li[@id='active_chat_Session_item']")
+	private WebElement getsingle;
+	
+	public WebElement getSingleChat()
+	{
+		return getsingle;
 	}
 	
 	public void createNewpatient(String speciality, String chiefcompliant) {

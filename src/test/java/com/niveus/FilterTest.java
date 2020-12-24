@@ -78,8 +78,9 @@ public class FilterTest extends Base {
 
 		}
 
-		WebDriverWait waitt = new WebDriverWait(driver, 50);
+		WebDriverWait waitt = new WebDriverWait(driver, 10);
 		waitt.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
+		
 		ut.moveToElement(driver, docpage.getSubProvider());
 
 		WebDriverWait wt = new WebDriverWait(driver, 10);
@@ -87,7 +88,7 @@ public class FilterTest extends Base {
 
 		logp.getproficPic().click();
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
@@ -95,70 +96,56 @@ public class FilterTest extends Base {
 		logp.getcloseProfile().click();
 
 		Reporter.log("sucessfully logedin and Home page is displayed", true);
-		/*
-		 * WebDriverWait till = new WebDriverWait(driver, 10);
-		 * 
-		 * till.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
-		 * 
-		 * int count = 0;
-		 * 
-		 * boolean resl = filter.getFilter().isEnabled();
-		 * 
-		 * while (count >= 0) {
-		 * 
-		 * if (resl == true) {
-		 * 
-		 * WebDriverWait w1 = new WebDriverWait(driver, 10);
-		 * w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		 * 
-		 * JavascriptExecutor ex = (JavascriptExecutor) driver;
-		 * ex.executeScript("arguments[0].click();", filter.getFilter());
-		 * 
-		 * break; } else { count++; } }
-		 * 
-		 * Thread.sleep(4000);
-		 * 
-		 * WebDriverWait w1 = new WebDriverWait(driver, 10);
-		 * 
-		 * w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		 * 
-		 * JavascriptExecutor ex = (JavascriptExecutor) driver;
-		 * ex.executeScript("arguments[0].click();", filter.getAllchat());
-		 */
+	
 		
-		
-		
-		wait.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		filter.getFilter().click();
-		wait.until(ExpectedConditions.visibilityOf(filter.getAllchat()));
-		
-		filter.getAllchat().click();
+		 wait.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+	        
+			boolean resl = filter.getFilter().isEnabled();
+	        while(resl==true)
+	        {
+	        	try
+	        	{
+	        		
+	        	
+			if(resl)
+			{
 
-		int cnt = 0;
-		while (cnt >= 0) {
-			try {
-				WebDriverWait hh = new WebDriverWait(driver, 20);
-				hh.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
-
-				homepge.getChatsesion().isDisplayed();
-
-				break;
-			} catch (Exception e) {
-				Thread.sleep(100);
-				filter.getFilter().click();
-				filter.getAllchat().click();
-
-				cnt++;
-				e.printStackTrace();
+			filter.getFilter().click();
+	       					
+			resl=false;
+			
+			break;	
 			}
+	        	}
+	        catch (Exception e) 
+	        	{
+					
+	        	}
+	        }
+	        int count=0;
+	        while(count==0)
+	        {
+	        try
+	        {
+				
+	        filter.getAllchat().click();
 
-		}
-		Thread.sleep(3000);
+			homepge.getChatsesion().isDisplayed();
+			count++;
+	        }
+	        catch (Exception e) 
+	        {
+	        	
+			}
+	        }
 
-		WebDriverWait w = new WebDriverWait(driver, 20);
 
-		w.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 
+			/*
+			 * WebDriverWait hme = new WebDriverWait(driver, 10);
+			 * 
+			 * hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+			 */
 		String chat = homepge.getChatsesion().getText();
 
 		Reporter.log(chat, true);
@@ -177,8 +164,14 @@ public class FilterTest extends Base {
 		}
 
 		Reporter.log(newtime, true);
-		
+		try
+		{
 		filter.getFilterClose().click();
+		}
+		catch(Exception e)
+		{
+			
+		}
 
 		WebDriverWait p = new WebDriverWait(driver, 10);
 
@@ -186,10 +179,17 @@ public class FilterTest extends Base {
 
 		filter.getSorting().click();
 
+		try
+		{
 		WebDriverWait q = new WebDriverWait(driver, 10);
 
 		q.until(ExpectedConditions.visibilityOf(filter.getNewest()));
 
+		}
+		catch (Exception e) 
+		{
+			
+		}
 		JavascriptExecutor ex1 = (JavascriptExecutor) driver;
 		ex1.executeScript("arguments[0].click();", filter.getNewest());
 

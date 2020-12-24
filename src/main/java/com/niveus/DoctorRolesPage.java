@@ -63,7 +63,7 @@ public class DoctorRolesPage {
 	}
 	
 	
-	@FindBy(id="speciality")
+	@FindBy(id="specialty")
 	private WebElement spec;
 	
 	public  WebElement getSpeciality()
@@ -71,7 +71,7 @@ public class DoctorRolesPage {
 		return spec;
 	}
 	
-	@FindBy(id="chiefcomplaint")
+	@FindBy(id="chief_complaint")
 	private WebElement chiefcomplaint;
 	
 	public WebElement getChiefcomplaint()
@@ -105,7 +105,7 @@ public class DoctorRolesPage {
 	}
 	
 	
-	@FindBy(xpath="//span[text()=' NEW']/..")
+	@FindBy(xpath="//img[@src='/static/add_plus.8284d929.svg']")
 	private WebElement subNew;
 	
 	public WebElement getNewSubmitter()
@@ -166,5 +166,28 @@ public class DoctorRolesPage {
 	public WebElement getChatM()
 	{
 		return chat;
-}
+    }
+	@FindBy(name = "month")
+	private WebElement mon;
+	
+	public WebElement getdMonth()
+	{
+		return mon;
+	}
+	@FindBy(name = "date")
+	private WebElement dDate;
+	
+	public WebElement getDate()
+	{
+		return dDate;
+	}
+	@FindBy(id = "year")
+	private WebElement yaer;
+	
+	public WebElement getyear()
+	{
+		return yaer;
+	}
+	
+	
 }

@@ -105,8 +105,8 @@ public class ProfileUpadateTest extends Base{
 
 		util.moveToElement(driver, profile.getProfilehov());
 		
-		Thread.sleep(3000);
-
+        wait.until(ExpectedConditions.visibilityOf(profile.getFname()));
+        
 		profile.updateProfile("M", "A", "11111999", "Female");
 		
 		

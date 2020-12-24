@@ -113,11 +113,7 @@ public class AssigningDoctorTest extends Base {
 		Reporter.log("Login TestCase is sucessfully done ############################# TEST IS PASS", true);
 	
 	
-		/*
-		 * WebDriverWait wait5 = new WebDriverWait(driver, 20);
-		 * 
-		 * wait5.until(ExpectedConditions.visibilityOf(homepge.getSingleChat()));
-		 */
+	
 		boolean btn = homepge.getNewbtn().isEnabled();
 		
 		while(btn)

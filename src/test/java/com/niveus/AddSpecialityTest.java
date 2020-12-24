@@ -195,19 +195,32 @@ public class AddSpecialityTest extends Base {
 
 		}
 		Reporter.log("Speciality list is displaying sucessfully", true);
+		
+		try
+		{
 
 		WebDriverWait w = new WebDriverWait(driver, 20);
+		
 		w.until(ExpectedConditions.visibilityOf(landpage.getAddSpec()));
+		
+		
 
 		String lang1 = landpage.getAddSpec().getText();
 
 		boolean flag1 = landpage.getAddSpec().isDisplayed();
 
+	
 		Assert.assertTrue(flag1);
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		
+		
 
 		Reporter.log("Doctor is sucessfully added to the chat session", true);
 
-		System.out.println(lang1);
 
 		Reporter.log("AddSpeciality TestCase is sucessfully done ############################# TEST IS PASS", true);
 

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.FilterTest" class="method navigator-link" hash-for-method="filterValidationTest">filterValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +114,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.AddNewPatientTest" class="method navigator-link" hash-for-method="addNewPatientTest">addNewPatientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.AddSpecialityTest" class="method navigator-link" hash-for-method="addspecialityValidationTest">addspecialityValidationTest</a> <!-- method navigator-link -->
@@ -112,7 +131,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.FilterTest" class="method navigator-link" hash-for-method="filterValidationTest">filterValidationTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.ChatMemberTest" class="method navigator-link" hash-for-method="chatMemeberValidation">chatMemeberValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.CloseCodeTest" class="method navigator-link" hash-for-method="closeCodeValidationTest">closeCodeValidationTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -122,7 +146,37 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.MediaFileTest" class="method navigator-link" hash-for-method="mediaFileValidation">mediaFileValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.ParticipantTest" class="method navigator-link" hash-for-method="participantValidationTest">participantValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.PatientInfoTest" class="method navigator-link" hash-for-method="patientInfoValidationTest">patientInfoValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.ResponderStatusTest" class="method navigator-link" hash-for-method="statusValidation">statusValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.ProfileUpadateTest" class="method navigator-link" hash-for-method="updateProfileInformation">updateProfileInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.UploadDocumentTest" class="method navigator-link" hash-for-method="uploadDocumentValidation">uploadDocumentValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.niveus.UploadPhotosTest" class="method navigator-link" hash-for-method="uploadPhotoValidation">uploadPhotoValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -137,6 +191,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.niveus.FilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterValidationTest">
+                  </a> <!-- filterValidationTest -->
+                  <span class="method-name">filterValidationTest</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-58-generic&apos;, java.version: &apos;11.0.9.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.rVusJq}, goog:chromeOptions: {debuggerAddress: localhost:45991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97cf549510b871fa648ff2266395c042
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.niveus.FilterTest.filterValidationTest(FilterTest.java:168)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.UploadPhotosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadPhotoValidation">
+                  </a> <!-- uploadPhotoValidation -->
+                  <span class="method-name">uploadPhotoValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.MediaFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mediaFileValidation">
+                  </a> <!-- mediaFileValidation -->
+                  <span class="method-name">mediaFileValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -148,6 +269,21 @@
                   <a name="loginPageTest">
                   </a> <!-- loginPageTest -->
                   <span class="method-name">loginPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.CloseCodeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeCodeValidationTest">
+                  </a> <!-- closeCodeValidationTest -->
+                  <span class="method-name">closeCodeValidationTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,6 +306,36 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.niveus.UploadDocumentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadDocumentValidation">
+                  </a> <!-- uploadDocumentValidation -->
+                  <span class="method-name">uploadDocumentValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.AddNewPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewPatientTest">
+                  </a> <!-- addNewPatientTest -->
+                  <span class="method-name">addNewPatientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.niveus.ProfileUpadateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -185,21 +351,6 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.niveus.FilterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filterValidationTest">
-                  </a> <!-- filterValidationTest -->
-                  <span class="method-name">filterValidationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.niveus.AddSpecialityTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -208,6 +359,66 @@
                   <a name="addspecialityValidationTest">
                   </a> <!-- addspecialityValidationTest -->
                   <span class="method-name">addspecialityValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.ParticipantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="participantValidationTest">
+                  </a> <!-- participantValidationTest -->
+                  <span class="method-name">participantValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.ResponderStatusTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="statusValidation">
+                  </a> <!-- statusValidation -->
+                  <span class="method-name">statusValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.ChatMemberTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="chatMemeberValidation">
+                  </a> <!-- chatMemeberValidation -->
+                  <span class="method-name">chatMemeberValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.niveus.PatientInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="patientInfoValidationTest">
+                  </a> <!-- patientInfoValidationTest -->
+                  <span class="method-name">patientInfoValidationTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,32 +487,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addspecialityValidationTest')
-data.setCell(0, 2, 'com.niveus.AddSpecialityTest')
-data.setCell(0, 3, 28790);
+data.setCell(0, 1, 'closeCodeValidationTest')
+data.setCell(0, 2, 'com.niveus.CloseCodeTest')
+data.setCell(0, 3, 41157);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'updateProfileInformation')
-data.setCell(1, 2, 'com.niveus.ProfileUpadateTest')
-data.setCell(1, 3, 20583);
+data.setCell(1, 1, 'chatMemeberValidation')
+data.setCell(1, 2, 'com.niveus.ChatMemberTest')
+data.setCell(1, 3, 38494);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'filterValidationTest')
-data.setCell(2, 2, 'com.niveus.FilterTest')
-data.setCell(2, 3, 18678);
+data.setCell(2, 1, 'patientInfoValidationTest')
+data.setCell(2, 2, 'com.niveus.PatientInfoTest')
+data.setCell(2, 3, 37182);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'assigningDoctorTest')
-data.setCell(3, 2, 'com.niveus.AssigningDoctorTest')
-data.setCell(3, 3, 16221);
+data.setCell(3, 1, 'addNewPatientTest')
+data.setCell(3, 2, 'com.niveus.AddNewPatientTest')
+data.setCell(3, 3, 33982);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageTest')
-data.setCell(4, 2, 'com.niveus.LoginTest')
-data.setCell(4, 3, 5636);
+data.setCell(4, 1, 'addspecialityValidationTest')
+data.setCell(4, 2, 'com.niveus.AddSpecialityTest')
+data.setCell(4, 3, 31705);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'mediaFileValidation')
+data.setCell(5, 2, 'com.niveus.MediaFileTest')
+data.setCell(5, 3, 30519);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'uploadPhotoValidation')
+data.setCell(6, 2, 'com.niveus.UploadPhotosTest')
+data.setCell(6, 3, 28949);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'filterValidationTest')
+data.setCell(7, 2, 'com.niveus.FilterTest')
+data.setCell(7, 3, 28745);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'participantValidationTest')
+data.setCell(8, 2, 'com.niveus.ParticipantTest')
+data.setCell(8, 3, 24930);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'uploadDocumentValidation')
+data.setCell(9, 2, 'com.niveus.UploadDocumentTest')
+data.setCell(9, 3, 23451);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'updateProfileInformation')
+data.setCell(10, 2, 'com.niveus.ProfileUpadateTest')
+data.setCell(10, 3, 20286);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'assigningDoctorTest')
+data.setCell(11, 2, 'com.niveus.AssigningDoctorTest')
+data.setCell(11, 3, 17793);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'statusValidation')
+data.setCell(12, 2, 'com.niveus.ResponderStatusTest')
+data.setCell(12, 3, 17469);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginPageTest')
+data.setCell(13, 2, 'com.niveus.LoginTest')
+data.setCell(13, 3, 6779);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -313,29 +560,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">assigningDoctorTest</span>
+              <span class="reporter-method-name">closeCodeValidationTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Assigining doctor Testcase is running...........</span>
-                <span class="reporter-method-output">Login page is sucessfully displayed..................Pass</span>
+                <span class="reporter-method-output">Closecode Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
                 <span class="reporter-method-output">Login Alert Popup is displayed......</span>
-                <span class="reporter-method-output">No Alert Popup...............</span>
-                <span class="reporter-method-output">sucessfully loged in and Home page is displayed..............Pass</span>
-                <span class="reporter-method-output">Login TestCase is sucessfully done ############################# TEST IS PASS</span>
-                <span class="reporter-method-output">sucessfully specialty is seleced</span>
-                <span class="reporter-method-output">Session has been created sucessfully created</span>
-                <span class="reporter-method-output">Doctor is sucessfully added to the chat session</span>
-                <span class="reporter-method-output">AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully logedin and HomePage is displayed</span>
+                <span class="reporter-method-output">Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>></span>
+                <span class="reporter-method-output">Dr. Test2 Prasanna has marked this consultation as Complete sucess</span>
+                <span class="reporter-method-output">close code apply sucessfully...>>>> 1</span>
+                <span class="reporter-method-output">Dr. Test2 Prasanna has recommended an In-Person Visit sucess</span>
+                <span class="reporter-method-output">CloseCode TestCase is sucessfully done ############################# TEST IS PASS</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">updateProfileInformation</span>
+              <span class="reporter-method-name">uploadDocumentValidation</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">ProfileUpdate Testcase is runnng..........</span>
+                <span class="reporter-method-output">UploadDocument Testcase is runnng..........</span>
                 <span class="reporter-method-output">Login page is sucessfully displayed</span>
                 <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
                 <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
-                <span class="reporter-method-output">Profile ingormation is sucessfully updated</span>
-                <span class="reporter-method-output">ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS</span>
+                <span class="reporter-method-output">Sucessfully chat session is displayed Upload Doccument>>>>>>>>>>>>>></span>
+                <span class="reporter-method-output">file has been successfully uploaded. sucessfully updated</span>
+                <span class="reporter-method-output">UploadDocument Test is sucessfully done ############################# TEST IS PASS</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -353,6 +602,77 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">addNewPatientTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Addnewpatient testcase is running.............############</span>
+                <span class="reporter-method-output">Enter the url sucessfully###################</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Addd new paient step ....1</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">This chat has been assigned to Dr. Hhhhhh Sssss (Anesthesiology) and the provider will respond to this chat after they've reviewed...........Sucess...</span>
+                <span class="reporter-method-output">Patient  is sucessfully added to the chat session</span>
+                <span class="reporter-method-output">AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">participantValidationTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Participant Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>></span>
+                <span class="reporter-method-output">Full Access sucess</span>
+                <span class="reporter-method-output">ParticipantTest TestCase is sucessfully done ################################################## TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">patientInfoValidationTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">PatientInfo Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Addd new paient step ....1</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">This chat has been assigned to Dr. Alvin Pp (Anesthesiology) and the provider will respond to this chat after they've reviewed...........Sucess...</span>
+                <span class="reporter-method-output">Patient  is sucessfully added to the chat session</span>
+                <span class="reporter-method-output">Patien Info   Test   step ....5</span>
+                <span class="reporter-method-output">Patient Details
+Close
+Name:
+Prasanna Helo
+Chief_Complaint:
+Have A Knee Pain In Leg
+Dob:
+11-11-1998
+Sex:
+Male
+Age:
+22 Years Old
+Mobile_Number:
+917022912986
+Email:
+Prasanna@Gmail.Com
+ICD:
+Not Specified
+CPT: sucess</span>
+                <span class="reporter-method-output">patient name is displayed  sucesssfully</span>
+                <span class="reporter-method-output">patient date of birth  is displayed  sucesssfully</span>
+                <span class="reporter-method-output">patient year  is displayed  sucesssfully</span>
+                <span class="reporter-method-output">PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">loginPageTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Login Testcase is runnng..........>>>>>>>>>>>>>>>></span>
@@ -364,36 +684,118 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">assigningDoctorTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Assigining doctor Testcase is running...........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed..................Pass</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">No Alert Popup...............</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed..............Pass</span>
+                <span class="reporter-method-output">Login TestCase is sucessfully done ############################# TEST IS PASS</span>
+                <span class="reporter-method-output">sucessfully specialty is seleced</span>
+                <span class="reporter-method-output">Session has been created sucessfully created</span>
+                <span class="reporter-method-output">Doctor is sucessfully added to the chat session</span>
+                <span class="reporter-method-output">AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">statusValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Responder Status Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">User status is changed to Away</span>
+                <span class="reporter-method-output">status is sucessfully changed </span>
+                <span class="reporter-method-output">ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">uploadPhotoValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">UploadPhoto Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Sucessfully chat session is displayed Upload photo>>>>>>>>>>>>>></span>
+                <span class="reporter-method-output">file has been successfully uploaded. sucessfully updated</span>
+                <span class="reporter-method-output">UploadPhotosTest is sucessfully done ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">chatMemeberValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Chatmember Testcase is running............</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Addd new paient step ....1</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No ICd code.................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">No cpt code.....................................</span>
+                <span class="reporter-method-output">This chat has been assigned to Dr. Testing Uat (Anesthesiology) and the provider will respond to this chat after they've reviewed...........Sucess...</span>
+                <span class="reporter-method-output">Patient  is sucessfully added to the chat session</span>
+                <span class="reporter-method-output">Chat Member   Test   step ....5</span>
+                <span class="reporter-method-output">Responder 1 name  is displayed sucessfully</span>
+                <span class="reporter-method-output">patient name is displayed  sucesssfully</span>
+                <span class="reporter-method-output">ChatMember TestCase is sucessfully done  ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">updateProfileInformation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ProfileUpdate Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Profile ingormation is sucessfully updated</span>
+                <span class="reporter-method-output">ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">mediaFileValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">MediaFile Testcase is runnng..........</span>
+                <span class="reporter-method-output">Login page is sucessfully displayed</span>
+                <span class="reporter-method-output">Login Alert Popup is displayed......</span>
+                <span class="reporter-method-output">Submitter Provider role is selected</span>
+                <span class="reporter-method-output">sucessfully loged in and Home page is displayed</span>
+                <span class="reporter-method-output">Sucessfully chat session is displayed Upload photo>>>>>>>>>>>>>></span>
+                <span class="reporter-method-output">file has been successfully uploaded. sucessfully updated</span>
+                <span class="reporter-method-output">UploadPhotosTest is sucessfully done ############################# TEST IS PASS</span>
+                <span class="reporter-method-output">Media File Test   step ....4</span>
+                <span class="reporter-method-output">media file is sucessfully displayed</span>
+                <span class="reporter-method-output">MediaFileTest TestCase is sucessfully done ################################################## TEST IS PASS</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">filterValidationTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">FilterTest Testcase is runnng..........</span>
                 <span class="reporter-method-output">Login page is sucessfully displayed</span>
                 <span class="reporter-method-output">Login Alert Popup is displayed......</span>
                 <span class="reporter-method-output">sucessfully logedin and Home page is displayed</span>
-                <span class="reporter-method-output">Alvin, Test2 +3
-Dr. Test2 Prasanna has added Dr. Account Two to the chat
-a month ago
+                <span class="reporter-method-output">prem, Test2 +1
+Sent an image
+8 days old
 RE: prasanna Helo</span>
                 <span class="reporter-method-output">second time stamp is taken.........############</span>
-                <span class="reporter-method-output">a month ago</span>
-                <span class="reporter-method-output">a minute ago</span>
-                <span class="reporter-method-output">filter is sucessfully applied</span>
-                <span class="reporter-method-output">Filter Test is sucessfully done ############################# TEST IS PASS</span>
+                <span class="reporter-method-output">8 days old</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">35 ignored methods</span>
+            <span class="header-content">26 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.niveus.UploadPhotosTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">uploadPhotoValidation</span>
                 <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
@@ -403,8 +805,6 @@ RE: prasanna Helo</span>
               <span class="ignored-class-name">com.niveus.MediaFileTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">mediaFileValidation</span>
                 <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
@@ -424,8 +824,6 @@ RE: prasanna Helo</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
-                <span class="ignored-method-name">closeCodeValidationTest</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -435,8 +833,6 @@ RE: prasanna Helo</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
-                <span class="ignored-method-name">uploadDocumentValidation</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -445,8 +841,6 @@ RE: prasanna Helo</span>
               <span class="ignored-class-name">com.niveus.AddNewPatientTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">addNewPatientTest</span>
                 <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
@@ -484,8 +878,6 @@ RE: prasanna Helo</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
-                <span class="ignored-method-name">participantValidationTest</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -493,8 +885,6 @@ RE: prasanna Helo</span>
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.niveus.ResponderStatusTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">statusValidation</span>
-                <br/>
                 <span class="ignored-method-name">setUp</span>
                 <br/>
                 <span class="ignored-method-name">flushReport</span>
@@ -506,8 +896,6 @@ RE: prasanna Helo</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
-                <span class="ignored-method-name">chatMemeberValidation</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -516,8 +904,6 @@ RE: prasanna Helo</span>
               <span class="ignored-class-name">com.niveus.PatientInfoTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">patientInfoValidationTest</span>
                 <br/>
                 <span class="ignored-method-name">flushReport</span>
                 <br/>
@@ -538,82 +924,219 @@ RE: prasanna Helo</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">configBc</span>
-                <span class="method-start">261 ms</span>
+                <span class="method-start">722 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">assigningDoctorTest</span>
-                <span class="method-start">9142 ms</span>
+                <span class="method-start">11432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=assigningDoctorTest status=SUCCESS method=AssigningDoctorTest.assigningDoctorTest()...)</span>
-                <span class="method-start">25364 ms</span>
+                <span class="method-start">29226 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.UploadDocumentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">29264 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">uploadDocumentValidation</span>
+                <span class="method-start">37556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=uploadDocumentValidation status=SUCCESS method=UploadDocumentTest.uploadDocumentVal...)</span>
+                <span class="method-start">61007 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.ParticipantTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">61008 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">participantValidationTest</span>
+                <span class="method-start">67783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=participantValidationTest status=SUCCESS method=ParticipantTest.participantValidati...)</span>
+                <span class="method-start">92713 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.niveus.AddSpecialityTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBc</span>
-                <span class="method-start">25372 ms</span>
+                <span class="method-start">92713 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addspecialityValidationTest</span>
-                <span class="method-start">33461 ms</span>
+                <span class="method-start">102104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=addspecialityValidationTest status=SUCCESS method=AddSpecialityTest.addspecialityVa...)</span>
-                <span class="method-start">62255 ms</span>
+                <span class="method-start">133810 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.PatientInfoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">133810 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">patientInfoValidationTest</span>
+                <span class="method-start">141401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=patientInfoValidationTest status=SUCCESS method=PatientInfoTest.patientInfoValidati...)</span>
+                <span class="method-start">178583 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.ResponderStatusTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">178584 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">statusValidation</span>
+                <span class="method-start">187983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=statusValidation status=SUCCESS method=ResponderStatusTest.statusValidation()[pri:0...)</span>
+                <span class="method-start">205452 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.niveus.ProfileUpadateTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBc</span>
-                <span class="method-start">62256 ms</span>
+                <span class="method-start">205453 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">updateProfileInformation</span>
-                <span class="method-start">69962 ms</span>
+                <span class="method-start">216189 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=updateProfileInformation status=SUCCESS method=ProfileUpadateTest.updateProfileInfo...)</span>
-                <span class="method-start">90545 ms</span>
+                <span class="method-start">236475 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.MediaFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">236476 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">mediaFileValidation</span>
+                <span class="method-start">243476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=mediaFileValidation status=SUCCESS method=MediaFileTest.mediaFileValidation()[pri:0...)</span>
+                <span class="method-start">273995 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.niveus.FilterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBc</span>
-                <span class="method-start">90546 ms</span>
+                <span class="method-start">273996 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">filterValidationTest</span>
-                <span class="method-start">97430 ms</span>
+                <span class="method-start">280988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=filterValidationTest status=SUCCESS method=FilterTest.filterValidationTest()[pri:5,...)</span>
-                <span class="method-start">116108 ms</span>
+                <span class="method-name">getResult([TestResult name=filterValidationTest status=FAILURE method=FilterTest.filterValidationTest()[pri:5,...)</span>
+                <span class="method-start">309759 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.niveus.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBc</span>
-                <span class="method-start">116108 ms</span>
+                <span class="method-start">310644 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginPageTest</span>
-                <span class="method-start">123061 ms</span>
+                <span class="method-start">318459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=loginPageTest status=SUCCESS method=LoginTest.loginPageTest()[pri:1, instance:com.n...)</span>
-                <span class="method-start">128698 ms</span>
+                <span class="method-start">325238 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.ChatMemberTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">325240 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">chatMemeberValidation</span>
+                <span class="method-start">335531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=chatMemeberValidation status=SUCCESS method=ChatMemberTest.chatMemeberValidation()[...)</span>
+                <span class="method-start">374026 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.AddNewPatientTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">374026 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addNewPatientTest</span>
+                <span class="method-start">383572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=addNewPatientTest status=SUCCESS method=AddNewPatientTest.addNewPatientTest()[pri:0...)</span>
+                <span class="method-start">417555 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.UploadPhotosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">417555 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">uploadPhotoValidation</span>
+                <span class="method-start">430335 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=uploadPhotoValidation status=SUCCESS method=UploadPhotosTest.uploadPhotoValidation(...)</span>
+                <span class="method-start">459284 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.niveus.CloseCodeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBc</span>
+                <span class="method-start">459285 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">closeCodeValidationTest</span>
+                <span class="method-start">466673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=closeCodeValidationTest status=SUCCESS method=CloseCodeTest.closeCodeValidationTest...)</span>
+                <span class="method-start">507831 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.niveus.AssigningDoctorTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">128741 ms</span>
+                <span class="method-start">507950 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

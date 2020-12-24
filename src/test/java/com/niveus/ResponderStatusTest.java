@@ -20,7 +20,7 @@ public class ResponderStatusTest extends Base{
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test(enabled=false)
+	@Test()
 	public void statusValidation() throws Exception {
 		
 		test=extent.createTest("11.ResponderStatus","This test case is to check Responder status");
@@ -44,6 +44,11 @@ public class ResponderStatusTest extends Base{
 
 		Reporter.log("Responder Status Testcase is runnng..........",true);
 
+		
+
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -73,7 +78,25 @@ public class ResponderStatusTest extends Base{
 
 		}
 		}		
+		try {
+            Thread.sleep(2000);
+			if (logp.getloginAlert().isEnabled()) {
 
+				if (true) {
+					Reporter.log("Login Alert Popup is displayed......", true);
+
+					logp.getloginAlert().click();
+
+				}
+
+			}
+		} catch (Exception e) { 
+			
+
+			Reporter.log("No Alert Popup...............", true);
+			
+
+		}
 		
 		WebDriverWait wait11 = new WebDriverWait(driver, 50);
 		wait11.until(ExpectedConditions.elementToBeClickable(docpage.getResponder()));
@@ -81,29 +104,50 @@ public class ResponderStatusTest extends Base{
 		ut.moveToElement(driver, docpage.getResponder());
 		
 
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+
+		logp.getproficPic().click();
+
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
+		
+		logp.getcloseProfile().click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
-
-		for (int i = 0; i < 3; i++) {
-
-            Thread.sleep(10000);
-
+		
+		wait.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+		
+		 homepge.getResrol().click();
+    
+			wait.until(ExpectedConditions.elementToBeClickable(homepge.getResponderStatus()));
+         
+			boolean flag=true;
+           
+           while(flag==true)
+			try
+			{
 			homepge.getResponderStatus().click();
 			
-			WebDriverWait ww = new WebDriverWait(driver, 100);
+			flag=false;
+			}
+			catch (Exception e)
+			{
+				
+			}
+			
+			WebDriverWait ww = new WebDriverWait(driver, 20);
 
 			ww.until(ExpectedConditions.visibilityOf(logp.getUpdateChange()));
 
 			Reporter.log(logp.getUpdateChange().getText(), true);
 
 			Reporter.log("status is sucessfully changed ",true);
-			Reporter.log("ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS",true);
+			
+		Reporter.log("ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS",true);
 
-		}
 	}
 
 }

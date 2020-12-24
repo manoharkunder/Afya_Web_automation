@@ -3,7 +3,6 @@ package com.niveus;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +21,7 @@ public class UploadPhotosTest extends Base {
 	public Utility ut=new Utility();
 	public DoctorRolesPage docpage;
 
-	@Test(enabled=false)
+	@Test()
 
 	public void uploadPhotoValidation() throws Exception {
 
@@ -38,6 +37,9 @@ public class UploadPhotosTest extends Base {
 		filter = PageFactory.initElements(driver, FilterSection.class);
         docpage=PageFactory.initElements(driver, DoctorRolesPage.class);
 		Reporter.log("UploadPhoto Testcase is runnng..........",true);
+		
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
@@ -46,6 +48,7 @@ public class UploadPhotosTest extends Base {
 
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
+		
 		logp.getUsername().sendKeys("test2prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 		logp.getpswdview().click();
@@ -70,7 +73,33 @@ public class UploadPhotosTest extends Base {
 		}
 		}
 		
-		WebDriverWait wait2 = new WebDriverWait(driver, 50);
+		boolean alert=false;
+		while(alert==false)
+		{
+		try {
+			if (logp.getloginAlert().isEnabled()) {
+
+				if (true) {
+					Reporter.log("Login Alert Popup is displayed......", true);
+					
+
+					logp.getloginAlert().click();
+					
+					alert=true;
+					
+					break;
+
+				}
+
+			}
+		} catch (Exception e) { 
+						
+
+		}
+		}
+		
+		
+			WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
@@ -79,60 +108,71 @@ public class UploadPhotosTest extends Base {
 		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
 		Assert.assertTrue(flag);
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+		
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		logp.getproficPic().click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 		
+		logp.getcloseProfile().click();
+		
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 		
-	
 
-		int count = 0;
 
+        wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+        
 		boolean resl = filter.getFilter().isEnabled();
-		while (count >= 0) {
+        while(resl==true)
+        {
+        	
+       try
+       {
+		if(resl)
+		{
+		filter.getFilter().click();
+              		
+		filter.getAllchat().click();
+		
 
-			if (resl == true) {
-
-				WebDriverWait w1 = new WebDriverWait(driver, 100);
-				w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-			
-				   JavascriptExecutor ex = (JavascriptExecutor)driver;
-				     ex.executeScript("arguments[0].click();", filter.getFilter());
-				     
-				break;
-			} else {
-				count++;
-			}
+		resl=false;
+		
+		break;	
+		}}
+        catch (Exception e) 
+        {
+        	e.printStackTrace();
+        }
 		}
 
-		/*
-		 * WebDriverWait pp=new WebDriverWait(driver, 30);
-		 * 
-		 * pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-		 */
-		
-		Thread.sleep(4000);
-		
-		
-		filter.getAllchat().click();
 
-		WebDriverWait wait33 = new WebDriverWait(driver, 30);
-		wait33.until(ExpectedConditions.elementToBeClickable(homepge.getChatsesion()));
+
+		WebDriverWait hme = new WebDriverWait(driver, 10);
+
+		hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+
+		Reporter.log("Sucessfully chat session is displayed Upload photo>>>>>>>>>>>>>>", true);
 
 		homepge.getChatsesion().click();
 
-		WebDriverWait wait11 = new WebDriverWait(driver, 30);
+
+		    
+		WebDriverWait wait11 = new WebDriverWait(driver, 10);
 		wait11.until(ExpectedConditions.elementToBeClickable(homepge.getPaperclip()));
 
 		homepge.getPaperclip().click();
+
 
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 		homepge.getUploadPhoto().click();
 
+		Thread.sleep(3000);
 		homepge.getPhotoUpload().sendKeys(fs.getAbsolutePath());
 
 		homepge.getSubmitButton().click();

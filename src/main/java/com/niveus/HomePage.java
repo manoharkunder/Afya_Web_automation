@@ -9,7 +9,7 @@ public class HomePage
 {
 	WebDriver driver;
 	
-	@FindBy(xpath = "//span[text()='Start Consult']")
+	@FindBy(xpath = "//span[text()='  REGISTER ']")
 	private WebElement reg;
 	
 	public WebElement getReg()
@@ -104,7 +104,7 @@ public class HomePage
 		return btnsend;
 	}
 
-	@FindBy(xpath = "//div[@id='textArea']//button")
+	@FindBy(xpath = "//div[contains(@class,'attachment___')]")
 	private WebElement paperclip;
 
 	public WebElement getPaperclip() {
@@ -265,7 +265,7 @@ public class HomePage
 		return org2;
 	}
 
-	@FindBy(xpath = "//span[text()='Status']//ancestor::div[contains(@class,'status___')]")
+	@FindBy(xpath = "//div[contains(@class,'status_container___q45qw')]")
 	private WebElement status;
 
 	public WebElement getResponderStatus() {
@@ -339,6 +339,14 @@ public class HomePage
 	public WebElement getSingleChat()
 	{
 		return getsingle;
+	}
+	
+	@FindBy(xpath = "//span[@aria-label='down']/..")
+	private WebElement resrole;
+	
+	public WebElement getResrol()
+	{
+		return resrole;
 	}
 	
 	public void createNewpatient(String speciality, String chiefcompliant) {

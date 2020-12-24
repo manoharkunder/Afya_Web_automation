@@ -1,10 +1,8 @@
 package com.niveus;
 
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,7 +21,7 @@ public class ChatMemberTest extends Base{
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test(enabled=false)
+	@Test()
 
 	public void chatMemeberValidation() throws Exception {
 		
@@ -43,39 +41,54 @@ public class ChatMemberTest extends Base{
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
 		Reporter.log("Chatmember Testcase is running............",true);
+
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		Reporter.log("Login page is sucessfully displayed", true);
-
-
-		WebDriverWait wait = new WebDriverWait(driver, 200);
-		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-		logp.getUsername().sendKeys("test2prasanna@gmail.com");
+		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
+
 		logp.getpswdview().click();
 
+		for (int i = 0; i <= 10; i++) {
+			try {
+				boolean res = logp.getloginbtn().isEnabled();
+				if (res == true) {
+					logp.getloginbtn().click();
 
-		for(int i=0;i<=10;i++)
-		{
-		try
-		{
+					break;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
 
-		boolean res = logp.getloginbtn().isEnabled();
-		if(res==true)
-		{
-			logp.getloginbtn().click();
+			}
+		}
+		boolean alert = false;
+		while (alert == false) {
+			try {
+				if (logp.getloginAlert().isEnabled()) {
 
-			break;
-		}
-		}
-		catch (Exception e) 
-		{
-			e.printStackTrace();
+					if (true) {
+						Reporter.log("Login Alert Popup is displayed......", true);
 
+						logp.getloginAlert().click();
+
+						alert = true;
+
+						break;
+
+					}
+
+				}
+			} catch (Exception e) {
+
+			}
 		}
-		}
-		
-		WebDriverWait wait2 = new WebDriverWait(driver, 50);
+
+		WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
@@ -85,168 +98,139 @@ public class ChatMemberTest extends Base{
 		Assert.assertTrue(flag);
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+
+		logp.getproficPic().click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
-		
-		Reporter.log("sucessfully logedin and Home page is displayed", true);
+		Assert.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		boolean ret = docpage.getNewSubmitter().isEnabled();
-         int c=0;
-         while(c>=0)
-         {
-        	 if(ret==true)
-        	 {
-        			WebDriverWait rr=new WebDriverWait(driver, 20);
-        			rr.until(ExpectedConditions.visibilityOf(docpage.getNewSubmitter()));
-        			
-        			   JavascriptExecutor ex = (JavascriptExecutor)driver;
-        			    ex.executeScript("arguments[0].click();", docpage.getNewSubmitter());
-        			     
-		Reporter.log("click on the new button sucessfully......###########",true);
-		break;
-        	 }
-        	 else
-        	 {
-        		 c++;
-        	 }
-         }
+		logp.getcloseProfile().click();
 
-		docpage.getSelectDate().sendKeys("11/11/1998",Keys.ENTER);
-		
-		WebDriverWait waittt=new WebDriverWait(driver, 20);
-		waittt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
-	
-		docpage.getPatientSearch().sendKeys("prasanna");
-		
-		WebDriverWait wait33 = new WebDriverWait(driver, 40);
-		
-		wait33.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
-		
-		docpage.getSearchResult().click();
-		
-		Reporter.log("Chat Member   Test   step ....1",true);
+		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-	   WebDriverWait wa = new WebDriverWait(driver, 40);
-		
-		wa.until(ExpectedConditions.elementToBeClickable(docpage.getConbutton()));
-		
-		
-		docpage.getConbutton().click();
-		
-		docpage.getSpeciality().sendKeys("anesthesiology");
-		
-		WebDriverWait wait66 = new WebDriverWait(driver, 20);
-		
-		wait66.until(ExpectedConditions.visibilityOf(docpage.getAnsthesiolgy()));
-		
-		Thread.sleep(4000);
-		
-		docpage.getAnsthesiolgy().click();
-		
-		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
-		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
-		Reporter.log("sucessfully enter the speciality and chief complaint.........########",true);
-		
-		Thread.sleep(2000);
-		docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
-		
-		int count = 0;   
-		while (count <= 90) {
+		int btn = 0;
+		while (btn==0) {
+
 			try {
-                  WebDriverWait op=new WebDriverWait(driver, 5);
-                 
-                  op.until(ExpectedConditions.visibilityOf(docpage.getIcdHeart()));
-                  
-				docpage.getIcdHeart().click();
-				
-				Reporter.log("Icd code is sucessfully displayed............############",true);
-				
+				docpage.getNewSubmitter().click();
 				break;
-			} 
-			catch (Exception e) 
-			{
-				e.printStackTrace();
-				count++;
-				Reporter.log("count number..."+count,true);
+
+			} catch (Exception e) {
+				// TODO: handle exception
 			}
 		}
-		
-		Reporter.log("Chat Member   Test   step ....2",true);
 
+		wait1.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
+		docpage.getdMonth().sendKeys("11");
+		docpage.getDate().sendKeys("11");
+		docpage.getyear().sendKeys("1998");
+
+		WebDriverWait tt = new WebDriverWait(driver, 10);
+
+		tt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
+
+		docpage.getPatientSearch().sendKeys("prasanna");
+
+		wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
+
+		docpage.getSearchResult().click();
+
+		Reporter.log("Addd new paient step ....1", true);
+
+		boolean flag1 = true;
+
+		while (flag1 == true) {
+			try {
+				
+				docpage.getSpeciality().sendKeys("anesthesiology");
+				
+				Thread.sleep(1000);
+
+
+				docpage.getAnsthesiolgy().click();
+
+				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
+
+				flag1 = false;
+				break;
+			} catch (Exception e) 
+			{
+			}
+		}
+
+		int count = 0;
+		while (count <= 1) {
+			try {
+				if (docpage.getIcd().isEnabled()) 
+				{
+
+					docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
+				   try
+				   {
+					   Thread.sleep(3000);
+					docpage.getIcdHeart().click();
+					break;
+
+				}
+				catch(Exception e)
+				{
+					
+				}
+				}
+
+			} catch (Exception e) {
+				Reporter.log("No ICd code.................................", true);
+				count++;
+			}
+		}
+
+		int count1 = 0;
+
+		while (count1 <= 1) {
+			try {
+				if (docpage.getCpt().isEnabled()) {
+
+					docpage.getCpt().sendKeys("A002");
+					break;
+
+				}
+
+			} catch (Exception e) {
+				Reporter.log("No cpt code.....................................", true);
+				count1++;
+			}
+		}
+
+		try
+		{
+		homepge.getReg().click();
+		}
+		catch(Exception e)
+		{
+			
+		}
  
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		boolean flg = true;
+		while (flg == true) {
+			try {
+				homepge.getChatsesion().click();
+
+				String lang1 = homepge.getBannerLang1().getText();
+				Reporter.log(lang1 + "...........Sucess...", true);
+
+				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
+				flg = false;
+
+			} catch (Exception e) {
+			}
+		}
+
+		Reporter.log("Patient  is sucessfully added to the chat session", true);
 		
-		boolean result = homepge.getReg().isEnabled();
-		int countt=0;
-		while(countt>=0)
-		{
-		if(result==true)
-		{
-        homepge.getReg().click();
-        break;
-		}
-		else
-		{
-			count++;
-		}
-		}         
-         
-		Reporter.log("Chat Member   Test   step ....3",true);
-
- 		WebDriverWait w = new WebDriverWait(driver, 100);
- 		w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
-
- 		String lang1 = homepge.getBannerLang1().getText();
- 		
-		Reporter.log("Chat Member   Test   step ....4",true);
-
-
- 		Date d = new Date();
-
- 		String[] dateArr = d.toString().split(" ");
-
- 		boolean flag3 = lang1.contains(dateArr[1]);
-
- 		Assert.assertTrue(flag3);
- 		
- 		Reporter.log("Doctor is sucessfully added to the chat session", true);
- 		boolean flag1 = lang1.contains(dateArr[2]);
- 		Assert.assertTrue(flag1);
- 		Reporter.log("Doctor is assigned to the chat session", true);
- 		System.out.println(lang1);
-
- 		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
- 		
- 		Reporter.log("Patient  is sucessfully added to the chat session", true);
-
-
-		WebDriverWait www = new WebDriverWait(driver, 100);
-		www.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
-
-		String lang11 = homepge.getBannerLang1().getText();
-
-		Date dd = new Date();
-
-		String[] dateArr1 = dd.toString().split(" ");
-
-		boolean flag33 = lang1.contains(dateArr1[1]);
-
-		Assert.assertTrue(flag33);
-		Reporter.log("Doctor is sucessfully added to the chat session", true);
-		boolean flag11 = lang1.contains(dateArr1[2]);
-		Assert.assertTrue(flag11);
-		Reporter.log("DOctor is assigned to the chat session", true);
-		System.out.println(lang11);
-
-		Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-		Reporter.log("Patient  is sucessgully added to the chat session", true);
-
 		int val = 0;
 		while (val <= 100) {
 			try {
@@ -282,7 +266,7 @@ public class ChatMemberTest extends Base{
 		String chatmemeber = docpage.getChatM().getText();
 		System.out.println(chatmemeber);
 
-		boolean flag2 = chatmemeber.contains("Test2");
+		boolean flag2 = chatmemeber.contains("Testone");
 		boolean flag4 = chatmemeber.contains("Prasanna");
 		Assert.assertTrue(flag2);
 		Reporter.log("Responder 1 name  is displayed sucessfully", true);

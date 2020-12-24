@@ -2,7 +2,6 @@ package com.niveus;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +21,7 @@ public class CloseCodeTest extends Base {
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test(enabled=false)
+	@Test()
 
 	public void closeCodeValidationTest() throws Exception {
 
@@ -45,12 +44,17 @@ public class CloseCodeTest extends Base {
 		close = PageFactory.initElements(driver, CloseCode.class);
 
 		Reporter.log("Closecode Testcase is runnng..........", true);
+		
+		
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 100);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 
 		logp.getUsername().sendKeys("test2prasanna@gmail.com");
@@ -71,9 +75,33 @@ public class CloseCodeTest extends Base {
 
 			}
 		}
-		Thread.sleep(2000);
+		
+		boolean alert=false;
+		while(alert==false)
+		{
+		try {
+			if (logp.getloginAlert().isEnabled()) {
 
-		WebDriverWait wait2 = new WebDriverWait(driver, 50);
+				if (true) {
+					Reporter.log("Login Alert Popup is displayed......", true);
+					
+
+					logp.getloginAlert().click();
+					
+					alert=true;
+					
+					break;
+
+				}
+
+			}
+		} catch (Exception e) { 
+						
+
+		}
+		}
+		
+		WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
@@ -82,44 +110,41 @@ public class CloseCodeTest extends Base {
 		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
 		Assert.assertTrue(flag);
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+		
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+
+		logp.getproficPic().click();
+		
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
+		
+		logp.getcloseProfile().click();
 
 		Reporter.log("sucessfully logedin and HomePage is displayed", true);
 
-		int count = 0;
-
+        wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		boolean resl = filter.getFilter().isEnabled();
-
-		while (count >= 0) {
-
-			if (resl == true) {
-
-				WebDriverWait w1 = new WebDriverWait(driver, 100);
-				w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-
-				JavascriptExecutor ex = (JavascriptExecutor) driver;
-				ex.executeScript("arguments[0].click();", filter.getFilter());
-
-				break;
-			} else {
-				count++;
-			}
-		}
-
-		/*
-		 * WebDriverWait op=new WebDriverWait(driver, 30);
-		 * op.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-		 */
-
-		Thread.sleep(4000);
-
+        while(resl==true)
+        {
+        	
+		if(resl)
+		{
+		filter.getFilter().click();
 		filter.getAllchat().click();
 
-		WebDriverWait hme = new WebDriverWait(driver, 100);
+		resl=false;
+		
+		break;
+		}
+        }
+
+
+
+		WebDriverWait hme = new WebDriverWait(driver, 10);
 
 		hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 
@@ -127,7 +152,6 @@ public class CloseCodeTest extends Base {
 
 		homepge.getChatsesion().click();
 
-		System.out.println("1");
 
 		int ch = 1;
 
@@ -136,25 +160,24 @@ public class CloseCodeTest extends Base {
 		  case 1:
 		  
 		  
-		  // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  
 		  Thread.sleep(5000);
 		  
 		  homepge.getTextarea().sendKeys("@close");
 		  
 		  
-		  WebDriverWait wt=new WebDriverWait(driver, 100);
+		  WebDriverWait w=new WebDriverWait(driver, 10);
 		  
-		  wt.until(ExpectedConditions.elementToBeClickable(close.getCloseVideo()));
+		  w.until(ExpectedConditions.elementToBeClickable(close.getCloseVideo()));
 		  
 		  
-		  WebDriverWait wtr=new WebDriverWait(driver, 20);
+		  WebDriverWait wtr=new WebDriverWait(driver, 10);
 		  wtr.until(ExpectedConditions.visibilityOf(close.getCloseComplete()));
 		  
 		  close.getCloseComplete().click();
 		  
 		  
-		  WebDriverWait uu=new WebDriverWait(driver, 20);
+		  WebDriverWait uu=new WebDriverWait(driver, 10);
 		  
 		  uu.until(ExpectedConditions.visibilityOf(close.getConsultcomplete()));
 		  
@@ -163,25 +186,27 @@ public class CloseCodeTest extends Base {
 		  Assert.assertTrue(b); Reporter.log(close.getConsultcomplete().getText()+
 		  " sucess",true);
 		  
-		  WebDriverWait pp=new WebDriverWait(driver, 40);
-		  pp.until(ExpectedConditions.elementToBeClickable(homepge.getSendbutton()));
-		  
-		  homepge.getSendbutton().click();
+			/*
+			 * WebDriverWait pp=new WebDriverWait(driver, 10);
+			 * pp.until(ExpectedConditions.elementToBeClickable(homepge.getSendbutton()));
+			 * 
+			 * homepge.getSendbutton().click();
+			 */
 		  
 		  Reporter.log("close code apply sucessfully...>>>> 1",true);
 		  
 		case 2:
 
-			Thread.sleep(4000);
+			Thread.sleep(1000);
 			
 			homepge.getTextarea().sendKeys("@close");
 
-			WebDriverWait wtw = new WebDriverWait(driver, 20);
+			WebDriverWait wtw = new WebDriverWait(driver, 10);
 			wtw.until(ExpectedConditions.visibilityOf(close.getCloseInPerson()));
 
 			close.getCloseInPerson().click();
 
-				WebDriverWait ll = new WebDriverWait(driver, 30);
+				WebDriverWait ll = new WebDriverWait(driver, 10);
 		
 			ll.until(ExpectedConditions.visibilityOf(close.getInPerson()));
 
@@ -191,10 +216,6 @@ public class CloseCodeTest extends Base {
 
 			Reporter.log(close.getInPerson().getText() + " sucess", true);
 
-			WebDriverWait ppp = new WebDriverWait(driver, 40);
-			ppp.until(ExpectedConditions.elementToBeClickable(homepge.getSendbutton()));
-
-			homepge.getSendbutton().click();
 
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Reporter.log("CloseCode TestCase is sucessfully done ############################# TEST IS PASS", true);

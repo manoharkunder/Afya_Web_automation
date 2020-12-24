@@ -1,8 +1,5 @@
 package com.niveus;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +19,7 @@ public class ParticipantTest extends Base {
 	public CloseCode close;
 	public FilterSection filter;
 
-	@Test(enabled=false)
+	@Test()
 	public void participantValidationTest() throws Exception {
 		
 		test=extent.createTest("8.ParticipantTest","This test case is to check whether ParticipantTest is working");
@@ -46,12 +43,16 @@ public class ParticipantTest extends Base {
 
 		Reporter.log("Participant Testcase is runnng..........",true);
 
+		
+		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
 
 		
-		WebDriverWait wait = new WebDriverWait(driver, 100);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 		logp.getUsername().sendKeys("test2prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
@@ -78,7 +79,33 @@ public class ParticipantTest extends Base {
 		}
 		}
 		
-		WebDriverWait wait2 = new WebDriverWait(driver, 50);
+		boolean alert=false;
+		while(alert==false)
+		{
+		try {
+			if (logp.getloginAlert().isEnabled()) {
+
+				if (true) {
+					Reporter.log("Login Alert Popup is displayed......", true);
+					
+
+					logp.getloginAlert().click();
+					
+					alert=true;
+					
+					break;
+
+				}
+
+			}
+		} catch (Exception e) { 
+						
+
+		}
+		}
+		
+		
+		WebDriverWait wait2 = new WebDriverWait(driver, 15);
 
 		wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
@@ -87,76 +114,61 @@ public class ParticipantTest extends Base {
 		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
 		Assert.assertTrue(flag);
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+		
+		
+		WebDriverWait wt = new WebDriverWait(driver, 10);
+		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		logp.getproficPic().click();
+		
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 
+		logp.getcloseProfile().click();
+
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-	
-		  int count=0;
-			
-			
-			boolean resl = filter.getFilter().isEnabled();
-			while(count>=0)
-			{
-			
-			if(resl==true)
-			{
 
-			     WebDriverWait w1=new WebDriverWait(driver, 100);
-			     w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-			    
-			     JavascriptExecutor ex = (JavascriptExecutor)driver;
-			     ex.executeScript("arguments[0].click();", filter.getFilter());
-			     
-			   			       break;
-			}
-			else
-			{
-	     count++;
-			}
-			}
-			/*
-			 * WebDriverWait pp=new WebDriverWait(driver, 30);
-			 * pp.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-			 * 
-			 */
-			
-			Thread.sleep(4000);
-			filter.getAllchat().click();
-			
-			
-         WebDriverWait w=new WebDriverWait(driver, 100);
-         w.until(ExpectedConditions.elementToBeClickable(homepge.getChatsesion()));
+        wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+        
+		boolean resl = filter.getFilter().isEnabled();
+        while(resl==true)
+        {
+        	try
+        	{
+        		
+        	
+		if(resl)
+		{
+		filter.getFilter().click();
+       		
+		filter.getAllchat().click();
+
+		resl=false;
 		
-         int cnt=0;
- 	    while(cnt>=0)
- 	    {
- 	    	try
- 	    	{
- 	    		homepge.getChatsesion().isDisplayed();
- 	    		homepge.getChatsesion().click();
- 	    		break;
- 	    	}
- 	    	catch (Exception e) 
- 	    	{
- 	    		Thread.sleep(1000);
- 				filter.getFilter().click();
- 				filter.getAllchat().click();
+		break;	
+		}
+        	}
+        catch (Exception e) 
+        	{
+				
+        	}
+        }
+        
 
-                  cnt++;
-                  e.printStackTrace();
- 	    	}
- 	    	
- 	    }
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
-		Thread.sleep(10000);
+
+		WebDriverWait hme = new WebDriverWait(driver, 10);
+
+		hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+
+		Reporter.log("Sucessfully chat session is displayed...in close code ....>>>>>>>>>>>>>>", true);
+
+		homepge.getChatsesion().click();
+
 
 		int ch = 1;
 		switch (ch) {
@@ -166,32 +178,31 @@ public class ParticipantTest extends Base {
            
 			homepge.getTextarea().sendKeys("@participant");
 
-			Thread.sleep(5000);
-			
+			wait.until(ExpectedConditions.elementToBeClickable(close.getFullAccess()));
 			ut.moveToElement(driver, close.getFullAccess());
+			
 
-			WebDriverWait t = new WebDriverWait(driver, 100);
+			WebDriverWait t = new WebDriverWait(driver, 10);
 			t.until(ExpectedConditions.visibilityOf(close.getParticipantFull()));
 
 			boolean b = close.getParticipantFull().getText().contains("Full Access");
 			Assert.assertTrue(b);
 			Reporter.log(close.getParticipantFull().getText() + " sucess", true);
 
-			homepge.getSendbutton().click();
-
+		
 			break;
 			
 		case 2:
 
 			homepge.getTextarea().sendKeys("@participant");
 
-			WebDriverWait wt1 = new WebDriverWait(driver, 100);
+			WebDriverWait wt1 = new WebDriverWait(driver, 10);
 
 			wt1.until(ExpectedConditions.elementToBeClickable(close.getLimitAcces()));
 
 			ut.moveToElement(driver, close.getLimitAcces());
 
-			WebDriverWait u = new WebDriverWait(driver, 100);
+			WebDriverWait u = new WebDriverWait(driver, 10);
 			u.until(ExpectedConditions.visibilityOf(close.getPArticipantLimit()));
 
 			boolean b1 = close.getPArticipantLimit().getText().contains("Limited Access");
@@ -202,19 +213,19 @@ public class ParticipantTest extends Base {
 
 			homepge.getSendbutton().click();
 
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 
-			
+		
 
 		case 3:
 			homepge.getTextarea().sendKeys("@participant");
 
-			WebDriverWait wait22 = new WebDriverWait(driver, 100);
+			WebDriverWait wait22 = new WebDriverWait(driver, 10);
 			wait22.until(ExpectedConditions.elementToBeClickable(close.getNoAccess()));
 
 			ut.moveToElement(driver, close.getNoAccess());
 
-			WebDriverWait tu = new WebDriverWait(driver, 100);
+			WebDriverWait tu = new WebDriverWait(driver, 10);
 			tu.until(ExpectedConditions.visibilityOf(close.getPArticipantNo()));
 
 			boolean b3 = close.getPArticipantNo().getText().contains("No Access");

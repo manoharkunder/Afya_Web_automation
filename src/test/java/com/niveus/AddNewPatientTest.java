@@ -178,14 +178,14 @@ public class AddNewPatientTest extends Base {
 			try {
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 					
-					Thread.sleep(2000);
+					Thread.sleep(3000);
 
 					Utility.isElementPresntOnId(driver, "ICD", 10)
 							.sendKeys("Hypertensive heart disease with heart failure");
 					try {
 						// docpage.getIcdHeart().click();
 
-						Thread.sleep(2000);
+						Thread.sleep(3000);
 						Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10).click();
 						Reporter.log("Icd Code is sucessfully selected..###############################",true);

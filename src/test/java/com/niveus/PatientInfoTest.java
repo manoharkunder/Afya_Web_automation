@@ -280,12 +280,12 @@ public class PatientInfoTest extends Base {
 
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 
-					Thread.sleep(2000);
+					Thread.sleep(3000);
 
 					Utility.isElementPresntOnId(driver, "ICD", 10)
 							.sendKeys("Hypertensive heart disease with heart failure");
 					try {
-						Thread.sleep(2000);
+						Thread.sleep(3000);
 						WebElement icd = Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10);
 						icd.click();

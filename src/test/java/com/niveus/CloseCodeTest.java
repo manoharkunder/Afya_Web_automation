@@ -150,7 +150,6 @@ public class CloseCodeTest extends Base {
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 		
-		wait.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		
 	
 		/*

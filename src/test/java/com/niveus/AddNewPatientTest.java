@@ -1,5 +1,6 @@
 package com.niveus;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,7 +34,6 @@ public class AddNewPatientTest extends Base {
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
 		registerp = PageFactory.initElements(driver, Registeration.class);
-
 
 		WebDriverWait wait00 = new WebDriverWait(driver, 10);
 
@@ -89,30 +89,31 @@ public class AddNewPatientTest extends Base {
 		 * 
 		 * ut.moveToElement(driver, docpage.getSubProvider());
 		 */
-		
+
 		Utility.isElementPresnt(driver, "//span[text()='Submitter Provider']", 10).click();
 
 		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
-		
+
 		Assert.assertTrue(flag);
-		
+
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
 		/*
 		 * WebDriverWait wt = new WebDriverWait(driver, 10);
 		 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
 		 */
 		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
-	
-		//logp.getproficPic().click();
+
+		// logp.getproficPic().click();
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 
-		//logp.getcloseProfile().click();
-		
-		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10).click();
+		// logp.getcloseProfile().click();
+
+		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
+				10).click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
@@ -123,9 +124,11 @@ public class AddNewPatientTest extends Base {
 		 * 
 		 * } catch (Exception e) { } }
 		 */
-		
-		Utility.isElementPresnt(driver, "//img[@src='/static/add_plus.8284d929.svg']", 10).click();
-		
+
+		WebElement newbtn = Utility.isElementPresnt(driver, "//img[@src='/static/add_plus.8284d929.svg']", 10);
+
+		newbtn.click();
+
 		wait1.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
 
 		docpage.getdMonth().sendKeys("11");
@@ -138,10 +141,10 @@ public class AddNewPatientTest extends Base {
 
 		docpage.getPatientSearch().sendKeys("prasanna");
 
-	//	wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
+		// wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
 
 //	/	docpage.getSearchResult().click();
-		
+
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 
 		Reporter.log("Addd new paient step ....1", true);
@@ -150,19 +153,20 @@ public class AddNewPatientTest extends Base {
 
 		while (flag1 == true) {
 			try {
-				
-			//	docpage.getSpeciality().sendKeys("anesthesiology");
-				
-            Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");				
-			
-            //Thread.sleep(3000);
 
-			//	docpage.getAnsthesiolgy().click();
-            
-            Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
+				// docpage.getSpeciality().sendKeys("anesthesiology");
+
+				Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
+
+				// Thread.sleep(3000);
+
+				// docpage.getAnsthesiolgy().click();
+
+				Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
 
 				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 
+				Reporter.log("Specialty and chief complaint is displayed########################",true);
 				flag1 = false;
 				break;
 			} catch (Exception e) {
@@ -172,23 +176,24 @@ public class AddNewPatientTest extends Base {
 		int count = 0;
 		while (count <= 1) {
 			try {
-				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) 
-				{
-
-					Utility.isElementPresntOnId(driver, "ICD", 10).sendKeys("Hypertensive heart disease with heart failure");
-				   try
-				   {
-					   Thread.sleep(3000);
-				//	docpage.getIcdHeart().click();
-					   
-					   Utility.isElementPresnt(driver, "//span[text()='Hypertensive heart disease with heart failure']", 10).click();
-					break;
-
-				}
-				catch(Exception e)
-				{
+				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 					
-				}
+					Thread.sleep(2000);
+
+					Utility.isElementPresntOnId(driver, "ICD", 10)
+							.sendKeys("Hypertensive heart disease with heart failure");
+					try {
+						// docpage.getIcdHeart().click();
+
+						Thread.sleep(2000);
+						Utility.isElementPresnt(driver,
+								"//span[text()='Hypertensive heart disease with heart failure']", 10).click();
+						Reporter.log("Icd Code is sucessfully selected..###############################",true);
+						break;
+
+					} catch (Exception e) {
+						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+					}
 				}
 
 			} catch (Exception e) {
@@ -203,7 +208,7 @@ public class AddNewPatientTest extends Base {
 			try {
 				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
-					//docpage.getCpt().sendKeys("A002");
+					// docpage.getCpt().sendKeys("A002");
 					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
 					break;
 
@@ -215,19 +220,19 @@ public class AddNewPatientTest extends Base {
 			}
 		}
 
-		//homepge.getReg().click();
-		
+		// homepge.getReg().click();
+
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
 
 		boolean flg = true;
 		while (flg == true) {
 			try {
-			//	homepge.getChatsesion().click();
+				// homepge.getChatsesion().click();
 
 				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
-				
+
 				String lang1 = homepge.getBannerLang1().getText();
-				
+
 				Reporter.log(lang1 + "...........Sucess...", true);
 
 				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");

@@ -266,6 +266,8 @@ public class PatientInfoTest extends Base {
 
 				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 
+				Reporter.log("specialty and chief complaint is sucessfullly displayed##################", true);
+
 				flag1 = false;
 				break;
 			} catch (Exception e) {
@@ -275,15 +277,20 @@ public class PatientInfoTest extends Base {
 		int count = 0;
 		while (count <= 1) {
 			try {
+
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
+
+					Thread.sleep(2000);
 
 					Utility.isElementPresntOnId(driver, "ICD", 10)
 							.sendKeys("Hypertensive heart disease with heart failure");
 					try {
-
+						Thread.sleep(2000);
 						WebElement icd = Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10);
 						icd.click();
+						
+						Reporter.log("Sucessfully icd code is selected########################",true);
 						break;
 
 					} catch (Exception e) {

@@ -269,6 +269,8 @@ public class ChatMemberTest extends Base {
 				Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
 
 				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
+				
+				Reporter.log("Specialty and chief complaint is sucessfully displayed",true);
 
 				flag1 = false;
 				break;
@@ -280,15 +282,19 @@ public class ChatMemberTest extends Base {
 		while (count <= 1) {
 			try {
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
+					
+					Thread.sleep(2000);
 
 					Utility.isElementPresntOnId(driver, "ICD", 10)
 							.sendKeys("Hypertensive heart disease with heart failure");
 					try {
 						// docpage.getIcdHeart().click();
 
+						Thread.sleep(2000);
 						WebElement Icd=Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10);
 						Icd.click();
+						Reporter.log("Icd code is sucessfully selected##########################",true);
 						break;
 
 					} catch (Exception e) {

@@ -122,7 +122,7 @@ public class AssigningDoctorTest extends Base {
 		 */
 		
 		Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
-		for (int i = 1; i <= 10;) {
+	//	for (int i = 1; i <= 10;) {
 
 			try
 
@@ -169,11 +169,11 @@ public class AssigningDoctorTest extends Base {
 				if (b) {
 					Reporter.log(homepge.getSession().getText() + " sucessfully created", true);
 
-					break;
+				//	break;
 				} else {
 					Reporter.log(homepge.getNoDoctor().getText() + "UnSucessfull");
 
-					i++;
+			//		i++;
 
 				}
 			}
@@ -185,7 +185,7 @@ public class AssigningDoctorTest extends Base {
 				 * pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
 				 */
 				
-				Utility.isElementPresnt(driver, "//a[contains(@class,'close')]", 10).click();
+			//	Utility.isElementPresnt(driver, "//a[contains(@class,'close')]", 10).click();
 				
 				//homepge.getpopUpClose().click();
 
@@ -195,10 +195,10 @@ public class AssigningDoctorTest extends Base {
 				 */
 				//homepge.getNewbtn().click();
 			
-				Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
+		//		Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
 				
 			}
-		}
+		//}
 		
 	Reporter.log("Doctor is sucessfully added to the chat session",true);
 //	boolean flag1 = lang1.contains(dateArr[2]);Assert.assertTrue(flag1);Reporter.log("DOctor is assigned to the cht session",true);

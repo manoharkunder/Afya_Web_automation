@@ -41,7 +41,7 @@ public class AddNewPatientTest extends Base {
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		logp.getUsername().sendKeys("test1prasanna@gmail.com");
+		logp.getUsername().sendKeys("test2prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 
 		logp.getpswdview().click();
@@ -108,7 +108,7 @@ public class AddNewPatientTest extends Base {
 		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 
 		//logp.getcloseProfile().click();
 		

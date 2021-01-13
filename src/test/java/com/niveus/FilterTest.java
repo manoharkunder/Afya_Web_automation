@@ -247,9 +247,11 @@ public class FilterTest extends Base {
 		String oldtime = "";
 		if (chat.contains("old")) {
 			//oldtime = filter.getTime().getText();
+			Thread.sleep(2000);
 			oldtime=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
 
 		} else {
+			Thread.sleep(2000);
 		//	String time = filter.getTimeStamp().getText();
 			String time=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
 			

@@ -180,7 +180,6 @@ public class AssigningDoctorTest extends Base {
 
 			catch (Exception e) {
 
-				e.printStackTrace();
 				/*
 				 * WebDriverWait pp=new WebDriverWait(driver, 30);
 				 * pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));

@@ -144,18 +144,21 @@ public class ProfilePage {
 		lname.sendKeys(lastName);
 
 		dobid.sendKeys(dateofbirth, Keys.ENTER);
+		
 		gnder.click();
 		
-		Thread.sleep(4000);
-
-		if (gender.equals("Male")) {
+		if (gender.equals("Male")) 
+		{
 			genmale.click();
+			
+		//	Utility.isElementPresnt(driver, "//div[text()='Male']", 5).click();
 		} else if (gender.equals("Female")) {
-			genFemale.click();
+			
+		genFemale.click();
+		//	Utility.isElementPresnt(driver, "//div[text()='Female']", 5).click();
 		} else {
 			notspecify.click();
 		}
-		Thread.sleep(4000);
 
 
 	}

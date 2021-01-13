@@ -2,8 +2,6 @@ package com.niveus;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,7 +18,7 @@ public class AssigningDoctorTest extends Base {
 	public ProfilePage propage;
 	FileLib flib = new FileLib();
 
-	@Test(priority = 2)
+	@Test()
 	public void assigningDoctorTest() throws Exception {
 
 		test = extent.createTest("14.AssigningDoctor",
@@ -114,17 +112,16 @@ public class AssigningDoctorTest extends Base {
 	
 	
 	
-		boolean btn = homepge.getNewbtn().isEnabled();
+		/*
+		 * boolean btn = homepge.getNewbtn().isEnabled();
+		 * 
+		 * while(btn) { homepge.getNewbtn().click();
+		 * 
+		 * btn=false; break; }
+		 * 
+		 */
 		
-		while(btn)
-		{
-			homepge.getNewbtn().click();
-			
-		    btn=false;
-		    break;
-		}
-	
-
+		Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
 		for (int i = 1; i <= 10;) {
 
 			try
@@ -132,32 +129,42 @@ public class AssigningDoctorTest extends Base {
 			{
 				
 				
-				homepge.getSpeciality().click();
+			//	homepge.getSpeciality().click();
 				
-				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				
-				WebElement spec = driver.findElement(By.xpath(
-						" //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][" + i
-								+ "]"));
-
-				WebDriverWait tt=new WebDriverWait(driver, 30);
-				tt.until(ExpectedConditions.elementToBeClickable(spec));
-				
-				spec.click();
+               Utility.isElementPresntOnId(driver, "speciality", 10).click();
+               
+				/*
+				 * driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				 * 
+				 * WebElement spec = driver.findElement(By.xpath(
+				 * " //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')]["
+				 * + i + "]"));
+				 * 
+				 * WebDriverWait tt=new WebDriverWait(driver, 30);
+				 * tt.until(ExpectedConditions.elementToBeClickable(spec));
+				 */
+               
+               Utility.isElementPresnt(driver, "//div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][\"\n" + 
+               		"				 * + i + \"]", 10).click();
+			//	spec.click();
 				
 				Reporter.log("sucessfully specialty is seleced",true);
 				
-				Thread.sleep(3000);
+			//	Thread.sleep(3000);
+				Utility.isElementPresntOnId(driver, "chiefcomplaint", 10).sendKeys("have a knee pain leg");
 
-				homepge.getChiefcomplaint().sendKeys("have a knee pain leg");
+			//	homepge.getChiefcomplaint().sendKeys("have a knee pain leg");
 
-				homepge.getNewpatient().click();
+				Utility.isElementPresnt(driver, "//span[text()='Create a new chat']", 10).click();
+		
+			//	homepge.getNewpatient().click();
 
 				WebDriverWait wit = new WebDriverWait(driver, 100);
 
 				wit.until(ExpectedConditions.visibilityOf(homepge.getSession()));
 
-				
+				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
+
 				boolean b = homepge.getSession().getText().contains("Session");
 				if (b) {
 					Reporter.log(homepge.getSession().getText() + " sucessfully created", true);
@@ -174,39 +181,26 @@ public class AssigningDoctorTest extends Base {
 			catch (Exception e) {
 
 				e.printStackTrace();
+				/*
+				 * WebDriverWait pp=new WebDriverWait(driver, 30);
+				 * pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
+				 */
 				
-				WebDriverWait pp=new WebDriverWait(driver, 30);
-				pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
+				Utility.isElementPresnt(driver, "//a[contains(@class,'close')]", 10).click();
+				
+				//homepge.getpopUpClose().click();
 
-				homepge.getpopUpClose().click();
-
-				Thread.sleep(2000);
-				WebDriverWait ppp=new WebDriverWait(driver, 30);
-				ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
+				/*
+				 * Thread.sleep(2000); WebDriverWait ppp=new WebDriverWait(driver, 30);
+				 * ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
+				 */
+				//homepge.getNewbtn().click();
+			
+				Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
 				
-				homepge.getNewbtn().click();
-				
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
-		/*
-		 * Thread.sleep(6000);
-		 * 
-		 * WebDriverWait w = new WebDriverWait(driver, 100);
-		 * 
-		 * w.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
-		 * 
-		 * String lang1 = homepge.getBannerLang1().getText();
-		 * 
-		 * 
-		 * Date d = new Date();
-		 * 
-		 * String[] dateArr = d.toString().split(" ");
-		 * 
-		 * boolean flag2 = lang1.contains(dateArr[1]);
-		 * 
-		 * Assert.assertTrue(flag2);
-		 */
+		
 	Reporter.log("Doctor is sucessfully added to the chat session",true);
 //	boolean flag1 = lang1.contains(dateArr[2]);Assert.assertTrue(flag1);Reporter.log("DOctor is assigned to the cht session",true);
 

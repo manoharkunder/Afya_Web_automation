@@ -98,38 +98,59 @@ public class ResponderStatusTest extends Base{
 
 		}
 		
-		WebDriverWait wait11 = new WebDriverWait(driver, 50);
-		wait11.until(ExpectedConditions.elementToBeClickable(docpage.getResponder()));
-
-		ut.moveToElement(driver, docpage.getResponder());
+		/*
+		 * WebDriverWait wait11 = new WebDriverWait(driver, 50);
+		 * wait11.until(ExpectedConditions.elementToBeClickable(docpage.getResponder()))
+		 * ;
+		 */
+		
+		Utility.isElementPresnt(driver, "//span[text()='Responder Provider']", 10).click();
+	//	ut.moveToElement(driver, docpage.getResponder());
 		
 
-		WebDriverWait wt = new WebDriverWait(driver, 10);
-		wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-
-		logp.getproficPic().click();
+	/*
+	 * WebDriverWait wt = new WebDriverWait(driver, 10);
+	 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+	 * 
+	 * logp.getproficPic().click();
+	 */
+		
+     boolean flag1 = docpage.getResponder().getText().contains("Responder");
+		
+		Assert.assertTrue(flag1);
+		
+		Reporter.log(docpage.getResponder().getText() + " role is selected", true);
+	
+		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
 		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
 		
-		logp.getcloseProfile().click();
+//		logp.getcloseProfile().click();
+		
+		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10).click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 		
 		wait.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 		
-		 homepge.getResrol().click();
+        Utility.isElementPresntOnId(driver, "chat_session_items", 10);		
+	
+        //homepge.getResrol().click();
+         
+        Utility.isElementPresnt(driver, "//span[@aria-label='down']/..", 10).click();
     
-			wait.until(ExpectedConditions.elementToBeClickable(homepge.getResponderStatus()));
+	//	wait.until(ExpectedConditions.elementToBeClickable(homepge.getResponderStatus()));
          
 			boolean flag=true;
            
            while(flag==true)
 			try
 			{
-			homepge.getResponderStatus().click();
+			//homepge.getResponderStatus().click();
+				Utility.isElementPresnt(driver, "//div[contains(@class,'status_container___q45qw')]", 10).click();
 			
 			flag=false;
 			}
@@ -138,9 +159,12 @@ public class ResponderStatusTest extends Base{
 				
 			}
 			
-			WebDriverWait ww = new WebDriverWait(driver, 20);
-
-			ww.until(ExpectedConditions.visibilityOf(logp.getUpdateChange()));
+		/*
+		 * WebDriverWait ww = new WebDriverWait(driver, 20);
+		 * 
+		 * ww.until(ExpectedConditions.visibilityOf(logp.getUpdateChange()));
+		 */
+           Utility.isElementPresnt(driver, "//span[contains(text(),'User status is changed to')]", 10);
 
 			Reporter.log(logp.getUpdateChange().getText(), true);
 

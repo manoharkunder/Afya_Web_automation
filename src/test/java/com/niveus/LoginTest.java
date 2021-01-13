@@ -16,7 +16,7 @@ public class LoginTest extends Base {
 	FileLib flib = new FileLib();
 	public ProfilePage propage;
 
-	@Test(priority = 1)
+	@Test()
 	public void loginPageTest() {
 
 		test = extent.createTest("1.Login", "This test case is used to check the Login validation");

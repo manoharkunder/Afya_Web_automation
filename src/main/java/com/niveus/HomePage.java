@@ -82,7 +82,7 @@ public class HomePage
 		return search;
 	}
 
-	@FindBy(xpath = "//li[@id='chat_session_items']")
+	@FindBy(id = "chat_session_items")
 	private WebElement chatsession;
 
 	public WebElement getChatsesion() {

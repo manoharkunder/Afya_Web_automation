@@ -1,6 +1,5 @@
 package com.niveus;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,7 +18,7 @@ public class FilterTest extends Base {
 	public DoctorRolesPage docpage;
 	Utility ut = new Utility();
 
-	@Test(priority = 5)
+	@Test()
 	public void filterValidationTest() throws Exception {
 
 		test = extent.createTest("6.FilterTest", "This test case is to check whether Filter is working");
@@ -97,47 +96,76 @@ public class FilterTest extends Base {
 
 		Reporter.log("sucessfully logedin and Home page is displayed", true);
 	
-		
-		 wait.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-	        
-			boolean resl = filter.getFilter().isEnabled();
-	        while(resl==true)
-	        {
-	        	try
-	        	{
-	        		
-	        	
-			if(resl)
+		/*
+		 * wait.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+		 * 
+		 * boolean resl = filter.getFilter().isEnabled(); while(resl==true) { try {
+		 * 
+		 * 
+		 * if(resl) {
+		 * 
+		 * filter.getFilter().click();
+		 * 
+		 * resl=false;
+		 * 
+		 * break; } } catch (Exception e) {
+		 * 
+		 * } } int count=0; while(count==0) { try {
+		 * 
+		 * filter.getAllchat().click();
+		 * 
+		 * homepge.getChatsesion().isDisplayed(); count++; } catch (Exception e) {
+		 * 
+		 * } }
+		 */
+
+			Utility.isElementPresnt(driver, "//div[@role='filter_holder']/span", 12).click();
+			;
+			/*
+			 * wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+			 * 
+			 * boolean resl = filter.getFilter().isEnabled();
+			 * 
+			 * while (count >= 0) {
+			 * 
+			 * if (resl == true) {
+			 * 
+			 * Thread.sleep(2000); WebDriverWait w1 = new WebDriverWait(driver, 100);
+			 * w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
+			 * 
+			 * JavascriptExecutor ex = (JavascriptExecutor) driver;
+			 * ex.executeScript("arguments[0].click();", filter.getFilter());
+			 * 
+			 * break; } else { count++; } }
+			 * 
+			 * Thread.sleep(4000);
+			 */
+
+			// filter.getAllchat().click();
+			
+			try
 			{
 
-			filter.getFilter().click();
-	       					
-			resl=false;
+			Utility.isElementPresnt(driver, "//span[text()=' All Chats']", 10).click();
 			
-			break;	
 			}
-	        	}
-	        catch (Exception e) 
-	        	{
-					
-	        	}
-	        }
-	        int count=0;
-	        while(count==0)
-	        {
-	        try
-	        {
-				
-	        filter.getAllchat().click();
+			catch (Exception e)
+			{
+				Reporter.log("error is displaying");
+			}
+			/*
+			 * try { WebDriverWait up = new WebDriverWait(driver, 30);
+			 * up.until(ExpectedConditions.visibilityOf(landpage.getChatsesion())); } catch
+			 * (Exception e)
+			 * 
+			 * { e.printStackTrace(); }
+			 */
+	        Thread.sleep(2000);
+	        
+			String chat=Utility.isElementPresnt(driver, "//li[@id='chat_session_items']", 10).getText();
+			
+			Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>", true);
 
-			homepge.getChatsesion().isDisplayed();
-			count++;
-	        }
-	        catch (Exception e) 
-	        {
-	        	
-			}
-	        }
 
 
 
@@ -146,7 +174,7 @@ public class FilterTest extends Base {
 			 * 
 			 * hme.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
 			 */
-		String chat = homepge.getChatsesion().getText();
+//		String chat = homepge.getChatsesion().getText();
 
 		Reporter.log(chat, true);
 
@@ -155,10 +183,12 @@ public class FilterTest extends Base {
 
 		if (chat.equalsIgnoreCase("ago")) {
 			Reporter.log("First time stmp is  displayed........###########", true);
-			newtime = filter.getTimeStamp().getText();
+			newtime=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
+		//	newtime = filter.getTimeStamp().getText();
 		} else {
 			Reporter.log("second time stamp is taken.........############", true);
-			StrOld = filter.getTime().getText();
+			//StrOld = filter.getTime().getText();
+			StrOld=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
 			newtime = StrOld;
 
 		}
@@ -166,40 +196,63 @@ public class FilterTest extends Base {
 		Reporter.log(newtime, true);
 		try
 		{
-		filter.getFilterClose().click();
+	//	filter.getFilterClose().click();
+		Utility.isElementPresnt(driver, "//span[text()='Close']", 10).click();
 		}
 		catch(Exception e)
 		{
 			
 		}
-
-		WebDriverWait p = new WebDriverWait(driver, 10);
-
-		p.until(ExpectedConditions.visibilityOf(filter.getSorting()));
-
-		filter.getSorting().click();
+		
+		  WebDriverWait p = new WebDriverWait(driver, 10);
+		  
+		  p.until(ExpectedConditions.visibilityOf(filter.getSorting()));
+		  
+		   
+		Utility.isElementPresnt(driver, "//img[@src='/static/sort.260d578a.svg']", 10).click();
+		
+	//	filter.getSorting().click();
 
 		try
 		{
-		WebDriverWait q = new WebDriverWait(driver, 10);
-
-		q.until(ExpectedConditions.visibilityOf(filter.getNewest()));
+			/*
+			 * WebDriverWait q = new WebDriverWait(driver, 10);
+			 * 
+			 * q.until(ExpectedConditions.visibilityOf(filter.getNewest()));
+			 */
+			
+			Utility.isElementPresnt(driver, "//span[text()='Newest']", 10).click();
 
 		}
 		catch (Exception e) 
 		{
 			
 		}
-		JavascriptExecutor ex1 = (JavascriptExecutor) driver;
-		ex1.executeScript("arguments[0].click();", filter.getNewest());
-
-		WebDriverWait www = new WebDriverWait(driver, 10);
-		www.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+		
+		/*
+		 * JavascriptExecutor ex1 = (JavascriptExecutor) driver;
+		 * ex1.executeScript("arguments[0].click();", filter.getNewest());
+		 * 
+		 * 
+		 * WebDriverWait www = new WebDriverWait(driver, 10);
+		 * www.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
+		 */
+		
+	    Thread.sleep(2000);
+		Utility.isElementPresnt(driver, "//li[@id='chat_session_items']", 10).getText();
+				
+				Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>", true);
+		
+		
 		String oldtime = "";
 		if (chat.contains("old")) {
-			oldtime = filter.getTime().getText();
+			//oldtime = filter.getTime().getText();
+			oldtime=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
+
 		} else {
-			String time = filter.getTimeStamp().getText();
+		//	String time = filter.getTimeStamp().getText();
+			String time=Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
+			
 			oldtime = time;
 
 		}

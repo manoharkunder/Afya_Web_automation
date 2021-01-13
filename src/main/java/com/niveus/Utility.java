@@ -3,6 +3,7 @@ package com.niveus;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -51,5 +52,76 @@ public class Utility {
 	{
 	Actions act=new Actions(driver);
 	act.moveToElement(webelement).perform();
+	}
+	public static WebElement isElementPresnt(WebDriver driver,String xpath,int time)
+	{
+	 
+	 
+	WebElement ele = null;
+	 
+	for(int i=0;i<time;i++)
+	{
+	try{
+	ele=driver.findElement(By.xpath(xpath));
+	System.out.println("element is appered on DOM...........##################");
+
+	break;
+	}
+	catch(Exception e)
+	{
+	try 
+	{
+	Thread.sleep(1000);
+	} catch (InterruptedException e1) 
+	{
+	System.out.println("Waiting for element to appear on DOM");
+	}
+	}
+	 
+	 
+	}
+	return ele;
+	 
+	}
+	/**
+	 * 
+	 */
+	public static WebElement isElementPresntOnId(WebDriver driver,String Id,int time)
+	{
+	 
+	int errorcnt=0; 
+	WebElement res = null;
+	 
+	for(int i=0;i<time;i++)
+	{
+	try{
+	res=driver.findElement(By.id(Id));
+	System.out.println("element is appered on DOM...........##################");
+
+	break;
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+		System.out.println("Error count>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+errorcnt);
+		errorcnt++;
+		if(errorcnt>10)
+		{
+			System.out.println("Error count croos 10 times");
+			break;
+		}
+	try 
+	{
+	Thread.sleep(500);
+	} catch (InterruptedException e1) 
+	{
+	System.out.println("Waiting for element to appear on DOM");
+	}
+	}
+	 
+	 
+	}
+	return res;
+	 
 	}
 }

@@ -273,14 +273,14 @@ public class PatientInfoTest extends Base {
 			} catch (Exception e) {
 			}
 		}
-
-		int count = 0;
-		while (count <= 1) {
+		/*
+		 * int count = 0; while (count <= 1)
+		 */{
 			try {
 
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 
-					Thread.sleep(3000);
+					Thread.sleep(2000);
 
 					Utility.isElementPresntOnId(driver, "ICD", 10)
 							.sendKeys("Hypertensive heart disease with heart failure");
@@ -291,7 +291,7 @@ public class PatientInfoTest extends Base {
 						icd.click();
 						
 						Reporter.log("Sucessfully icd code is selected########################",true);
-						break;
+					//	break;
 
 					} catch (Exception e) {
 						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>", true);
@@ -301,27 +301,28 @@ public class PatientInfoTest extends Base {
 
 			} catch (Exception e) {
 				Reporter.log("No ICd code.................................", true);
-				count++;
+			//	count++;
 			}
 		}
-
-		int count1 = 0;
-
-		while (count1 <= 1) {
+		/*
+		 * int count1 = 0;
+		 * 
+		 * while (count1 <= 1)
+		 */ 
 			try {
 				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
 					// docpage.getCpt().sendKeys("A002");
 					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
-					break;
+					//break;
 
 				}
 
 			} catch (Exception e) {
 				Reporter.log("No cpt code.....................................", true);
-				count1++;
+				//count1++;
 			}
-		}
+		
 
 		// homepge.getReg().click();
 

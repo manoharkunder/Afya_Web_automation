@@ -365,7 +365,8 @@ public class PatientInfoTest extends Base {
 				 */
 
 			Thread.sleep(2000);
-			Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10).click();
+			WebElement more = Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10);
+			more.click();
 
 		} catch (Exception e) {
 
@@ -380,8 +381,10 @@ public class PatientInfoTest extends Base {
 		 * homepge.getPatientinfo().click();
 		 */
 
-		Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Patient info']", 10).click();
-		/*
+		 WebElement info=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Patient info']", 10);
+	      info.click();
+		 
+		 /*
 		 * WebDriverWait pp = new WebDriverWait(driver, 100);
 		 * pp.until(ExpectedConditions.visibilityOf(homepge.getPatientDetails()));
 		 */

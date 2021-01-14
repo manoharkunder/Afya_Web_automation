@@ -377,13 +377,18 @@ public class ChatMemberTest extends Base {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		
+			/*
+			 * WebDriverWait rr = new WebDriverWait(driver, 20);
+			 * 
+			 * rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));
+			 * 
+			 * JavascriptExecutor ex = (JavascriptExecutor) driver;
+			 * ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
+			 */
 
-		WebDriverWait rr = new WebDriverWait(driver, 20);
-		rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));
-
-		JavascriptExecutor ex = (JavascriptExecutor) driver;
-		ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
-
+			 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 10);
+		
+			 chatmem.click();
 		// homepge.getChatMemeber().click();
 
 		WebDriverWait ww = new WebDriverWait(driver, 50);

@@ -1,5 +1,6 @@
 package com.niveus;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -147,8 +148,9 @@ public class AddSpecialityTest extends Base {
 		
 		
 
-		Utility.isElementPresnt(driver, "//div[@role='filter_holder']/span", 10).click();
+     WebElement filter=Utility.isElementPresnt(driver, "//div[@role='filter_holder']/span", 10);
 		;
+		filter.click();
 		/*
 		 * wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		 * 

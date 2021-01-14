@@ -249,9 +249,10 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("Addd new paient step ....1", true);
 
-		boolean flag1 = true;
-
-		while (flag1 == true) {
+		//boolean flag1 = true;
+		/*
+		 * while (flag1 == true)
+		 */{
 			try {
 
 				// docpage.getSpeciality().sendKeys("anesthesiology");
@@ -268,8 +269,8 @@ public class PatientInfoTest extends Base {
 
 				Reporter.log("specialty and chief complaint is sucessfullly displayed##################", true);
 
-				flag1 = false;
-				break;
+				//flag1 = false;
+				//break;
 			} catch (Exception e) {
 			}
 		}

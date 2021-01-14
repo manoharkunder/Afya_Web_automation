@@ -334,6 +334,8 @@ public class PatientInfoTest extends Base {
 		 */
 			try {
 				// homepge.getChatsesion().click();
+				
+				Thread.sleep(2000);
 
 				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
 
@@ -362,6 +364,7 @@ public class PatientInfoTest extends Base {
 				 * break;
 				 */
 
+			Thread.sleep(2000);
 			Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10).click();
 
 		} catch (Exception e) {

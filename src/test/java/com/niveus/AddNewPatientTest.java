@@ -149,9 +149,11 @@ public class AddNewPatientTest extends Base {
 
 		Reporter.log("Addd new paient step ....1", true);
 
-		boolean flag1 = true;
-
-		while (flag1 == true) {
+		/*
+		 * boolean flag1 = true;
+		 * 
+		 * while (flag1 == true) {
+		 */
 			try {
 
 				// docpage.getSpeciality().sendKeys("anesthesiology");
@@ -167,14 +169,15 @@ public class AddNewPatientTest extends Base {
 				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 
 				Reporter.log("Specialty and chief complaint is displayed########################",true);
-				flag1 = false;
-				break;
+				/*
+				 * flag1 = false; break;
+				 */
 			} catch (Exception e) {
 			}
-		}
-
-		int count = 0;
-		while (count <= 1) {
+		
+			/*
+			 * int count = 0; while (count <= 1) {
+			 */
 			try {
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 					
@@ -189,7 +192,7 @@ public class AddNewPatientTest extends Base {
 						Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10).click();
 						Reporter.log("Icd Code is sucessfully selected..###############################",true);
-						break;
+					//	break;
 
 					} catch (Exception e) {
 						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
@@ -198,34 +201,36 @@ public class AddNewPatientTest extends Base {
 
 			} catch (Exception e) {
 				Reporter.log("No ICd code.................................", true);
-				count++;
+				//count++;
 			}
-		}
+	//	}
 
-		int count1 = 0;
-
-		while (count1 <= 1) {
+	/*
+	 * int count1 = 0;
+	 * 
+	 * while (count1 <= 1) {
+	 */
 			try {
 				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
 					// docpage.getCpt().sendKeys("A002");
 					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
-					break;
+					//break;
 
 				}
 
 			} catch (Exception e) {
 				Reporter.log("No cpt code.....................................", true);
-				count1++;
+				//count1++;
 			}
-		}
+		
 
 		// homepge.getReg().click();
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
-
+/*
 		boolean flg = true;
-		while (flg == true) {
+		while (flg == true) {*/
 			try {
 				// homepge.getChatsesion().click();
 
@@ -236,11 +241,11 @@ public class AddNewPatientTest extends Base {
 				Reporter.log(lang1 + "...........Sucess...", true);
 
 				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-				flg = false;
+				//flg = false;
 
 			} catch (Exception e) {
 			}
-		}
+		
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 		Reporter.log("AddNewPatientTest TestCase is sucessfully done ############################# TEST IS PASS", true);

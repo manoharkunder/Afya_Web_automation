@@ -253,9 +253,11 @@ public class ChatMemberTest extends Base {
 
 		Reporter.log("Addd new paient step ....1", true);
 
-		boolean flag1 = true;
-
-		while (flag1 == true) {
+		/*
+		 * boolean flag1 = true;
+		 * 
+		 * while (flag1 == true) {
+		 */
 			try {
 
 				// docpage.getSpeciality().sendKeys("anesthesiology");
@@ -272,14 +274,15 @@ public class ChatMemberTest extends Base {
 				
 				Reporter.log("Specialty and chief complaint is sucessfully displayed",true);
 
-				flag1 = false;
-				break;
+				//flag1 = false;
+			//	break;
 			} catch (Exception e) {
 			}
-		}
+		
 
-		int count = 0;
-		while (count <= 1) {
+			/*
+			 * int count = 0; while (count <= 1) {
+			 */
 			try {
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 					
@@ -296,44 +299,46 @@ public class ChatMemberTest extends Base {
 								"//span[text()='Hypertensive heart disease with heart failure']", 10);
 						Icd.click();
 						Reporter.log("Icd code is sucessfully selected##########################",true);
-						break;
+					//	break;
 
 					} catch (Exception e) {
 						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>>>>>>>",true);
 						e.printStackTrace();
 					}
 				}
-
-			} catch (Exception e) {
-				Reporter.log("No ICd code.................................", true);
-				count++;
 			}
-		}
 
-		int count1 = 0;
-
-		while (count1 <= 1) {
+			 catch (Exception e) {
+				Reporter.log("No ICd code.................................", true);
+			//	count++;
+			}
+		
+			/*
+			 * int count1 = 0;
+			 * 
+			 * while (count1 <= 1) {
+			 */
 			try {
 				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
 					// docpage.getCpt().sendKeys("A002");
 					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
-					break;
+					//break;
 
 				}
 
 			} catch (Exception e) {
 				Reporter.log("No cpt code.....................................", true);
-				count1++;
+				//count1++;
 			}
-		}
+		
 
 		// homepge.getReg().click();
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
-
-		boolean flg = true;
-		while (flg == true) {
+		/*
+		 * boolean flg = true; while (flg == true) {
+		 */
 			try {
 				// homepge.getChatsesion().click();
 
@@ -344,16 +349,16 @@ public class ChatMemberTest extends Base {
 				Reporter.log(lang1 + "...........Sucess...", true);
 
 				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-				flg = false;
+			//	flg = false;
 
 			} catch (Exception e) {
 			}
-		}
+		
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
-
-		int val = 0;
-		while (val <= 100) {
+		/*
+		 * int val = 0; while (val <= 100) {
+		 */
 			try {
 
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -363,15 +368,15 @@ public class ChatMemberTest extends Base {
 
 				Reporter.log("Chat Member   Test   step ....5", true);
 
-				break;
+				//break;
 
 			} catch (Exception e) {
 
 				e.printStackTrace();
-				val++;
+			//	val++;
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
-		}
+		
 
 		WebDriverWait rr = new WebDriverWait(driver, 20);
 		rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));

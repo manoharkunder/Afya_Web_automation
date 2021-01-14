@@ -252,7 +252,7 @@ public class PatientInfoTest extends Base {
 		//boolean flag1 = true;
 		/*
 		 * while (flag1 == true)
-		 */{
+		 */
 			try {
 
 				// docpage.getSpeciality().sendKeys("anesthesiology");
@@ -273,7 +273,7 @@ public class PatientInfoTest extends Base {
 				//break;
 			} catch (Exception e) {
 			}
-		}
+		
 		/*
 		 * int count = 0; while (count <= 1)
 		 */{
@@ -329,8 +329,9 @@ public class PatientInfoTest extends Base {
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
 
-		boolean flg = true;
-		while (flg == true) {
+		/*
+		 * boolean flg = true; while (flg == true) {
+		 */
 			try {
 				// homepge.getChatsesion().click();
 
@@ -341,11 +342,11 @@ public class PatientInfoTest extends Base {
 				Reporter.log(lang1 + "...........Sucess...", true);
 
 				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-				flg = false;
+			//	flg = false;
 
 			} catch (Exception e) {
 			}
-		}
+		
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 

@@ -1,8 +1,7 @@
 package com.niveus;
 
 import java.io.File;
-import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -296,12 +295,12 @@ public class MediaFileTest extends Base {
 		while (val <= 100) {
 			try {
 
-				/*
-				 * JavascriptExecutor executor = (JavascriptExecutor) driver;
-				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-				 */
+				
+				  JavascriptExecutor executor = (JavascriptExecutor) driver;
+				  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				 
 
-				Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10).click();
+			//	Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10).click();
 
 				Reporter.log("Media File Test   step ....4", true);
 
@@ -311,22 +310,22 @@ public class MediaFileTest extends Base {
 
 				e.printStackTrace();
 				val++;
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
-
-		WebDriverWait p = new WebDriverWait(driver, 20);
-		p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
-
 		/*
-		 * WebDriverWait p=new WebDriverWait(driver, 20);
+		 * WebDriverWait p = new WebDriverWait(driver, 20);
 		 * p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
-		 * 
-		 * JavascriptExecutor ex = (JavascriptExecutor)driver;
-		 * ex.executeScript("arguments[0].click();", homepge.getMediaFil());
 		 */
 
-		Utility.isElementPresnt(driver, "//ul[@role='menu']//li[text()='Media files']", 10).click();
+		
+		  WebDriverWait p=new WebDriverWait(driver, 20);
+		  p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
+		  
+		  JavascriptExecutor ex = (JavascriptExecutor)driver;
+		  ex.executeScript("arguments[0].click();", homepge.getMediaFil());
+		 
+
+	//	Utility.isElementPresnt(driver, "//ul[@role='menu']//li[text()='Media files']", 10).click();
 
 		String fle=Utility.isElementPresnt(driver, "//div[@class='ant-card-meta-detail']", 10).getText();
 

@@ -2,6 +2,7 @@ package com.niveus;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -352,21 +353,20 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
-		try {/*
-				 * 
-				 * driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				 * 
-				 * JavascriptExecutor executor = (JavascriptExecutor) driver;
-				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-				 * 
-				 * Reporter.log("Patien Info   Test   step ....5",true);
-				 * 
-				 * break;
-				 */
+		try {
+				  
+				  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				  
+				  JavascriptExecutor executor = (JavascriptExecutor) driver;
+				  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				  
+				  Reporter.log("Patien Info   Test   step ....5",true);
+				  
+				 
 
 			Thread.sleep(2000);
-			WebElement more = Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10);
-			more.click();
+		//	WebElement more = Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10);
+		//	more.click();
 
 		} catch (Exception e) {
 
@@ -374,16 +374,17 @@ public class PatientInfoTest extends Base {
 
 		}
 
-		/*
-		 * WebDriverWait wrt=new WebDriverWait(driver, 20);
-		 * wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
-		 * 
-		 * homepge.getPatientinfo().click();
-		 */
-
-		 WebElement info=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Patient info']", 10);
-	      info.click();
+		
+		  WebDriverWait wrt=new WebDriverWait(driver, 20);
+		  wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
+		  
+		  homepge.getPatientinfo().click();
 		 
+
+			/*
+			 * WebElement info=Utility.isElementPresnt(driver,
+			 * "//ul[@role='menu']/li[text()='Patient info']", 10); info.click();
+			 */
 		 /*
 		 * WebDriverWait pp = new WebDriverWait(driver, 100);
 		 * pp.until(ExpectedConditions.visibilityOf(homepge.getPatientDetails()));

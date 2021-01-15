@@ -5,81 +5,39 @@
       <![CDATA[ Page  is sucessfully displayed]]>
     </line>
     <line>
-      <![CDATA[FilterTest Testcase is runnng..........]]>
-    </line>
-    <line>
-      <![CDATA[Login page is sucessfully displayed]]>
+      <![CDATA[PatientInfo Testcase is runnng..........]]>
     </line>
     <line>
       <![CDATA[Login Alert Popup is displayed......]]>
     </line>
     <line>
-      <![CDATA[sucessfully logedin and Home page is displayed]]>
+      <![CDATA[Submitter Provider role is selected]]>
     </line>
     <line>
-      <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
-    </line>
-    <line>
-      <![CDATA[prasanna, Jffff +6
-Sent an image
-19 hours ago
-RE: prasanna Helo]]>
-    </line>
-    <line>
-      <![CDATA[second time stamp is taken.........############]]>
-    </line>
-    <line>
-      <![CDATA[19 hours ago]]>
+      <![CDATA[sucessfully loged in and Home page is displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-01-09T15:57:57 IST" name="Default suite" finished-at="2021-01-09T15:58:22 IST" duration-ms="25175">
+  <suite started-at="2021-01-15T12:39:34 IST" name="Default suite" finished-at="2021-01-15T12:40:13 IST" duration-ms="38598">
     <groups>
     </groups>
-    <test started-at="2021-01-09T15:57:57 IST" name="Default test" finished-at="2021-01-09T15:58:22 IST" duration-ms="25175">
-      <class name="com.niveus.FilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2021-01-09T15:57:57 IST" name="setUp" finished-at="2021-01-09T15:57:57 IST" duration-ms="235" status="PASS">
+    <test started-at="2021-01-15T12:39:34 IST" name="Default test" finished-at="2021-01-15T12:40:13 IST" duration-ms="38598">
+      <class name="com.niveus.PatientInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d]" started-at="2021-01-15T12:39:34 IST" name="setUp" finished-at="2021-01-15T12:39:34 IST" duration-ms="535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2021-01-09T15:57:57 IST" name="configBc" finished-at="2021-01-09T15:58:05 IST" duration-ms="8204" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d]" started-at="2021-01-15T12:39:34 IST" name="configBc" finished-at="2021-01-15T12:39:47 IST" duration-ms="12363" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ Page  is sucessfully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="filterValidationTest()[pri:5, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2021-01-09T15:58:05 IST" name="filterValidationTest" finished-at="2021-01-09T15:58:22 IST" duration-ms="16670" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: headless chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-59-generic', java.version: '11.0.9.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.sRljyi}, goog:chromeOptions: {debuggerAddress: localhost:43271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f3c4f5d8454a43bf9d47b8c62bd8a31f]]>
-            </message>
+        <test-method signature="patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d]" started-at="2021-01-15T12:39:47 IST" name="patientInfoValidationTest" finished-at="2021-01-15T12:40:13 IST" duration-ms="26003" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: headless chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-59-generic', java.version: '11.0.9.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.sRljyi}, goog:chromeOptions: {debuggerAddress: localhost:43271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f3c4f5d8454a43bf9d47b8c62bd8a31f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.niveus.FilterTest.filterValidationTest(FilterTest.java:211)
+              <![CDATA[java.lang.NullPointerException
+at com.niveus.PatientInfoTest.patientInfoValidationTest(PatientInfoTest.java:231)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,53 +68,38 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
-              <![CDATA[FilterTest Testcase is runnng..........]]>
-            </line>
-            <line>
-              <![CDATA[Login page is sucessfully displayed]]>
+              <![CDATA[PatientInfo Testcase is runnng..........]]>
             </line>
             <line>
               <![CDATA[Login Alert Popup is displayed......]]>
             </line>
             <line>
-              <![CDATA[sucessfully logedin and Home page is displayed]]>
+              <![CDATA[Submitter Provider role is selected]]>
             </line>
             <line>
-              <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
-            </line>
-            <line>
-              <![CDATA[prasanna, Jffff +6
-Sent an image
-19 hours ago
-RE: prasanna Helo]]>
-            </line>
-            <line>
-              <![CDATA[second time stamp is taken.........############]]>
-            </line>
-            <line>
-              <![CDATA[19 hours ago]]>
+              <![CDATA[sucessfully loged in and Home page is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- filterValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2021-01-09T15:58:22 IST" name="getResult" finished-at="2021-01-09T15:58:22 IST" duration-ms="249" status="PASS">
+        </test-method> <!-- patientInfoValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d]" started-at="2021-01-15T12:40:13 IST" name="getResult" finished-at="2021-01-15T12:40:13 IST" duration-ms="55" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterValidationTest status=FAILURE method=FilterTest.filterValidationTest()[pri:5, instance:com.niveus.FilterTest@6e75aa0d] output=FilterTest Testcase is runnng..........]]]>
+                <![CDATA[[TestResult name=patientInfoValidationTest status=FAILURE method=PatientInfoTest.patientInfoValidationTest()[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d] output=PatientInfo Testcase is runnng..........]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.FilterTest@6e75aa0d]" started-at="2021-01-09T15:58:22 IST" name="flushReport" finished-at="2021-01-09T15:59:39 IST" duration-ms="77239" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.PatientInfoTest@6e75aa0d]" started-at="2021-01-15T12:40:13 IST" name="flushReport" finished-at="2021-01-15T12:41:32 IST" duration-ms="79141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- com.niveus.FilterTest -->
+      </class> <!-- com.niveus.PatientInfoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

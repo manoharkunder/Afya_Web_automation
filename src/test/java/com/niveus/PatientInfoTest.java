@@ -250,34 +250,34 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("Addd new paient step ....1", true);
 
-		//boolean flag1 = true;
+		// boolean flag1 = true;
 		/*
 		 * while (flag1 == true)
 		 */
-			try {
+		try {
 
-				// docpage.getSpeciality().sendKeys("anesthesiology");
+			// docpage.getSpeciality().sendKeys("anesthesiology");
 
-				Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
+			Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
 
-				// Thread.sleep(3000);
+			// Thread.sleep(3000);
 
-				// docpage.getAnsthesiolgy().click();
+			// docpage.getAnsthesiolgy().click();
 
-				Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
+			Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
 
-				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
+			docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 
-				Reporter.log("specialty and chief complaint is sucessfullly displayed##################", true);
+			Reporter.log("specialty and chief complaint is sucessfullly displayed##################", true);
 
-				//flag1 = false;
-				//break;
-			} catch (Exception e) {
-			}
-		
+			// flag1 = false;
+			// break;
+		} catch (Exception e) {
+		}
+
 		/*
 		 * int count = 0; while (count <= 1)
-		 */{
+		 */ {
 			try {
 
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
@@ -291,9 +291,9 @@ public class PatientInfoTest extends Base {
 						WebElement icd = Utility.isElementPresnt(driver,
 								"//span[text()='Hypertensive heart disease with heart failure']", 10);
 						icd.click();
-						
-						Reporter.log("Sucessfully icd code is selected########################",true);
-					//	break;
+
+						Reporter.log("Sucessfully icd code is selected########################", true);
+						// break;
 
 					} catch (Exception e) {
 						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>", true);
@@ -303,28 +303,27 @@ public class PatientInfoTest extends Base {
 
 			} catch (Exception e) {
 				Reporter.log("No ICd code.................................", true);
-			//	count++;
+				// count++;
 			}
 		}
 		/*
 		 * int count1 = 0;
 		 * 
 		 * while (count1 <= 1)
-		 */ 
-			try {
-				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
+		 */
+		try {
+			if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
-					// docpage.getCpt().sendKeys("A002");
-					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
-					//break;
+				// docpage.getCpt().sendKeys("A002");
+				Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
+				// break;
 
-				}
-
-			} catch (Exception e) {
-				Reporter.log("No cpt code.....................................", true);
-				//count1++;
 			}
-		
+
+		} catch (Exception e) {
+			Reporter.log("No cpt code.....................................", true);
+			// count1++;
+		}
 
 		// homepge.getReg().click();
 
@@ -333,40 +332,39 @@ public class PatientInfoTest extends Base {
 		/*
 		 * boolean flg = true; while (flg == true) {
 		 */
-			try {
-				// homepge.getChatsesion().click();
-				
-				Thread.sleep(2000);
+		try {
+			// homepge.getChatsesion().click();
 
-				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
+			Thread.sleep(4000);
 
-				String lang1 = homepge.getBannerLang1().getText();
+			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 10);
+			chat.click();
 
-				Reporter.log(lang1 + "...........Sucess...", true);
+			String lang1 = homepge.getBannerLang1().getText();
 
-				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-			//	flg = false;
+			Reporter.log(lang1 + "...........Sucess...", true);
 
-			} catch (Exception e) {
-			}
-		
+			Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
+			// flg = false;
+
+		} catch (Exception e) {
+		}
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
 		try {
-				  
-				  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				  
-				  JavascriptExecutor executor = (JavascriptExecutor) driver;
-				  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-				  
-				  Reporter.log("Patien Info   Test   step ....5",true);
-				  
-				 
+
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+
+			Reporter.log("Patien Info   Test   step ....5", true);
 
 			Thread.sleep(2000);
-		//	WebElement more = Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10);
-		//	more.click();
+			// WebElement more = Utility.isElementPresnt(driver,
+			// "//span[@aria-label='more']", 10);
+			// more.click();
 
 		} catch (Exception e) {
 
@@ -374,18 +372,16 @@ public class PatientInfoTest extends Base {
 
 		}
 
-		
-		  WebDriverWait wrt=new WebDriverWait(driver, 20);
-		  wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
-		  
-		  homepge.getPatientinfo().click();
-		 
+		WebDriverWait wrt = new WebDriverWait(driver, 20);
+		wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
 
-			/*
-			 * WebElement info=Utility.isElementPresnt(driver,
-			 * "//ul[@role='menu']/li[text()='Patient info']", 10); info.click();
-			 */
-		 /*
+		homepge.getPatientinfo().click();
+
+		/*
+		 * WebElement info=Utility.isElementPresnt(driver,
+		 * "//ul[@role='menu']/li[text()='Patient info']", 10); info.click();
+		 */
+		/*
 		 * WebDriverWait pp = new WebDriverWait(driver, 100);
 		 * pp.until(ExpectedConditions.visibilityOf(homepge.getPatientDetails()));
 		 */

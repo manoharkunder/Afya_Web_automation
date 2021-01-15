@@ -342,7 +342,10 @@ public class ChatMemberTest extends Base {
 			try {
 				// homepge.getChatsesion().click();
 
-				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
+				Thread.sleep(4000);
+				WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 10);
+				
+				chat.click();
 
 				String lang1 = homepge.getBannerLang1().getText();
 

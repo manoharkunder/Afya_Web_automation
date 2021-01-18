@@ -311,6 +311,7 @@ public class MediaFileTest extends Base {
 			try {
 
 				Thread.sleep(1000);
+				
 				Reporter.log("count in  mediaFile..............." + i);
 
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -324,13 +325,17 @@ public class MediaFileTest extends Base {
 				 */
 
 				Reporter.log("Media File Test   step ....4", true);
+				break;
 
 				// break;
 
 			} catch (Exception e) {
 
 				e.printStackTrace();
-				i++;
+				
+				  	i++;
+				
+				
 				// val++;
 			}
 		}

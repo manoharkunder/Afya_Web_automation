@@ -191,9 +191,10 @@ public class Base {
 			 
 				
 				  ChromeOptions options = new ChromeOptions();
-				  
-				  options.addArguments("--headless", "--disable-gpu",
-				  "--blink-settings=imagesEnabled=false");
+					/*
+					 * options.addArguments("--headless", "--disable-gpu",
+					 * "--blink-settings=imagesEnabled=false");
+					 */
 				  
 				  options.setPageLoadStrategy(PageLoadStrategy.NONE);
 				  

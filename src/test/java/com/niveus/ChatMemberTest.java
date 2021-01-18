@@ -367,6 +367,8 @@ public class ChatMemberTest extends Base {
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 
 				Reporter.log("Chat Member   Test   step ....5", true);
+				
+				Thread.sleep(3000);
 
 				//break;
 

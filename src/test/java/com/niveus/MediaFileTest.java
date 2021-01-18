@@ -317,9 +317,10 @@ public class MediaFileTest extends Base {
 				 * JavascriptExecutor executor = (JavascriptExecutor) driver;
 				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				 */
-				Utility.isElementPresnt(driver,
+			WebElement more	=Utility.isElementPresnt(driver,
 						"//*[@id=\\\"chat_area_widget\\\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span",
-						15).click();
+						15);
+				more.click();
 
 				/*
 				 * WebElement more = Utility.isElementPresnt(driver,

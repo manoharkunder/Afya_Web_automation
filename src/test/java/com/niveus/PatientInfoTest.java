@@ -2,7 +2,6 @@ package com.niveus;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -371,7 +370,8 @@ public class PatientInfoTest extends Base {
 
 			Thread.sleep(2000);
 			Reporter.log("count in patiet info>>>>>>>>>>"+i,true);
-			Utility.isElementPresnt(driver, "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span", 10).click();
+		WebElement more=	Utility.isElementPresnt(driver, "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span", 10);
+			more.click();
 			/*
 			 * Reporter.log("count in patiet info>>>>>>>>>>"+i,true); JavascriptExecutor
 			 * executor = (JavascriptExecutor) driver;

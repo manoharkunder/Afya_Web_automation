@@ -1,6 +1,5 @@
 package com.niveus;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -371,9 +370,10 @@ public class ChatMemberTest extends Base {
 				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				 */
 
-				Utility.isElementPresnt(driver,
+				WebElement more=Utility.isElementPresnt(driver,
 						"//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span",
-						10).click();
+						10);
+				more.click();
 				WebElement chatmem = Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']",
 						15);
 

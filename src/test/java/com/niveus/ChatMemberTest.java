@@ -19,7 +19,7 @@ public class ChatMemberTest extends Base {
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test(priority = 1)
+	@Test(enabled=false)
 
 	public void chatMemeberValidation() throws Exception {
 

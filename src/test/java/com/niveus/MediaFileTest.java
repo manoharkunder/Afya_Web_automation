@@ -1,6 +1,7 @@
 package com.niveus;
 
 import java.io.File;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -21,14 +22,12 @@ public class MediaFileTest extends Base {
 	public DoctorRolesPage docpage;
 	Utility ut = new Utility();
 
-	@Test()
+	@Test(priority = 1)
 	public void mediaFileValidation() throws Exception {
 
 		test = extent.createTest("2.MediaFile", "This test case is to check whether close code is working");
 
-		File f1 = new File("data");
-
-		File fs = new File(f1, "res.png");
+	
 
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 		logp = PageFactory.initElements(driver, LoginPage.class);
@@ -199,9 +198,17 @@ public class MediaFileTest extends Base {
 		 * Reporter.log("sucessfully loged in and Home page is displayed", true);
 		 */
 		// int count = 0;
+		
+		try
+		{
 
 		Utility.isElementPresnt(driver, "//div[@role='filter_holder']/span", 15).click();
-		;
+		}
+		catch (Exception e) 
+		{
+			
+		}
+		
 		/*
 		 * wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
 		 * 
@@ -243,14 +250,23 @@ public class MediaFileTest extends Base {
 
 		chat.click();
 
-		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>", true);
+		Reporter.log("chat session is sucessfully displayed in Media File..>>>>>>>>>>>", true);
 
 		/*
 		 * WebDriverWait wait11 = new WebDriverWait(driver, 10);
 		 * wait11.until(ExpectedConditions.elementToBeClickable(homepge.getPaperclip()))
 		 * ;
 		 */
+	}
+	    @Test(priority = 2)
+		public void mediaFileTest() throws Exception
+		
+		{
+	    	
+	    	File f1 = new File("data");
 
+			File fs = new File(f1, "res.png");
+			
 		Utility.isElementPresnt(driver, "//div[contains(@class,'attachment___')]", 10).click();
 
 		/*
@@ -262,9 +278,8 @@ public class MediaFileTest extends Base {
 		 * // homepge.getUploadPhoto().click();
 		 */
 
-		Utility.isElementPresnt(driver, "//div[@role='tab' and text()='Upload Photos']", 10).click();
+		Utility.isElementPresnt(driver, "//div[@role='tab' and text()='Upload Photos']", 15).click();
 
-		Thread.sleep(3000);
 		/*
 		 * homepge.getPhotoUpload().sendKeys(fs.getAbsolutePath());
 		 * 
@@ -274,6 +289,8 @@ public class MediaFileTest extends Base {
 		Utility.isElementPresnt(driver, "(//input[@type='file'])[2]", 10).sendKeys(fs.getAbsolutePath());
 
 		Utility.isElementPresnt(driver, "//button[text()='Submit']", 10).click();
+		
+		Thread.sleep(2000);
 
 		/*
 		 * WebDriverWait www = new WebDriverWait(driver, 50);
@@ -290,33 +307,43 @@ public class MediaFileTest extends Base {
 		Reporter.log("file has been  sucessfully updated", true);
 
 		Reporter.log("UploadPhotosTest is sucessfully done ############################# TEST IS PASS", true);
-
-		int val = 0;
-		while (val <= 100) {
+	
+		
+		
+		/*
+		 * int val = 0; while (val <= 100) {
+		 */
 			try {
 
+				
 				
 				  JavascriptExecutor executor = (JavascriptExecutor) driver;
 				  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				 
 
-			//	Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10).click();
-
+			//	Utility.isElementPresnt(driver, "//span[@aria-label='more']", 15).click();
+				
+			/*
+			 * WebElement more = Utility.isElementPresnt(driver,
+			 * "//span[@aria-label='more']", 10); more.click();
+			 */
+				
 				Reporter.log("Media File Test   step ....4", true);
 
-				break;
+				//break;
 
 			} catch (Exception e) {
 
 				e.printStackTrace();
-				val++;
+			//	val++;
 			}
-		}
+		
 		/*
 		 * WebDriverWait p = new WebDriverWait(driver, 20);
 		 * p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
 		 */
 
+		
 		
 		  WebDriverWait p=new WebDriverWait(driver, 20);
 		  p.until(ExpectedConditions.visibilityOf(homepge.getMediaFil()));
@@ -324,8 +351,9 @@ public class MediaFileTest extends Base {
 		  JavascriptExecutor ex = (JavascriptExecutor)driver;
 		  ex.executeScript("arguments[0].click();", homepge.getMediaFil());
 		 
+		 
 
-	//	Utility.isElementPresnt(driver, "//ul[@role='menu']//li[text()='Media files']", 10).click();
+	     //Utility.isElementPresnt(driver, "//ul[@role='menu']//li[text()='Media files']", 10).click();
 
 		String fle=Utility.isElementPresnt(driver, "//div[@class='ant-card-meta-detail']", 15).getText();
 

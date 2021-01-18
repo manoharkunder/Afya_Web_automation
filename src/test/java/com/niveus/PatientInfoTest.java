@@ -22,7 +22,7 @@ public class PatientInfoTest extends Base {
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test(enabled=false)
+	@Test(priority = 1)
 	public void patientInfoValidationTest() throws Exception {
 
 		test = extent.createTest("8.PatientInfoTest", "This test case is to check whether patientInfo is working");
@@ -248,7 +248,12 @@ public class PatientInfoTest extends Base {
 
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 
-		Reporter.log("Addd new paient step ....1", true);
+	}
+	@Test(priority = 2)
+		public void patientinformationTest()
+		{
+
+		Reporter.log("Patient information Test started ######################", true);
 
 		// boolean flag1 = true;
 		/*
@@ -282,23 +287,23 @@ public class PatientInfoTest extends Base {
 
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 
-					Thread.sleep(2000);
 
+					
 					Utility.isElementPresntOnId(driver, "ICD", 10)
+					
 							.sendKeys("Hypertensive heart disease with heart failure");
-					try {
-						Thread.sleep(3000);
-						WebElement icd = Utility.isElementPresnt(driver,
-								"//span[text()='Hypertensive heart disease with heart failure']", 10);
-						icd.click();
-
-						Reporter.log("Sucessfully icd code is selected########################", true);
-						// break;
-
-					} catch (Exception e) {
-						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>", true);
-						e.printStackTrace();
-					}
+					
+					  try { WebElement icd = Utility.isElementPresnt(driver,
+					  "//span[text()='Hypertensive heart disease with heart failure']", 10);
+					  icd.click();
+					  
+					  Reporter.log("Sucessfully icd code is selected########################",
+					  true); // break;
+					  
+					  } catch (Exception e) {
+					  Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>", true);
+					  e.printStackTrace(); }
+					 
 				}
 
 			} catch (Exception e) {
@@ -328,6 +333,13 @@ public class PatientInfoTest extends Base {
 		// homepge.getReg().click();
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
+		}
+	
+	@Test(priority = 3)
+	public void patietDetailsTest()
+	{
+
+		Reporter.log("Patient Details Test started ######################", true);
 
 		/*
 		 * boolean flg = true; while (flg == true) {
@@ -335,9 +347,9 @@ public class PatientInfoTest extends Base {
 		try {
 			// homepge.getChatsesion().click();
 
-			Thread.sleep(4000);
-
+              
 			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
+			
 			chat.click();
 
 			String lang1 = homepge.getBannerLang1().getText();
@@ -355,15 +367,16 @@ public class PatientInfoTest extends Base {
 		try {
 
 
-			JavascriptExecutor executor = (JavascriptExecutor) driver;
-			executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-
-			Reporter.log("Patien Info   Test   step ....5", true);
-
-			// WebElement more = Utility.isElementPresnt(driver,
-			// "//span[@aria-label='more']", 10);
-			// more.click();
-
+			Thread.sleep(2000);
+			  JavascriptExecutor executor = (JavascriptExecutor) driver;
+			  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+			  
+			  Reporter.log("Patien Info   Test   step ....5", true);
+			 
+			/*
+			 * WebElement more = Utility.isElementPresnt(driver,
+			 * "//span[@aria-label='more']", 10); more.click();
+			 */
 		} catch (Exception e) {
 
 			e.printStackTrace();

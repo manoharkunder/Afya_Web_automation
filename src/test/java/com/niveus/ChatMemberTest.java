@@ -20,7 +20,7 @@ public class ChatMemberTest extends Base {
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test(enabled = false)
+	@Test(priority = 1)
 
 	public void chatMemeberValidation() throws Exception {
 
@@ -248,8 +248,12 @@ public class ChatMemberTest extends Base {
 //	/	docpage.getSearchResult().click();
 
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
+	}
+		@Test(priority = 2)
+		public void chatmemberTest()
+		{
 
-		Reporter.log("Addd new paient step ....1", true);
+		Reporter.log("Chat member Test is running", true);
 
 		/*
 		 * boolean flag1 = true;
@@ -284,17 +288,15 @@ public class ChatMemberTest extends Base {
 			try {
 				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 					
-					Thread.sleep(3000);
 
-					Utility.isElementPresntOnId(driver, "ICD", 10)
+					Utility.isElementPresntOnId(driver, "ICD", 15)
 							.sendKeys("Hypertensive heart disease with heart failure");
 					try {
 						// docpage.getIcdHeart().click();
 
-						Thread.sleep(3000);
 						
 						WebElement Icd=Utility.isElementPresnt(driver,
-								"//span[text()='Hypertensive heart disease with heart failure']", 10);
+								"//span[text()='Hypertensive heart disease with heart failure']", 15);
 						Icd.click();
 						Reporter.log("Icd code is sucessfully selected##########################",true);
 					//	break;
@@ -334,13 +336,18 @@ public class ChatMemberTest extends Base {
 		// homepge.getReg().click();
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
+		}
+		
+		@Test(priority = 3)
+		public void memberVerificationTest()
+		{
 		/*
 		 * boolean flg = true; while (flg == true) {
 		 */
 			try {
 				// homepge.getChatsesion().click();
 
-				Thread.sleep(4000);
+				
 				WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
 				
 				chat.click();
@@ -362,13 +369,16 @@ public class ChatMemberTest extends Base {
 		 */
 			try {
 
+				Thread.sleep(2000);
 
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 15);
+					
+				 chatmem.click();
 
 				Reporter.log("Chat Member   Test   step ....5", true);
 				
-				Thread.sleep(3000);
 
 				//break;
 
@@ -387,9 +397,12 @@ public class ChatMemberTest extends Base {
 			 * ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
 			 */
 
-			 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 15);
-		
-			 chatmem.click();
+			/*
+			 * WebElement chatmem=Utility.isElementPresnt(driver,
+			 * "//ul[@role='menu']/li[text()='Chat members']", 15);
+			 * 
+			 * chatmem.click();
+			 */
 		// homepge.getChatMemeber().click();
 
 		WebDriverWait ww = new WebDriverWait(driver, 50);

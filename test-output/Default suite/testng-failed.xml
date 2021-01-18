@@ -7,7 +7,8 @@
         <methods>
           <include name="getResult"/>
           <include name="setUp"/>
-          <include name="patientInfoValidationTest"/>
+          <include name="patientinformationTest"/>
+          <include name="patietDetailsTest"/>
           <include name="flushReport"/>
           <include name="configBc"/>
         </methods>

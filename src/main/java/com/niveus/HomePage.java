@@ -111,7 +111,7 @@ public class HomePage
 		return paperclip;
 	}
 
-	@FindBy(xpath = "//span[@aria-label='more']")
+	@FindBy(xpath = "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[2]")
 	private WebElement moreoptions;
 
 	public WebElement getMoreoptions() {

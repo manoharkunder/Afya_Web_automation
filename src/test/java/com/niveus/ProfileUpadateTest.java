@@ -28,7 +28,8 @@ public class ProfileUpadateTest extends Base {
 
 		Reporter.log("ProfileUpdate Testcase is runnng..........", true);
 
-		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		WebDriverWait wait00 = new WebDriverWait(driver, 20);
+	
 		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");

@@ -327,7 +327,7 @@ public class MediaFileTest extends Base {
 
 	//	Utility.isElementPresnt(driver, "//ul[@role='menu']//li[text()='Media files']", 10).click();
 
-		String fle=Utility.isElementPresnt(driver, "//div[@class='ant-card-meta-detail']", 10).getText();
+		String fle=Utility.isElementPresnt(driver, "//div[@class='ant-card-meta-detail']", 15).getText();
 
 
 		boolean f = fle.contains("Test2");

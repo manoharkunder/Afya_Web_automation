@@ -367,26 +367,32 @@ public class ChatMemberTest extends Base {
 		/*
 		 * int val = 0; while (val <= 100) {
 		 */
+		for(int i=0;i<=15;)
+		{
 			try {
 
 				Thread.sleep(2000);
 
+				Reporter.log("Count in chat member>>>>>>>>"+i);
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				
 				 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 15);
 					
 				 chatmem.click();
 
 				Reporter.log("Chat Member   Test   step ....5", true);
-				
+				break;
 
 				//break;
 
 			} catch (Exception e) {
 
 				e.printStackTrace();
+				i++;
 			//	val++;
 			}
+		}
 		
 			/*
 			 * WebDriverWait rr = new WebDriverWait(driver, 20);

@@ -364,23 +364,32 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
+		for(int i=0;i<=15;)
+		{
 		try {
 
 
 			Thread.sleep(2000);
+			
+			Reporter.log("count in patiet info>>>>>>>>>>"+i);
 			  JavascriptExecutor executor = (JavascriptExecutor) driver;
+			  
 			  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 			  
 			  Reporter.log("Patien Info   Test   step ....5", true);
+			  
+			  break;
 			 
 			/*
 			 * WebElement more = Utility.isElementPresnt(driver,
 			 * "//span[@aria-label='more']", 10); more.click();
 			 */
 		} catch (Exception e) {
+			i++;
 
 			e.printStackTrace();
 
+		}
 		}
 
 		WebDriverWait wrt = new WebDriverWait(driver, 20);

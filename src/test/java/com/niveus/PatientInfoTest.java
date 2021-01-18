@@ -371,7 +371,7 @@ public class PatientInfoTest extends Base {
 
 			Thread.sleep(2000);
 			
-			Reporter.log("count in patiet info>>>>>>>>>>"+i);
+			Reporter.log("count in patiet info>>>>>>>>>>"+i,true);
 			  JavascriptExecutor executor = (JavascriptExecutor) driver;
 			  
 			  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());

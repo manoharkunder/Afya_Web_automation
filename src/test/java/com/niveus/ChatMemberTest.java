@@ -373,7 +373,7 @@ public class ChatMemberTest extends Base {
 
 				Thread.sleep(2000);
 
-				Reporter.log("Count in chat member>>>>>>>>"+i);
+				Reporter.log("Count in chat member>>>>>>>>"+i,true);
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 				

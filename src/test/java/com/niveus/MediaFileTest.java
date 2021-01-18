@@ -312,8 +312,7 @@ public class MediaFileTest extends Base {
 
 				Thread.sleep(1000);
 				
-				Reporter.log("count in  mediaFile..............." + i);
-
+				Reporter.log("count in  mediaFile..............." + i,true);
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 
@@ -323,8 +322,6 @@ public class MediaFileTest extends Base {
 				 * WebElement more = Utility.isElementPresnt(driver,
 				 * "//span[@aria-label='more']", 10); more.click();
 				 */
-
-				Reporter.log("Media File Test   step ....4", true);
 				break;
 
 				// break;

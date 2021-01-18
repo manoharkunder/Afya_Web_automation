@@ -254,7 +254,7 @@ public class MediaFileTest extends Base {
 		 */
 	}
 
-	@Test(priority = 2)
+	@Test(enabled=false)
 	public void mediaFileTest() throws Exception
 
 	{

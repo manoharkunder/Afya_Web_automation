@@ -248,7 +248,7 @@ public class PatientInfoTest extends Base {
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 
 	}
-	@Test(priority = 2)
+	@Test(enabled=false)
 		public void patientinformationTest()
 		{
 
@@ -334,7 +334,7 @@ public class PatientInfoTest extends Base {
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
 		}
 	
-	@Test(priority = 3)
+	@Test(enabled=false)
 	public void patietDetailsTest()
 	{
 

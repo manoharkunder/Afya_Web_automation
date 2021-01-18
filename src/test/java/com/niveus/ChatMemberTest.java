@@ -249,7 +249,7 @@ public class ChatMemberTest extends Base {
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled=false)
 	public void chatmemberTest() {
 
 		Reporter.log("Chat member Test is running", true);
@@ -333,7 +333,7 @@ public class ChatMemberTest extends Base {
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
 	}
 
-	@Test(priority = 3)
+	@Test(enabled=false)
 	public void memberVerificationTest() {
 		/*
 		 * boolean flg = true; while (flg == true) {

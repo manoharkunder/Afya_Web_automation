@@ -111,7 +111,7 @@ public class HomePage
 		return paperclip;
 	}
 
-	@FindBy(xpath = "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[2]")
+	@FindBy(xpath = "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span")
 	private WebElement moreoptions;
 
 	public WebElement getMoreoptions() {

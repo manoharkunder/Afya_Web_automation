@@ -249,9 +249,9 @@ public class ChatMemberTest extends Base {
 
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 	}
-		@Test(priority = 2)
-		public void chatmemberTest()
-		{
+
+	@Test(priority = 2)
+	public void chatmemberTest() {
 
 		Reporter.log("Chat member Test is running", true);
 
@@ -260,155 +260,153 @@ public class ChatMemberTest extends Base {
 		 * 
 		 * while (flag1 == true) {
 		 */
-			try {
+		try {
 
-				// docpage.getSpeciality().sendKeys("anesthesiology");
+			// docpage.getSpeciality().sendKeys("anesthesiology");
 
-				Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
+			Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
 
-				// Thread.sleep(3000);
+			// Thread.sleep(3000);
 
-				// docpage.getAnsthesiolgy().click();
+			// docpage.getAnsthesiolgy().click();
 
-				Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
+			Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
 
-				docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
-				
-				Reporter.log("Specialty and chief complaint is sucessfully displayed",true);
+			docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
 
-				//flag1 = false;
-			//	break;
-			} catch (Exception e) {
-			}
-		
+			Reporter.log("Specialty and chief complaint is sucessfully displayed", true);
 
-			/*
-			 * int count = 0; while (count <= 1) {
-			 */
-			try {
-				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
-					
+			// flag1 = false;
+			// break;
+		} catch (Exception e) {
+		}
 
-					Utility.isElementPresntOnId(driver, "ICD", 15)
-							.sendKeys("Hypertensive heart disease with heart failure");
-					try {
-						// docpage.getIcdHeart().click();
+		/*
+		 * int count = 0; while (count <= 1) {
+		 */
+		try {
+			if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
 
-						
-						WebElement Icd=Utility.isElementPresnt(driver,
-								"//span[text()='Hypertensive heart disease with heart failure']", 15);
-						Icd.click();
-						Reporter.log("Icd code is sucessfully selected##########################",true);
-					//	break;
+				Utility.isElementPresntOnId(driver, "ICD", 15)
+						.sendKeys("Hypertensive heart disease with heart failure");
+				try {
+					// docpage.getIcdHeart().click();
 
-					} catch (Exception e) {
-						Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>>>>>>>",true);
-						e.printStackTrace();
-					}
+					WebElement Icd = Utility.isElementPresnt(driver,
+							"//span[text()='Hypertensive heart disease with heart failure']", 15);
+					Icd.click();
+					Reporter.log("Icd code is sucessfully selected##########################", true);
+					// break;
+
+				} catch (Exception e) {
+					Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+					e.printStackTrace();
 				}
 			}
+		}
 
-			 catch (Exception e) {
-				Reporter.log("No ICd code.................................", true);
-			//	count++;
+		catch (Exception e) {
+			Reporter.log("No ICd code.................................", true);
+			// count++;
+		}
+
+		/*
+		 * int count1 = 0;
+		 * 
+		 * while (count1 <= 1) {
+		 */
+		try {
+			if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
+
+				// docpage.getCpt().sendKeys("A002");
+				Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
+				// break;
+
 			}
-		
-			/*
-			 * int count1 = 0;
-			 * 
-			 * while (count1 <= 1) {
-			 */
-			try {
-				if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
-					// docpage.getCpt().sendKeys("A002");
-					Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
-					//break;
-
-				}
-
-			} catch (Exception e) {
-				Reporter.log("No cpt code.....................................", true);
-				//count1++;
-			}
-		
+		} catch (Exception e) {
+			Reporter.log("No cpt code.....................................", true);
+			// count1++;
+		}
 
 		// homepge.getReg().click();
 
 		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
-		}
-		
-		@Test(priority = 3)
-		public void memberVerificationTest()
-		{
+	}
+
+	@Test(priority = 3)
+	public void memberVerificationTest() {
 		/*
 		 * boolean flg = true; while (flg == true) {
 		 */
-			try {
-				// homepge.getChatsesion().click();
+		try {
+			// homepge.getChatsesion().click();
 
-				
-				WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
-				
-				chat.click();
+			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
 
-				String lang1 = homepge.getBannerLang1().getText();
+			chat.click();
 
-				Reporter.log(lang1 + "...........Sucess...", true);
+			String lang1 = homepge.getBannerLang1().getText();
 
-				Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-			//	flg = false;
+			Reporter.log(lang1 + "...........Sucess...", true);
 
-			} catch (Exception e) {
-			}
-		
+			Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
+			// flg = false;
+
+		} catch (Exception e) {
+		}
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 		/*
 		 * int val = 0; while (val <= 100) {
 		 */
-		for(int i=0;i<=15;)
-		{
+		for (int i = 0; i <= 15;) {
 			try {
 
 				Thread.sleep(2000);
 
-				Reporter.log("Count in chat member>>>>>>>>"+i,true);
-				JavascriptExecutor executor = (JavascriptExecutor) driver;
-				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-				
-				 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 15);
-					
-				 chatmem.click();
+				Reporter.log("Count in chat member>>>>>>>>" + i, true);
+				/*
+				 * JavascriptExecutor executor = (JavascriptExecutor) driver;
+				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				 */
+
+				Utility.isElementPresnt(driver,
+						"//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span",
+						10).click();
+				WebElement chatmem = Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']",
+						15);
+
+				chatmem.click();
 
 				Reporter.log("Chat Member   Test   step ....5", true);
 				break;
 
-				//break;
+				// break;
 
 			} catch (Exception e) {
 
 				e.printStackTrace();
 				i++;
-			//	val++;
+				// val++;
 			}
 		}
-		
-			/*
-			 * WebDriverWait rr = new WebDriverWait(driver, 20);
-			 * 
-			 * rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));
-			 * 
-			 * JavascriptExecutor ex = (JavascriptExecutor) driver;
-			 * ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
-			 */
 
-			/*
-			 * WebElement chatmem=Utility.isElementPresnt(driver,
-			 * "//ul[@role='menu']/li[text()='Chat members']", 15);
-			 * 
-			 * chatmem.click();
-			 */
+		/*
+		 * WebDriverWait rr = new WebDriverWait(driver, 20);
+		 * 
+		 * rr.until(ExpectedConditions.visibilityOf(homepge.getChatMemeber()));
+		 * 
+		 * JavascriptExecutor ex = (JavascriptExecutor) driver;
+		 * ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
+		 */
+
+		/*
+		 * WebElement chatmem=Utility.isElementPresnt(driver,
+		 * "//ul[@role='menu']/li[text()='Chat members']", 15);
+		 * 
+		 * chatmem.click();
+		 */
 		// homepge.getChatMemeber().click();
 
 		WebDriverWait ww = new WebDriverWait(driver, 50);

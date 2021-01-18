@@ -311,12 +311,15 @@ public class MediaFileTest extends Base {
 			try {
 
 				Thread.sleep(1000);
-				
-				Reporter.log("count in  mediaFile..............." + i,true);
-				JavascriptExecutor executor = (JavascriptExecutor) driver;
-				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 
-				// Utility.isElementPresnt(driver, "//span[@aria-label='more']", 15).click();
+				Reporter.log("count in  mediaFile..............." + i, true);
+				/*
+				 * JavascriptExecutor executor = (JavascriptExecutor) driver;
+				 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+				 */
+				Utility.isElementPresnt(driver,
+						"//*[@id=\\\"chat_area_widget\\\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span",
+						15).click();
 
 				/*
 				 * WebElement more = Utility.isElementPresnt(driver,
@@ -329,10 +332,9 @@ public class MediaFileTest extends Base {
 			} catch (Exception e) {
 
 				e.printStackTrace();
-				
-				  	i++;
-				
-				
+
+				i++;
+
 				// val++;
 			}
 		}

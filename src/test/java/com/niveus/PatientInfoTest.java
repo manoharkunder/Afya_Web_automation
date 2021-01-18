@@ -370,12 +370,14 @@ public class PatientInfoTest extends Base {
 
 
 			Thread.sleep(2000);
-			
 			Reporter.log("count in patiet info>>>>>>>>>>"+i,true);
-			  JavascriptExecutor executor = (JavascriptExecutor) driver;
-			  
-			  executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-			  
+			Utility.isElementPresnt(driver, "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span", 10).click();
+			/*
+			 * Reporter.log("count in patiet info>>>>>>>>>>"+i,true); JavascriptExecutor
+			 * executor = (JavascriptExecutor) driver;
+			 * 
+			 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
+			 */  
 			  Reporter.log("Patien Info   Test   step ....5", true);
 			  
 			  break;

@@ -22,7 +22,7 @@ public class PatientInfoTest extends Base {
 	public ProfilePage propage;
 	public HomePage homepge;
 
-	@Test()
+	@Test(enabled=false)
 	public void patientInfoValidationTest() throws Exception {
 
 		test = extent.createTest("8.PatientInfoTest", "This test case is to check whether patientInfo is working");

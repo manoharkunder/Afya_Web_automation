@@ -10,6 +10,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -166,6 +167,11 @@ public class Base {
 		
 		  
 		  ChromeOptions options = new ChromeOptions();
+		  
+		  options.setPageLoadStrategy(PageLoadStrategy.NONE);
+
+		  options.addArguments("enable-features=NetworkServiceInProcess");
+
 		  options.addArguments("--headless", "--disable-web-security",
 		  "--ignore-certificate-errors", "--allow-running-insecure-content",
 		  "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",

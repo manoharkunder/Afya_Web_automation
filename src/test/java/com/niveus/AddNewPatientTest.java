@@ -159,6 +159,7 @@ public class AddNewPatientTest extends Base {
 				try {
 
 					Thread.sleep(3000);
+					
 					WebElement icd=Utility.isElementPresnt(driver, "//span[text()='Hypertensive heart disease with heart failure']",
 							10);
 					icd.click();

@@ -115,6 +115,7 @@ public class LoginPage {
 	}
    
 	public void login(String email, String password) {
+		
 		username.sendKeys(email);
 		pwd.sendKeys(password);
 		pwdview.click();

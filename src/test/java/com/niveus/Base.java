@@ -15,7 +15,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
 import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -157,7 +156,7 @@ public class Base {
 		 * below code is used to launch the browser
 		 */
 
-	    //  driver = new ChromeDriver();
+	   //driver = new ChromeDriver();
 
 		/*
 		 * below code is used to run the Script in headless mode
@@ -165,24 +164,45 @@ public class Base {
 		
 		
 		
+		/*
+		 * ChromeOptions options = new ChromeOptions();
+		 * 
+		 * options.setPageLoadStrategy(PageLoadStrategy.NONE);
+		 * 
+		 * options.addArguments("enable-features=NetworkServiceInProcess");
+		 * 
+		 * 
+		 * 
+		 * options.addArguments("--headless", "--disable-web-security",
+		 * "--ignore-certificate-errors", "--allow-running-insecure-content",
+		 * "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",
+		 * "--window-size=1920,1080", "--start-maximized", "--disable-gpu",
+		 * "--test-type"); options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,
+		 * true); options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		 * options.setExperimentalOption("useAutomationExtension", false);
+		 * options.setExperimentalOption("excludeSwitches", new String[] {
+		 * "enable-automation" }); driver = new ChromeDriver(options);
+		 */
 		  
-		  ChromeOptions options = new ChromeOptions();
-		  
-		  options.setPageLoadStrategy(PageLoadStrategy.NONE);
-
-		  options.addArguments("enable-features=NetworkServiceInProcess");
-
-		  options.addArguments("--headless", "--disable-web-security",
-		  "--ignore-certificate-errors", "--allow-running-insecure-content",
-		  "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",
-		  "--window-size=1920,1080", "--start-maximized", "--disable-gpu",
-		  "--test-type"); options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,
-		  true); options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		  options.setExperimentalOption("useAutomationExtension", false);
-		  options.setExperimentalOption("excludeSwitches", new String[] {
-		  "enable-automation" }); driver = new ChromeDriver(options);
-		  
-		  
+			 
+			 /*
+			  * this is used to run the script in headless mode*
+			  */
+			 
+				
+				  ChromeOptions options = new ChromeOptions();
+				  
+				  options.addArguments("--headless", "--disable-gpu",
+				  "--blink-settings=imagesEnabled=false");
+				  
+				  options.setPageLoadStrategy(PageLoadStrategy.NONE);
+				  
+				  options.addArguments("enable-features=NetworkServiceInProcess");
+				  
+				  options.addArguments("headless");
+				  
+				  driver = new ChromeDriver(options);
+				 
 		 
 		 
 		System.out.println("browser is launched");

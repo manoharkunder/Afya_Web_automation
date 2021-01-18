@@ -138,10 +138,19 @@ public class ProfilePage {
 
 
 
-		fname.sendKeys(firstname);
+    	fname.sendKeys(Keys.CONTROL, Keys.chord("a")); //select all text in textbox
+    	fname.sendKeys(Keys.BACK_SPACE); //delete it
+    	fname.sendKeys(firstname);
+	
+    //	fname.sendKeys(firstname);
 
 		
-		lname.sendKeys(lastName);
+
+    	lname.sendKeys(Keys.CONTROL, Keys.chord("a")); //select all text in textbox
+    	lname.sendKeys(Keys.BACK_SPACE); //delete it
+    	lname.sendKeys(lastName);
+    	
+	//	lname.sendKeys(lastName);
 
 		dobid.sendKeys(dateofbirth, Keys.ENTER);
 		

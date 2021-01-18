@@ -86,7 +86,7 @@ public class ProfileUpadateTest extends Base {
 
 		Assert.assertEquals(propage.getmailId().getText(), "pammi@gmail.com");
 
-		// logp.getcloseProfile().click();
+		// logp.getcloseProfile().click();	
 		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
 				10).click();
 

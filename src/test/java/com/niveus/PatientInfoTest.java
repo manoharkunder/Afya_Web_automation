@@ -337,7 +337,7 @@ public class PatientInfoTest extends Base {
 
 			Thread.sleep(4000);
 
-			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 10);
+			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
 			chat.click();
 
 			String lang1 = homepge.getBannerLang1().getText();
@@ -354,14 +354,12 @@ public class PatientInfoTest extends Base {
 
 		try {
 
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
 
 			Reporter.log("Patien Info   Test   step ....5", true);
 
-			Thread.sleep(2000);
 			// WebElement more = Utility.isElementPresnt(driver,
 			// "//span[@aria-label='more']", 10);
 			// more.click();

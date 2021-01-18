@@ -1,7 +1,5 @@
 package com.niveus;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -343,7 +341,7 @@ public class ChatMemberTest extends Base {
 				// homepge.getChatsesion().click();
 
 				Thread.sleep(4000);
-				WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 10);
+				WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
 				
 				chat.click();
 
@@ -364,7 +362,6 @@ public class ChatMemberTest extends Base {
 		 */
 			try {
 
-				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				JavascriptExecutor executor = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
@@ -377,7 +374,6 @@ public class ChatMemberTest extends Base {
 
 				e.printStackTrace();
 			//	val++;
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		
 			/*
@@ -389,7 +385,7 @@ public class ChatMemberTest extends Base {
 			 * ex.executeScript("arguments[0].click();", homepge.getChatMemeber());
 			 */
 
-			 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 10);
+			 WebElement chatmem=Utility.isElementPresnt(driver, "//ul[@role='menu']/li[text()='Chat members']", 15);
 		
 			 chatmem.click();
 		// homepge.getChatMemeber().click();

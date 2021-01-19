@@ -16,14 +16,11 @@ public class ProfileUpadateTest extends Base {
 	Utility util = new Utility();
 	public ProfilePage propage;
 
-
 	@Test(priority = 1)
 	public void updateProfileInformation() throws Exception {
 
-		
 		test = extent.createTest("10.ProfileUpdateTest",
 				"This test case is to check user is able to Update the Profile");
-		
 
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
@@ -31,10 +28,13 @@ public class ProfileUpadateTest extends Base {
 
 		Reporter.log("ProfileUpdate Testcase is runnng..........", true);
 
-		WebDriverWait wait00 = new WebDriverWait(driver, 20);
-	
-		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
-
+		/*
+		 * WebDriverWait wait00 = new WebDriverWait(driver, 20);
+		 * 
+		 * wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		 */
+		
+		Utility.isElementPresnt(driver, "//button[@type='submit']", 10);
 		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed", true);
@@ -90,13 +90,13 @@ public class ProfileUpadateTest extends Base {
 
 		Assert.assertEquals(propage.getmailId().getText(), "pammi@gmail.com");
 
-		// logp.getcloseProfile().click();	
+		// logp.getcloseProfile().click();
 		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
 				10).click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-		//profile = PageFactory.initElements(driver, ProfilePage.class);
+		// profile = PageFactory.initElements(driver, ProfilePage.class);
 		/*
 		 * WebDriverWait wait2 = new WebDriverWait(driver, 20);
 		 * wait2.until(ExpectedConditions.elementToBeClickable(profile.getProfilehov()))
@@ -107,14 +107,13 @@ public class ProfileUpadateTest extends Base {
 		 * 
 		 */
 	}
-		
-		@Test(priority = 2)
-		public void profileChangeTest() throws Exception
-		{
-			profile = PageFactory.initElements(driver, ProfilePage.class);
 
-			Reporter.log("profileChage Test Started  ###########################",true);
-		
+	@Test(priority = 2)
+	public void profileChangeTest() throws Exception {
+		profile = PageFactory.initElements(driver, ProfilePage.class);
+
+		Reporter.log("profileChage Test Started  ###########################", true);
+
 		Utility.isElementPresnt(driver, "//a[@href='/profile']", 10).click();
 
 		// wait.until(ExpectedConditions.visibilityOf(profile.getFname()));
@@ -142,8 +141,6 @@ public class ProfileUpadateTest extends Base {
 		Reporter.log("Profile ingormation is sucessfully updated");
 		Reporter.log("ProfileUpdateTest TestCase is sucessfully done ############################# TEST IS PASS", true);
 
-		}
-		
-		}
+	}
 
-
+}

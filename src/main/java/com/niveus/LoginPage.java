@@ -106,6 +106,14 @@ public class LoginPage {
 	{
 		return close;
 	}
+	
+	@FindBy(xpath = "//span[text()='Logout']")
+	private WebElement logout;
+	
+	public WebElement getlogout()
+	{
+		return logout;
+	}
 	public void loginPopUP() 
 	{
 		

@@ -163,7 +163,7 @@ public class Base {
 		 * below code is used to run the Script in headless mode
 		 */
 		
-		  
+		
 		  ChromeOptions options = new ChromeOptions();
 		  
 		  options.setPageLoadStrategy(PageLoadStrategy.NONE);
@@ -179,9 +179,9 @@ public class Base {
 		  options.setExperimentalOption("useAutomationExtension", false);
 		  options.setExperimentalOption("excludeSwitches", new String[] {
 		  "enable-automation" }); driver = new ChromeDriver(options);
+		  
+		  
 		 
-		 
-
 		/*
 		 * this is used to run the script in headless mode*
 		 */

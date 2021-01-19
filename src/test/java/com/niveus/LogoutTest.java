@@ -2,6 +2,7 @@ package com.niveus;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,17 +10,19 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class LoginTest extends Base {
+public class LogoutTest extends Base
+{
 	public LoginPage logp;
 	public Registeration registerp;
 	public Carddetails card;
 	FileLib flib = new FileLib();
 	public ProfilePage propage;
 
-	@Test()
-	public void loginPageTest() {
 
-		test = extent.createTest("1.Login", "This test case is used to check the Login validation");
+	@Test
+	public void logoutValidationTest()
+	{
+		test = extent.createTest("13.Logout", "This test case is used to check the Logout");
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
@@ -27,7 +30,7 @@ public class LoginTest extends Base {
 
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
-		Reporter.log("Login Testcase is runnng..........>>>>>>>>>>>>>>>>",true);
+		Reporter.log("Logout Testcase is runnng..........>>>>>>>>>>>>>>>>",true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -70,11 +73,14 @@ public class LoginTest extends Base {
 
 		try {
 
-			if (logp.getloginAlert().isEnabled()) {
+			if (logp.getloginAlert().isEnabled())
+			{
 				Reporter.log("Login Alert Popup is displayed......", true);
 
 				logp.loginPopUP();
 			}
+			
+			
 		}
 		   catch (Exception e) {
 
@@ -93,17 +99,27 @@ public class LoginTest extends Base {
 		WebDriverWait wait1 = new WebDriverWait(driver, 90);
 
 		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-		
-		
 
 		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
 		
-		logp.getcloseProfile().click();
-
-		
 		Reporter.log("sucessfully loged in and Home page is displayed..............Pass", true);
 
-		Reporter.log("Login TestCase is sucessfully done ############################# TEST IS PASS", true);
-	}
+		
+		try
+		{
+       
+		WebElement logout = Utility.isElementPresnt(driver, "//span[text()='Logout']", 10);
+		
+		logout.click();
+		}
+		catch (Exception e) 
+		
+		{
+			
+		}
+		
 
+
+		Reporter.log("Logout TestCase is sucessfully done ############################# TEST IS PASS", true);
+	}
 }

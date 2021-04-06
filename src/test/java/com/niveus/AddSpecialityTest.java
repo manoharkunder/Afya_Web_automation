@@ -1,6 +1,7 @@
 package com.niveus;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
@@ -77,7 +78,7 @@ public class AddSpecialityTest extends Base {
 				if (logp.getloginAlert().isEnabled()) {
 
 					if (true) {
-						Reporter.log("Login Alert Popup is displayed......", true);
+						Reporter.log("Login Alert Popup found !!!!!!!!!!!......", true);
 
 						logp.getloginAlert().click();
 
@@ -138,6 +139,7 @@ public class AddSpecialityTest extends Base {
 			wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
 			filter.getAllchat().click();
+			Thread.sleep(2000);
 
 			wait.until(ExpectedConditions.elementToBeClickable(filter.getChatSession()));
 
@@ -147,7 +149,7 @@ public class AddSpecialityTest extends Base {
 			Reporter.log(e.getMessage(), true);
 		}
 
-		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>", true);
+		Reporter.log("chat session   displayed in Add specialty..!!!!!.......", true);
 
 		try {
 
@@ -170,7 +172,8 @@ public class AddSpecialityTest extends Base {
 			boolean fg1 = Utility.isElementPresnt(driver, "//div[contains(@class,'chat_content_items_')]", 10)
 					.isDisplayed();
 
-			AssertJUnit.assertTrue(fg1);
+			Assert.assertTrue(fg1);
+
 		} catch (Exception e) {
 		}
 

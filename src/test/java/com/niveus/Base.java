@@ -162,7 +162,7 @@ public class Base {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
 
-		// driver = new ChromeDriver(options);
+	//  driver = new ChromeDriver(options);
 
 		/*
 		 * below code is used to run the Script in headless mode
@@ -189,15 +189,18 @@ public class Base {
 		 * this is used to run the script in headless mode*
 		 */
 
-		options.addArguments("--headless", "--disable-gpu", "--blink-settings=imagesEnabled=false");
-
-		options.setPageLoadStrategy(PageLoadStrategy.NONE);
-
-		options.addArguments("enable-features=NetworkServiceInProcess");
-
-		options.addArguments("headless");
-
-		driver = new ChromeDriver(options);
+		
+		  options.addArguments("--headless", "--disable-gpu",
+		  "--blink-settings=imagesEnabled=false");
+		  
+		  options.setPageLoadStrategy(PageLoadStrategy.NONE);
+		  
+		  options.addArguments("enable-features=NetworkServiceInProcess");
+		  
+		  options.addArguments("headless");
+		  
+		  driver = new ChromeDriver(options);
+		 
 
 		System.out.println("browser is launched");
 

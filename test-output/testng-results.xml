@@ -11,31 +11,28 @@
       <![CDATA[Login page is sucessfully displayed]]>
     </line>
     <line>
-      <![CDATA[Login Alert Popup is displayed......]]>
-    </line>
-    <line>
-      <![CDATA[No Alert Popup...............]]>
+      <![CDATA[Login Alert Popup found !!.Please peform an action......]]>
     </line>
     <line>
       <![CDATA[sucessfully logedin and Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+      <![CDATA[chat session is sucessfully displayed in Filter Test..>>>>>>>>>>>]]>
     </line>
     <line>
-      <![CDATA[Staff, Doctortest +2
-4 months ago
-This chat has been assigned to Dr. Doctortest New (Obstetrics) and the provider will respond to this chat after they've reviewed
-RE: KeloInfia ki]]>
+      <![CDATA[Test, APrasanna +1
+a month ago
+Kj
+RE: Prasannnashetty Lname]]>
     </line>
     <line>
-      <![CDATA[second time stamp is taken.........############]]>
+      <![CDATA[First time stmp is  displayed........!!!!!......]]>
     </line>
     <line>
       <![CDATA[4 months ago]]>
     </line>
     <line>
-      <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+      <![CDATA[chat session is sucessfully displayed in Filter Test..>>>>>>>>>>>]]>
     </line>
     <line>
       <![CDATA[a month ago]]>
@@ -47,27 +44,27 @@ RE: KeloInfia ki]]>
       <![CDATA[Filter Test is sucessfully done ############################# TEST IS PASS]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-04-06T15:23:43 IST" name="Default suite" finished-at="2021-04-06T15:24:21 IST" duration-ms="38537">
+  <suite started-at="2021-04-06T21:10:16 IST" name="Default suite" finished-at="2021-04-06T21:10:55 IST" duration-ms="38807">
     <groups>
     </groups>
-    <test started-at="2021-04-06T15:23:43 IST" name="Default test" finished-at="2021-04-06T15:24:21 IST" duration-ms="38537">
+    <test started-at="2021-04-06T21:10:16 IST" name="Default test" finished-at="2021-04-06T21:10:55 IST" duration-ms="38807">
       <class name="com.niveus.FilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:23:42 IST" name="setUp" finished-at="2021-04-06T15:23:43 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:16 IST" name="setUp" finished-at="2021-04-06T21:10:16 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:23:43 IST" name="configBc" finished-at="2021-04-06T15:23:45 IST" duration-ms="2369" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:16 IST" name="configBc" finished-at="2021-04-06T21:10:19 IST" duration-ms="2520" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ Page  is sucessfully displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:23:45 IST" name="setUp" finished-at="2021-04-06T15:23:45 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:19 IST" name="setUp" finished-at="2021-04-06T21:10:19 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:23:45 IST" name="filterValidationTest" finished-at="2021-04-06T15:24:21 IST" duration-ms="36058" status="PASS">
+        <test-method signature="filterValidationTest()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:19 IST" name="filterValidationTest" finished-at="2021-04-06T21:10:55 IST" duration-ms="36034" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FilterTest Testcase is runnng..........]]>
@@ -76,31 +73,28 @@ RE: KeloInfia ki]]>
               <![CDATA[Login page is sucessfully displayed]]>
             </line>
             <line>
-              <![CDATA[Login Alert Popup is displayed......]]>
-            </line>
-            <line>
-              <![CDATA[No Alert Popup...............]]>
+              <![CDATA[Login Alert Popup found !!.Please peform an action......]]>
             </line>
             <line>
               <![CDATA[sucessfully logedin and Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+              <![CDATA[chat session is sucessfully displayed in Filter Test..>>>>>>>>>>>]]>
             </line>
             <line>
-              <![CDATA[Staff, Doctortest +2
-4 months ago
-This chat has been assigned to Dr. Doctortest New (Obstetrics) and the provider will respond to this chat after they've reviewed
-RE: KeloInfia ki]]>
+              <![CDATA[Test, APrasanna +1
+a month ago
+Kj
+RE: Prasannnashetty Lname]]>
             </line>
             <line>
-              <![CDATA[second time stamp is taken.........############]]>
+              <![CDATA[First time stmp is  displayed........!!!!!......]]>
             </line>
             <line>
               <![CDATA[4 months ago]]>
             </line>
             <line>
-              <![CDATA[chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>]]>
+              <![CDATA[chat session is sucessfully displayed in Filter Test..>>>>>>>>>>>]]>
             </line>
             <line>
               <![CDATA[a month ago]]>
@@ -113,7 +107,7 @@ RE: KeloInfia ki]]>
             </line>
           </reporter-output>
         </test-method> <!-- filterValidationTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:24:21 IST" name="getResult" finished-at="2021-04-06T15:24:21 IST" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:55 IST" name="getResult" finished-at="2021-04-06T21:10:55 IST" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +118,7 @@ RE: KeloInfia ki]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T15:24:21 IST" name="flushReport" finished-at="2021-04-06T15:25:38 IST" duration-ms="76641" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.FilterTest@add0edd]" started-at="2021-04-06T21:10:55 IST" name="flushReport" finished-at="2021-04-06T21:12:13 IST" duration-ms="78416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

@@ -68,7 +68,7 @@ public class FilterTest extends Base {
 			if (logp.getloginAlert().isEnabled()) {
 
 				if (true) {
-					Reporter.log("Login Alert Popup is displayed......", true);
+					Reporter.log("Login Alert Popup found !!.Please peform an action......", true);
 
 					logp.getloginAlert().click();
 
@@ -78,9 +78,9 @@ public class FilterTest extends Base {
 		} catch (Exception e) {
 
 			Reporter.log(e.getMessage(), true);
-		}
+			Reporter.log("No Alert Popup...!....", true);
 
-		Reporter.log("No Alert Popup...............", true);
+		}
 
 		wait.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider()));
 
@@ -98,14 +98,14 @@ public class FilterTest extends Base {
 
 		Reporter.log("sucessfully logedin and Home page is displayed", true);
 
-		try {
-			wait.until(ExpectedConditions.visibilityOf(homepge.getAllChat()));
-
-			Utility.isElementPresnt(driver, "//span[text()='All Chats']", 12).click();
-		} catch (Exception e) {
-
-			e.getMessage();
-		}
+		/*
+		 * try { wait.until(ExpectedConditions.visibilityOf(homepge.getAllChat()));
+		 * 
+		 * Utility.isElementPresnt(driver, "//span[text()='All Chats']", 12).click(); }
+		 * catch (Exception e) {
+		 * 
+		 * e.getMessage(); }
+		 */
 
 		Thread.sleep(2000);
 
@@ -118,12 +118,12 @@ public class FilterTest extends Base {
 		String newtime = "";
 		String StrOld = "";
 
-		if (chat.equalsIgnoreCase("ago")) {
-			Reporter.log("First time stmp is  displayed........###########", true);
+		if (chat.contains("ago")) {
+			Reporter.log("First time stmp is  displayed........!!!!!......", true);
 			Thread.sleep(2000);
 			newtime = Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
 		} else {
-			Reporter.log("second time stamp is taken.........############", true);
+			Reporter.log("second time stamp is taken.........!!!!!!!.....", true);
 			Thread.sleep(2000);
 			StrOld = Utility.isElementPresnt(driver, "//div[@class='chatItem___1pptZ']//div[2]//div[2]", 10).getText();
 			newtime = StrOld;
@@ -151,7 +151,7 @@ public class FilterTest extends Base {
 		Thread.sleep(2000);
 		Utility.isElementPresnt(driver, "//li[@id='chat_session_items']", 10).getText();
 
-		Reporter.log("chat session is sucessfully displayed in Filter Test..>>>>>>>>>>>", true);
+		Reporter.log("chat session Found !!!!!!!!!!.......", true);
 
 		String oldtime = "";
 		if (chat.contains("old")) {
@@ -173,6 +173,6 @@ public class FilterTest extends Base {
 
 		Reporter.log("filter is sucessfully applied", true);
 
-		Reporter.log("Filter Test is sucessfully done ############################# TEST IS PASS", true);
+		Reporter.log("Filter Test is sucessfully done ##################### TEST IS PASS", true);
 	}
 }

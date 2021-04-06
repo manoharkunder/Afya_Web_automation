@@ -1,57 +1,56 @@
 package com.niveus;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
-public class AssigningDoctorTest extends Base {	
+public class AssigningDoctorTest extends Base {
 	public LoginPage logp;
 	public Registeration registerp;
 	public Carddetails card;
 	public HomePage homepge;
 	public FilterSection filter;
 	public ProfilePage propage;
+	public DoctorRolesPage docpage;
+
 	FileLib flib = new FileLib();
 
 	@Test()
 	public void assigningDoctorTest() throws Exception {
 
-		test = extent.createTest("14.AssigningDoctor",
-				"This test case is to check consumer is able to Assign the Doctor");
+		test = extent.createTest("1.Login", "This test case is used to check the Assigning doctor validation");
 
-		Reporter.log("Assigining doctor Testcase is running...........",true);
 		logp = PageFactory.initElements(driver, LoginPage.class);
+
 		card = PageFactory.initElements(driver, Carddetails.class);
-		filter = PageFactory.initElements(driver, FilterSection.class);
+
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
-		homepge = PageFactory.initElements(driver, HomePage.class);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Reporter.log("Login Testcase is runnng..........>>>>>>>>>>>>>>>>", true);
 
-		WebDriverWait log = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 
-		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed..................Pass", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 
 		logp.getUsername().sendKeys("prasannaachar126@gmail.com");
-		logp.getpassword().sendKeys("Aa123456@");
+		logp.getpassword().sendKeys("Aa123456!");
 
 		logp.getpswdview().click();
 
 		boolean flag = true;
 
-		while (flag) {
+		while (flag == true) {
 			try {
 
 				boolean res = logp.getloginbtn().isEnabled();
@@ -61,7 +60,6 @@ public class AssigningDoctorTest extends Base {
 
 					flag = false;
 
-					break;
 				}
 			} catch (Exception e) {
 
@@ -72,139 +70,83 @@ public class AssigningDoctorTest extends Base {
 
 		try {
 
-			if (logp.getloginAlert().isEnabled()) 
-			{
-				
-				if(true)
-				{
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+			if (logp.getloginAlert().isEnabled()) {
 				Reporter.log("Login Alert Popup is displayed......", true);
 
 				logp.loginPopUP();
-				
-			}
-							
+
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 			}
 		} catch (Exception e) {
 
-			Reporter.log("No Alert Popup...............", true);
-
-			WebDriverWait wt = new WebDriverWait(driver, 10);
-			wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-
-			logp.getproficPic().click();
-			
-		
+			Reporter.log(e.getMessage(), true);
 		}
 
-		
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		Thread.sleep(2000);
+		try {
+			if (logp.getDenyBtn().isEnabled()) 
+			{
+				wait.until(ExpectedConditions.elementToBeClickable(logp.getDenyBtn()));
 
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+				Utility.moveToElement(driver, logp.getDenyBtn());
 
-		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
-		
+			}
+
+		} catch (Exception e) {
+			Reporter.log(e.getMessage(), true);
+		}
+
+		Reporter.log("No Family confirmation Popup", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
+
+		logp.getproficPic().click();
+
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
+
 		logp.getcloseProfile().click();
-
 
 		Reporter.log("sucessfully loged in and Home page is displayed..............Pass", true);
 
-		Reporter.log("Login TestCase is sucessfully done ############################# TEST IS PASS", true);
-	
-	
-	
-		/*
-		 * boolean btn = homepge.getNewbtn().isEnabled();
-		 * 
-		 * while(btn) { homepge.getNewbtn().click();
-		 * 
-		 * btn=false; break; }
-		 * 
-		 */
-		
-		Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
-	//	for (int i = 1; i <= 10;) {
+		try
 
-			try
+		{
+			Thread.sleep(1000);
 
-			{
-				
-				
-			//	homepge.getSpeciality().click();
-				
-               Utility.isElementPresntOnId(driver, "speciality", 10).click();
-               
-				/*
-				 * driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				 * 
-				 * WebElement spec = driver.findElement(By.xpath(
-				 * " //div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')]["
-				 * + i + "]"));
-				 * 
-				 * WebDriverWait tt=new WebDriverWait(driver, 30);
-				 * tt.until(ExpectedConditions.elementToBeClickable(spec));
-				 */
-               
-               Utility.isElementPresnt(driver, "//div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][\"\n" + 
-               		"				 * + i + \"]", 10).click();
-			//	spec.click();
-				
-				Reporter.log("sucessfully specialty is seleced",true);
-				
-			//	Thread.sleep(3000);
-				Utility.isElementPresntOnId(driver, "chiefcomplaint", 10).sendKeys("have a knee pain leg");
+			Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
 
-			//	homepge.getChiefcomplaint().sendKeys("have a knee pain leg");
+			Thread.sleep(2000);
 
-				Utility.isElementPresnt(driver, "//span[text()='Create a new chat']", 10).click();
-		
-			//	homepge.getNewpatient().click();
+			Utility.isElementPresntOnId(driver, "speciality", 10).click();
 
-				WebDriverWait wit = new WebDriverWait(driver, 100);
+			Utility.isElementPresnt(driver,
+					"//div[contains(@class,'ant-select-dropdown')]//div[contains(@class,'ant-select-item ')][\"\n"
+							+ "				 * + i + \"]",
+					5).click();
 
-				wit.until(ExpectedConditions.visibilityOf(homepge.getSession()));
+			Reporter.log("sucessfully specialty is seleced", true);
 
-				Utility.isElementPresntOnId(driver, "chat_session_items", 10).click();
+			Utility.isElementPresntOnId(driver, "chiefcomplaint", 5).sendKeys("have a knee pain leg");
 
-				boolean b = homepge.getSession().getText().contains("Session");
-				if (b) {
-					Reporter.log(homepge.getSession().getText() + " sucessfully created", true);
+			Utility.isElementPresnt(driver, "//span[text()='Create a new chat']", 5).click();
 
-				//	break;
-				} else {
-					Reporter.log(homepge.getNoDoctor().getText() + "UnSucessfull");
+		} catch (Exception e) {
+		}
 
-			//		i++;
+		try {
+			if (logp.getNoDoctor().isEnabled() == true)
 
-				}
-			}
+				Reporter.log("No Doctor availble at the moment", true);
 
-			catch (Exception e) {
+		} catch (Exception e) {
+			Reporter.log("Doctor is sucessfullly added to the chat session", true);
 
-				/*
-				 * WebDriverWait pp=new WebDriverWait(driver, 30);
-				 * pp.until(ExpectedConditions.elementToBeClickable(homepge.getpopUpClose()));
-				 */
-				
-			//	Utility.isElementPresnt(driver, "//a[contains(@class,'close')]", 10).click();
-				
-				//homepge.getpopUpClose().click();
+		}
 
-				/*
-				 * Thread.sleep(2000); WebDriverWait ppp=new WebDriverWait(driver, 30);
-				 * ppp.until(ExpectedConditions.elementToBeClickable(homepge.getNewbtn()));
-				 */
-				//homepge.getNewbtn().click();
-			
-		//		Utility.isElementPresnt(driver, "//div[contains(@class,'container___2U')]//img", 10).click();
-				
-			}
-		//}
-		
-	Reporter.log("Doctor is sucessfully added to the chat session",true);
-//	boolean flag1 = lang1.contains(dateArr[2]);Assert.assertTrue(flag1);Reporter.log("DOctor is assigned to the cht session",true);
-
-	Reporter.log("AssigningDoctorTest TestCase is sucessfully done ############################# TEST IS PASS",true);
-
-}
-
+	}
 }

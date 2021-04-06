@@ -20,7 +20,7 @@ public class LoginPage {
 	@FindBy(xpath = "//span[text()='auto log-in']/preceding-sibling::span//input")
 	private WebElement autolog;
 
-	@FindBy(xpath = "//span[@role='img' and contains(@class,'password-icon')]")
+	@FindBy(xpath = "//span[@role='img']")
 	private WebElement pwdview;
 
 	@FindBy(xpath = "//a[text()='Register account']")
@@ -32,7 +32,7 @@ public class LoginPage {
 	@FindBy(xpath = "//div[text()='Login']")
 	private WebElement logpage;
 
-	@FindBy(xpath = "//span[text()=' Yes']/..")
+	@FindBy(xpath = "//span[text()=' No']/../preceding-sibling::button")
 	private WebElement getpop;
 
 	@FindBy(xpath = "//div[contains(@class,'user_name_')]")
@@ -118,10 +118,26 @@ public class LoginPage {
 	{
 		
 			getloginAlert().click();
-		    ut.moveToElement(driver, getproficPic());
+		    Utility.moveToElement(driver, getproficPic());
 					
 	}
    
+	@FindBy(xpath = "//span[text()='Confirm Family Member']/../div//span[text()='Deny']")
+	private WebElement deny;
+	
+	public WebElement getDenyBtn()
+	{
+		return deny;
+	}
+	
+	
+	@FindBy(xpath = "//div[text()='No doctors available at the moment']")
+	private WebElement  nodoc;
+	
+	public WebElement getNoDoctor()
+	{
+		return nodoc;
+	}
 	public void login(String email, String password) {
 		
 		username.sendKeys(email);

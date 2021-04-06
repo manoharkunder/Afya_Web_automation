@@ -1,13 +1,12 @@
 package com.niveus;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class LoginTest extends Base {
 	public LoginPage logp;
@@ -17,7 +16,7 @@ public class LoginTest extends Base {
 	public ProfilePage propage;
 
 	@Test()
-	public void loginPageTest() {
+	public void loginPageTest() throws Exception {
 
 		test = extent.createTest("1.Login", "This test case is used to check the Login validation");
 
@@ -27,29 +26,28 @@ public class LoginTest extends Base {
 
 		propage = PageFactory.initElements(driver, ProfilePage.class);
 
-		Reporter.log("Login Testcase is runnng..........>>>>>>>>>>>>>>>>",true);
+		Reporter.log("Login Testcase is runnng..........>>>>>>>>>>>>>>>>", true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		WebDriverWait log = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
-
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		Reporter.log("Login page is sucessfully displayed..................Pass", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 
 		logp.getUsername().sendKeys("prasannaachar126@gmail.com");
-		logp.getpassword().sendKeys("Aa123456@");
+		logp.getpassword().sendKeys("Aa123456!");
 
 		logp.getpswdview().click();
 
 		boolean flag = true;
 
-		while (flag) {
+		while (flag == true) {
 			try {
 
 				boolean res = logp.getloginbtn().isEnabled();
@@ -59,7 +57,6 @@ public class LoginTest extends Base {
 
 					flag = false;
 
-					break;
 				}
 			} catch (Exception e) {
 
@@ -70,37 +67,47 @@ public class LoginTest extends Base {
 
 		try {
 
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 			if (logp.getloginAlert().isEnabled()) {
 				Reporter.log("Login Alert Popup is displayed......", true);
 
 				logp.loginPopUP();
+
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 			}
+
+		} catch (Exception e) {
+
+			Reporter.log(e.getMessage(), true);
 		}
-		   catch (Exception e) {
 
-			Reporter.log("No Alert Popup...............", true);
+		Thread.sleep(4000);
+		try {
+			if (logp.getDenyBtn().isEnabled()) {
+				wait.until(ExpectedConditions.elementToBeClickable(logp.getDenyBtn()));
 
-			WebDriverWait wt = new WebDriverWait(driver, 10);
-			wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-             
-			logp.getproficPic().click();
+				Utility.moveToElement(driver, logp.getDenyBtn());
 
+			}
 
+		} catch (Exception e) {
+			Reporter.log(e.getMessage(), true);
 		}
-		
-	
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
+		Reporter.log("No Family confirmation Popup", true);
 
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-		
-		
+		wait.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
-		
+		logp.getproficPic().click();
+
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
+
 		logp.getcloseProfile().click();
 
-		
 		Reporter.log("sucessfully loged in and Home page is displayed..............Pass", true);
 
 		Reporter.log("Login TestCase is sucessfully done ############################# TEST IS PASS", true);

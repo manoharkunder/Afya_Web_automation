@@ -1,14 +1,14 @@
 package com.niveus;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class LogoutTest extends Base
 {
@@ -17,12 +17,15 @@ public class LogoutTest extends Base
 	public Carddetails card;
 	FileLib flib = new FileLib();
 	public ProfilePage propage;
+	public DoctorRolesPage docpage;
 
 
-	@Test
-	public void logoutValidationTest()
+	@Test()
+	public void logoutValidationTest() throws Exception	
 	{
 		test = extent.createTest("13.Logout", "This test case is used to check the Logout");
+
+		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
@@ -32,79 +35,88 @@ public class LogoutTest extends Base
 
 		Reporter.log("Logout Testcase is runnng..........>>>>>>>>>>>>>>>>",true);
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		WebDriverWait log = new WebDriverWait(driver, 20);
 
-		log.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		Reporter.log("Login page is sucessfully displayed..................Pass", true);
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
-		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		logp.getUsername().sendKeys("prasannaachar126@gmail.com");
+		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 
 		logp.getpswdview().click();
 
-		boolean flag = true;
+		boolean flag1 = true;
 
-		while (flag) {
+		while (flag1 == true) {
 			try {
-
 				boolean res = logp.getloginbtn().isEnabled();
-
 				if (res == true) {
 					logp.getloginbtn().click();
-
-					flag = false;
-
-					break;
+					flag1 = false;
 				}
 			} catch (Exception e) {
-
 				e.printStackTrace();
 
 			}
 		}
+		boolean alert = false;
+		while (alert == false) {
+			try {
+				if (logp.getloginAlert().isEnabled()) {
 
-		try {
+					if (true) {
+						Reporter.log("Login Alert Popup is displayed......", true);
 
-			if (logp.getloginAlert().isEnabled())
-			{
-				Reporter.log("Login Alert Popup is displayed......", true);
+						logp.getloginAlert().click();
 
-				logp.loginPopUP();
+						alert = true;
+
+					}
+
+				}
+			} catch (Exception e) {
+
 			}
-			
-			
-		}
-		   catch (Exception e) {
-
-			Reporter.log("No Alert Popup...............", true);
-
-			WebDriverWait wt = new WebDriverWait(driver, 10);
-			wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-             
-			logp.getproficPic().click();
-
-
 		}
 		
+		Thread.sleep(2000);
+       
+		wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
+		
+	    Utility.moveToElement(driver, docpage.getSubProvider());
+	    
+		boolean flag = docpage.getSubProvider().getText().contains("provider");
+
+		AssertJUnit.assertTrue(flag);
+
+		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			if (docpage.getSkip().isEnabled()) {
+				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+			}
+
+			else {
+				Reporter.log("No Missed call Popup", true);
+			}
+		} catch (Exception e) {
+
+		}
+
+		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
+
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+
 	
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
-
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-
-		Assert.assertEquals(propage.getmailId().getText(), "prasannaachar126@gmail.com");
-		
-		Reporter.log("sucessfully loged in and Home page is displayed..............Pass", true);
-
-		
+		Reporter.log("sucessfully loged in and Home page is displayed", true);		
 		try
 		{
        

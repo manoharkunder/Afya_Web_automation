@@ -55,14 +55,14 @@ public class ProfilePage {
 		return gnder;
 	}
 
-	@FindBy(xpath = "//div[text()='Male']")
+	@FindBy(xpath = "//div[@id='gender']//div[1]")
 	private WebElement genmale;
 
 	public WebElement getGenMale() {
 		return genmale;
 	}
 
-	@FindBy(xpath = "//div[text()='Female']")
+	@FindBy(xpath = "//div[@id='gender']//div[2]")
 	private WebElement genFemale;
 
 	public WebElement getFemale() {
@@ -90,7 +90,7 @@ public class ProfilePage {
 		return bio;
 	}
 
-	@FindBy(xpath = "//button[@type='submit' and text()='Update Information']")
+	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement updatebtn;
 
 	public WebElement getUpdatebtn() {
@@ -133,7 +133,7 @@ public class ProfilePage {
     	return logout;
     }
 	
-    public void updateProfile(String firstname, String lastName, String dateofbirth, String gender)
+    public  void  updateProfile(String firstname, String lastName, String gender)
 			throws Exception {
 
 
@@ -141,8 +141,6 @@ public class ProfilePage {
     	fname.sendKeys(Keys.CONTROL, Keys.chord("a")); //select all text in textbox
     	fname.sendKeys(Keys.BACK_SPACE); //delete it
     	fname.sendKeys(firstname);
-	
-    //	fname.sendKeys(firstname);
 
 		
 
@@ -150,25 +148,29 @@ public class ProfilePage {
     	lname.sendKeys(Keys.BACK_SPACE); //delete it
     	lname.sendKeys(lastName);
     	
-	//	lname.sendKeys(lastName);
-
-		dobid.sendKeys(dateofbirth, Keys.ENTER);
-		
-		gnder.click();
+    	Thread.sleep(2000);
+       
+    	try
+    	{
 		
 		if (gender.equals("Male")) 
 		{
-			genmale.click();
-			
-		//	Utility.isElementPresnt(driver, "//div[text()='Male']", 5).click();
-		} else if (gender.equals("Female")) {
-			
-		genFemale.click();
-		//	Utility.isElementPresnt(driver, "//div[text()='Female']", 5).click();
-		} else {
-			notspecify.click();
+			if(genmale.isSelected())
+				
+              Utility.moveToElement(driver, genFemale);
+			else
+	              Utility.moveToElement(driver, genmale);
 		}
+    	else
+    	{
+            Utility.moveToElement(driver, genFemale);
 
+    		
+    	}}
+
+		
+    	catch (Exception e) {
+		}
 
 	}
 

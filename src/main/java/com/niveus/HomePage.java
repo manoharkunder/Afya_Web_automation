@@ -160,7 +160,7 @@ public class HomePage
 		return photo;
 	}
 
-	@FindBy(xpath = "//ul[@role='menu']/li[text()='Patient info']")
+	@FindBy(xpath = "//span[text()='Patient info']")
 	private WebElement patientinfo;
 
 	public WebElement getPatientinfo() {
@@ -318,7 +318,7 @@ public class HomePage
 	}
 	
 	
-	@FindBy(xpath="//ul[@role='menu']//li[text()='Media files']")
+	@FindBy(xpath="//span[text()='Media files']")
 	private WebElement media1;
 	
 	public WebElement getMediaFil()
@@ -347,6 +347,36 @@ public class HomePage
 	public WebElement getResrol()
 	{
 		return resrole;
+	}
+	
+	@FindBy(xpath = "//span[text()='All Chats']")
+	private WebElement all;
+	
+	public WebElement getAllChat()
+	{
+		return all;
+	}
+	
+	@FindBy(xpath = "//button[@type='submit']//span[text()='CONFIRM PATIENT']")
+	private WebElement  confirm;
+	
+	public WebElement getConfirmPatient()
+	{
+		return confirm;
+	}
+	@FindBy(xpath  = "//input[@id='specialty']")
+	private WebElement specid;
+	
+	public WebElement getSpecdropDown()
+	{
+		return specid;
+	}
+	@FindBy(xpath = "//div[text()='Obstetrics']")
+	private WebElement dropdown;
+	
+	public WebElement getObstrtrics()
+	{
+		return dropdown;
 	}
 	
 	public void createNewpatient(String speciality, String chiefcompliant) {

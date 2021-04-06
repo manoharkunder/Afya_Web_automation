@@ -1,12 +1,13 @@
 package com.niveus;
 
-import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class AddSpecialityTest extends Base {
 
@@ -16,241 +17,161 @@ public class AddSpecialityTest extends Base {
 	public DoctorRolesPage docpage;
 	Utility ut = new Utility();
 	public LoginPage logp;
-	public HomePage landpage;
+	public HomePage homepge;
 	public CloseCode close;
 	public ProfilePage propage;
 	public FilterSection filter;
+	WebDriverWait wait;
 
 	@Test()
 	public void addspecialityValidationTest() throws Exception {
 
 		test = extent.createTest("3.AddSpeciality",
 				"This test case is to check whether whether User is able to add the speciality");
-
-		filter = PageFactory.initElements(driver, FilterSection.class);
-
 		card = PageFactory.initElements(driver, Carddetails.class);
 
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
 
 		registerp = PageFactory.initElements(driver, Registeration.class);
 
-		close = PageFactory.initElements(driver, CloseCode.class);
+		propage = PageFactory.initElements(driver, ProfilePage.class);
+
+		homepge = PageFactory.initElements(driver, HomePage.class);
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
-		landpage = PageFactory.initElements(driver, HomePage.class);
+		filter = PageFactory.initElements(driver, FilterSection.class);
 
-		propage = PageFactory.initElements(driver, ProfilePage.class);
+		close = PageFactory.initElements(driver, CloseCode.class);
 
-		Reporter.log("AddSpecialty testcase is running...........", true);
+		Reporter.log("add specialty Testcase is runnng..........", true);
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		wait1.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Reporter.log("Login page is sucessfully displayed", true);
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-
-		logp.getUsername().sendKeys("test2prasanna@gmail.com");
+		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
+
 		logp.getpswdview().click();
 
-		for (int i = 0; i <= 10; i++) {
+		boolean flag1 = true;
+
+		while (flag1 == true) {
 			try {
 				boolean res = logp.getloginbtn().isEnabled();
 				if (res == true) {
 					logp.getloginbtn().click();
-
-					break;
+					flag1 = false;
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
 
 			}
 		}
+		boolean alert = false;
+		while (alert == false) {
+			try {
+				if (logp.getloginAlert().isEnabled()) {
 
-		try {
-			Thread.sleep(2000);
-			if (logp.getloginAlert().isEnabled()) {
+					if (true) {
+						Reporter.log("Login Alert Popup is displayed......", true);
 
-				if (true) {
-					Reporter.log("Login Alert Popup is displayed......", true);
+						logp.getloginAlert().click();
 
-					logp.getloginAlert().click();
+						alert = true;
+
+					}
 
 				}
+			} catch (Exception e) {
 
+			}
+		}
+
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
+
+		Utility.moveToElement(driver, docpage.getSubProvider());
+
+		boolean flag = docpage.getSubProvider().getText().contains("provider");
+
+		AssertJUnit.assertTrue(flag);
+
+		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			if (docpage.getSkip().isEnabled()) {
+				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+			}
+
+			else {
+				Reporter.log("No Missed call Popup", true);
 			}
 		} catch (Exception e) {
 
-			Reporter.log("No Alert Popup...............", true);
-
 		}
-		
-		Utility.isElementPresnt(driver, "//span[text()='Submitter Provider']", 10).click();
 
-		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
-		
-		Assert.assertTrue(flag);
-		
-		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
-		
-		
-		
-		
 		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
-		
-		//logp.getproficPic().click();
 
-		WebDriverWait wait3 = new WebDriverWait(driver, 10);
-		wait3.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
 
-		//logp.getcloseProfile().click();
-		
-		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10).click();
+		// logp.getcloseProfile().click();
+
+		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
+				10).click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
 
-		/*
-		 * WebDriverWait wait2 = new WebDriverWait(driver, 50);
-		 * 
-		 * wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider())
-		 * );
-		 * 
-		 * ut.moveToElement(driver, docpage.getSubProvider());
-		 * 
-		 * boolean flag = docpage.getSubProvider().getText().contains("Submitter");
-		 * Assert.assertTrue(flag); Reporter.log(docpage.getSubProvider().getText() +
-		 * " role is selected", true); WebDriverWait wt = new WebDriverWait(driver, 10);
-		 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-		 * 
-		 * logp.getproficPic().click();
-		 * 
-		 * WebDriverWait wait4 = new WebDriverWait(driver, 90);
-		 * 
-		 * wait4.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-		 * 
-		 * Assert.assertEquals(propage.getmailId().getText(),
-		 * "test2prasanna@gmail.com");
-		 * 
-		 * logp.getcloseProfile().click();
-		 * 
-		 * Reporter.log("sucessfully loged in and Home page is displayed", true);
-		 */
-		// int count = 0;
-		
-		
+			filter.getFilter().click();
 
-     WebElement filter=Utility.isElementPresnt(driver, "//div[@role='filter_holder']/span", 10);
-		;
-		filter.click();
-		/*
-		 * wait2.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		 * 
-		 * boolean resl = filter.getFilter().isEnabled();
-		 * 
-		 * while (count >= 0) {
-		 * 
-		 * if (resl == true) {
-		 * 
-		 * Thread.sleep(2000); WebDriverWait w1 = new WebDriverWait(driver, 100);
-		 * w1.until(ExpectedConditions.visibilityOf(filter.getFilter()));
-		 * 
-		 * JavascriptExecutor ex = (JavascriptExecutor) driver;
-		 * ex.executeScript("arguments[0].click();", filter.getFilter());
-		 * 
-		 * break; } else { count++; } }
-		 * 
-		 * Thread.sleep(4000);
-		 */
+			wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
-		// filter.getAllchat().click();
-		
-		try
-		{
+			filter.getAllchat().click();
 
-		Utility.isElementPresnt(driver, "//span[text()=' All Chats']", 10).click();
-		
+			wait.until(ExpectedConditions.elementToBeClickable(filter.getChatSession()));
+
+			filter.getChatSession().click();
+
+		} catch (Exception e) {
+			Reporter.log(e.getMessage(), true);
 		}
-		catch (Exception e)
-		{
-			Reporter.log("error is displaying");
-		}
-		/*
-		 * try { WebDriverWait up = new WebDriverWait(driver, 30);
-		 * up.until(ExpectedConditions.visibilityOf(landpage.getChatsesion())); } catch
-		 * (Exception e)
-		 * 
-		 * { e.printStackTrace(); }
-		 */
-        Thread.sleep(2000);
-		Utility.isElementPresnt(driver, "//li[@id='chat_session_items']", 10).click();
-		
+
 		Reporter.log("chat session is sucessfully displayed in Add specialty..>>>>>>>>>>>", true);
 
-		/*
-		 * WebDriverWait wait11 = new WebDriverWait(driver, 40);
-		 * 
-		 * wait11.until(ExpectedConditions.elementToBeClickable(landpage.getChatsesion()
-		 * ));
-		 * 
-		 * landpage.getChatsesion().click();
-		 */
+		try {
 
+			Thread.sleep(4000);
 
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-			try {
-				Thread.sleep(2000);
-                 Utility.isElementPresnt(driver, "//div[@id='textArea']/preceding-sibling::div/input[@type='text']", 10).sendKeys("@spec");
-			
-                 //landpage.getTextarea().sendKeys("@speciality");
+			Utility.isElementPresnt(driver, "//input[@id='input']", 10).sendKeys("@spec");
 
-		//		WebElement spcilaity = driver.findElement(By.xpath("//div[@class='list-sort-demo-list'][" + i + "]"));
+			Utility.isElementPresnt(driver, "//div[@class='list-sort-demo-list']", 10).click();
 
-				/*
-				 * WebDriverWait itt = new WebDriverWait(driver, 10);
-				 * 
-				 * itt.until(ExpectedConditions.visibilityOf(spcilaity));
-				 * 
-				 * WebDriverWait waitt = new WebDriverWait(driver, 100);
-				 * 
-				 * waitt.until(ExpectedConditions.elementToBeClickable(spcilaity));
-				 */
-				Utility.isElementPresnt(driver, "//div[@class='list-sort-demo-list'][\" + i + \"]", 10).click();
-			//	spcilaity.click();
+		} catch (Exception e) {
 
-				
+		}
 
-			} catch (Exception e) {
-
-				e.printStackTrace();
-			}
-
-		
 		Reporter.log("Speciality list is displaying sucessfully", true);
 
 		try {
-			/*
-			 * WebDriverWait w = new WebDriverWait(driver, 20);
-			 * 
-			 * w.until(ExpectedConditions.visibilityOf(landpage.getAddSpec()));
-			 */
 
-			boolean flag1=Utility.isElementPresnt(driver, "//div[contains(@class,'chat_content_items_')]", 10).isDisplayed();
-		//	String lang1 = landpage.getAddSpec().getText();
+			boolean fg1 = Utility.isElementPresnt(driver, "//div[contains(@class,'chat_content_items_')]", 10)
+					.isDisplayed();
 
-		//	boolean flag1 = landpage.getAddSpec().isDisplayed();
-
-			Assert.assertTrue(flag1);
+			AssertJUnit.assertTrue(fg1);
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 		Reporter.log("Doctor is sucessfully added to the chat session", true);

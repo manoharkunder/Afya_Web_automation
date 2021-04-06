@@ -97,7 +97,7 @@ public class CloseCode {
 	{
 		return access;
 	}
-	@FindBy(xpath="//span[text()='Full Access']")
+	@FindBy(xpath="//span[text()='Patient can submit chats']")
 	private WebElement full;
 	
 	public WebElement getParticipantFull()

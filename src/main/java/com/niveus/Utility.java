@@ -42,31 +42,28 @@ public class Utility {
 		return pid;
 	}
 
-	public void moveToElement(WebDriver driver, WebElement webelement) {
+	public static  void moveToElement(WebDriver driver, WebElement webelement) {
 		Actions act = new Actions(driver);
 		act.moveToElement(webelement).click().perform();
 	}
 
-	public void hoverMouse(WebDriver driver, WebElement webelement) {
+	public static void hoverMouse(WebDriver driver, WebElement webelement) {
 		Actions act = new Actions(driver);
 		act.moveToElement(webelement).perform();
 	}
 
 	public static WebElement isElementPresnt(WebDriver driver, String xpath, int time) {
-		int count = 0;
 
 		WebElement ele = null;
 
 		for (int i = 0; i < time; i++) {
 			try {
 				ele = driver.findElement(By.xpath(xpath));
-				System.out.println("element is appered on DOM...........##################");
 
 				break;
 			} catch (Exception e) {
-				System.out.println("Error count>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + count++);
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e1) {
 					System.out.println("Waiting for element to appear on DOM");
 				}
@@ -82,20 +79,17 @@ public class Utility {
 	 */
 	public static WebElement isElementPresntOnId(WebDriver driver, String Id, int time) {
 
-		int errorcnt = 0;
 		WebElement res = null;
 
 		for (int i = 0; i < time; i++) {
 			try {
 				res = driver.findElement(By.id(Id));
-				System.out.println("element is appered on DOM...........##################");
 
 				break;
 			} catch (Exception e) {
-				System.out.println("Error count>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + errorcnt++);
 
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e1) {
 
 					System.out.println("Waiting for element to appear on DOM");

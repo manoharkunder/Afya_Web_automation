@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 485.095 s <<< FAILURE! - in TestSuite
-patientInfoValidationTest(com.niveus.PatientInfoTest)  Time elapsed: 42.836 s  <<< FAILURE!
-java.lang.AssertionError: did not expect to find [true] but found [false]
-	at com.niveus.PatientInfoTest.patientInfoValidationTest(PatientInfoTest.java:405)
-
-updateProfileInformation(com.niveus.ProfileUpadateTest)  Time elapsed: 13.473 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: headless chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-60-generic', java.version: '11.0.9.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.xMf1pG}, goog:chromeOptions: {debuggerAddress: localhost:44817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7b0300b3c8319af968189eec05139344
-	at com.niveus.ProfileUpadateTest.updateProfileInformation(ProfileUpadateTest.java:103)
-
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 912.988 s - in TestSuite

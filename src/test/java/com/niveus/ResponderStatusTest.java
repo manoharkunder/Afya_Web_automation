@@ -1,13 +1,15 @@
 package com.niveus;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
-public class ResponderStatusTest extends Base{
+public class ResponderStatusTest extends Base {
 
 	public Registeration registerp;
 	public Carddetails card;
@@ -22,9 +24,8 @@ public class ResponderStatusTest extends Base{
 
 	@Test()
 	public void statusValidation() throws Exception {
-		
-		test=extent.createTest("11.ResponderStatus","This test case is to check Responder status");
 
+		test = extent.createTest("11.ResponderStatus", "This test case is to check Responder status");
 
 		card = PageFactory.initElements(driver, Carddetails.class);
 
@@ -42,135 +43,107 @@ public class ResponderStatusTest extends Base{
 
 		close = PageFactory.initElements(driver, CloseCode.class);
 
-		Reporter.log("Responder Status Testcase is runnng..........",true);
+		Reporter.log("Responder Status Testcase is runnng..........", true);
 
-		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		WebDriverWait wait00 = new WebDriverWait(driver, 10);
-		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
-		
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Reporter.log("Login page is sucessfully displayed", true);
-		
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		WebDriverWait wait = new WebDriverWait(driver, 100);
-		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
-		logp.getUsername().sendKeys("test2prasanna@gmail.com");
+		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
+
 		logp.getpswdview().click();
 
-		for(int i=0;i<=10;i++)
-		{
-		try
-		{
-		boolean res = logp.getloginbtn().isEnabled(); 
-		if(res==true)
-		{
-			logp.getloginbtn().click();
+		boolean flag1 = true;
 
-			break;
+		while (flag1 == true) {
+			try {
+				boolean res = logp.getloginbtn().isEnabled();
+				if (res == true) {
+					logp.getloginbtn().click();
+					flag1 = false;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+
+			}
 		}
-		}
-		catch (Exception e) 
-		{
-			e.printStackTrace();
+		boolean alert = false;
+		while (alert == false) {
+			try {
+				if (logp.getloginAlert().isEnabled()) {
 
-		}
-		}		
-		try {
-            Thread.sleep(2000);
-			if (logp.getloginAlert().isEnabled()) {
+					if (true) {
+						Reporter.log("Login Alert Popup is displayed......", true);
 
-				if (true) {
-					Reporter.log("Login Alert Popup is displayed......", true);
+						logp.getloginAlert().click();
 
-					logp.getloginAlert().click();
+						alert = true;
+
+					}
 
 				}
+			} catch (Exception e) {
 
 			}
-		} catch (Exception e) { 
-			
+		}
 
-			Reporter.log("No Alert Popup...............", true);
-			
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(docpage.getResponder()));
+
+		boolean flag = docpage.getResponder().isEnabled();
+
+		Utility.moveToElement(driver, docpage.getResponder());
+
+		AssertJUnit.assertTrue(flag);
+
+		Reporter.log(docpage.getResponder().getText() + " role is selected", true);
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			if (docpage.getSkip().isEnabled()) {
+				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+			}
+
+			else {
+				Reporter.log("No Missed call Popup", true);
+			}
+		} catch (Exception e) {
 
 		}
-		
-		/*
-		 * WebDriverWait wait11 = new WebDriverWait(driver, 50);
-		 * wait11.until(ExpectedConditions.elementToBeClickable(docpage.getResponder()))
-		 * ;
-		 */
-		
-		Utility.isElementPresnt(driver, "//span[text()='Responder Provider']", 10).click();
-	//	ut.moveToElement(driver, docpage.getResponder());
-		
 
-	/*
-	 * WebDriverWait wt = new WebDriverWait(driver, 10);
-	 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-	 * 
-	 * logp.getproficPic().click();
-	 */
-		
-     boolean flag1 = docpage.getResponder().getText().contains("Responder");
-		
-		Assert.assertTrue(flag1);
-		
-		Reporter.log(docpage.getResponder().getText() + " role is selected", true);
-	
 		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 90);
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
-		
-//		logp.getcloseProfile().click();
-		
-		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10).click();
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+
+		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
+				10).click();
+
+		Thread.sleep(2000);
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
-		
-		wait.until(ExpectedConditions.visibilityOf(homepge.getChatsesion()));
-		
-        Utility.isElementPresntOnId(driver, "chat_session_items", 10);		
-	
-        //homepge.getResrol().click();
-         
-        Utility.isElementPresnt(driver, "//span[@aria-label='down']/..", 10).click();
-    
-	//	wait.until(ExpectedConditions.elementToBeClickable(homepge.getResponderStatus()));
-         
-			boolean flag=true;
-           
-           while(flag==true)
-			try
-			{
-			//homepge.getResponderStatus().click();
-				Utility.isElementPresnt(driver, "//div[contains(@class,'status_container___q45qw')]", 10).click();
-			
-			flag=false;
-			}
-			catch (Exception e)
-			{
-				
-			}
-			
-		/*
-		 * WebDriverWait ww = new WebDriverWait(driver, 20);
-		 * 
-		 * ww.until(ExpectedConditions.visibilityOf(logp.getUpdateChange()));
-		 */
-           Utility.isElementPresnt(driver, "//span[contains(text(),'User status is changed to')]", 10);
 
-			Reporter.log(logp.getUpdateChange().getText(), true);
+		String result = docpage.getUserstate().getText();
 
-			Reporter.log("status is sucessfully changed ",true);
-			
-		Reporter.log("ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS",true);
+		wait.until(ExpectedConditions.elementToBeClickable(docpage.getStatus()));
+
+		docpage.getStatus().click();
+
+		Thread.sleep(3000);
+
+		String result1 = docpage.getUserstate().getText();
+
+		if (result1 != result) {
+			Reporter.log(result + " is not equal to " + result1 + " status is sucessfully changed ", true);
+
+		}
+
+		Reporter.log("ResponderStatus TestCase is sucessfully done ############################# TEST IS PASS", true);
 
 	}
 

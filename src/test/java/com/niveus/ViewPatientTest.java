@@ -1,15 +1,16 @@
 package com.niveus;
 
-import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class ViewPatientTest extends Base {
-	
+
 	public LoginPage logp;
 	public Registeration registerp;
 	public Carddetails card;
@@ -18,10 +19,9 @@ public class ViewPatientTest extends Base {
 	Utility ut = new Utility();
 	public HomePage homepge;
 	public ProfilePage propage;
-	
-	@Test
-	public void patientValidationTest()
-	{
+
+	@Test()
+	public void patientValidationTest() throws Exception {
 		test = extent.createTest("16.ViewPatient", "This test case is to view the added  patient");
 
 		Reporter.log("ViewPatient testcase is running.............############", true);
@@ -36,24 +36,25 @@ public class ViewPatientTest extends Base {
 
 		registerp = PageFactory.initElements(driver, Registeration.class);
 
-		WebDriverWait wait00 = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		wait00.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
-		logp.getUsername().sendKeys("test2prasanna@gmail.com");
+		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 
 		logp.getpswdview().click();
 
-		for (int i = 0; i <= 10; i++) {
+		boolean flag1 = true;
+
+		while (flag1 == true) {
 			try {
 				boolean res = logp.getloginbtn().isEnabled();
 				if (res == true) {
 					logp.getloginbtn().click();
-
-					break;
+					flag1 = false;
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -63,7 +64,6 @@ public class ViewPatientTest extends Base {
 		boolean alert = false;
 		while (alert == false) {
 			try {
-				Thread.sleep(2000);
 				if (logp.getloginAlert().isEnabled()) {
 
 					if (true) {
@@ -73,66 +73,64 @@ public class ViewPatientTest extends Base {
 
 						alert = true;
 
-						break;
-
 					}
 
-				} else {
-					Reporter.log("No Alert Popup##############", true);
-					break;
 				}
 			} catch (Exception e) {
 
 			}
 		}
 
-		WebElement subRole = Utility.isElementPresnt(driver, "//span[text()='Submitter Provider']", 10);
+		Thread.sleep(2000);
 
-		subRole.click();
+		wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
 
-		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
+		Utility.moveToElement(driver, docpage.getSubProvider());
 
-		Assert.assertTrue(flag);
+		boolean flag = docpage.getSubProvider().getText().contains("provider");
+
+		AssertJUnit.assertTrue(flag);
 
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
 
-		WebElement userEmail = Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			if (docpage.getSkip().isEnabled()) {
+				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+			}
 
-		userEmail.click();
+			else {
+				Reporter.log("No Missed call Popup", true);
+			}
+		} catch (Exception e) {
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		}
 
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
 
-		Assert.assertEquals(propage.getmailId().getText(), "test2prasanna@gmail.com");
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		WebElement profilehov = Utility.isElementPresnt(driver,
-				"//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10);
-	
-		profilehov.click();
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+
+		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
+				10).click();
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-		WebElement newbtn = Utility.isElementPresnt(driver, "//img[@src='/static/add_plus.8284d929.svg']", 10);
+		Utility.isElementPresnt(driver, "//img[@src='/static/add_plus.8284d929.svg']", 10).click();
 
-		newbtn.click();
-
-		wait1.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
+		wait.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
 
 		docpage.getdMonth().sendKeys("11");
 		docpage.getDate().sendKeys("11");
 		docpage.getyear().sendKeys("1998");
 
-		WebDriverWait tt = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
 
-		tt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
+		docpage.getPatientSearch().sendKeys("prasanna ");
 
-		docpage.getPatientSearch().sendKeys("prasanna");
+		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 
-		WebElement searchres = Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10);
-		
-		searchres.click();
-		
 		Reporter.log("Viewpatient TestCase is sucessfully done###################################", true);
 	}
 

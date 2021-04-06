@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class DoctorRolesPage {
-	@FindBy(xpath="//span[text()='Submitter Provider']")
+	@FindBy(xpath="//div/img[@src='/static/submitterprovider.7a03b2fc.png']/../following-sibling::div")
 	private WebElement submitter;
 	
 	public WebElement getSubProvider()
@@ -12,8 +12,9 @@ public class DoctorRolesPage {
 	{
 		return submitter;
 	}
+	//img[@src='/static/responderprovider.fe25027c.png']
+	@FindBy(xpath="	//span[text()='Respond to chats submitted to you']/..//span")
 	
-	@FindBy(xpath="//span[text()='Responder Provider']")
 	private WebElement responder;
 	
 	public WebElement getResponder()
@@ -71,6 +72,13 @@ public class DoctorRolesPage {
 		return spec;
 	}
 	
+	@FindBy(xpath = "//span[text()='Specialty']")
+	private WebElement dropdown;
+	
+	public WebElement getSpecdrop()
+	{
+		return dropdown;
+	}
 	@FindBy(id="chief_complaint")
 	private WebElement chiefcomplaint;
 	
@@ -145,7 +153,7 @@ public class DoctorRolesPage {
 		return regbutton;
 	}
 	
-	@FindBy(xpath="//div[contains(@class,'details_contaner')]//div/span")
+	@FindBy(xpath="//div[contains(@class,'details_contaner')]")
 	private WebElement patient;
 	
 	public WebElement getPatientInfo()
@@ -189,5 +197,72 @@ public class DoctorRolesPage {
 		return yaer;
 	}
 	
+	@FindBy(xpath = "//span[text()='Skip >']")
+	private WebElement skip;
 	
+	public WebElement getSkip()
+	{
+		return skip;
+	}
+   
+	@FindBy(xpath = "//div[text()='Anesthesiology']")
+	private WebElement specialty;
+	
+	public WebElement getspec()
+	{
+		return specialty;
+	}
+	
+	@FindBy(xpath = "//div[contains(@class,'item-option-content')]")
+	private WebElement list;
+	
+	public WebElement getSpeclist()
+	{
+		return list;
+	}
+	
+	@FindBy(id = "ICD")
+	private WebElement icddrop;
+	
+	public WebElement getIcdCode()
+	{
+		return icddrop;
+	}
+	
+	
+	@FindBy(id = "CPT")
+	private WebElement cptdrop;
+	
+	public WebElement getCptCode()
+	{
+		return cptdrop;
+	}
+	
+	////div[@id='ICD_list']/div[@role='option']
+	
+
+	@FindBy(xpath = "//div[@class='ant-select-item-option-content']//span")
+	private WebElement icdselect;
+	
+	public WebElement getSelectICD()
+	{
+		return icdselect;
+	}
+
+	@FindBy(xpath = "//span[@role='user_status_value']/img")
+	
+	private WebElement staus;
+	
+	public WebElement getStatus()
+	{
+		return staus;
+	}
+	
+	@FindBy(xpath = "//span[@role='user_status']")
+	private WebElement state;
+	
+	public WebElement getUserstate()
+	{
+		return state;
+	}
 }

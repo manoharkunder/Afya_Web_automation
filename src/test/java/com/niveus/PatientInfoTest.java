@@ -1,32 +1,28 @@
 package com.niveus;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class PatientInfoTest extends Base {
-
 	public Registeration registerp;
-	public Carddetails card;
 	FileLib flib = new FileLib();
 	public DoctorRolesPage docpage;
 	Utility ut = new Utility();
 	public LoginPage logp;
 	public ProfilePage propage;
 	public HomePage homepge;
+	public FilterSection filter;
 
-	@Test(enabled = false)
+	@Test()
 	public void patientInfoValidationTest() throws Exception {
-
-		test = extent.createTest("8.PatientInfoTest", "This test case is to check whether patientInfo is working");
-
-		card = PageFactory.initElements(driver, Carddetails.class);
 
 		docpage = PageFactory.initElements(driver, DoctorRolesPage.class);
 
@@ -38,26 +34,29 @@ public class PatientInfoTest extends Base {
 
 		logp = PageFactory.initElements(driver, LoginPage.class);
 
-		Reporter.log("PatientInfo Testcase is runnng..........", true);
+		filter = PageFactory.initElements(driver, FilterSection.class);
 
-		WebDriverWait wait2 = new WebDriverWait(driver, 10);
+		test = extent.createTest("8.PatientInfoTest", "This test case is to check whether patientInfo is working");
 
-		wait2.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		Assert.assertEquals(logp.getloginbtn().getText(), "Login");
+		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+
+		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
 
 		logp.getUsername().sendKeys("test1prasanna@gmail.com");
 		logp.getpassword().sendKeys("Aa123456@");
 
 		logp.getpswdview().click();
 
-		for (int i = 0; i <= 10; i++) {
+		boolean flag1 = true;
+
+		while (flag1 == true) {
 			try {
 				boolean res = logp.getloginbtn().isEnabled();
 				if (res == true) {
 					logp.getloginbtn().click();
-
-					break;
+					flag1 = false;
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -76,141 +75,44 @@ public class PatientInfoTest extends Base {
 
 						alert = true;
 
-						break;
-
 					}
 
 				}
 			} catch (Exception e) {
 
 			}
-		} /*
-			 * 
-			 * 
-			 * wait2.until(ExpectedConditions.elementToBeClickable(docpage.getSubProvider())
-			 * );
-			 * 
-			 * ut.moveToElement(driver, docpage.getSubProvider());
-			 * 
-			 * boolean flag = docpage.getSubProvider().getText().contains("Submitter");
-			 * Assert.assertTrue(flag); Reporter.log(docpage.getSubProvider().getText() +
-			 * " role is selected", true);
-			 * 
-			 * WebDriverWait wt = new WebDriverWait(driver, 10);
-			 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-			 * 
-			 * logp.getproficPic().click();
-			 * 
-			 * WebDriverWait wait1 = new WebDriverWait(driver, 10);
-			 * wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-			 * 
-			 * Assert.assertEquals(propage.getmailId().getText(),
-			 * "test1prasanna@gmail.com");
-			 * 
-			 * logp.getcloseProfile().click();
-			 * 
-			 * Reporter.log("sucessfully loged in and Home page is displayed", true);
-			 * 
-			 * int btn = 0; while (btn==0) {
-			 * 
-			 * try { docpage.getNewSubmitter().click(); break;
-			 * 
-			 * } catch (Exception e) { // TODO: handle exception } }
-			 * 
-			 * wait1.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
-			 * docpage.getdMonth().sendKeys("11"); docpage.getDate().sendKeys("11");
-			 * docpage.getyear().sendKeys("1998");
-			 * 
-			 * WebDriverWait tt = new WebDriverWait(driver, 10);
-			 * 
-			 * tt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
-			 * 
-			 * docpage.getPatientSearch().sendKeys("prasanna");
-			 * 
-			 * wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()
-			 * ));
-			 * 
-			 * docpage.getSearchResult().click();
-			 * 
-			 * Reporter.log("Addd new paient step ....1", true);
-			 * 
-			 * boolean flag1 = true;
-			 * 
-			 * while (flag1 == true) { try {
-			 * 
-			 * docpage.getSpeciality().sendKeys("anesthesiology");
-			 * 
-			 * Thread.sleep(1000);
-			 * 
-			 * 
-			 * docpage.getAnsthesiolgy().click();
-			 * 
-			 * docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
-			 * 
-			 * flag1 = false; break; } catch (Exception e) { } }
-			 * 
-			 * int count = 0; while (count <= 1) { try { if (docpage.getIcd().isEnabled()) {
-			 * 
-			 * docpage.getIcd().sendKeys("Hypertensive heart disease with heart failure");
-			 * try { Thread.sleep(3000); docpage.getIcdHeart().click(); break;
-			 * 
-			 * } catch(Exception e) {
-			 * 
-			 * } }
-			 * 
-			 * } catch (Exception e) {
-			 * Reporter.log("No ICd code.................................", true); count++;
-			 * } }
-			 * 
-			 * int count1 = 0;
-			 * 
-			 * while (count1 <= 1) { try { if (docpage.getCpt().isEnabled()) {
-			 * 
-			 * docpage.getCpt().sendKeys("A002"); break;
-			 * 
-			 * }
-			 * 
-			 * } catch (Exception e) {
-			 * Reporter.log("No cpt code.....................................", true);
-			 * count1++; } }
-			 * 
-			 * try { homepge.getReg().click(); } catch(Exception e) {
-			 * 
-			 * }
-			 * 
-			 * boolean flg = true; while (flg == true) { try {
-			 * homepge.getChatsesion().click();
-			 * 
-			 * String lang1 = homepge.getBannerLang1().getText(); Reporter.log(lang1 +
-			 * "...........Sucess...", true);
-			 * 
-			 * Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna"); flg =
-			 * false;
-			 * 
-			 * } catch (Exception e) { } }
-			 * 
-			 * Reporter.log("Patient  is sucessfully added to the chat session", true);
-			 */
+		}
 
-		Utility.isElementPresnt(driver, "//span[text()='Submitter Provider']", 10).click();
+		Thread.sleep(2000);
 
-		boolean flag = docpage.getSubProvider().getText().contains("Submitter");
+		wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
 
-		Assert.assertTrue(flag);
+		Utility.moveToElement(driver, docpage.getSubProvider());
+
+		boolean flag = docpage.getSubProvider().getText().contains("provider");
+
+		AssertJUnit.assertTrue(flag);
 
 		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
-		/*
-		 * WebDriverWait wt = new WebDriverWait(driver, 10);
-		 * wt.until(ExpectedConditions.elementToBeClickable(logp.getproficPic()));
-		 */
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			if (docpage.getSkip().isEnabled()) {
+				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+			}
+
+			else {
+				Reporter.log("No Missed call Popup", true);
+			}
+		} catch (Exception e) {
+
+		}
+
 		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
 
-		// logp.getproficPic().click();
+		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		wait1.until(ExpectedConditions.visibilityOf(propage.getmailId()));
-
-		Assert.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
 
 		// logp.getcloseProfile().click();
 
@@ -219,27 +121,17 @@ public class PatientInfoTest extends Base {
 
 		Reporter.log("sucessfully loged in and Home page is displayed", true);
 
-		/*
-		 * int btn = 0; while (btn==0) {
-		 * 
-		 * try { docpage.getNewSubmitter().click(); break;
-		 * 
-		 * } catch (Exception e) { } }
-		 */
-
 		Utility.isElementPresnt(driver, "//img[@src='/static/add_plus.8284d929.svg']", 10).click();
 
-		wait1.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
+		wait.until(ExpectedConditions.visibilityOf(docpage.getdMonth()));
 
 		docpage.getdMonth().sendKeys("11");
 		docpage.getDate().sendKeys("11");
 		docpage.getyear().sendKeys("1998");
 
-		WebDriverWait tt = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
 
-		tt.until(ExpectedConditions.visibilityOf(docpage.getPatientSearch()));
-
-		docpage.getPatientSearch().sendKeys("prasanna");
+		docpage.getPatientSearch().sendKeys("c1");
 
 		// wait1.until(ExpectedConditions.elementToBeClickable(docpage.getSearchResult()));
 
@@ -247,187 +139,176 @@ public class PatientInfoTest extends Base {
 
 		Utility.isElementPresnt(driver, "//span[text()=' Select']/..", 10).click();
 
-	}
-	@Test(enabled=false)
-		public void patientinformationTest()
-		{
-
-		Reporter.log("Patient information Test started ######################", true);
-
-		// boolean flag1 = true;
 		/*
-		 * while (flag1 == true)
+		 * JavascriptExecutor js=(JavascriptExecutor)driver;
+		 * 
+		 * js.executeScript("window.scrollBy(0,1000)");
 		 */
-		try {
 
-			// docpage.getSpeciality().sendKeys("anesthesiology");
+		wait.until(ExpectedConditions.visibilityOf(docpage.getSpeciality()));
 
-			Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("anesthesiology");
+		docpage.getSpeciality().sendKeys("@4224244");
 
-			// Thread.sleep(3000);
+		Thread.sleep(2000);
 
-			// docpage.getAnsthesiolgy().click();
+		docpage.getSpeciality().clear();
 
-			Utility.isElementPresnt(driver, "//div[text()='Anesthesiology']", 10).click();
+		boolean flg = true;
 
-			docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
+		while (flg == true) {
 
-			Reporter.log("specialty and chief complaint is sucessfullly displayed##################", true);
-
-			// flag1 = false;
-			// break;
-		} catch (Exception e) {
-		}
-
-		/*
-		 * int count = 0; while (count <= 1)
-		 */ {
 			try {
-
-				if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
-
-
-					
-					Utility.isElementPresntOnId(driver, "ICD", 10)
-					
-							.sendKeys("Hypertensive heart disease with heart failure");
-					
-					  try { WebElement icd = Utility.isElementPresnt(driver,
-					  "//span[text()='Hypertensive heart disease with heart failure']", 10);
-					  icd.click();
-					  
-					  Reporter.log("Sucessfully icd code is selected########################",
-					  true); // break;
-					  
-					  } catch (Exception e) {
-					  Reporter.log("Icd code is not selected>>>>>>>>>>>>>>>>>>>", true);
-					  e.printStackTrace(); }
-					 
-				}
+				docpage.getChiefcomplaint().click();
+				Thread.sleep(2000);
+				docpage.getSpeciality().click();
+				if (docpage.getSpeclist().isEnabled())
+					docpage.getSpeclist().click();
+				flg = false;
 
 			} catch (Exception e) {
-				Reporter.log("No ICd code.................................", true);
-				// count++;
 			}
-		}
-		/*
-		 * int count1 = 0;
-		 * 
-		 * while (count1 <= 1)
-		 */
-		try {
-			if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
-				// docpage.getCpt().sendKeys("A002");
-				Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
+		}
+
+		// Utility.isElementPresntOnId(driver, "specialty", 10).sendKeys("Obstetrics");
+
+		docpage.getChiefcomplaint().sendKeys("have a knee pain in leg");
+
+		Reporter.log("Specialty and chief complaint is sucessfully displayed", true);
+
+		try {
+			if (Utility.isElementPresntOnId(driver, "ICD", 10).isEnabled()) {
+
+				boolean fg = true;
+
+				while (fg == true) {
+
+					try {
+						docpage.getIcdCode().sendKeys("Hypertensive heart disease with heart failure");
+						;
+
+						Thread.sleep(2000);
+
+						if (docpage.getIcdHeart().isEnabled())
+							Thread.sleep(1000);
+						docpage.getIcdHeart().click();
+
+						fg = false;
+
+					} catch (Exception e) {
+						docpage.getCptCode().click();
+
+						docpage.getIcdCode().clear();
+					}
+
+				}
+				Reporter.log("Icd code is sucessfully selected##########################", true);
 				// break;
 
 			}
-
-		} catch (Exception e) {
-			Reporter.log("No cpt code.....................................", true);
-			// count1++;
 		}
 
-		// homepge.getReg().click();
-
-		Utility.isElementPresnt(driver, "//span[text()='  REGISTER ']", 10).click();
+		catch (Exception e) {
+			Reporter.log("No ICd code.................................", true);
+			// count++;
 		}
-	
-	@Test(enabled=false)
-	public void patietDetailsTest()
-	{
 
-		Reporter.log("Patient Details Test started ######################", true);
-
-		/*
-		 * boolean flg = true; while (flg == true) {
-		 */
 		try {
-			// homepge.getChatsesion().click();
+			if (Utility.isElementPresntOnId(driver, "CPT", 10).isEnabled()) {
 
-              
-			WebElement chat = Utility.isElementPresntOnId(driver, "chat_session_items", 15);
-			
-			chat.click();
+				Utility.isElementPresntOnId(driver, "CPT", 10).sendKeys("A002");
 
-			String lang1 = homepge.getBannerLang1().getText();
-
-			Reporter.log(lang1 + "...........Sucess...", true);
-
-			Assert.assertEquals(docpage.getPatientInfo().getText(), "Prasanna");
-			// flg = false;
+			}
 
 		} catch (Exception e) {
+			e.getMessage();
 		}
+
+		try {
+
+			homepge.getConfirmPatient().submit();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		int cnt = 0;
+		while (cnt == 0)
+			try {
+
+				Thread.sleep(2000);
+
+				wait.until(ExpectedConditions.visibilityOf(filter.getChatSession()));
+
+				filter.getChatSession().click();
+
+				cnt++;
+			} catch (Exception e) {
+
+			}
+		try {
+
+			wait.until(ExpectedConditions.visibilityOf(homepge.getBannerLang1()));
+		} catch (Exception e) {
+		}
+		String lang1 = homepge.getBannerLang1().getText();
+
+		Reporter.log(lang1 + "...........Sucess...", true);
+
+		boolean res = docpage.getPatientInfo().getText().contains("C");
+
+		AssertJUnit.assertTrue(res);
+
 
 		Reporter.log("Patient  is sucessfully added to the chat session", true);
 
-		for(int i=0;i<=15;)
-		{
 		try {
 
+			Thread.sleep(2000);
+
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@aria-label='more']")));
+
+			WebElement more = Utility.isElementPresnt(driver, "//span[@aria-label='more']", 10);
+
+			more.click();
+
+			wait.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
+
+			homepge.getPatientinfo().click();
+
+			// break;
+
+		} catch (Exception e) {
+
+		}
+
+		try {
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ant-row']")));
+
+			Utility.isElementPresnt(driver, "//div[@class='ant-row']", 10);
+
+			String chatmemeber = homepge.getPatientDetails().getText();
+
+			Reporter.log(chatmemeber + " sucess", true);
 
 			Thread.sleep(2000);
-			Reporter.log("count in patiet info>>>>>>>>>>"+i,true);
-		WebElement more=	Utility.isElementPresnt(driver, "//*[@id=\"chat_area_widget\"]/div/div/div[1]/div[1]/div/span[1]/img/../following-sibling::span", 10);
-			more.click();
-			/*
-			 * Reporter.log("count in patiet info>>>>>>>>>>"+i,true); JavascriptExecutor
-			 * executor = (JavascriptExecutor) driver;
-			 * 
-			 * executor.executeScript("arguments[0].click();", homepge.getMoreoptions());
-			 */  
-			  Reporter.log("Patien Info   Test   step ....5", true);
-			  
-			  break;
-			 
-			/*
-			 * WebElement more = Utility.isElementPresnt(driver,
-			 * "//span[@aria-label='more']", 10); more.click();
-			 */
+
+			boolean flag4 = chatmemeber.contains("c");
+
+			AssertJUnit.assertTrue(flag4);
+
+			Reporter.log("patient name is displayed  sucesssfully", true);
+
+			boolean flag5 = chatmemeber.contains("11-11-1998");
+			AssertJUnit.assertTrue(flag5);
+			Reporter.log("patient date of birth  is displayed  sucesssfully", true);
+			boolean flag6 = chatmemeber.contains("Years Old");
+			AssertJUnit.assertTrue(flag6);
+			Reporter.log("patient year  is displayed  sucesssfully", true);
+			Reporter.log(
+					"PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS",
+					true);
 		} catch (Exception e) {
-			i++;
-
-			e.printStackTrace();
-
+			// TODO: handle exception
 		}
-		}
-
-		WebDriverWait wrt = new WebDriverWait(driver, 20);
-		wrt.until(ExpectedConditions.elementToBeClickable(homepge.getPatientinfo()));
-
-		homepge.getPatientinfo().click();
-
-		/*
-		 * WebElement info=Utility.isElementPresnt(driver,
-		 * "//ul[@role='menu']/li[text()='Patient info']", 10); info.click();
-		 */
-		/*
-		 * WebDriverWait pp = new WebDriverWait(driver, 100);
-		 * pp.until(ExpectedConditions.visibilityOf(homepge.getPatientDetails()));
-		 */
-
-		Utility.isElementPresnt(driver, "//div[contains(@class,'patient_info_modal_content')]", 10);
-
-		String chatmemeber = homepge.getPatientDetails().getText();
-
-		Reporter.log(chatmemeber + " sucess", true);
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		boolean flag4 = chatmemeber.contains("Prasanna");
-		Assert.assertTrue(flag4);
-
-		Reporter.log("patient name is displayed  sucesssfully", true);
-
-		boolean flag5 = chatmemeber.contains("11-11-1998");
-		Assert.assertTrue(flag5);
-		Reporter.log("patient date of birth  is displayed  sucesssfully", true);
-		boolean flag6 = chatmemeber.contains("Years Old");
-		Assert.assertTrue(flag6);
-		Reporter.log("patient year  is displayed  sucesssfully", true);
-		Reporter.log(
-				"PatientInfoTest TestCase is sucessfully done ################################################## TEST IS PASS",
-				true);
 	}
 }

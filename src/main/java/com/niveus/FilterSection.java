@@ -97,4 +97,22 @@ public class FilterSection {
        {
     	   return getclose;
        }
+       
+       @FindBy(xpath = "//div[contains(@class,'chatItem')]")
+       
+       private WebElement chat;
+       
+       public  WebElement getChatSession()
+       {
+    	   return chat;
+       }
+       
+       @FindBy(xpath = "//span[text()='Upload files']/..")
+       private WebElement file;
+       
+       public WebElement getUploadFile()
+       {
+    	   return file ;
+       }
+       
 }

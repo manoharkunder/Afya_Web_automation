@@ -39,146 +39,149 @@ public class UploadDocumentTest extends Base {
 
 		Reporter.log("UploadDocument Testcase is runnng..........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
+			wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
-		AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
-		wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
+			AssertJUnit.assertEquals(logp.getloginbtn().getText(), "Login");
+			wait.until(ExpectedConditions.elementToBeClickable(logp.getUsername()));
 
-		logp.getUsername().sendKeys("test1prasanna@gmail.com");
-		logp.getpassword().sendKeys("Aa123456@");
+			logp.getUsername().sendKeys("test1prasanna@gmail.com");
+			logp.getpassword().sendKeys("Aa123456@");
 
-		logp.getpswdview().click();
+			logp.getpswdview().click();
 
-		boolean flag1 = true;
+			boolean flag1 = true;
 
-		while (flag1 == true) {
-			try {
-				boolean res = logp.getloginbtn().isEnabled();
-				if (res == true) {
-					logp.getloginbtn().click();
-					flag1 = false;
+			while (flag1 == true) {
+				try {
+					boolean res = logp.getloginbtn().isEnabled();
+					if (res == true) {
+						logp.getloginbtn().click();
+						flag1 = false;
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+
 				}
-			} catch (Exception e) {
-				e.printStackTrace();
-
 			}
-		}
-		boolean alert = false;
-		while (alert == false) {
-			try {
-				if (logp.getloginAlert().isEnabled()) {
+			boolean alert = false;
+			while (alert == false) {
+				try {
+					if (logp.getloginAlert().isEnabled()) {
 
-					if (true) {
-						Reporter.log("Login Alert Popup is displayed......", true);
+						if (true) {
+							Reporter.log("Login Alert Popup is displayed......", true);
 
-						logp.getloginAlert().click();
+							logp.getloginAlert().click();
 
-						alert = true;
+							alert = true;
+
+						}
 
 					}
+				} catch (Exception e) {
 
+				}
+			}
+
+			Thread.sleep(2000);
+
+			wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
+
+			Utility.moveToElement(driver, docpage.getSubProvider());
+
+			boolean flag = docpage.getSubProvider().getText().contains("provider");
+
+			AssertJUnit.assertTrue(flag);
+
+			Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			try {
+				if (docpage.getSkip().isEnabled()) {
+					Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+				}
+
+				else {
+					Reporter.log("No Missed call Popup", true);
 				}
 			} catch (Exception e) {
 
 			}
-		}
 
-		Thread.sleep(2000);
+			Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
 
-		wait.until(ExpectedConditions.visibilityOf(docpage.getSubProvider()));
+			wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
 
-		Utility.moveToElement(driver, docpage.getSubProvider());
+			AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
 
-		boolean flag = docpage.getSubProvider().getText().contains("provider");
+			// logp.getcloseProfile().click();
 
-		AssertJUnit.assertTrue(flag);
+			Utility.isElementPresnt(driver,
+					"//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img", 10).click();
 
-		Reporter.log(docpage.getSubProvider().getText() + " role is selected", true);
+			Reporter.log("sucessfully loged in and Home page is displayed", true);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		try {
-			if (docpage.getSkip().isEnabled()) {
-				Utility.isElementPresnt(driver, "//span[text()='Skip >']", 5).click();
+				filter.getFilter().click();
+
+				wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
+
+				filter.getAllchat().click();
+
+			} catch (Exception e) {
+				Reporter.log(e.getMessage(), true);
 			}
+			Thread.sleep(2000);
 
-			else {
-				Reporter.log("No Missed call Popup", true);
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(filter.getChatSession()));
+
+				filter.getChatSession().click();
+			} catch (Exception e) {
 			}
-		} catch (Exception e) {
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
 
-		}
+				filter.getFilter().click();
 
-		Utility.isElementPresnt(driver, "//div[contains(@class,'user_name_')]", 10).click();
+				wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
 
-		wait.until(ExpectedConditions.visibilityOf(propage.getmailId()));
+				filter.getAllchat().click();
 
-		AssertJUnit.assertEquals(propage.getmailId().getText(), "test1prasanna@gmail.com");
+			} catch (Exception e) {
+				Reporter.log(e.getMessage(), true);
+			}
+			Thread.sleep(2000);
 
-		// logp.getcloseProfile().click();
-
-		Utility.isElementPresnt(driver, "//span[text()='Logout']/ancestor::div[contains(@class,'profile_wrap')]//img",
-				10).click();
-
-		Reporter.log("sucessfully loged in and Home page is displayed", true);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		try {
-			wait.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
-
-			filter.getFilter().click();
-
-			wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-
-			filter.getAllchat().click();
-
-		} catch (Exception e) {
-			Reporter.log(e.getMessage(), true);
-		}
-		Thread.sleep(2000);
-
-		try {
 			wait.until(ExpectedConditions.elementToBeClickable(filter.getChatSession()));
 
 			filter.getChatSession().click();
+
+			Reporter.log("chat session is sucessfully displayed in Media File >>>>>>>>>>>", true);
+
+			Utility.isElementPresnt(driver, "//div[contains(@class,'attachment___')]", 10).click();
+
+			wait.until(ExpectedConditions.elementToBeClickable(filter.getUploadFile()));
+
+			filter.getUploadFile().click();
+
+			Utility.isElementPresnt(driver, "//input[@type='file']", 10).sendKeys(fs.getAbsolutePath());
+
+			Utility.isElementPresnt(driver, "//button[text()='Submit']", 10).click();
+
+			Thread.sleep(2000);
+
+			Reporter.log("file has been  sucessfully updated", true);
+
+			Reporter.log("UploadPhotosTest is sucessfully done ############################# TEST IS PASS", true);
+
 		} catch (Exception e) {
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		try {
-			wait.until(ExpectedConditions.elementToBeClickable(filter.getFilter()));
-
-			filter.getFilter().click();
-
-			wait.until(ExpectedConditions.elementToBeClickable(filter.getAllchat()));
-
-			filter.getAllchat().click();
-
-		} catch (Exception e) {
-			Reporter.log(e.getMessage(), true);
-		}
-		Thread.sleep(2000);
-
-		wait.until(ExpectedConditions.elementToBeClickable(filter.getChatSession()));
-
-		filter.getChatSession().click();
-
-		Reporter.log("chat session is sucessfully displayed in Media File >>>>>>>>>>>", true);
-
-		Utility.isElementPresnt(driver, "//div[contains(@class,'attachment___')]", 10).click();
-
-		wait.until(ExpectedConditions.elementToBeClickable(filter.getUploadFile()));
-
-		filter.getUploadFile().click();
-
-		Utility.isElementPresnt(driver, "//input[@type='file']", 10).sendKeys(fs.getAbsolutePath());
-
-		Utility.isElementPresnt(driver, "//button[text()='Submit']", 10).click();
-
-		Thread.sleep(2000);
-
-		Reporter.log("file has been  sucessfully updated", true);
-
-		Reporter.log("UploadPhotosTest is sucessfully done ############################# TEST IS PASS", true);
-
 	}
 }

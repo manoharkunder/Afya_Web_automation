@@ -40,6 +40,8 @@ public class CloseCodeTest extends Base {
 
 		close = PageFactory.initElements(driver, CloseCode.class);
 
+		try
+		{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 
 		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
@@ -193,5 +195,9 @@ public class CloseCodeTest extends Base {
 			Reporter.log("CloseCode TestCase is sucessfully done ############################# TEST IS PASS", true);
 
 		}
+		}
+		catch (Exception e) {
+		}
+		
 	}
 }

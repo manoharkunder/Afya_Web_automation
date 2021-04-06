@@ -141,10 +141,10 @@ public class AssigningDoctorTest extends Base {
 		try {
 			if (logp.getNoDoctor().isEnabled() == true)
 
-				Reporter.log("No Doctor availble at the moment", true);
+				Reporter.log("No Doctor availble at the moment##############PASS", true);
 
 		} catch (Exception e) {
-			Reporter.log("Doctor is sucessfullly added to the chat session", true);
+			Reporter.log("Doctor is sucessfullly added to the chat session###########PASS", true);
 
 		}
 

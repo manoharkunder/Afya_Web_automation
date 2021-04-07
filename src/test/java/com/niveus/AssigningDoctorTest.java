@@ -33,7 +33,7 @@ public class AssigningDoctorTest extends Base {
 
 		Reporter.log("Login Testcase is runnng..........>>>>>>>>>>>>>>>>", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
 		wait.until(ExpectedConditions.visibilityOf(logp.getloginbtn()));
 
@@ -87,8 +87,7 @@ public class AssigningDoctorTest extends Base {
 
 		Thread.sleep(2000);
 		try {
-			if (logp.getDenyBtn().isEnabled()) 
-			{
+			if (logp.getDenyBtn().isEnabled()) {
 				wait.until(ExpectedConditions.elementToBeClickable(logp.getDenyBtn()));
 
 				Utility.moveToElement(driver, logp.getDenyBtn());
